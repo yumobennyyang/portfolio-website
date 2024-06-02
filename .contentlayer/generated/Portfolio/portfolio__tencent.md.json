@@ -1,0 +1,42 @@
+{
+  "title": "Tencent",
+  "date": "2023-10-10T00:00:00.000Z",
+  "slug": "tencent",
+  "video": {
+    "src": "/images/portfolio/tencent.mp4",
+    "width": 1374,
+    "height": 1374,
+    "type": "Video",
+    "_raw": {}
+  },
+  "description": "Tencent - Internship 2023",
+  "enabled": true,
+  "orderIndex": 4,
+  "preview": {
+    "src": "/images/tencent/tencent1.png",
+    "width": 3840,
+    "height": 2160,
+    "type": "Image",
+    "_raw": {}
+  },
+  "overview": "During the summer of 2023 I interned at Tencent’s Interactive Entertainment Group (IEG) as an interface and interaction designer. The majority of my work involved creating HTML5 visuals and fine-tuning UI/UX for the Tencent Games Joy Club mobile app, which I am unfortunately unable to share. However, I was also assigned a separate solo task of a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps. On this page I will go through snippets of my redesign of the Dora Platform.",
+  "tools": [
+    "Photoshop",
+    "Figma",
+    "CSS"
+  ],
+  "duration": "2 months",
+  "body": {
+    "raw": "\n\n---\n\n&nbsp;\n\n**Select Old UI Screenshots** \n\n&nbsp;\n\n![Tencent2](/images/tencent/tencent2.png \"tencent2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**The Problem** \n\n&nbsp;\n\nThe UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.\n\n&nbsp;\n\nI was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**UI Restructuring**\n\n&nbsp;\n\n\n![Tencent3](/images/tencent/tencent3.png \"tencent3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**New Style Guide**\n\n&nbsp;\n\nLogo Update\n\n![Tencent4](/images/tencent/tencent4.png \"tencent4\")\n\n&nbsp;\n\nPalette\n\n![Tencent5](/images/tencent/tencent5.png \"tencent5\")\n\n&nbsp;\n\nType\n\n![Tencent6](/images/tencent/tencent6.png \"tencent6\")\n\n&nbsp;\n\nVisual Identity Development\n\n![Tencent7](/images/tencent/tencent7.png \"tencent7\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n\n\n&nbsp;\n\n**Responsive Layout Grid**\n\n&nbsp;\n\n![Tencent8](/images/tencent/tencent8.png \"tencent8\")\n\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Home**\n\n&nbsp;\n\n![Tencent9](/images/tencent/tencent9.png \"tencent9\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Table**\n\n&nbsp;\n\n![Tencent10](/images/tencent/tencent10.png \"tencent10\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Form**\n\n&nbsp;\n\n![Tencent11](/images/tencent/tencent11.png \"tencent11\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Navigation**\n\n&nbsp;\n\n![Tencent12](/images/tencent/tencent12.png \"tencent12\")\n\n&nbsp;\n\n&nbsp;\n",
+    "html": "<hr>\n<p> </p>\n<p><strong>Select Old UI Screenshots</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent2.png\" alt=\"Tencent2\" title=\"tencent2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>The Problem</strong></p>\n<p> </p>\n<p>The UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.</p>\n<p> </p>\n<p>I was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.</p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>UI Restructuring</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent3.png\" alt=\"Tencent3\" title=\"tencent3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>New Style Guide</strong></p>\n<p> </p>\n<p>Logo Update</p>\n<p><img src=\"/images/tencent/tencent4.png\" alt=\"Tencent4\" title=\"tencent4\"></p>\n<p> </p>\n<p>Palette</p>\n<p><img src=\"/images/tencent/tencent5.png\" alt=\"Tencent5\" title=\"tencent5\"></p>\n<p> </p>\n<p>Type</p>\n<p><img src=\"/images/tencent/tencent6.png\" alt=\"Tencent6\" title=\"tencent6\"></p>\n<p> </p>\n<p>Visual Identity Development</p>\n<p><img src=\"/images/tencent/tencent7.png\" alt=\"Tencent7\" title=\"tencent7\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Responsive Layout Grid</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent8.png\" alt=\"Tencent8\" title=\"tencent8\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Home</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent9.png\" alt=\"Tencent9\" title=\"tencent9\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Table</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent10.png\" alt=\"Tencent10\" title=\"tencent10\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Form</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent11.png\" alt=\"Tencent11\" title=\"tencent11\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Navigation</strong></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent12.png\" alt=\"Tencent12\" title=\"tencent12\"></p>\n<p> </p>\n<p> </p>"
+  },
+  "_id": "portfolio/tencent.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/tencent.md",
+    "sourceFileName": "tencent.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/tencent"
+  },
+  "type": "Portfolio"
+}

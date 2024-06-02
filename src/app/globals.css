@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+* {
+  cursor: url("/images/cursors/cursor.svg"), auto !important;
+}
+
+*/
+
+
+html {
+  background-color: #111111
+}
+
+#scrollSection {
+  height: calc(100vh*7);
+}
+
+
+#portfolioCard:hover {
+  transform: scale(0.995);
+}
+
+
+.gradient-blur {
+  inset: 0;
+  height: 104px;
+}
+
+.gradient-blur>div,
+.gradient-blur::before,
+.gradient-blur::after {
+  position: absolute;
+  inset: 0;
+}
+
+.gradient-blur::before {
+  content: "";
+  z-index: 1;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 1)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 1)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 12.5%,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(0, 0, 0, 1) 37.5%);
+}
+
+.gradient-blur>div:nth-of-type(1) {
+  z-index: 2;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 2)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 2)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 12.5%,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(0, 0, 0, 1) 37.5%,
+      rgba(0, 0, 0, 1) 50%);
+}
+
+.gradient-blur>div:nth-of-type(2) {
+  z-index: 3;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 3)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 3)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 1) 37.5%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 1) 62.5%);
+}
+
+.gradient-blur>div:nth-of-type(3) {
+  z-index: 4;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 4)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 4)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 37.5%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 1) 62.5%,
+      rgba(0, 0, 0, 1) 75%);
+}
+
+.gradient-blur>div:nth-of-type(4) {
+  z-index: 5;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 5)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 5)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 62.5%,
+      rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 1) 87.5%);
+}
+
+.gradient-blur>div:nth-of-type(5) {
+  z-index: 6;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 6)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 6)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 62.5%,
+      rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 1) 87.5%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+.gradient-blur>div:nth-of-type(6) {
+  z-index: 7;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 7)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 7)));
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 1) 87.5%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+.gradient-blur::after {
+  content: "";
+  z-index: 8;
+  backdrop-filter: blur(calc(0.5px * pow(1.5, 8)));
+  -webkit-backdrop-filter: blur(calc(0.5px * pow(1.5, 8)));
+
+  mask: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 87.5%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+
+.gradient-background {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 104px;
+  background-image: linear-gradient(to bottom,
+      hsla(0, 0%, 7%, calc(0.6 * 1)) 0%,
+
+      hsla(0, 0%, 7%, calc(0.6 * 0.987)) 9.4%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.951)) 17.6%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.896)) 24.8%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.825)) 31.2%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.741)) 37%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.648)) 42.4%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.55)) 47.5%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.45)) 52.5%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.352)) 57.6%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.259)) 63%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.175)) 68.8%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.104)) 75.2%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.049)) 82.4%,
+      hsla(0, 0%, 7%, calc(0.6 * 0.013)) 90.6%,
+      hsla(0, 0%, 7%, calc(0.6 * 0)) 100%);
+}
+
+
+* {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+
+
+::selection {
+  background-color: rgba(90, 90, 90, 1);
+  color: rgb(255, 255, 255);
+}
+
+
+.flashing {
+
+  -webkit-animation: 1.2s blink step-end infinite;
+  -moz-animation: 1.2s blink step-end infinite;
+  -ms-animation: 1.2s blink step-end infinite;
+  -o-animation: 1.2s blink step-end infinite;
+  animation: 1.2s blink step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+.textareaElement {
+  width: 100%;
+  min-height: 100px;
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+#hospital-container{
+  resize: horizontal;
+  width: calc(100%/0.75);
+  min-width: 50%;
+  max-width: 100%;
+}
+
+#hospital{
+  width: calc(100%/ 0.75);
+  transform: translate(-12.5%,-12.5%) scale(0.75); 
+  pointer-events: none;
+  height: 500px;
+}
+
+.iframe-container {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 375px;
+  border: 1px solid rgba(255,255,255,0.1);
+  
+  
+}
+
+.iframe {
+  left: 0;
+  width:100%;
+  height: 375px;
+  
+  border: none;
+  
+ 
+}
+
+
+.scrolldown {
+  position: relative;
+  width: 30px;
+  height: 50px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  box-shadow: 0px -5px 3px 1px rgba(0, 0, 0, .6);
+  animation: scrolldown-anim 2s infinite;
+}
+@keyframes scrolldown-anim {
+  0% {
+      opacity: 0;
+      height: 6px;
+  }
+  40% {
+      opacity: 1;
+      height: 10px;
+  }
+  80% {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+      height: 10px;
+  }
+  100% {
+      opacity: 0;
+      height: 3px;
+      }
+  }
