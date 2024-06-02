@@ -1,0 +1,29 @@
+{
+  "title": "Mamere",
+  "date": "2023-01-17T00:00:00.000Z",
+  "slug": "mamere",
+  "tags": [],
+  "image": {
+    "src": "/images/portfolio/mamere.png",
+    "width": 1920,
+    "height": 1080,
+    "type": "Image",
+    "_raw": {}
+  },
+  "description": "MAMÈRE - UX CASE STUDY AND BRAND DESIGN",
+  "enabled": true,
+  "orderIndex": 7,
+  "body": {
+    "raw": "\n\n<!-- before-title -->\nThis comes before the title.\n<!-- /before-title -->\n\n<!-- after-title -->\nThis comes after the title.\n<!-- /after-title -->\n\n\n\n",
+    "html": "<p>This comes before the title.</p>\n<p>This comes after the title.</p>"
+  },
+  "_id": "portfolio/mamere copy.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/mamere copy.md",
+    "sourceFileName": "mamere copy.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/mamere copy"
+  },
+  "type": "Portfolio"
+}

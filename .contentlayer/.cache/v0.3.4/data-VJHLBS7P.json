@@ -1,0 +1,235 @@
+{
+  "cacheItemsMap": {
+    "portfolio/USA.md": {
+      "document": {
+        "title": "USA",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "usa",
+        "video": {
+          "src": "/images/portfolio/usa.mp4",
+          "width": 1374,
+          "height": 1374,
+          "type": "Video",
+          "_raw": {}
+        },
+        "description": "The United States of Achromaticism - Photoshop Project",
+        "enabled": true,
+        "orderIndex": 8,
+        "body": {
+          "raw": "\nThe sun is rising on l’Ile de la Cité\n\n",
+          "html": "<p>The sun is rising on l’Ile de la Cité</p>"
+        },
+        "_id": "portfolio/USA.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/USA.md",
+          "sourceFileName": "USA.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/USA"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716429937578",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/neo-tetra.md": {
+      "document": {
+        "title": "Neo Tetra",
+        "date": "2023-03-27T00:00:00.000Z",
+        "slug": "neo-tetra",
+        "image": {
+          "src": "/images/portfolio/neo-tetra.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "Neo Tetra - Typeface Design",
+        "enabled": true,
+        "orderIndex": 1,
+        "preview": {
+          "src": "/images/neo-tetra/neotetra1.png",
+          "width": 3840,
+          "height": 2160,
+          "type": "Image",
+          "_raw": {}
+        },
+        "overview": "Inspired by the extraordinary geometric abstractions of Bauhaus, Neo Tetra is a typographic study that reimagines 26 letters, 10 numbers, and 12 symbols as geometric forms comprised of primitive shapes.",
+        "tools": [
+          "Figma",
+          "Glyphs"
+        ],
+        "body": {
+          "raw": "\n\n\n\n---\n\n&nbsp;\n\n**Background** \n\n&nbsp;\n\nThe Bauhaus is one of the most influential movements in the history of design. With a focus on structure and precision, its philosophy hypothesizes that clean lines and simple shapes of geometric forms can create a sense of order, clarity, and efficiency.\n\n&nbsp;\n\n![Neo2](/images/neo-tetra/neo2.png \"neo2\")\n\n&nbsp;\n\nContemporary adaptations of the movement’s design principals further embrace the minimalistic geometry explored by the school, creating bold designs that incorporate basic shapes and limited color palettes. They embody a continuation of such utilitarian view on design, stripping away the inessentials.\n\n&nbsp;\n\n![Neo3](/images/neo-tetra/neo3.png \"neo3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Initial Sketches**\n\n&nbsp;\n\n\nTo stay true to Bauhaus philosophy, I want to make the typeface monospaced, with each alphabet encompassed in a perfect square to create the sense of unity and balance. \n\n&nbsp;\n\n![Neo4](/images/neo-tetra/neo4.png \"neo4\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Digital Construction**\n\n&nbsp;\n\nOn the computer I started to experiment with two different construction guidelines to generate two sets of alphabets. I wanted to keep these logo grids as simple as possible.\n\n&nbsp;\n\n![Neo5](/images/neo-tetra/neo5.png \"neo5\")\n\n&nbsp;\n\nThe result came out as follows. The faintlier makred ones are questionable, but I was generally happy with the legibility of most forms.\n\n&nbsp;\n\n![Neo6](/images/neo-tetra/neo6.png \"neo6\")\n\n&nbsp;\n\nI decided to then merge the two grids and create a version that makes use of effective elements from both versions.\n\n&nbsp;\n\n![Neo7](/images/neo-tetra/neo7.png \"neo7\")\n\n&nbsp;\n\nThis ended up being the final construction guide. Every alphabet, number, and symbol will follow the lines from this grid.\n\n&nbsp;\n\nThe construction of the glyphs can be summarized in another way: Each character is divided into four parts, and each part contains and only contains one of the four following primitive shapes and their rotations:\n\n&nbsp;\n\n![Neo8](/images/neo-tetra/neo8.png \"neo8\")\n\n&nbsp;\n\nIn fact, the circle is used in none of the 26 alphabets and 10 numbers, only in the symbols. \n\n&nbsp;\n\nThese shapes will either link or not, creating thin lines throughout each glyph. These subtle separations are what help distinguish forms that have the same silohettes in the design: H and I, O and 0, U and V.\n\n&nbsp;\n\n![Neo9](/images/neo-tetra/neo9.png \"neo9\")\n\n&nbsp;\n\nMany forms went through multiple iterations. Staying consistent with the overall style while preserving the legibility and uniqueness of each character was a challenge. The letter F was particularly hard to construct in the limited space given. \n\n&nbsp;\n\nThese and many more were all attempts to make the perfect F:\n\n&nbsp;\n\n![Neo10](/images/neo-tetra/neo10.png \"neo10\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Final Glyph Catalog**\n\n&nbsp;\n\nThe final “contact sheet” view of all [76 total / 48 unique] glyphs, each labeled with their respective name and unicode(s).\n\n&nbsp;\n\n![Neo11](/images/neo-tetra/neo11.png \"neo11\")\n\n&nbsp;\n\nSince Neo Tetra is intended to be a display typeface used in large titles and headings, I excluded symbols such as semicolon and parenthesis that would have been easy to make but not have much use. To follow the Bauhaus teaching of “Form Follows Function,” I kept the catalogue as concise as possible for its purpose, preserving the value of simplicity. \n\n&nbsp;\n\nOn the other hand, period, grave, asterisk, and asciicircum as circles in four positions aim to be used as forms that can be easily integrated by designers (or any user of the font) into their design wherever they see fit, their purpose being that of ornament and accessory to the layout.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Gallery**\n\n&nbsp;\n\n![Neo12](/images/neo-tetra/neo12.png \"neo12\")\n\n",
+          "html": "<hr>\n<p> </p>\n<p><strong>Background</strong></p>\n<p> </p>\n<p>The Bauhaus is one of the most influential movements in the history of design. With a focus on structure and precision, its philosophy hypothesizes that clean lines and simple shapes of geometric forms can create a sense of order, clarity, and efficiency.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo2.png\" alt=\"Neo2\" title=\"neo2\"></p>\n<p> </p>\n<p>Contemporary adaptations of the movement’s design principals further embrace the minimalistic geometry explored by the school, creating bold designs that incorporate basic shapes and limited color palettes. They embody a continuation of such utilitarian view on design, stripping away the inessentials.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo3.png\" alt=\"Neo3\" title=\"neo3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Initial Sketches</strong></p>\n<p> </p>\n<p>To stay true to Bauhaus philosophy, I want to make the typeface monospaced, with each alphabet encompassed in a perfect square to create the sense of unity and balance.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo4.png\" alt=\"Neo4\" title=\"neo4\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Digital Construction</strong></p>\n<p> </p>\n<p>On the computer I started to experiment with two different construction guidelines to generate two sets of alphabets. I wanted to keep these logo grids as simple as possible.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo5.png\" alt=\"Neo5\" title=\"neo5\"></p>\n<p> </p>\n<p>The result came out as follows. The faintlier makred ones are questionable, but I was generally happy with the legibility of most forms.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo6.png\" alt=\"Neo6\" title=\"neo6\"></p>\n<p> </p>\n<p>I decided to then merge the two grids and create a version that makes use of effective elements from both versions.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo7.png\" alt=\"Neo7\" title=\"neo7\"></p>\n<p> </p>\n<p>This ended up being the final construction guide. Every alphabet, number, and symbol will follow the lines from this grid.</p>\n<p> </p>\n<p>The construction of the glyphs can be summarized in another way: Each character is divided into four parts, and each part contains and only contains one of the four following primitive shapes and their rotations:</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo8.png\" alt=\"Neo8\" title=\"neo8\"></p>\n<p> </p>\n<p>In fact, the circle is used in none of the 26 alphabets and 10 numbers, only in the symbols.</p>\n<p> </p>\n<p>These shapes will either link or not, creating thin lines throughout each glyph. These subtle separations are what help distinguish forms that have the same silohettes in the design: H and I, O and 0, U and V.</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo9.png\" alt=\"Neo9\" title=\"neo9\"></p>\n<p> </p>\n<p>Many forms went through multiple iterations. Staying consistent with the overall style while preserving the legibility and uniqueness of each character was a challenge. The letter F was particularly hard to construct in the limited space given.</p>\n<p> </p>\n<p>These and many more were all attempts to make the perfect F:</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo10.png\" alt=\"Neo10\" title=\"neo10\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Final Glyph Catalog</strong></p>\n<p> </p>\n<p>The final “contact sheet” view of all [76 total / 48 unique] glyphs, each labeled with their respective name and unicode(s).</p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo11.png\" alt=\"Neo11\" title=\"neo11\"></p>\n<p> </p>\n<p>Since Neo Tetra is intended to be a display typeface used in large titles and headings, I excluded symbols such as semicolon and parenthesis that would have been easy to make but not have much use. To follow the Bauhaus teaching of “Form Follows Function,” I kept the catalogue as concise as possible for its purpose, preserving the value of simplicity.</p>\n<p> </p>\n<p>On the other hand, period, grave, asterisk, and asciicircum as circles in four positions aim to be used as forms that can be easily integrated by designers (or any user of the font) into their design wherever they see fit, their purpose being that of ornament and accessory to the layout.</p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Gallery</strong></p>\n<p> </p>\n<p><img src=\"/images/neo-tetra/neo12.png\" alt=\"Neo12\" title=\"neo12\"></p>"
+        },
+        "_id": "portfolio/neo-tetra.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/neo-tetra.md",
+          "sourceFileName": "neo-tetra.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/neo-tetra"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716678162258",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/playground.md": {
+      "document": {
+        "title": "Playground",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "playground",
+        "video": {
+          "src": "/images/portfolio/playground.mp4",
+          "width": 1080,
+          "height": 1080,
+          "type": "Video",
+          "_raw": {}
+        },
+        "description": "Playground - Interface and Interaction Experiments",
+        "enabled": true,
+        "orderIndex": 3,
+        "body": {
+          "raw": "\nThe sun is rising on l’Ile de la Cité\n\n",
+          "html": "<p>The sun is rising on l’Ile de la Cité</p>"
+        },
+        "_id": "portfolio/playground.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/playground.md",
+          "sourceFileName": "playground.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/playground"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716628302699",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/spec-mobile.md": {
+      "document": {
+        "title": "Spec Mobile",
+        "date": "2023-02-14T00:00:00.000Z",
+        "slug": "spec-mobile",
+        "image": {
+          "src": "/images/portfolio/spec-mobile.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "Spectator 1.0 - Mobile UI/UX",
+        "enabled": true,
+        "orderIndex": 2,
+        "preview": {
+          "src": "/images/spec-mobile/specmobile1.png",
+          "width": 3840,
+          "height": 2160,
+          "type": "Image",
+          "_raw": {}
+        },
+        "overview": "Columbia University’s self-sustaining news publication, the Daily Spectator, publishes online five days a week and in physical editions once a week. Our team designed and shipped an app to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.",
+        "role": [
+          "Design Systems",
+          "UI/UX"
+        ],
+        "tools": [
+          "Figma"
+        ],
+        "duration": "15 weeks",
+        "team": [
+          "Philippe Wu",
+          "Christina Su",
+          "Muchen Guo"
+        ],
+        "body": {
+          "raw": "\n\n\n---\n\n&nbsp;\n\n**Context** \n\n&nbsp;\n\nColumbia Daily Spectator is the second-oldest college daily paper in the United States. Spectator’s Engagement analytics report an increasing consumption of Spectator articles on mobile devices, with more and more users being directed to the Spectator’s mobile website from the organization’s instagram posts. \n\n&nbsp;\n\nHowever, a quick scan of the CDS website on mobile phones yields many problems. The visual layout on a desktop does not translate well onto a smaller screen, resulting in the mobile interface being filled with inconsistent and clunky elements.\n\n&nbsp;\n\n![Spec2](/images/spec-mobile/spec2.png \"spec2\")\n\n&nbsp;\n\nVisual Issues: \n\n* &nbsp;&nbsp; ∟ Misaligned headers\n* &nbsp;&nbsp; ∟ Messy visual hierarchy\n* &nbsp;&nbsp; ∟ Overabundance of fonts\n\n&nbsp;\n\nInteractive Issues: \n\n* &nbsp;&nbsp; ∟ Tiny clickable elements\n* &nbsp;&nbsp; ∟ Frequently used navigation button placed at a hard-to-reach corner\n\n&nbsp;\n\nThus, the product team at Spectator, for which I serve as Head Product Designer, began ideating a different news viewing experience to replace the web browser: a mobile app.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Oppurtunities for Improvement**\n\n&nbsp;\n\n\nUser Interaction\n  * &nbsp;&nbsp; ∟ Easier to access\n  * &nbsp;&nbsp; ∟ Easier to browse\n  * &nbsp;&nbsp; ∟ Easier to share\n\n&nbsp;\n\nExpanded Functionalities\n  * &nbsp;&nbsp; ∟ Story-telling through more specific sections and subsections\n  * &nbsp;&nbsp; ∟ Tighter integration between print and mobile formats\n  * &nbsp;&nbsp; ∟ Customizable notifications System\n  * &nbsp;&nbsp; ∟ Personalization of feed\n  * &nbsp;&nbsp; ∟ Offline Reading\n\n&nbsp;\n\nImpact\n  * &nbsp;&nbsp; ∟ Increase in user activity (people on apps spend more time)\n  * &nbsp;&nbsp; ∟ Increased brand influence & mobile presence\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Demand Analysis**\n\n&nbsp;\n\nDo people want a mobile app?\n\n&nbsp;\n\nWe send out surveys with discreet and explicit questions about news consumptions\n  * &nbsp;&nbsp; ∟ To Spectator Staff (they spend half their life on the spectator website and have a full understanding of the site down to its tiniest problems)\n  * &nbsp;&nbsp; ∟ To other Columbia undergraduate students (our main target audience, who can provide good general feedback for the current method of viewing Spectator news)\n\n&nbsp;\n\nWe also found Existing Research on mobile app demand and trends from American Press(2016), Insider(2020), Comscore(2016), etc.\n\n&nbsp;\n\n![Spec3](/images/spec-mobile/spec3.png \"spec3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Competitive Landscape**\n\n&nbsp;\n\nWe looked into other successful news delivering apps to gain a better understanding of the mobile iteration of news content and to get inspired with new feature ideas: New York Times, Bloomberg, Washington Post, Daily Pennsylvanian, Tencent News.\n\n&nbsp;\n\n![Spec4](/images/spec-mobile/spec4.png \"spec4\")\n\n&nbsp;\n\nTogether with the results we received from surveys, we now have a good understanding of what features to prioritize for the 1.0 version of our MVP, all to construct a personalized and customizable experience for the users:\n\n* &nbsp;&nbsp; ∟ Restructuring the navigation, including the process of section-subsection exploration and the placement of image & text content.\n* &nbsp;&nbsp; ∟ Cutting down the number of fonts (EB Garamond, Bitter, Open Sans, Merriweather,  Lato, Playfair Display, Neue Haas Unica)\n* &nbsp;&nbsp; ∟ Designing easy sharing and saving functionalities\n* &nbsp;&nbsp; ∟ Categorizing articles by tags and subtags\n* &nbsp;&nbsp; ∟ Adding in accessibility settings\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Styles Revamp**\n\n&nbsp;\n\nI simplified the palette from the CDS website to the brand color and 5 greys, and the font library from 7 to 3 type families. The cleaner result with more consistency is still able to preserve the visual hierarchy and page weight of the familiar interface.\n\n&nbsp;\n\n![Spec5](/images/spec-mobile/spec5.png \"spec5\")\n\n&nbsp;\n\n![Spec6](/images/spec-mobile/spec6.png \"spec6\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Design Library**\n\n&nbsp;\n\nVisual components for article layouts and a brand new articles navigating interaction.\n\n&nbsp;\n\n![Spec7](/images/spec-mobile/spec7.png \"spec7\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Alternative Designs**\n\n&nbsp;\n\nOur UX went through multiple iterations during the mid fidelity prototyping stage that ended up being scrapped for various reasons. Here are 2 of many.\n\n&nbsp;\n\nA proposal for a top-scroll bar for sub-section navigation was rejected because:\n* &nbsp;&nbsp; ∟ Subsections placed later in the scroll sequence are disadvantaged in terms of receiving views.\n* &nbsp;&nbsp; ∟ The scroll bar consists of small texts on top of the phone screen that can be hard to reach.\n\n&nbsp;\n\nAn inital UI of black navigation bars and previews with images on the left was replaced because: \n* &nbsp;&nbsp; ∟ The black/white contrast makes the screen feel confined and restricted\n* &nbsp;&nbsp; ∟ The image alignment creates a rift in the user’s F-shaped reading patterns.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\n**Final High Fidelity Prototypes**\n\n&nbsp;\n\nHome\n\n![Spec10](/images/spec-mobile/spec10.png \"spec10\")\n\n&nbsp;\n\nSections\n\n![Spec11](/images/spec-mobile/spec11.png \"spec11\")\n\n&nbsp;\n\nProfile\n\n\n![Spec12](/images/spec-mobile/spec12.png \"spec12\")\n\n&nbsp;\n\nSearch\n\n\n![Spec13](/images/spec-mobile/spec13.png \"spec13\")",
+          "html": "<hr>\n<p> </p>\n<p><strong>Context</strong></p>\n<p> </p>\n<p>Columbia Daily Spectator is the second-oldest college daily paper in the United States. Spectator’s Engagement analytics report an increasing consumption of Spectator articles on mobile devices, with more and more users being directed to the Spectator’s mobile website from the organization’s instagram posts.</p>\n<p> </p>\n<p>However, a quick scan of the CDS website on mobile phones yields many problems. The visual layout on a desktop does not translate well onto a smaller screen, resulting in the mobile interface being filled with inconsistent and clunky elements.</p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec2.png\" alt=\"Spec2\" title=\"spec2\"></p>\n<p> </p>\n<p>Visual Issues:</p>\n<ul>\n<li>   ∟ Misaligned headers</li>\n<li>   ∟ Messy visual hierarchy</li>\n<li>   ∟ Overabundance of fonts</li>\n</ul>\n<p> </p>\n<p>Interactive Issues:</p>\n<ul>\n<li>   ∟ Tiny clickable elements</li>\n<li>   ∟ Frequently used navigation button placed at a hard-to-reach corner</li>\n</ul>\n<p> </p>\n<p>Thus, the product team at Spectator, for which I serve as Head Product Designer, began ideating a different news viewing experience to replace the web browser: a mobile app.</p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Oppurtunities for Improvement</strong></p>\n<p> </p>\n<p>User Interaction</p>\n<ul>\n<li>   ∟ Easier to access</li>\n<li>   ∟ Easier to browse</li>\n<li>   ∟ Easier to share</li>\n</ul>\n<p> </p>\n<p>Expanded Functionalities</p>\n<ul>\n<li>   ∟ Story-telling through more specific sections and subsections</li>\n<li>   ∟ Tighter integration between print and mobile formats</li>\n<li>   ∟ Customizable notifications System</li>\n<li>   ∟ Personalization of feed</li>\n<li>   ∟ Offline Reading</li>\n</ul>\n<p> </p>\n<p>Impact</p>\n<ul>\n<li>   ∟ Increase in user activity (people on apps spend more time)</li>\n<li>   ∟ Increased brand influence &#x26; mobile presence</li>\n</ul>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Demand Analysis</strong></p>\n<p> </p>\n<p>Do people want a mobile app?</p>\n<p> </p>\n<p>We send out surveys with discreet and explicit questions about news consumptions</p>\n<ul>\n<li>   ∟ To Spectator Staff (they spend half their life on the spectator website and have a full understanding of the site down to its tiniest problems)</li>\n<li>   ∟ To other Columbia undergraduate students (our main target audience, who can provide good general feedback for the current method of viewing Spectator news)</li>\n</ul>\n<p> </p>\n<p>We also found Existing Research on mobile app demand and trends from American Press(2016), Insider(2020), Comscore(2016), etc.</p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec3.png\" alt=\"Spec3\" title=\"spec3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Competitive Landscape</strong></p>\n<p> </p>\n<p>We looked into other successful news delivering apps to gain a better understanding of the mobile iteration of news content and to get inspired with new feature ideas: New York Times, Bloomberg, Washington Post, Daily Pennsylvanian, Tencent News.</p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec4.png\" alt=\"Spec4\" title=\"spec4\"></p>\n<p> </p>\n<p>Together with the results we received from surveys, we now have a good understanding of what features to prioritize for the 1.0 version of our MVP, all to construct a personalized and customizable experience for the users:</p>\n<ul>\n<li>   ∟ Restructuring the navigation, including the process of section-subsection exploration and the placement of image &#x26; text content.</li>\n<li>   ∟ Cutting down the number of fonts (EB Garamond, Bitter, Open Sans, Merriweather,  Lato, Playfair Display, Neue Haas Unica)</li>\n<li>   ∟ Designing easy sharing and saving functionalities</li>\n<li>   ∟ Categorizing articles by tags and subtags</li>\n<li>   ∟ Adding in accessibility settings</li>\n</ul>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Styles Revamp</strong></p>\n<p> </p>\n<p>I simplified the palette from the CDS website to the brand color and 5 greys, and the font library from 7 to 3 type families. The cleaner result with more consistency is still able to preserve the visual hierarchy and page weight of the familiar interface.</p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec5.png\" alt=\"Spec5\" title=\"spec5\"></p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec6.png\" alt=\"Spec6\" title=\"spec6\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Design Library</strong></p>\n<p> </p>\n<p>Visual components for article layouts and a brand new articles navigating interaction.</p>\n<p> </p>\n<p><img src=\"/images/spec-mobile/spec7.png\" alt=\"Spec7\" title=\"spec7\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Alternative Designs</strong></p>\n<p> </p>\n<p>Our UX went through multiple iterations during the mid fidelity prototyping stage that ended up being scrapped for various reasons. Here are 2 of many.</p>\n<p> </p>\n<p>A proposal for a top-scroll bar for sub-section navigation was rejected because:</p>\n<ul>\n<li>   ∟ Subsections placed later in the scroll sequence are disadvantaged in terms of receiving views.</li>\n<li>   ∟ The scroll bar consists of small texts on top of the phone screen that can be hard to reach.</li>\n</ul>\n<p> </p>\n<p>An inital UI of black navigation bars and previews with images on the left was replaced because:</p>\n<ul>\n<li>   ∟ The black/white contrast makes the screen feel confined and restricted</li>\n<li>   ∟ The image alignment creates a rift in the user’s F-shaped reading patterns.</li>\n</ul>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p><strong>Final High Fidelity Prototypes</strong></p>\n<p> </p>\n<p>Home</p>\n<p><img src=\"/images/spec-mobile/spec10.png\" alt=\"Spec10\" title=\"spec10\"></p>\n<p> </p>\n<p>Sections</p>\n<p><img src=\"/images/spec-mobile/spec11.png\" alt=\"Spec11\" title=\"spec11\"></p>\n<p> </p>\n<p>Profile</p>\n<p><img src=\"/images/spec-mobile/spec12.png\" alt=\"Spec12\" title=\"spec12\"></p>\n<p> </p>\n<p>Search</p>\n<p><img src=\"/images/spec-mobile/spec13.png\" alt=\"Spec13\" title=\"spec13\"></p>"
+        },
+        "_id": "portfolio/spec-mobile.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/spec-mobile.md",
+          "sourceFileName": "spec-mobile.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/spec-mobile"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716674935884",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/tencent.md": {
+      "document": {
+        "title": "Tencent",
+        "date": "2023-10-10T00:00:00.000Z",
+        "slug": "tencent",
+        "video": {
+          "src": "/images/portfolio/tencent.mp4",
+          "width": 1374,
+          "height": 1374,
+          "type": "Video",
+          "_raw": {}
+        },
+        "description": "Tencent - Internship 2023",
+        "enabled": true,
+        "orderIndex": 4,
+        "body": {
+          "raw": "\nSunrise over the Seine river \n\n",
+          "html": "<p>Sunrise over the Seine river</p>"
+        },
+        "_id": "portfolio/tencent.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/tencent.md",
+          "sourceFileName": "tencent.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/tencent"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716429923265",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/valorant.md": {
+      "document": {
+        "title": "Valorant",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "valorant",
+        "image": {
+          "src": "/images/portfolio/valorant.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "Valorant - Promotional Graphics",
+        "enabled": true,
+        "orderIndex": 5,
+        "body": {
+          "raw": "\nThe sun is rising on l’Ile de la Cité\n\n",
+          "html": "<p>The sun is rising on l’Ile de la Cité</p>"
+        },
+        "_id": "portfolio/valorant.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/valorant.md",
+          "sourceFileName": "valorant.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/valorant"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1716429945134",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    }
+  }
+}
