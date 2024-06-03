@@ -30,7 +30,11 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
-  const scrollSpeed = 7;
+  let scrollSpeed = 1; // Default value
+
+  if (window.innerWidth >= 768) {
+    scrollSpeed = 7;
+  }
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -531,7 +535,7 @@ export default function PortfolioIndex() {
         >
 
           <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
-          ↗ art
+            ↗ art
             {/* <span>↗</span>*/}
           </p>
 
@@ -543,7 +547,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
-          ↗ cv
+            ↗ cv
           </p>
 
         </a>
