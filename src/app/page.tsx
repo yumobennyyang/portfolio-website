@@ -547,7 +547,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
-            ↗cv
+            ↗ cv
           </p>
 
         </a>
@@ -604,7 +604,7 @@ export default function PortfolioIndex() {
 
       <section className=" z-0 w-screen h-auto !pointer-events-none ">
         <div id="scrollSection"
-          className="z-10 relative !pointer-events-none w-full justify-between "
+          className="z-10 relative !pointer-events-none w-full justify-between h-[calc(100vh * 1)] md:h-[calc(100vh * 1)] "
         >
 
 
