@@ -531,7 +531,7 @@ export default function PortfolioIndex() {
         >
 
           <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
-            🎨 art
+          ↗ art
             {/* <span>↗</span>*/}
           </p>
 
@@ -543,7 +543,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
-            📄 cv
+          ↗ cv
           </p>
 
         </a>
