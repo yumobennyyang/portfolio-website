@@ -217,7 +217,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Pure CSS</span>
                         <br></br>
                         <br></br>
-                        <span>A fake 3d effect...</span>
+                        <span>A 3d effect...</span>
                         <br></br>
                         <br></br>
 
