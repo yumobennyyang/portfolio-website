@@ -50,9 +50,9 @@ export default function PortfolioIndex() {
 
   function interaction() {
 
-    if (window.innerWidth >= 768) {
-      scrollSpeed = 7;
-    }
+    // if (window.innerWidth >= 768) {
+    //   scrollSpeed = 7;
+    // }
 
 
     const saturateVideo = document.querySelectorAll('.saturateVideo')
