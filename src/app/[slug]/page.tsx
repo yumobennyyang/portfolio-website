@@ -72,7 +72,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             >
 
                 <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
-                    🎨 art
+                ↗ art
                     {/* <span>↗</span>*/}
                 </p>
 
