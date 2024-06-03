@@ -50,7 +50,13 @@ html {
 }
 
 #scrollSection {
-  height: calc(100vh*7);
+  height: calc(100vh * 1); /* Default for smaller screens */
+}
+
+@media (min-width: 768px) {
+  #scrollSection {
+    height: calc(100vh * 7); /* For screens with a minimum width of 768px */
+  }
 }
 
 
