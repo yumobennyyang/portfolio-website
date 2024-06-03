@@ -66,7 +66,7 @@ export default function PortfolioIndex() {
             // Apply an easing function to make the progress non-linear
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const linearProgress = gsap.parseEase("power1.in")(progress);
-            const currentSaturation = gsap.utils.interpolate(1, 50, easedProgress);
+            const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
             const currentHue = gsap.utils.interpolate(0, -360, linearProgress);
             (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
           }
@@ -574,7 +574,7 @@ export default function PortfolioIndex() {
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>v3.0.0 Last updated 2024-05-15</span>
+          <span>v3.0.0 Last updated 2024-06-02</span>
         </p>
       </div>
 
