@@ -547,7 +547,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
-            ↗ cv
+            ↗cv
           </p>
 
         </a>
