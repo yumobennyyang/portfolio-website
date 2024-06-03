@@ -30,7 +30,25 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
-  const scrollSpeed = 7;
+  const scrollspeed = 1;
+  if (typeof window !== 'undefined') {
+    let scrollSpeed = 1; // Default value
+
+    const updateScrollSpeed = () => {
+      if (window.innerWidth >= 768) {
+        scrollSpeed = 7;
+      } else {
+        scrollSpeed = 1;
+      }
+      console.log(scrollSpeed); // For testing purposes
+    }
+
+    // Initial check
+    updateScrollSpeed();
+
+    // Update on resize
+    window.addEventListener('resize', updateScrollSpeed);
+  }
 
   gsap.registerPlugin(ScrollTrigger)
 
