@@ -351,16 +351,16 @@ html {
 @keyframes scrolldown-anim {
   0% {
       opacity: 0;
-      height: 3px;
+      height: 6px;
   }
   40% {
       opacity: 1;
-      height: 6px;
+      height: 8px;
   }
   80% {
       opacity: 0;
       transform: translate(-50%, 20px);
-      height: 6px;
+      height: 8px;
   }
   100% {
       opacity: 0;
