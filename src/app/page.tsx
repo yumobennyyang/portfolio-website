@@ -30,7 +30,7 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
-  const scrollspeed = 1;
+  const scrollSpeed = 1;
   if (typeof window !== 'undefined') {
     let scrollSpeed = 1; // Default value
 
