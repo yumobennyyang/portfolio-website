@@ -583,14 +583,14 @@ export default function PortfolioIndex() {
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
-          <span>I'm on </span>
+          <span>I&apos;m on </span>
           <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Twitter</a>
           <span> </span>
           <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Linkedin</a>
           <span> </span>
           <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Cosmos</a>
           <br></br>
-          <span>Let's chat </span>
+          <span>Let&apos;s chat </span>
           <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">yy3204@columbia.edu</a>
         </p>
       </div>
