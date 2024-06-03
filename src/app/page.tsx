@@ -30,25 +30,10 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
-  const scrollSpeed = 1;
-  if (typeof window !== 'undefined') {
-    let scrollSpeed = 1; // Default value
 
-    const updateScrollSpeed = () => {
-      if (window.innerWidth >= 768) {
-        scrollSpeed = 7;
-      } else {
-        scrollSpeed = 1;
-      }
-      console.log(scrollSpeed); // For testing purposes
-    }
+  let scrollSpeed = 1;
 
-    // Initial check
-    updateScrollSpeed();
 
-    // Update on resize
-    window.addEventListener('resize', updateScrollSpeed);
-  }
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -422,7 +407,7 @@ export default function PortfolioIndex() {
 
 
   useEffect(() => {
-
+    updateScrollSpeed();
 
     interaction();
 
@@ -446,6 +431,16 @@ export default function PortfolioIndex() {
     function handleResize() {
       interaction();
       ScrollTrigger.refresh();
+
+    }
+
+
+    function updateScrollSpeed() {
+      if (window.innerWidth >= 768) {
+        scrollSpeed = 7;
+      } else {
+        scrollSpeed = 1;
+      }
     }
 
 
@@ -456,7 +451,10 @@ export default function PortfolioIndex() {
 
 
 
+
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', updateScrollSpeed);
 
     return () => {
       window.removeEventListener('resize', handleResize);
