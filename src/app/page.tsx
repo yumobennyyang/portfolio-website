@@ -32,9 +32,6 @@ export default function PortfolioIndex() {
 
   let scrollSpeed = 1; // Default value
 
-  if (window.innerWidth >= 768) {
-    scrollSpeed = 7;
-  }
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -52,6 +49,10 @@ export default function PortfolioIndex() {
 
 
   function interaction() {
+
+    if (window.innerWidth >= 768) {
+      scrollSpeed = 7;
+    }
 
 
     const saturateVideo = document.querySelectorAll('.saturateVideo')
