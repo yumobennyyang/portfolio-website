@@ -45,7 +45,7 @@ body {
 
 
 html {
-  background-color: rgba(0,0,0,0);
+  scroll-behavior: smooth;
 }
 
 #scrollSection {
