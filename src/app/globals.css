@@ -49,6 +49,10 @@ html {
   background-color: #111111;
 }
 
+#scrollSection {
+  height: calc(100vh*7);
+}
+
 
 #portfolioCard:hover {
   transform: scale(0.995);
