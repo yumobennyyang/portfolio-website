@@ -315,7 +315,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
                         <div className="w-full h-auto rounded-md overflow-hidden border border-white/10">
-                            <img src="/images/playground/playground2.png " />
+                            <img src="/images/playground/playground2.png " alt=""/>
                         </div>
 
                         <span className="opacity-50">yee</span>
