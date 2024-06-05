@@ -134,7 +134,7 @@ export default function PortfolioIndex() {
     })
 
 
-    const darkBackgroundElements = document.querySelectorAll('.darkBackground, html');
+    const darkBackgroundElements = document.querySelectorAll('.darkBackground');
 
     darkBackgroundElements.forEach((element) => {
 
