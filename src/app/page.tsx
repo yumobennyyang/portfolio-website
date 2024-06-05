@@ -490,6 +490,7 @@ export default function PortfolioIndex() {
       <div style={{ background: "#111111" }} className=" darkBackground pointer-events-none  -z-40 w-full h-full fixed" />
 
 
+      <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed" />
       <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed">
         <div></div>
         <div></div>
@@ -499,7 +500,7 @@ export default function PortfolioIndex() {
         <div></div>
       </div>
 
-      <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed" />
+
 
 
 
