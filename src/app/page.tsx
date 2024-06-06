@@ -70,8 +70,9 @@ export default function PortfolioIndex() {
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const linearProgress = gsap.parseEase("power1.in")(progress);
             const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
+            const currentBlur = gsap.utils.interpolate(24, 100, easedProgress);
             const currentHue = gsap.utils.interpolate(0, -360, linearProgress);
-            (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
+            (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg) blur(${currentBlur}px)`;
           }
         }
       });
@@ -479,7 +480,7 @@ export default function PortfolioIndex() {
           autoPlay
           muted
           loop
-          className="h-full w-full object-cover sm:object-fill blur-xl "
+          className="h-full w-full object-cover sm:object-fill "
         >
           <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
         </video>
