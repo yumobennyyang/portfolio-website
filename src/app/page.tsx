@@ -77,27 +77,6 @@ export default function PortfolioIndex() {
       });
     });
 
-    const blurBackground = document.querySelectorAll('.blurBackground')
-
-    blurBackground.forEach((element) => {
-      gsap.to(element as HTMLElement, {
-        scrollTrigger: {
-          trigger: element,
-          start: 0,
-          end: window.innerHeight * scrollSpeed,
-          scrub: true,
-          markers: false,
-          onUpdate: self => {
-            // Calculate the current saturation based on the scroll progress
-            const progress = self.progress;
-            // Apply an easing function to make the progress non-linear
-            const easedProgress = gsap.parseEase("power4.in")(progress);
-            const currentBlur = gsap.utils.interpolate(0, 50, easedProgress);
-            (element as HTMLElement).style.filter = `blur(${currentBlur}px)`;
-          }
-        }
-      });
-    });
 
 
 
@@ -498,18 +477,18 @@ export default function PortfolioIndex() {
 
 
       <div className=" -z-50 fixed h-screen  pointer-events-none  w-screen items-center  saturateVideo bg-white">
-        <div className="blurBackground">
-          <video
-            autoPlay
-            muted
-            loop
-            className="h-full w-full object-cover sm:object-fill  blur-xl"
 
-          >
+        <video
+          autoPlay
+          muted
+          loop
+          className="h-full w-full object-cover sm:object-fill  blur-xl"
 
-            <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
-          </video>
-        </div>
+        >
+
+          <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
+        </video>
+
       </div>
 
 
