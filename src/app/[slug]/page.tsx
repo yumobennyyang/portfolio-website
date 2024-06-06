@@ -197,7 +197,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Three.js</span>
                         <br></br>
 
-                        <span>Gidd is an interactive blob who has a mysterious connection to your cursor. </span>
+                        <span className="opacity-80">Gidd is an interactive blob who has a mysterious connection to your cursor. </span>
                         <br></br>
                         <span className="opacity-50">Try moving your cursor around Gidd.</span>
                         <br></br>
@@ -214,7 +214,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <br></br>
                         <br></br>
-                        <br></br>
+
 
                         <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
@@ -227,7 +227,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <span className=" font-bold">Pure CSS</span>
                         <br></br>
-                        <span>A 3d effect...</span>
+                        <span className="opacity-80">A 3d effect...</span>
                         <br></br>
                         <span className="opacity-50">Hover cursor over the image.</span>
                         <br></br>
@@ -243,7 +243,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <br></br>
                         <br></br>
-                        <br></br>
+
 
                         <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
@@ -254,7 +254,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <span className=" font-bold">Vanilla Javascript</span>
                         <br></br>
-                        <span>What if responsive sites are designed like that hospital from&nbsp;
+                        <span className="opacity-80">What if responsive sites are designed like that hospital from&nbsp;
                             <a className="underline underline-offset-4 italic hover:opacity-80" href="https://www.google.com/search?sca_esv=b32a931cfe3322f6&sxsrf=ADLYWIJmm7dqlSqfd2-1UDaQIsPBqf-emQ:1717042113497&q=Hospital+from+Idiocracy&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiI3PSpwLSGAxUfEFkFHXl-AaEQ0pQJegQICxAB&biw=1476&bih=839&dpr=2#imgrc=mRoYrEfpOGD_PM">
                                 Idiocracy
                             </a>
@@ -275,7 +275,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <br></br>
                         <br></br>
-                        <br></br>
+
 
                         <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
@@ -286,7 +286,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <span className=" font-bold">Interaction Prototyping</span>
                         <br></br>
-                        <span>An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
+                        <span className="opacity-80">An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
                         <br></br>
                         <span className="opacity-50">Prototyped with Figma</span>
 
@@ -313,7 +313,6 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <br></br>
                         <br></br>
-                        <br></br>
 
                         <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
@@ -324,7 +323,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <span className=" font-bold">Figma Illustrations</span>
                         <br></br>
-                        <span>Some gradient explorations with figma aiming to create realistic renders.</span>
+                        <span className="opacity-80">Some gradient explorations with figma aiming to create realistic renders.</span>
                         <br></br>
                         <span className="opacity-50">yee</span>
                         <br></br>
@@ -338,7 +337,6 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <br></br>
                         <br></br>
                         <br></br>
 
