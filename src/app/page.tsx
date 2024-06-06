@@ -93,7 +93,7 @@ export default function PortfolioIndex() {
             // Apply an easing function to make the progress non-linear
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const currentBlur = gsap.utils.interpolate(24, 100, easedProgress);
-            (element as HTMLElement).style.filter = `blur(${currentBlur}px)`;
+            (element as HTMLElement).style.filter = `blur(${currentBlur}px) !important`;
           }
         }
       });
@@ -502,7 +502,7 @@ export default function PortfolioIndex() {
           autoPlay
           muted
           loop
-          className="h-full w-full object-cover sm:object-fill blurBackground"
+          className="h-full w-full object-cover sm:object-fill blurBackground blur-xl"
         >
           <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
         </video>
