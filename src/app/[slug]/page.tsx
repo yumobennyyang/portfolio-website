@@ -197,6 +197,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Three.js</span>
 
                         <span>Gidd is an interactive blob who has a mysterious connection to your cursor. </span>
+                        <span className="opacity-50">Try moving your cursor around Gidd.</span>
                         <br></br>
                         <br></br>
 
@@ -207,7 +208,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         </div>
 
 
-                        <span className="opacity-50">Try moving your cursor around Gidd.</span>
+                        
 
                         <br></br>
                         <br></br>
@@ -225,6 +226,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Pure CSS</span>
 
                         <span>A 3d effect...</span>
+                        <span className="opacity-50">Hover cursor over the image.</span>
                         <br></br>
                         <br></br>
 
@@ -234,7 +236,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <iframe src="https://hover-lighting.vercel.app/" className="iframe  " />
                         </div>
 
-                        <span className="opacity-50">Hover cursor over the image.</span>
+                        
 
                         <br></br>
                         <br></br>
@@ -255,6 +257,8 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             </a>
                             &nbsp;?
                         </span>
+
+                        <span className="opacity-50">Drag the bottom right corner of the window to resize.</span>
                         <br></br>
                         <br></br>
 
@@ -264,7 +268,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <iframe id="hospital" src="https://stgodsmemorialhospital.vercel.app/" className="iframe  " />
                         </div>
 
-                        <span className="opacity-50">Drag the bottom right corner of the window to resize.</span>
+                        
 
                         <br></br>
                         <br></br>
@@ -279,6 +283,8 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <span className=" font-bold">Interaction Prototyping</span>
                         <span>An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
+                        <span className="opacity-50">Prototyped with Figma</span>
+                        
                         <br></br>
                         <br></br>
 
@@ -298,7 +304,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             </video>
                         </div>
 
-                        <span className="opacity-50">Prototyped with Figma</span>
+                        
 
                         <br></br>
                         <br></br>
@@ -314,6 +320,8 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Figma Illustrations</span>
 
                         <span>Some gradient explorations with figma aiming to create realistic renders.</span>
+
+                        <span className="opacity-50">yee</span>
                         <br></br>
                         <br></br>
 
@@ -323,7 +331,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <img src="/images/playground/playground2.png " alt="" />
                         </div>
 
-                        <span className="opacity-50">yee</span>
+                        
 
                         <br></br>
                         <br></br>
