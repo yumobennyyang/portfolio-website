@@ -70,13 +70,35 @@ export default function PortfolioIndex() {
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const linearProgress = gsap.parseEase("power1.in")(progress);
             const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
-            const currentBlur = gsap.utils.interpolate(24, 100, easedProgress);
             const currentHue = gsap.utils.interpolate(0, -360, linearProgress);
-            (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg) blur(${currentBlur}px)`;
+            (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
           }
         }
       });
     });
+
+    const blurBackground = document.querySelectorAll('.blurBackground')
+
+        saturateVideo.forEach((element) => {
+      gsap.to(element as HTMLElement, {
+        scrollTrigger: {
+          trigger: element,
+          start: 0,
+          end: window.innerHeight * scrollSpeed,
+          scrub: true,
+          markers: false,
+          onUpdate: self => {
+            // Calculate the current saturation based on the scroll progress
+            const progress = self.progress;
+            // Apply an easing function to make the progress non-linear
+            const easedProgress = gsap.parseEase("power4.in")(progress);
+            const currentBlur = gsap.utils.interpolate(24, 100, easedProgress);
+            (element as HTMLElement).style.filter = `blur(${currentBlur}px)`;
+          }
+        }
+      });
+    });
+
 
 
     const darkerWords = document.querySelectorAll('.darkerWords')
@@ -480,7 +502,7 @@ export default function PortfolioIndex() {
           autoPlay
           muted
           loop
-          className="h-full w-full object-cover sm:object-fill "
+          className="h-full w-full object-cover sm:object-fill blurBackground"
         >
           <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
         </video>
