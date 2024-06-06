@@ -93,7 +93,7 @@ export default function PortfolioIndex() {
             // Apply an easing function to make the progress non-linear
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const currentBlur = gsap.utils.interpolate(0, 50, easedProgress);
-            (element as HTMLElement).style.filter = `blur(${currentBlur}px) !important`;
+            (element as HTMLElement).style.filter = `blur(${currentBlur}px)`;
           }
         }
       });
