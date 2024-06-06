@@ -79,7 +79,7 @@ export default function PortfolioIndex() {
 
     const blurBackground = document.querySelectorAll('.blurBackground')
 
-        saturateVideo.forEach((element) => {
+    blurBackground.forEach((element) => {
       gsap.to(element as HTMLElement, {
         scrollTrigger: {
           trigger: element,
