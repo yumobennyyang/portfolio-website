@@ -72,7 +72,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             >
 
                 <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
-                ↗ art
+                    ↗ art
                     {/* <span>↗</span>*/}
                 </p>
 
@@ -195,8 +195,10 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     <div>
                         <br></br>
                         <span className=" font-bold">Three.js</span>
+                        <br></br>
 
                         <span>Gidd is an interactive blob who has a mysterious connection to your cursor. </span>
+                        <br></br>
                         <span className="opacity-50">Try moving your cursor around Gidd.</span>
                         <br></br>
                         <br></br>
@@ -208,7 +210,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         </div>
 
 
-                        
+
 
                         <br></br>
                         <br></br>
@@ -224,8 +226,9 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     <div>
                         <br></br>
                         <span className=" font-bold">Pure CSS</span>
-
+                        <br></br>
                         <span>A 3d effect...</span>
+                        <br></br>
                         <span className="opacity-50">Hover cursor over the image.</span>
                         <br></br>
                         <br></br>
@@ -236,7 +239,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <iframe src="https://hover-lighting.vercel.app/" className="iframe  " />
                         </div>
 
-                        
+
 
                         <br></br>
                         <br></br>
@@ -250,14 +253,14 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     <div>
                         <br></br>
                         <span className=" font-bold">Vanilla Javascript</span>
-
+                        <br></br>
                         <span>What if responsive sites are designed like that hospital from&nbsp;
                             <a className="underline underline-offset-4 italic hover:opacity-80" href="https://www.google.com/search?sca_esv=b32a931cfe3322f6&sxsrf=ADLYWIJmm7dqlSqfd2-1UDaQIsPBqf-emQ:1717042113497&q=Hospital+from+Idiocracy&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiI3PSpwLSGAxUfEFkFHXl-AaEQ0pQJegQICxAB&biw=1476&bih=839&dpr=2#imgrc=mRoYrEfpOGD_PM">
                                 Idiocracy
                             </a>
                             &nbsp;?
                         </span>
-
+                        <br></br>
                         <span className="opacity-50">Drag the bottom right corner of the window to resize.</span>
                         <br></br>
                         <br></br>
@@ -268,7 +271,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <iframe id="hospital" src="https://stgodsmemorialhospital.vercel.app/" className="iframe  " />
                         </div>
 
-                        
+
 
                         <br></br>
                         <br></br>
@@ -282,9 +285,11 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     <div>
                         <br></br>
                         <span className=" font-bold">Interaction Prototyping</span>
+                        <br></br>
                         <span>An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
+                        <br></br>
                         <span className="opacity-50">Prototyped with Figma</span>
-                        
+
                         <br></br>
                         <br></br>
 
@@ -304,7 +309,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             </video>
                         </div>
 
-                        
+
 
                         <br></br>
                         <br></br>
@@ -318,9 +323,9 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     <div>
                         <br></br>
                         <span className=" font-bold">Figma Illustrations</span>
-
+                        <br></br>
                         <span>Some gradient explorations with figma aiming to create realistic renders.</span>
-
+                        <br></br>
                         <span className="opacity-50">yee</span>
                         <br></br>
                         <br></br>
@@ -331,7 +336,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                             <img src="/images/playground/playground2.png " alt="" />
                         </div>
 
-                        
+
 
                         <br></br>
                         <br></br>
