@@ -60,7 +60,7 @@ I was quite surprised to see the site in such bad shape since hundreds of employ
 
 &nbsp;
 
-**UI Restructuring**
+**UX Restructuring**
 
 &nbsp;
 
