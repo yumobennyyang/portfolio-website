@@ -222,7 +222,6 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-
                     <div>
                         <br></br>
                         <span className=" font-bold">Pure CSS</span>
