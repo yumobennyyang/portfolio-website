@@ -48,7 +48,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
 
-        <div className={`flex mix-blend-difference m-4 z-50 left-0 top-0 fixed w-auto leading-6 text-neutral-500 text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 left-0 top-0 fixed w-auto leading-6 text-neutral-500 text-sm ${satoshi.className}`}>
 
             <a
                 className={` justify-between hover:text-neutral-50`}
@@ -63,7 +63,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
 
-        <div className={`flex mix-blend-difference m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
 
 
             <a
@@ -79,29 +79,28 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
 
-        <div className="mx-auto max-w-3xl px-8">
 
 
 
-            <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed ">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
-
+        <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed ">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+
+        <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
+
+
 
 
         <div className="w-full !h-1/2 object-contain" >
-            <Image className="w-full px-8 pt-[104px]" src={item?.preview?.src ?? ''} alt={item?.title} width={item?.preview?.width} height={item?.preview?.height} />
+            <Image className="w-full px-4 sm:px-8 pt-[104px]" src={item?.preview?.src ?? ''} alt={item?.title} width={item?.preview?.width} height={item?.preview?.height} />
         </div>
 
-        <div className="mx-auto max-w-3xl px-8 tracking-wider ">
+        <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
             <div className={` z-30 py-8 text-xl font-black`}>{item?.title}</div>
             <div className={` opacity-50 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
             <div className="pb-4"> {item?.overview}</div>
