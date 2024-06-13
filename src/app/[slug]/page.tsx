@@ -37,7 +37,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
     return <div className={`leading-6 text-neutral-900  tracking-wide ${text.className}`}>
 
 
-        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center opacity-50">
+        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center opacity-50 invert">
             <Image
                 src="/images/portfolio/logo.gif"
                 alt="Yang Logo"

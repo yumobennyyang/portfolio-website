@@ -189,10 +189,6 @@ export default function PortfolioIndex() {
 
       const mainText = document.querySelector('.mainText');
 
-      const elementHeight = (element as HTMLElement).clientHeight;
-
-
-
       if (mainText) {
 
         const changeX = 56 / mainText.clientWidth;
@@ -211,7 +207,7 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (mainText.clientHeight - 56) / 2 + 'px - 56px - 24px)',
             filter: "blur(2px)",
             scrollTrigger: {
               trigger: element,
