@@ -16,9 +16,11 @@ import Image from 'next/image'
 import localFont from 'next/font/local'
 
 const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Book.otf' })
+const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
 const text = localFont({ src: '../fonts/PPNeueMontreal-Variable.ttf' })
+
 
 
 
@@ -187,14 +189,14 @@ export default function PortfolioIndex() {
 
     hideTextElements.forEach((element) => {
 
-      const mainText = document.querySelector('.hideText');
+      const mainText1 = document.querySelector('#mainText');
       const portfolioCard = document.querySelector('#portfolioCard');
       const elementHeight = (element as HTMLElement).clientHeight;
 
-      if (mainText && portfolioCard) {
+      if (mainText1 && portfolioCard) {
 
         const changeX = 56 / portfolioCard.clientWidth;
-        const changeY = 56 / elementHeight;
+        const changeY = 56 / mainText1.clientHeight;
 
         gsap.fromTo(element,
           {
@@ -209,7 +211,7 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (mainText1.clientHeight - 56) / 2 + 'px - 56px - 24px)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
@@ -422,8 +424,6 @@ export default function PortfolioIndex() {
 
 
 
-
-
   }
 
 
@@ -495,6 +495,7 @@ export default function PortfolioIndex() {
 
 
 
+
       <div className=" -z-50 fixed h-screen  pointer-events-none  w-screen items-center  saturateVideo bg-white">
 
         <video
@@ -550,7 +551,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${satoshi.className}`}
+          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}`}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
@@ -617,7 +618,7 @@ export default function PortfolioIndex() {
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>©Yang. Last updated 2024-06-02</span>
+          <span>Last updated: 2024-06-02 ©yang</span>
         </p>
       </div>
 
