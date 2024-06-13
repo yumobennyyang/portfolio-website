@@ -14,7 +14,7 @@ date: 2023-10-10
 enabled: true
 title: Tencent
 slug: tencent
-description: Interaction Design Internship
+description: Interaction Design Internship | 2023
 orderIndex: 4
 
 overview: During the summer of 2023 I interned at Tencent’s Interactive Entertainment Group (IEG) as an interface and interaction designer. The majority of my work involved creating HTML5 visuals and fine-tuning UI/UX for the Tencent Games Joy Club mobile app, which I am unfortunately unable to share. However, I was also assigned a separate solo task of a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps. On this page I will go through snippets of my redesign of the Dora Platform.
