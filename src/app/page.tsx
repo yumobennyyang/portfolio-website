@@ -187,49 +187,60 @@ export default function PortfolioIndex() {
 
     hideTextElements.forEach((element) => {
 
+      const mainText = document.querySelector('.mainText');
+
       const elementHeight = (element as HTMLElement).clientHeight;
 
-      gsap.fromTo(element,
-        {
 
-          scale: 1,
-          top: 0,
 
-        },
-        {
+      if (mainText) {
 
-          scale: 0.1,
-          top: 'calc( -' + elementHeight / 20 * 9 + 'px - 56px - 24px)',
-          scrollTrigger: {
-            trigger: element,
-            
-            start: 450 + window.innerHeight * (scrollSpeed - 1),
-            end: 650 + window.innerHeight * (scrollSpeed - 1),
-            scrub: true,
-            markers: false
+        const changeX = 56 / mainText.clientWidth;
+        const changeY = 56 / mainText.clientHeight;
+
+        gsap.fromTo(element,
+          {
+
+            scale: 1,
+            top: 0,
+
           },
-          ease: "power1.in"
-        }
-      );
+          {
 
-      gsap.fromTo(element,
-        {
-          opacity: 1,
+            scaleX: changeX,
+            scaleY: changeY,
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            filter: "blur(6px)",
+            scrollTrigger: {
+              trigger: element,
 
-        },
-        {
-          opacity: 0,
-          display: 'none',
-          scrollTrigger: {
-            trigger: element,
-            start: 650 + window.innerHeight * (scrollSpeed - 1),
-            end: window.innerHeight * scrollSpeed,
-            scrub: true,
-            markers: false
+              start: 450 + window.innerHeight * (scrollSpeed - 1),
+              end: 650 + window.innerHeight * (scrollSpeed - 1),
+              scrub: true,
+              markers: false
+            },
+            ease: "power1.in"
           }
-        }
-      );
+        );
 
+        gsap.fromTo(element,
+          {
+            opacity: 1,
+
+          },
+          {
+            opacity: 0,
+            display: 'none',
+            scrollTrigger: {
+              trigger: element,
+              start: 650 + window.innerHeight * (scrollSpeed - 1),
+              end: window.innerHeight * scrollSpeed,
+              scrub: true,
+              markers: false
+            }
+          }
+        );
+      }
 
     });
 
@@ -308,9 +319,11 @@ export default function PortfolioIndex() {
       gsap.fromTo(element,
         {
           opacity: 0,
+          filter: "blur(5px)",
         },
         {
-          ease: 'outIn',
+          ease: 'power3.out',
+          filter: "blur(0px)",
           opacity: 0.5,
           scrollTrigger: {
             trigger: element,
@@ -319,6 +332,7 @@ export default function PortfolioIndex() {
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
           }
+
         }
       );
     });
