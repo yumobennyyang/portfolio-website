@@ -193,10 +193,13 @@ export default function PortfolioIndex() {
       const portfolioCard = document.querySelector('#portfolioCard');
       const elementHeight = (element as HTMLElement).clientHeight;
 
+      const text1 = document.querySelector('.text1');
+      const text2 = document.querySelector('.text2');
+
       if (mainText1 && portfolioCard) {
 
         const changeX = 56 / portfolioCard.clientWidth;
-        const changeY = 56 / mainText1.clientHeight;
+        const changeY = 56 / elementHeight;
 
         gsap.fromTo(element,
           {
@@ -211,7 +214,7 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (mainText1.clientHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
@@ -551,14 +554,14 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  hideText left-1/2 h-auto -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}`}
+          className={`  hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}`}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
-            <span id="intro" className="split-type">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
+            <span id="intro" className="split-type text1">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
+            <span className="reveal-type text2">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.</span>
           </div>
 
