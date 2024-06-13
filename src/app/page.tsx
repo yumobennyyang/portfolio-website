@@ -322,7 +322,7 @@ export default function PortfolioIndex() {
         {
           ease: 'power3.out',
           filter: "blur(0px)",
-          opacity: 0.5,
+          opacity: 1,
           scrollTrigger: {
             trigger: element,
             start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
@@ -530,7 +530,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div id="logo" className="logoOffset invert  z-40 fixed w-full h-auto pointer-events-none">
+      <div id="logo" className="logoOffset  mix-blend-difference z-40 fixed w-full h-auto pointer-events-none">
 
 
         <div className=" logoAppear  my-6 h-14 w-14 relative self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
@@ -560,11 +560,10 @@ export default function PortfolioIndex() {
           </p>
 
         </div>
-
       </div>
 
 
-      <div className={`flex mix-blend-difference m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
+      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between hover:text-neutral-50`}
@@ -609,7 +608,7 @@ export default function PortfolioIndex() {
 
 
       <div
-        className={` revealText pb-16 sm:pb-0 m-4  left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-neutral-500  text-sm ${satoshi.className}`}
+        className={` revealText pb-16 sm:pb-0 sm:m-4 -z-10 left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-neutral-500  text-sm ${satoshi.className}`}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
@@ -621,7 +620,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`revealText m-4  sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
+        className={`revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
@@ -651,7 +650,7 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`!pointer-events-none  relative px-6 pt-6 pb-36 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
+        <div id="portfolio" className={`!pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pt-20 !pointer-events-auto ">
 
 
