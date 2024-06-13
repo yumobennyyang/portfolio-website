@@ -187,7 +187,7 @@ export default function PortfolioIndex() {
 
     hideTextElements.forEach((element) => {
 
-      const mainText = document.querySelector('.mainText');
+      const mainText = document.querySelector('#mainText');
       const portfolioCard = document.querySelector('#portfolioCard');
 
       if (mainText && portfolioCard) {
@@ -552,7 +552,7 @@ export default function PortfolioIndex() {
           className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${satoshi.className}`}
         >
 
-          <div className="mainText justify-center mx-auto my-6  p-0.5">
+          <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
             <span id="intro" className="split-type">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
