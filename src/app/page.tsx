@@ -578,7 +578,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-neutral-50 text-sm ${satoshi.className}`}
+        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
           <div className="scrolldown opacity-30 !scale-75"></div>
