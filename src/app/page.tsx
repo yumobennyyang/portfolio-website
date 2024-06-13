@@ -201,7 +201,8 @@ export default function PortfolioIndex() {
         gsap.fromTo(element,
           {
 
-            scale: 1,
+            scaleX: 1,
+            scaleY: 1,
             top: 0,
             filter: "blur(0px)",
 
@@ -619,7 +620,7 @@ export default function PortfolioIndex() {
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>©YANG. Last updated 2024-06-02</span>
+          <span>©Yang. Last updated 2024-06-02</span>
         </p>
       </div>
 
