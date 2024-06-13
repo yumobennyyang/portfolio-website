@@ -50,7 +50,7 @@ html {
 }
 
 #scrollSection {
-  height: calc(100vh * 1.5);
+  height: calc(100vh * 1.2);
   /* Default for smaller screens */
 }
 
@@ -334,21 +334,21 @@ html {
   position: relative;
   width: 30px;
   height: 50px;
-  border: 3px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
 }
 
 .scrolldown::before {
   content: "";
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
   width: 6px;
   height: 6px;
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   border-radius: 3px;
-  box-shadow: 0px -5px 3px 1px rgba(0, 0, 0, .6);
+
   animation: scrolldown-anim 2s infinite;
 }
 
@@ -360,13 +360,13 @@ html {
 
   40% {
     opacity: 1;
-    height: 10px;
+    height: 12px;
   }
 
   80% {
     opacity: 0;
     transform: translate(-50%, 20px);
-    height: 10px;
+    height: 12px;
   }
 
   100% {
