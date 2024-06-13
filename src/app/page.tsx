@@ -80,30 +80,6 @@ export default function PortfolioIndex() {
 
 
 
-    const darkerWords = document.querySelectorAll('.darkerWords')
-
-    darkerWords.forEach((element) => {
-      gsap.to(element as HTMLElement, {
-        scrollTrigger: {
-          trigger: element,
-          start: 0,
-          end: window.innerHeight * scrollSpeed,
-          scrub: true,
-          markers: false,
-          onUpdate: self => {
-            // Calculate the current saturation based on the scroll progress
-            const progress = self.progress;
-            // Apply an easing function to make the progress non-linear
-            const linearProgress = gsap.parseEase("power1.in")(progress);
-            const currentDarkness = gsap.utils.interpolate(0.5, 1, linearProgress);
-            (element as HTMLElement).style.color = `rgba(255,255,255,${currentDarkness})`;
-          }
-        }
-      });
-    });
-
-
-
 
 
     const revealTypes = document.querySelectorAll('.reveal-type')
@@ -213,10 +189,11 @@ export default function PortfolioIndex() {
         {
           opacity: 1,
 
+
         },
         {
           opacity: 0,
-
+          display: 'none',
           scrollTrigger: {
             trigger: element,
             start: 450 + window.innerHeight * (scrollSpeed - 1),
