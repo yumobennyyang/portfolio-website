@@ -493,10 +493,10 @@ export default function PortfolioIndex() {
 
 
 
-      <div style={{ background: "#111111" }} className=" darkBackground pointer-events-none  -z-40 w-full h-full fixed" />
+      <div style={{ background: "#DDDDDD" }} className=" darkBackground pointer-events-none  -z-40 w-full h-full fixed" />
 
 
-      <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed" />
+      <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
       <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed">
         <div></div>
         <div></div>
@@ -513,9 +513,10 @@ export default function PortfolioIndex() {
 
 
 
-      <div id="logo" className="logoOffset  changeBlendMode z-40 fixed w-full h-auto pointer-events-none">
+      <div id="logo" className="logoOffset invert  z-40 fixed w-full h-auto pointer-events-none">
 
-        <div className=" logoAppear my-6 h-14 w-14 relative self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
+
+        <div className=" logoAppear  my-6 h-14 w-14 relative self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
           <a href="#top" onClick={goToLanding}>
             <Image
               src="/images/portfolio/logo.gif"
@@ -528,8 +529,9 @@ export default function PortfolioIndex() {
           </a>
         </div>
 
+
         <div
-          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-white/100  text-sm ${satoshi.className}`}
+          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50  text-sm ${satoshi.className}`}
         >
 
           <p className="mainText justify-center mx-auto my-6  p-0.5">
@@ -545,10 +547,10 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div className={`flex changeBlendMode m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-white/50  text-sm ${satoshi.className}`}>
+      <div className={`flex mix-blend-difference m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
 
         <a
-          className={` justify-between hover:text-white/100`}
+          className={` justify-between hover:text-neutral-50`}
           href="https://instagram.com/yangyart"
           target="_blank"
         >
@@ -561,7 +563,7 @@ export default function PortfolioIndex() {
         </a>
 
         <a
-          className={` justify-between hover:text-white/100`}
+          className={` justify-between hover:text-neutral-50`}
           href="https://read.cv/yumobennyyang"
           target="_blank"
         >
@@ -576,7 +578,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-black/50 text-sm ${satoshi.className}`}
+        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-neutral-50 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
           <div className="scrolldown opacity-30 !scale-75"></div>
@@ -590,31 +592,31 @@ export default function PortfolioIndex() {
 
 
       <div
-        className={` revealText pb-16 sm:pb-0 m-4  left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-white/50  text-sm ${satoshi.className}`}
+        className={` revealText pb-16 sm:pb-0 m-4  left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-neutral-500  text-sm ${satoshi.className}`}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>v3.0.0 Last updated 2024-06-02</span>
+          <span>©YANG. Last updated 2024-06-02</span>
         </p>
       </div>
 
       <div
-        className={`revealText m-4  sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-white/50 text-sm ${satoshi.className}`}
+        className={`revealText m-4  sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>I&apos;m on </span>
-          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Twitter</a>
+          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Twitter</a>
           <span> </span>
-          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Linkedin</a>
+          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">Cosmos</a>
+          <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
-          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-white/100 ">yy3204@columbia.edu</a>
+          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">yy3204@columbia.edu</a>
         </p>
       </div>
 
@@ -632,13 +634,13 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`!pointer-events-none  relative px-6 pt-6 pb-36 sm:pb-16 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between text-white ${text.className}`}>
+        <div id="portfolio" className={`!pointer-events-none  relative px-6 pt-6 pb-36 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pt-20 !pointer-events-auto ">
 
 
             {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
           </div>
-        </div>;
+        </div>
 
 
 
@@ -653,6 +655,6 @@ export default function PortfolioIndex() {
 
 
 
-  );
+  )
 
 }

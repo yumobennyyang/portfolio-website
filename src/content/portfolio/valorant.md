@@ -14,7 +14,7 @@ date: 2023-01-17
 enabled: true
 title: Valorant
 slug: valorant
-description: Valorant - Promotional Graphics
+description: Promotional Graphics
 orderIndex: 5
 
 overview: Promotional graphics published in app on 07/04/2023 for VALORANT’s China launch in summer 2023 - Layouts, visuals, and information on Agents, Weapons, Game modes, etc. Research involving understanding and collecting the brand's styles and decorative components to be recreated or repurposed.

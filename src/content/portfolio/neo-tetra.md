@@ -14,7 +14,7 @@ date: 2023-03-27
 enabled: true
 title: Neo Tetra
 slug: neo-tetra
-description: Neo Tetra - Typeface Design
+description: Typeface Design
 orderIndex: 1
 textarea: true
 

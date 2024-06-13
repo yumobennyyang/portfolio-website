@@ -14,7 +14,7 @@ date: 2023-02-14
 enabled: true
 title: Spec Mobile
 slug: spec-mobile
-description: Spectator 1.0 - Mobile UI/UX
+description: Mobile UI/UX
 orderIndex: 2
 
 
