@@ -379,18 +379,24 @@ html {
 
 .layer-shadow {
 
-  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.02),
-    0 2px 2px hsl(0deg 0% 0% / 0.02),
-    0 4px 4px hsl(0deg 0% 0% / 0.02),
-    0 8px 8px hsl(0deg 0% 0% / 0.02),
-    0 16px 16px hsl(0deg 0% 0% / 0.02);
+  box-shadow:
+    0 0.5px 1px hsl(0deg 0% 0% / 0.03),
+    0 1px 2px hsl(0deg 0% 0% / 0.03),
+    0 2px 4px hsl(0deg 0% 0% / 0.03),
+    0 4px 8px hsl(0deg 0% 0% / 0.03),
+    0 8px 16px hsl(0deg 0% 0% / 0.03);
 
 }
 
-.layer-shadow:hover {
-  box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.05),
-    0 2px 2.5px hsl(0deg 0% 0% / 0.05),
-    0 4px 5px hsl(0deg 0% 0% / 0.05),
-    0 8px 10px hsl(0deg 0% 0% / 0.05),
-    0 16px 20px hsl(0deg 0% 0% / 0.05);
+
+
+@media (min-width: 768px) {
+  .layer-shadow:hover {
+    box-shadow:
+      0 1px 2px hsl(0deg 0% 0% / 0.05),
+      0 2px 4px hsl(0deg 0% 0% / 0.05),
+      0 4px 8px hsl(0deg 0% 0% / 0.05),
+      0 8px 16px hsl(0deg 0% 0% / 0.05),
+      0 16px 32px hsl(0deg 0% 0% / 0.05);
+  }
 }
