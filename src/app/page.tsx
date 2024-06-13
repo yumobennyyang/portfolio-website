@@ -203,6 +203,7 @@ export default function PortfolioIndex() {
 
             scale: 1,
             top: 0,
+            filter: "blur(0px)",
 
           },
           {
@@ -210,7 +211,7 @@ export default function PortfolioIndex() {
             scaleX: changeX,
             scaleY: changeY,
             top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
-            filter: "blur(6px)",
+            filter: "blur(2px)",
             scrollTrigger: {
               trigger: element,
 
@@ -319,7 +320,7 @@ export default function PortfolioIndex() {
       gsap.fromTo(element,
         {
           opacity: 0,
-          filter: "blur(5px)",
+          filter: "blur(2px)",
         },
         {
           ease: 'power3.out',
