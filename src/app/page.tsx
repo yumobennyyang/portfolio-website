@@ -184,11 +184,37 @@ export default function PortfolioIndex() {
 
     const hideTextElements = document.querySelectorAll('.hideText');
 
+
     hideTextElements.forEach((element) => {
+
+      const elementHeight = (element as HTMLElement).clientHeight;
+
+      gsap.fromTo(element,
+        {
+
+          scale: 1,
+          top: 0,
+
+        },
+        {
+
+          scale: 0.1,
+          top: 'calc( -' + elementHeight / 20 * 9 + 'px - 56px - 24px)',
+          scrollTrigger: {
+            trigger: element,
+            
+            start: 450 + window.innerHeight * (scrollSpeed - 1),
+            end: 650 + window.innerHeight * (scrollSpeed - 1),
+            scrub: true,
+            markers: false
+          },
+          ease: "power1.in"
+        }
+      );
+
       gsap.fromTo(element,
         {
           opacity: 1,
-
 
         },
         {
@@ -196,13 +222,15 @@ export default function PortfolioIndex() {
           display: 'none',
           scrollTrigger: {
             trigger: element,
-            start: 450 + window.innerHeight * (scrollSpeed - 1),
-            end: 650 + window.innerHeight * (scrollSpeed - 1),
+            start: 650 + window.innerHeight * (scrollSpeed - 1),
+            end: window.innerHeight * scrollSpeed,
             scrub: true,
             markers: false
           }
         }
       );
+
+
     });
 
 
@@ -286,7 +314,7 @@ export default function PortfolioIndex() {
           opacity: 0.5,
           scrollTrigger: {
             trigger: element,
-            start: 0,  // Starts when the top of the viewport hits the top of the element
+            start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
             end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
@@ -508,7 +536,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50  text-sm ${satoshi.className}`}
+          className={`  hideText left-1/2  -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${satoshi.className}`}
         >
 
           <p className="mainText justify-center mx-auto my-6  p-0.5">

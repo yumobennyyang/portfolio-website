@@ -15,7 +15,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-300 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow hover:scale-[1.005] border !border-white/100">
+            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-300 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow hover:scale-[1.005] border !border-white/100 ">
 
 
 
@@ -26,8 +26,8 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                 )}
 
 
-                {item.video && (
-                    <div className="bg-[#f0f0f0] transition duration-150 rounded-t overflow-hidden border-b border-neutral-200">
+                {item.video && ( 
+                    <div className="bg-[#f0f0f0] transition duration-150 rounded-t overflow-hidden border-b border-neutral-200 ">
                         <video
                             playsInline
                             autoPlay
