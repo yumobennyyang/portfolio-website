@@ -187,13 +187,14 @@ export default function PortfolioIndex() {
 
     hideTextElements.forEach((element) => {
 
-      const mainText = document.querySelector('#mainText');
+      const mainText = document.querySelector('.hideText');
       const portfolioCard = document.querySelector('#portfolioCard');
+      const elementHeight = (element as HTMLElement).clientHeight;
 
       if (mainText && portfolioCard) {
 
         const changeX = 56 / portfolioCard.clientWidth;
-        const changeY = 56 / mainText.clientHeight;
+        const changeY = 56 / elementHeight;
 
         gsap.fromTo(element,
           {
@@ -208,7 +209,7 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (mainText.clientHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
