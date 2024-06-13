@@ -191,7 +191,7 @@ export default function PortfolioIndex() {
 
       const mainText1 = document.querySelector('#mainText');
       const portfolioCard = document.querySelector('#portfolioCard');
-      const elementHeight = (element as HTMLElement).clientHeight;
+      const elementHeight = (mainText1 as HTMLElement).clientHeight;
 
       const text1 = document.querySelector('.text1');
       const text2 = document.querySelector('.text2');
@@ -200,6 +200,8 @@ export default function PortfolioIndex() {
 
         const changeX = 56 / portfolioCard.clientWidth;
         const changeY = 56 / elementHeight;
+
+
 
         gsap.fromTo(element,
           {
