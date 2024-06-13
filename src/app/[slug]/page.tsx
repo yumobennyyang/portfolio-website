@@ -34,7 +34,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
     const nextItem = allPortfolios.find((portfolio) => portfolio.orderIndex === currentIndex + 1);
 
 
-    return <div className={`leading-6 text-white  tracking-wide ${text.className}`}>
+    return <div className={`leading-6 text-neutral-900  tracking-wide ${text.className}`}>
 
 
         <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center opacity-50">
@@ -48,10 +48,10 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
 
-        <div className={`flex changeBlendMode m-4 z-50 left-0 top-0 fixed w-auto leading-6 text-white/50  text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference m-4 z-50 left-0 top-0 fixed w-auto leading-6 text-neutral-500 text-sm ${satoshi.className}`}>
 
             <a
-                className={` justify-between hover:text-white/100`}
+                className={` justify-between hover:text-neutral-50`}
                 href="/#portfolio"
             >
                 <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
@@ -63,23 +63,11 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
 
-        <div className={`flex changeBlendMode m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-white/50  text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference m-4 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
+
 
             <a
-                className={` justify-between hover:text-white/100`}
-                href="https://instagram.com/yangyart"
-                target="_blank"
-            >
-
-                <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
-                    ↗ art
-                    {/* <span>↗</span>*/}
-                </p>
-
-            </a>
-
-            <a
-                className={` justify-between hover:text-white/100`}
+                className={` justify-between hover:text-neutral-50`}
                 href="https://read.cv/yumobennyyang"
                 target="_blank"
             >
@@ -88,8 +76,6 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 </p>
 
             </a>
-
-
 
         </div>
 
@@ -347,10 +333,10 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             )}
 
             {nextItem && (
-                <div className={`hideScrollText items-center text-center z-10 bottom-0 w-full pb-6 leading-6 justify-between text-white/50 text-sm ${satoshi.className}`}>
+                <div className={`hideScrollText items-center text-center z-10 bottom-0 w-full pb-6 leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}>
                     <div className="justify-center ml-auto  pointer-events-auto ">
                         <p>
-                            <a href={`/${nextItem.slug}`} className="underline underline-offset-4 hover:text-white">next project ({nextItem.description})</a>
+                            <a href={`/${nextItem.slug}`} className="underline underline-offset-4 hover:text-neutral-950">next project ({nextItem.description})</a>
                         </p>
                     </div>
                 </div>

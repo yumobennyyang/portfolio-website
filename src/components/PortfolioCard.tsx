@@ -11,42 +11,51 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
     return < Link href={"/" + item.slug}>
 
-        <div id="portfolioCard" className="transition duration-150 w-full flex-col relative flex rounded  overflow-hidden group ">
+        <div className=" w-full ">
 
-            <div className="z-20 absolute w-full h-full flex rounded overflow-hidden items-center group-hover:opacity-100 opacity-0 transition-opacity duration-500 ease-in-out  border !border-white/30">
-                <h2 className="p-4 w-full text-center">{item.description}</h2>
+
+
+            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-300 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow hover:scale-[1.005] border !border-white/100">
+
+
+
+                {item.image && (
+                    <div className="bg-[#f0f0f0] transition duration-150  rounded-t overflow-hidden border-b border-neutral-200  ">
+                        <Image className=" object-cover rounded-t " src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
+                    </div>
+                )}
+
+
+                {item.video && (
+                    <div className="bg-[#f0f0f0] transition duration-150 rounded-t overflow-hidden border-b border-neutral-200">
+                        <video
+                            playsInline
+                            autoPlay
+                            muted
+                            loop
+                            className="aspect-square object-cover rounded-t"
+                            width={item.video.width}
+                            height={item.video.height}>
+
+                            <source src={item.video.src} type="video/mp4" />
+
+                        </video>
+                    </div>
+                )}
+
+                <div className="z-20 px-4 py-3 relative w-full flex-row ">
+                    <div className="text-neutral-900 w-full font-medium text-nowrap">{item.title}</div>
+                    <div className="text-neutral-400 w-full font-medium text-nowrap">{item.description}</div>
+
+
+                </div>
+
+
             </div>
 
-            {item.image && (
-                <div className="bg-[#f0f0f0] transition duration-150  rounded overflow-hidden group-hover:brightness-50 group-hover:scale-[1.02] group-hover:blur-sm">
-                    <Image className=" object-cover rounded " src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
-                </div>
-            )}
 
 
-            {item.video && (
-                <div className="bg-[#f0f0f0] transition duration-150 rounded overflow-hidden group-hover:brightness-50 group-hover:scale-[1.02] group-hover:blur-sm">
+        </div>
 
-
-                    <video
-                        playsInline
-                        autoPlay
-                        muted
-                        loop
-                        className="aspect-square object-cover rounded"
-                        width={item.video.width}
-                        height={item.video.height}>
-
-                        <source src={item.video.src} type="video/mp4" />
-
-                    </video>
-
-
-
-
-
-                </div>
-            )}
-
-        </div></Link>
+    </Link>
 }
