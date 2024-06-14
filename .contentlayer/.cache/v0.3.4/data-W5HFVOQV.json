@@ -41,6 +41,50 @@
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
+    "portfolio/heads.md": {
+      "document": {
+        "title": "Heads",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "heads",
+        "image": {
+          "src": "/images/portfolio/head.png",
+          "width": 4032,
+          "height": 4032,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "2020 - 2024",
+        "enabled": true,
+        "orderIndex": 9,
+        "preview": {
+          "src": "/images/heads/head0.png",
+          "width": 3840,
+          "height": 2160,
+          "type": "Image",
+          "_raw": {}
+        },
+        "overview": "The manipulation of a foam fead in the form of sculpture.",
+        "media": [
+          "Found Objects"
+        ],
+        "body": {
+          "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n\n",
+          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\n </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\n </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\"></p>"
+        },
+        "_id": "portfolio/heads.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/heads.md",
+          "sourceFileName": "heads.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/heads"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1718397406376",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
     "portfolio/neo-tetra.md": {
       "document": {
         "title": "Neo Tetra",
@@ -373,50 +417,6 @@
         "type": "Portfolio"
       },
       "documentHash": "1718261183386",
-      "hasWarnings": false,
-      "documentTypeName": "Portfolio"
-    },
-    "portfolio/heads.md": {
-      "document": {
-        "title": "Heads",
-        "date": "2023-01-17T00:00:00.000Z",
-        "slug": "heads",
-        "image": {
-          "src": "/images/portfolio/head.png",
-          "width": 4032,
-          "height": 4032,
-          "type": "Image",
-          "_raw": {}
-        },
-        "description": "2020 - 2024",
-        "enabled": true,
-        "orderIndex": 9,
-        "preview": {
-          "src": "/images/heads/head0.png",
-          "width": 3840,
-          "height": 2160,
-          "type": "Image",
-          "_raw": {}
-        },
-        "overview": "The manipulation of a foam fead in the form of sculpture.",
-        "media": [
-          "Found Objects"
-        ],
-        "body": {
-          "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n\n",
-          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\n </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\n </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\"></p>"
-        },
-        "_id": "portfolio/heads.md",
-        "_raw": {
-          "sourceFilePath": "portfolio/heads.md",
-          "sourceFileName": "heads.md",
-          "sourceFileDir": "portfolio",
-          "contentType": "markdown",
-          "flattenedPath": "portfolio/heads"
-        },
-        "type": "Portfolio"
-      },
-      "documentHash": "1718397406376",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     }
