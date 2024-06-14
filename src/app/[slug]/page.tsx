@@ -69,7 +69,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
             <a
                 className={` justify-between hover:text-neutral-50`}
-                href="https://read.cv/yumobennyyang"
+                href="https://read.cv/bennyyyang"
                 target="_blank"
             >
                 <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
