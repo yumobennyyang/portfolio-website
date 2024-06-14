@@ -120,6 +120,48 @@
     "type": "Portfolio"
   },
   {
+    "title": "Euphemism for a Good Night's Sleep",
+    "date": "2023-01-17T00:00:00.000Z",
+    "slug": "sleep",
+    "image": {
+      "src": "/images/portfolio/sleep.png",
+      "width": 2000,
+      "height": 2000,
+      "type": "Image",
+      "_raw": {}
+    },
+    "description": "Ceramics, Metalwork, Found Objects",
+    "enabled": true,
+    "orderIndex": 7,
+    "preview": {
+      "src": "/images/sleep/sleep1.png",
+      "width": 3840,
+      "height": 2160,
+      "type": "Image",
+      "_raw": {}
+    },
+    "overview": "Sleep is popularly used as a euphemism for the violent concept of death. What then would be the euphemism for sleep, a notion already so peaceful and emotionless, even delightful at times. This piece is about finding the almost imperceptible middle ground between stress and relaxation. The head seems constrained in the box, but there’s no barrier blocking it from interacting with the outside world. The box itself seems to suspend the weight of the head, but how much of it is being carried by the longer ropes that hang from the ceiling? I explore into objects that lack the state of motion but whose state of immobility is only temporary.",
+    "media": [
+      "Ceramics",
+      "Metalwork",
+      "Found Objects"
+    ],
+    "dimensions": "22\"x 22\"x 60\"",
+    "body": {
+      "raw": "\n\n---\n\n&nbsp;\n\n![Sleep1](/images/sleep/sleep2.png \"sleep1\")\n&nbsp;\n![Sleep2](/images/sleep/sleep3.png \"sleep2\")\n\n\n\n\n",
+      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/sleep/sleep2.png\" alt=\"Sleep1\" title=\"sleep1\">\n \n<img src=\"/images/sleep/sleep3.png\" alt=\"Sleep2\" title=\"sleep2\"></p>"
+    },
+    "_id": "portfolio/sleep.md",
+    "_raw": {
+      "sourceFilePath": "portfolio/sleep.md",
+      "sourceFileName": "sleep.md",
+      "sourceFileDir": "portfolio",
+      "contentType": "markdown",
+      "flattenedPath": "portfolio/sleep"
+    },
+    "type": "Portfolio"
+  },
+  {
     "title": "Spectator 1.0",
     "date": "2023-02-14T00:00:00.000Z",
     "slug": "spec-mobile",
@@ -248,6 +290,49 @@
       "sourceFileDir": "portfolio",
       "contentType": "markdown",
       "flattenedPath": "portfolio/valorant"
+    },
+    "type": "Portfolio"
+  },
+  {
+    "title": "Flat Collection",
+    "date": "2023-01-17T00:00:00.000Z",
+    "slug": "paintings",
+    "image": {
+      "src": "/images/portfolio/paint.png",
+      "width": 2000,
+      "height": 2000,
+      "type": "Image",
+      "_raw": {}
+    },
+    "description": "2019 - 2024",
+    "enabled": true,
+    "orderIndex": 8,
+    "preview": {
+      "src": "/images/paintings/paint0.png",
+      "width": 3840,
+      "height": 2160,
+      "type": "Image",
+      "_raw": {}
+    },
+    "overview": "Two dimensional artwork made throuhgout the years.",
+    "media": [
+      "Oil",
+      "Pastel",
+      "Charcoal",
+      "Ink"
+    ],
+    "dimensions": "22\"x 22\"x 60\"",
+    "body": {
+      "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\n&nbsp;\n\n\n",
+      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\">\n </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\n </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\n </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\n </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\n </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\n </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\n </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\n </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\n </p>"
+    },
+    "_id": "portfolio/paintings.md",
+    "_raw": {
+      "sourceFilePath": "portfolio/paintings.md",
+      "sourceFileName": "paintings.md",
+      "sourceFileDir": "portfolio",
+      "contentType": "markdown",
+      "flattenedPath": "portfolio/paintings"
     },
     "type": "Portfolio"
   }

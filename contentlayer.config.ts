@@ -34,12 +34,14 @@ export const Portfolio = defineDocumentType(() => ({
 
         preview: { type: "nested", of: Image, required: false },
         overview: { type: "string", required: false },
-        role: { type: "list", of: { type:"string"}, required: false },
-        tools: { type: "list", of: { type:"string"}, required: false },
-        duration: { type: "string", required: false },    
-        team: { type: "list", of: { type:"string"}, required: false },
-        textarea:{ type: "boolean", required: false },
-        isPlayground:{ type: "boolean", required: false },
+        role: { type: "list", of: { type: "string" }, required: false },
+        tools: { type: "list", of: { type: "string" }, required: false },
+        media: { type: "list", of: { type: "string" }, required: false },
+        dimensions: { type: "string", required: false },
+        duration: { type: "string", required: false },
+        team: { type: "list", of: { type: "string" }, required: false },
+        textarea: { type: "boolean", required: false },
+        isPlayground: { type: "boolean", required: false },
 
 
     },

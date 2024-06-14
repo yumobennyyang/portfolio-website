@@ -25,6 +25,8 @@ export type Portfolio = {
   overview?: string | undefined
   role?: string[] | undefined
   tools?: string[] | undefined
+  media?: string[] | undefined
+  dimensions?: string | undefined
   duration?: string | undefined
   team?: string[] | undefined
   textarea?: boolean | undefined

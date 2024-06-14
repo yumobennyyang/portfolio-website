@@ -281,6 +281,52 @@
       "documentHash": "1718261183386",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
+    },
+    "portfolio/sleep.md": {
+      "document": {
+        "title": "Euphemism for a Good Night's Sleep",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "sleep",
+        "image": {
+          "src": "/images/portfolio/sleep.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "Ceramics, Metalwork, Found Objects",
+        "enabled": true,
+        "orderIndex": 7,
+        "preview": {
+          "src": "/images/sleep/sleep1.png",
+          "width": 3840,
+          "height": 2160,
+          "type": "Image",
+          "_raw": {}
+        },
+        "overview": "Sleep is popularly used as a euphemism for the violent concept of death. What then would be the euphemism for sleep, a notion already so peaceful and emotionless, even delightful at times. This piece is about finding the almost imperceptible middle ground between stress and relaxation. The head seems constrained in the box, but there’s no barrier blocking it from interacting with the outside world. The box itself seems to suspend the weight of the head, but how much of it is being carried by the longer ropes that hang from the ceiling? I explore into objects that lack the state of motion but whose state of immobility is only temporary.",
+        "tools": [
+          "Photoshop",
+          "Figma"
+        ],
+        "duration": "3 days",
+        "body": {
+          "raw": "\n\n---\n\n&nbsp;\n\n![Val1](/images/valorant/val1.png \"val1\")\n",
+          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/valorant/val1.png\" alt=\"Val1\" title=\"val1\"></p>"
+        },
+        "_id": "portfolio/sleep.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/sleep.md",
+          "sourceFileName": "sleep.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/sleep"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1718343059869",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
     }
   }
 }
