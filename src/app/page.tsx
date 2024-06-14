@@ -38,7 +38,7 @@ export default function PortfolioIndex() {
 
   const crafts = allPortfolios.slice(6, 9);
 
-  let scrollSpeed = 1;
+  // let scrollSpeed = 1;
 
 
 
@@ -67,7 +67,8 @@ export default function PortfolioIndex() {
         scrollTrigger: {
           trigger: element,
           start: 0,
-          end: window.innerHeight * scrollSpeed,
+          // end: window.innerHeight * scrollSpeed,
+          end: window.innerHeight,
           scrub: true,
           markers: false,
           onUpdate: self => {
@@ -398,13 +399,17 @@ export default function PortfolioIndex() {
           pointerEvents: 'auto',
           scrollTrigger: {
             trigger: element,
-            start: window.innerHeight * scrollSpeed,
-            end: window.innerHeight * scrollSpeed,
+            // start: window.innerHeight * scrollSpeed,
+            // end: window.innerHeight * scrollSpeed,
+            start: window.innerHeight,
+            end: window.innerHeight,
             scrub: true,
             markers: false
           }
         }
       );
+
+
     });
 
 
@@ -414,14 +419,16 @@ export default function PortfolioIndex() {
       // Create the GSAP animation with ScrollTrigger
       gsap.fromTo(element,
         {
-          opacity: '0',
+          top: -104,
         },
         {
-          opacity: '1',  // Equivalent to 'none' in this context
+          top: 0,  // Equivalent to 'none' in this context
           scrollTrigger: {
             trigger: element,
-            start: window.innerHeight * scrollSpeed,  // Starts when the top of the viewport hits the top of the element
-            end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            // start: window.innerHeight * scrollSpeed,  // Starts when the top of the viewport hits the top of the element
+            // end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            start: window.innerHeight,
+            end: window.innerHeight + 104,
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
           }
@@ -446,8 +453,10 @@ export default function PortfolioIndex() {
 
           scrollTrigger: {
             trigger: element,
-            start: window.innerHeight * scrollSpeed,  // Starts when the top of the viewport hits the top of the element
-            end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            // start: window.innerHeight * scrollSpeed,  // Starts when the top of the viewport hits the top of the element
+            // end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            start: window.innerHeight,
+            end: window.innerHeight,
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
           }
@@ -477,7 +486,7 @@ export default function PortfolioIndex() {
 
 
   useEffect(() => {
-    updateScrollSpeed();
+    // updateScrollSpeed();
 
     interaction();
 
@@ -505,13 +514,13 @@ export default function PortfolioIndex() {
     }
 
 
-    function updateScrollSpeed() {
-      if (window.innerWidth >= 768) {
-        scrollSpeed = 1;
-      } else {
-        scrollSpeed = 1;
-      }
-    }
+    // function updateScrollSpeed() {
+    //   if (window.innerWidth >= 768) {
+    //     scrollSpeed = 1;
+    //   } else {
+    //     scrollSpeed = 1;
+    //   }
+    // }
 
 
 
@@ -524,7 +533,7 @@ export default function PortfolioIndex() {
 
 
     window.addEventListener('resize', handleResize);
-    window.addEventListener('resize', updateScrollSpeed);
+    // window.addEventListener('resize', updateScrollSpeed);
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -566,7 +575,7 @@ export default function PortfolioIndex() {
 
 
       <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
-      <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed">
+      <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed ">
         <div></div>
         <div></div>
         <div></div>
@@ -607,9 +616,8 @@ export default function PortfolioIndex() {
             <span id="intro" className="split-type">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
+            <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>•••
               <br></br><br></br>Benny coded this website.</span>
           </div>
 
@@ -704,8 +712,8 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
-          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+          <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
 
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 

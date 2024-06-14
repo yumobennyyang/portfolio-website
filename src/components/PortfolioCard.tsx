@@ -15,7 +15,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-200 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/100 ">
+            <div id="portfolioCard" className=" bg-neutral-50 hover:bg-white/100 transition duration-200 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/100 ">
 
 
 
@@ -43,9 +43,9 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                     </div>
                 )}
 
-                <div className="z-20 px-4 py-3 relative w-full flex-row ">
-                    <div className="text-neutral-900 w-full font-medium text-nowrap">{item.title}</div>
-                    <div className="text-neutral-400 w-full font-medium text-nowrap">{item.description}</div>
+                <div className="z-20 px-4 py-3 relative w-full flex-row">
+                    <div className="text-neutral-900 w-full font-medium truncate">{item.title}</div>
+                    <div className="text-neutral-400 w-full font-medium truncate">{item.description}</div>
 
 
                 </div>
