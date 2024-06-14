@@ -618,7 +618,7 @@ export default function PortfolioIndex() {
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website.</span>
+              <br></br><br></br>Benny coded this website you're about to see.</span>
           </div>
 
         </div>
@@ -642,7 +642,7 @@ export default function PortfolioIndex() {
 
         <a
           className={` justify-between`}
-          href="https://read.cv/yumobennyyang"
+          href="https://read.cv/bennyyyang"
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-2 py-2  w-auto hover:underline underline-offset-4 decoration-0">
@@ -691,7 +691,7 @@ export default function PortfolioIndex() {
           <span> </span>
           <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4  decoration-0">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Cosmos</a>
+          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
           <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">yy3204@columbia.edu</a>
