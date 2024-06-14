@@ -618,7 +618,7 @@ export default function PortfolioIndex() {
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website you're about to see.</span>
+              <br></br><br></br>Benny coded the website you're about to see.</span>
           </div>
 
         </div>
@@ -633,7 +633,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto hover:underline underline-offset-4 decoration-0">
+          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-0 hover:decoration-2">
             ↗ art
             {/* <span>↗</span>*/}
           </p>
@@ -645,7 +645,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto hover:underline underline-offset-4 decoration-0">
+          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-0 hover:decoration-2">
             ↗ cv
           </p>
 
@@ -687,14 +687,14 @@ export default function PortfolioIndex() {
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>I&apos;m on </span>
-          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Twitter</a>
+          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Twitter</a>
           <span> </span>
-          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4  decoration-0">Linkedin</a>
+          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Cosmos</a>
+          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
-          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">yy3204@columbia.edu</a>
+          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">yy3204@columbia.edu</a>
         </p>
       </div>
 
@@ -712,7 +712,7 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 pb-40 sm:pb-32 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
           <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
 
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
