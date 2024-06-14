@@ -94,7 +94,8 @@ export default function PortfolioIndex() {
         scrollTrigger: {
           trigger: char,
           start: 0,
-          end: 300 + window.innerHeight * (scrollSpeed - 1),
+          // end: 300 + window.innerHeight * (scrollSpeed - 1),
+          end: window.innerHeight - 300,
           scrub: true,
           markers: false
         },
@@ -124,8 +125,10 @@ export default function PortfolioIndex() {
           opacity: 1,
           scrollTrigger: {
             trigger: element,
-            start: 450 + window.innerHeight * (scrollSpeed - 1),
-            end: window.innerHeight * scrollSpeed,
+            // start: 450 + window.innerHeight * (scrollSpeed - 1),
+            // end: window.innerHeight * scrollSpeed,
+            start: window.innerHeight - 300,
+            end: window.innerHeight,
             scrub: true,
             markers: false
           }
@@ -219,8 +222,10 @@ export default function PortfolioIndex() {
             scrollTrigger: {
               trigger: element,
 
-              start: 450 + window.innerHeight * (scrollSpeed - 1),
-              end: 650 + window.innerHeight * (scrollSpeed - 1),
+              // start: 450 + window.innerHeight * (scrollSpeed - 1),
+              // end: 650 + window.innerHeight * (scrollSpeed - 1),
+              start: window.innerHeight - 300 ,
+              end: window.innerHeight - 150,
               scrub: true,
               markers: false
             },
@@ -238,8 +243,10 @@ export default function PortfolioIndex() {
             display: 'none',
             scrollTrigger: {
               trigger: element,
-              start: 650 + window.innerHeight * (scrollSpeed - 1),
-              end: window.innerHeight * scrollSpeed,
+              // start: 650 + window.innerHeight * (scrollSpeed - 1),
+              // end: window.innerHeight * scrollSpeed,
+              start: window.innerHeight - 150,
+              end: window.innerHeight,
               scrub: true,
               markers: false
             }
@@ -307,7 +314,8 @@ export default function PortfolioIndex() {
           scrollTrigger: {
             trigger: element,
             start: 0,  // Starts when the top of the viewport hits the top of the element
-            end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            // end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            end: window.innerHeight,
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
           }
@@ -332,8 +340,10 @@ export default function PortfolioIndex() {
           opacity: 1,
           scrollTrigger: {
             trigger: element,
-            start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
-            end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            // start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
+            // end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            start: window.innerHeight - 150,
+            end: window.innerHeight,
             scrub: true,  // Smooth interpolation of values as you scroll
             markers: false  // Useful for debugging during development
           }
@@ -341,6 +351,35 @@ export default function PortfolioIndex() {
         }
       );
     });
+
+
+
+    const unblur = document.querySelectorAll('.blurToNotBlur');
+
+    unblur.forEach((element) => {
+      // Create the GSAP animation with ScrollTrigger
+      gsap.fromTo(element,
+        {
+          filter: "blur(1200px)",
+        },
+        {
+          filter: "blur(0px)",
+          scrollTrigger: {
+            trigger: element,
+            // start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
+            // end: window.innerHeight * scrollSpeed,  // Ends after scrolling the height of the viewport
+            start: 0,
+            end: window.innerHeight - 150,
+            scrub: true,  // Smooth interpolation of values as you scroll
+            markers: false  // Useful for debugging during development
+          }
+
+        }
+      );
+    });
+
+
+
 
     const addPointerEvent = document.querySelectorAll('.makeClickable');
 
@@ -621,7 +660,7 @@ export default function PortfolioIndex() {
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>Last updated: 2024-06-02 ©yang</span>
+          <span>©yang Last updated: 2024-06-02</span>
         </p>
       </div>
 
@@ -656,7 +695,7 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`!pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pt-20 !pointer-events-auto ">
 
 
