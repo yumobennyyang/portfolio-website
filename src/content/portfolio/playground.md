@@ -15,7 +15,7 @@ date: 2023-01-17
 enabled: true
 title: Playground
 slug: playground
-description: Interface and Interaction Experiments 
+description: Interactive Experiments 
 orderIndex: 3
 
 isPlayground: true

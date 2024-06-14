@@ -294,7 +294,6 @@ html {
 
 
 
-
 #hospital-container {
   resize: horizontal;
   width: calc(100%/0.75);
@@ -314,7 +313,7 @@ html {
   width: 100%;
   overflow: hidden;
   height: 375px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 1);
 
 
 }
@@ -391,7 +390,7 @@ html {
 
 
 @media (min-width: 768px) {
-  .layer-shadow:hover {
+  .layer-shadow-hover:hover {
     box-shadow:
       0 1px 2px hsl(0deg 0% 0% / 0.05),
       0 2px 4px hsl(0deg 0% 0% / 0.05),

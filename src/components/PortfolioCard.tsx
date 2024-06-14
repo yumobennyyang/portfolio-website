@@ -15,7 +15,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-200 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow sm:hover:scale-[1.005] border !border-white/100 ">
+            <div id="portfolioCard" className="bg-white/80 hover:bg-white/100 transition duration-200 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/100 ">
 
 
 

@@ -193,8 +193,6 @@ export default function PortfolioIndex() {
       const portfolioCard = document.querySelector('#portfolioCard');
       const elementHeight = (mainText1 as HTMLElement).clientHeight;
 
-      const text1 = document.querySelector('.text1');
-      const text2 = document.querySelector('.text2');
 
       if (mainText1 && portfolioCard) {
 

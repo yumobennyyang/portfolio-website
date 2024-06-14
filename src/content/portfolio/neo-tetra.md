@@ -43,7 +43,7 @@ The Bauhaus is one of the most influential movements in the history of design. W
 
 &nbsp;
 
-Contemporary adaptations of the movement’s design principals further embrace the minimalistic geometry explored by the school, creating bold designs that incorporate basic shapes and limited color palettes. They embody a continuation of such utilitarian view on design, stripping away the inessentials.
+Contemporary adaptations of the movement’s design principals further embrace the minimalistic geometry explored by the school, creating bold patterns made from the most basic shapes. They embody a continuation of the utilitarian view on design, stripping away the inessentials. The usage extending into letterform logos is now so common that the two softwares I used for this project, Figma and Glyphs, both happen to incorporate the style in discussion.
 
 &nbsp;
 
