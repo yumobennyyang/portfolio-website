@@ -461,7 +461,7 @@ export default function PortfolioIndex() {
 
     function updateScrollSpeed() {
       if (window.innerWidth >= 768) {
-        scrollSpeed = 7;
+        scrollSpeed = 1;
       } else {
         scrollSpeed = 1;
       }
