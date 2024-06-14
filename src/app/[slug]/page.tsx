@@ -151,6 +151,24 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                     </div>
                 )}
 
+                {item.media && (
+                    <div className="flex-1 pb-4 ">
+                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
+                        <ul>
+                            {item?.media?.map((media, index) => (
+                                <li key={index}>{media}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
+                {item.dimensions && (
+                    <div className="flex-1 pb-4 ">
+                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
+                        <div> {item?.dimensions}</div>
+                    </div>
+                )}
+
             </div>
 
             {item.textarea && (

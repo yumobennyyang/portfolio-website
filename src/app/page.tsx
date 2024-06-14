@@ -15,7 +15,7 @@ import { allPortfolios } from 'contentlayer/generated';
 import Image from 'next/image'
 import localFont from 'next/font/local'
 
-const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Book.otf' })
+const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
@@ -35,6 +35,8 @@ export default function PortfolioIndex() {
   const interfaces = allPortfolios.slice(0, 3);
 
   const graphics = allPortfolios.slice(3, 6);
+
+  const crafts = allPortfolios.slice(6, 9);
 
   let scrollSpeed = 1;
 
@@ -227,7 +229,7 @@ export default function PortfolioIndex() {
 
               // start: 450 + window.innerHeight * (scrollSpeed - 1),
               // end: 650 + window.innerHeight * (scrollSpeed - 1),
-              start: window.innerHeight - 300 ,
+              start: window.innerHeight - 300,
               end: window.innerHeight - 150,
               scrub: true,
               markers: false
@@ -606,22 +608,24 @@ export default function PortfolioIndex() {
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
-              <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.</span>
+              <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
+              <br></br><br></br>•••
+              <br></br><br></br>Benny coded this website.</span>
           </div>
 
         </div>
       </div>
 
 
-      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-500  text-sm ${satoshi.className}`}>
+      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-50  text-sm ${satoshi.className}`}>
 
         <a
-          className={` justify-between hover:text-neutral-50`}
+          className={` justify-between `}
           href="https://instagram.com/yangyart"
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
+          <p className=" justify-center pl-4 pr-2 py-2  w-auto hover:underline underline-offset-4 decoration-0">
             ↗ art
             {/* <span>↗</span>*/}
           </p>
@@ -629,11 +633,11 @@ export default function PortfolioIndex() {
         </a>
 
         <a
-          className={` justify-between hover:text-neutral-50`}
+          className={` justify-between`}
           href="https://read.cv/yumobennyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
+          <p className=" justify-center pr-4 pl-2 py-2  w-auto hover:underline underline-offset-4 decoration-0">
             ↗ cv
           </p>
 
@@ -644,7 +648,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
+        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 fixed w-full leading-6 justify-between text-neutral-950 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
           <div className="scrolldown opacity-30 !scale-75"></div>
@@ -658,7 +662,7 @@ export default function PortfolioIndex() {
 
 
       <div
-        className={` revealText pb-16 sm:pb-0 sm:m-4 -z-10 left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-neutral-500  text-sm ${satoshi.className}`}
+        className={` revealText pb-16 sm:pb-0 sm:m-4 -z-10 left-0 bottom-0 fixed sm:w-1/2 w-full leading-6 justify-between text-neutral-950  text-sm ${satoshi.className}`}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
@@ -670,19 +674,19 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}
+        className={`revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 fixed sm:w-auto w-full leading-6 justify-between text-neutral-950 text-sm ${satoshi.className} `}
       >
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>I&apos;m on </span>
-          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Twitter</a>
+          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Twitter</a>
           <span> </span>
-          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Linkedin</a>
+          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4  decoration-0">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">Cosmos</a>
+          <a href="https://cosmos.so/yangyumo" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
-          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 hover:text-neutral-950 ">yy3204@columbia.edu</a>
+          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto hover:underline underline-offset-4 decoration-0">yy3204@columbia.edu</a>
         </p>
       </div>
 
@@ -700,14 +704,34 @@ export default function PortfolioIndex() {
         </div>
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-center justify-between ${text.className}`}>
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pt-20 !pointer-events-auto ">
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-6 pb-32 sm:pb-20 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
+
+          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
 
             {interfaces.map((item, index) => <PortfolioCard key={index} item={item} />)}
 
-            {graphics.map((item, index) => <PortfolioCard key={index} item={item} />)}
+
           </div>
+
+          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>COMPOSITIONS</div>
+
+          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
+
+            {graphics.map((item, index) => <PortfolioCard key={index} item={item} />)}
+
+          </div>
+
+          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>CRAFTS</div>
+
+          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 !pointer-events-auto ">
+
+            {crafts.map((item, index) => <PortfolioCard key={index} item={item} />)}
+
+          </div>
+
+
         </div>
 
 

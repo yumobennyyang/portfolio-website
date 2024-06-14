@@ -1,0 +1,43 @@
+{
+  "title": "Flat Collection",
+  "date": "2023-01-17T00:00:00.000Z",
+  "slug": "paintings",
+  "image": {
+    "src": "/images/portfolio/paint.png",
+    "width": 2000,
+    "height": 2000,
+    "type": "Image",
+    "_raw": {}
+  },
+  "description": "2019 - 2024",
+  "enabled": true,
+  "orderIndex": 8,
+  "preview": {
+    "src": "/images/paintings/paint0.png",
+    "width": 3840,
+    "height": 2160,
+    "type": "Image",
+    "_raw": {}
+  },
+  "overview": "Two dimensional artwork made throuhgout the years.",
+  "media": [
+    "Oil",
+    "Pastel",
+    "Charcoal",
+    "Ink"
+  ],
+  "dimensions": "22\"x 22\"x 60\"",
+  "body": {
+    "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\n&nbsp;\n\n\n",
+    "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\">\n </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\n </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\n </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\n </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\n </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\n </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\n </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\n </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\n </p>"
+  },
+  "_id": "portfolio/paintings.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/paintings.md",
+    "sourceFileName": "paintings.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/paintings"
+  },
+  "type": "Portfolio"
+}
