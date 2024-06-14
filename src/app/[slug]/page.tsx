@@ -8,6 +8,7 @@ const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Book.otf' });
 const text = localFont({ src: '../../fonts/PPNeueMontreal-Variable.ttf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
+const boldd = localFont({ src: '../../fonts/PPNeueMontrealMono-Bold.otf' });
 
 interface Params {
     params: {
@@ -37,7 +38,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
     return <div className={`leading-6 text-neutral-900  tracking-wide ${text.className}`}>
 
 
-        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center opacity-50 invert">
+        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center  mix-blend-difference">
             <Image
                 src="/images/portfolio/logo.gif"
                 alt="Yang Logo"
@@ -101,7 +102,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
         <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
-            <div className={` z-30 py-8 text-xl font-black`}>{item?.title}</div>
+            <div className={` z-30 py-8 text-xl  font-medium`}>{item?.title}</div>
             <div className={` opacity-50 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
             <div className="pb-4"> {item?.overview}</div>
 
@@ -153,7 +154,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             </div>
 
             {item.textarea && (
-                <div contentEditable className={`leading-[49px] text-5xl rounded-sm px-3 py-2 pb-4 bg-[#EADFCD] text-[#D93A34] textareaElement ${neoTetra.className}`}>Try here...</div>
+                <div contentEditable className={`leading-[49px] text-5xl rounded-sm px-3 py-2 pb-4 bg-[#F0F0F0] text-[#D93A34] border !border-white layer-shadow textareaElement ${neoTetra.className}`}>Try here...</div>
             )}
 
 
@@ -163,7 +164,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-            <div className={`markDown pb-24 !tracking-wider [&_*] `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+            <div className={`markDown pb-24 !tracking-wider [&_*]:rounded  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
 
 
 
@@ -190,7 +191,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <div className="iframe-container rounded-md ">
+                        <div className="iframe-container rounded layer-shadow">
                             <iframe src="https://yumobennyyang.github.io/gidd-blob/" width="100%" height="375px" className="iframe  " />
                         </div>
 
@@ -201,7 +202,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
 
 
-                        <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+                        <div className="" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
 
 
@@ -219,7 +220,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <div className="iframe-container rounded-md ">
+                        <div className="iframe-container rounded layer-shadow">
                             <iframe src="https://hover-lighting.vercel.app/" className="iframe  " />
                         </div>
 
@@ -229,7 +230,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
 
 
-                        <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+                        <div className="" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
 
 
@@ -251,7 +252,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <div id="hospital-container" className="iframe-container rounded-md ">
+                        <div id="hospital-container" className="iframe-container rounded layer-shadow">
                             <iframe id="hospital" src="https://stgodsmemorialhospital.vercel.app/" className="iframe  " />
                         </div>
 
@@ -261,7 +262,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
 
 
-                        <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+                        <div className="" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
 
 
@@ -279,7 +280,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <div className="w-full h-auto rounded-md  overflow-hidden border border-white/10">
+                        <div className="w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50">
                             <video
                                 playsInline
                                 muted
@@ -298,7 +299,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <br></br>
 
-                        <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+                        <div className="" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
 
 
@@ -315,7 +316,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                        <div className="w-full h-auto rounded-md overflow-hidden border border-white/10">
+                        <div className="w-full h-auto rounded overflow-hidden border border-white layer-shadow">
                             <img src="/images/playground/playground2.png " alt="" />
                         </div>
 
@@ -324,7 +325,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <br></br>
                         <br></br>
 
-                        <div className="opacity-20" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+                        <div className="" dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
                     </div>
 
                 </div>

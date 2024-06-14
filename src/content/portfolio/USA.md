@@ -11,7 +11,7 @@ preview:
 
 date: 2023-01-17
 enabled: true
-title: The United States of Achromaticism
+title: United States of Achromaticism
 slug: usa
 description: Photoshop Project
 orderIndex: 6
