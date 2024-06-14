@@ -48,7 +48,7 @@
     },
     "description": "Typeface Design",
     "enabled": true,
-    "orderIndex": 1,
+    "orderIndex": 4,
     "preview": {
       "src": "/images/neo-tetra/neotetra1.png",
       "width": 3840,
@@ -181,7 +181,7 @@
     },
     "description": "Interaction Design Internship",
     "enabled": true,
-    "orderIndex": 4,
+    "orderIndex": 1,
     "preview": {
       "src": "/images/tencent/tencent1.png",
       "width": 3840,
