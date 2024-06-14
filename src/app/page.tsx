@@ -32,6 +32,9 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
+  const interfaces = allPortfolios.slice(0, 3);
+
+  const graphics = allPortfolios.slice(3, 6);
 
   let scrollSpeed = 1;
 
@@ -72,7 +75,7 @@ export default function PortfolioIndex() {
             const easedProgress = gsap.parseEase("power4.in")(progress);
             const linearProgress = gsap.parseEase("power1.in")(progress);
             const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
-            const currentHue = gsap.utils.interpolate(0, -360, linearProgress);
+            const currentHue = gsap.utils.interpolate(0, 0, linearProgress);
             (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
           }
         }
@@ -95,7 +98,7 @@ export default function PortfolioIndex() {
           trigger: char,
           start: 0,
           // end: 300 + window.innerHeight * (scrollSpeed - 1),
-          end: window.innerHeight - 300,
+          end: window.innerHeight - 400,
           scrub: true,
           markers: false
         },
@@ -127,7 +130,7 @@ export default function PortfolioIndex() {
             trigger: element,
             // start: 450 + window.innerHeight * (scrollSpeed - 1),
             // end: window.innerHeight * scrollSpeed,
-            start: window.innerHeight - 300,
+            start: window.innerHeight - 400,
             end: window.innerHeight,
             scrub: true,
             markers: false
@@ -360,10 +363,12 @@ export default function PortfolioIndex() {
       // Create the GSAP animation with ScrollTrigger
       gsap.fromTo(element,
         {
-          filter: "blur(1200px)",
+          filter: "blur(1200px) ",
+          opacity: 0,
         },
         {
-          filter: "blur(0px)",
+          filter: "blur(0px) ",
+          opacity: 1,
           scrollTrigger: {
             trigger: element,
             // start: 650 + window.innerHeight * (scrollSpeed - 1),  // Starts when the top of the viewport hits the top of the element
@@ -597,10 +602,10 @@ export default function PortfolioIndex() {
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
-            <span id="intro" className="split-type text1">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
+            <span id="intro" className="split-type">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type text2">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
+            <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well...
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.</span>
           </div>
 
@@ -699,7 +704,9 @@ export default function PortfolioIndex() {
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pt-20 !pointer-events-auto ">
 
 
-            {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
+            {interfaces.map((item, index) => <PortfolioCard key={index} item={item} />)}
+
+            {graphics.map((item, index) => <PortfolioCard key={index} item={item} />)}
           </div>
         </div>
 
