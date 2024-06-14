@@ -8,5 +8,6 @@ import portfolio__sleepMd from './portfolio__sleep.md.json' assert { type: 'json
 import portfolio__specMobileMd from './portfolio__spec-mobile.md.json' assert { type: 'json' }
 import portfolio__tencentMd from './portfolio__tencent.md.json' assert { type: 'json' }
 import portfolio__valorantMd from './portfolio__valorant.md.json' assert { type: 'json' }
+import portfolio__headsMd from './portfolio__heads.md.json' assert { type: 'json' }
 
-export const allPortfolios = [portfolio__usaMd, portfolio__neoTetraMd, portfolio__paintingsMd, portfolio__playgroundMd, portfolio__sleepMd, portfolio__specMobileMd, portfolio__tencentMd, portfolio__valorantMd]
+export const allPortfolios = [portfolio__usaMd, portfolio__neoTetraMd, portfolio__paintingsMd, portfolio__playgroundMd, portfolio__sleepMd, portfolio__specMobileMd, portfolio__tencentMd, portfolio__valorantMd, portfolio__headsMd]

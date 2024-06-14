@@ -19,7 +19,6 @@ orderIndex: 8
 overview: Two dimensional artwork made throuhgout the years.
 
 media: [Oil, Pastel, Charcoal, Ink]
-dimensions: 22"x 22"x 60"
 
 ---
 
