@@ -51,16 +51,16 @@ However, a quick scan of the CDS website on mobile phones yields many problems. 
 
 Visual Issues: 
 
-* &nbsp;&nbsp; ∟ Misaligned headers
-* &nbsp;&nbsp; ∟ Messy visual hierarchy
-* &nbsp;&nbsp; ∟ Overabundance of fonts
+* • Misaligned headers
+* • Messy visual hierarchy
+* • Overabundance of fonts
 
 &nbsp;
 
 Interactive Issues: 
 
-* &nbsp;&nbsp; ∟ Tiny clickable elements
-* &nbsp;&nbsp; ∟ Frequently used navigation button placed at a hard-to-reach corner
+* • Tiny clickable elements
+* • Frequently used navigation button placed at a hard-to-reach corner
 
 &nbsp;
 
@@ -80,24 +80,24 @@ Thus, the product team at Spectator, for which I serve as Head Product Designer,
 
 
 User Interaction
-  * &nbsp;&nbsp; ∟ Easier to access
-  * &nbsp;&nbsp; ∟ Easier to browse
-  * &nbsp;&nbsp; ∟ Easier to share
+  * • Easier to access
+  * • Easier to browse
+  * • Easier to share
 
 &nbsp;
 
 Expanded Functionalities
-  * &nbsp;&nbsp; ∟ Story-telling through more specific sections and subsections
-  * &nbsp;&nbsp; ∟ Tighter integration between print and mobile formats
-  * &nbsp;&nbsp; ∟ Customizable notifications System
-  * &nbsp;&nbsp; ∟ Personalization of feed
-  * &nbsp;&nbsp; ∟ Offline Reading
+  * • Story-telling through more specific sections and subsections
+  * • Tighter integration between print and mobile formats
+  * • Customizable notifications System
+  * • Personalization of feed
+  * • Offline Reading
 
 &nbsp;
 
 Potential Impact
-  * &nbsp;&nbsp; ∟ Increased user activity (people on apps spend more time)
-  * &nbsp;&nbsp; ∟ Increased brand influence & mobile presence
+  * • Increased user activity (people on apps spend more time)
+  * • Increased brand influence & mobile presence
 
 &nbsp;
 
@@ -116,8 +116,8 @@ Do people want a mobile app?
 &nbsp;
 
 We send out surveys with discreet and explicit questions about news consumptions
-  * &nbsp;&nbsp; ∟ To Spectator Staff (they spend half their life on the spectator website and have a full understanding of the site down to its tiniest problems)
-  * &nbsp;&nbsp; ∟ To other Columbia undergraduate students (our main target audience, who can provide good general feedback for the current method of viewing Spectator news)
+  * • To Spectator Staff (they spend half their life on the spectator website and have a full understanding of the site down to its tiniest problems)
+  * • To other Columbia undergraduate students (our main target audience, who can provide good general feedback for the current method of viewing Spectator news)
 
 &nbsp;
 
@@ -149,11 +149,11 @@ We looked into other successful news delivering apps to gain a better understand
 
 Together with the results we received from surveys, we now have a good understanding of what features to prioritize for the 1.0 version of our MVP, all to construct a personalized and customizable experience for the users:
 
-* &nbsp;&nbsp; ∟ Restructuring the navigation, including the process of section-subsection exploration and the placement of image & text content.
-* &nbsp;&nbsp; ∟ Cutting down the number of fonts (EB Garamond, Bitter, Open Sans, Merriweather,  Lato, Playfair Display, Neue Haas Unica)
-* &nbsp;&nbsp; ∟ Designing easy sharing and saving functionalities
-* &nbsp;&nbsp; ∟ Categorizing articles by tags and subtags
-* &nbsp;&nbsp; ∟ Adding in accessibility settings
+* • Restructuring the navigation, including the process of section-subsection exploration and the placement of image & text content.
+* • Cutting down the number of fonts (EB Garamond, Bitter, Open Sans, Merriweather,  Lato, Playfair Display, Neue Haas Unica)
+* • Designing easy sharing and saving functionalities
+* • Categorizing articles by tags and subtags
+* • Adding in accessibility settings
 
 &nbsp;
 
@@ -216,8 +216,8 @@ Our UX went through multiple iterations during the mid fidelity prototyping stag
 &nbsp;
 
 A proposal for a top-scroll bar for sub-section navigation was rejected because:
-* &nbsp;&nbsp; ∟ Subsections placed later in the scroll sequence are disadvantaged in terms of receiving views.
-* &nbsp;&nbsp; ∟ The scroll bar consists of small texts on top of the phone screen that can be hard to reach.
+* • Subsections placed later in the scroll sequence are disadvantaged in terms of receiving views.
+* • The scroll bar consists of small texts on top of the phone screen that can be hard to reach.
 
 &nbsp;
 
@@ -226,8 +226,8 @@ A proposal for a top-scroll bar for sub-section navigation was rejected because:
 &nbsp;
 
 An inital UI of black navigation bars and previews with images on the left was replaced because: 
-* &nbsp;&nbsp; ∟ The black/white contrast makes the screen feel confined and restricted
-* &nbsp;&nbsp; ∟ The image alignment creates a rift in the user’s F-shaped reading patterns.
+* • The black/white contrast makes the screen feel confined and restricted
+* • The image alignment creates a rift in the user’s F-shaped reading patterns.
 
 &nbsp;
 

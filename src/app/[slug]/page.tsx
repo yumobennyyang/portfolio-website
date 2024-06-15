@@ -103,7 +103,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
             <div className={` z-30 py-8 text-xl  font-medium`}>{item?.title}</div>
-            <div className={` opacity-50 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
+            <div className={` text-neutral-500 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
             <div className="pb-4"> {item?.overview}</div>
 
 
@@ -112,7 +112,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                 {item.role && (
                     <div className="flex-1 pb-4">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>ROLE</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>ROLE</div>
                         <ul>
                             {item?.role?.map((role, index) => (
                                 <li key={index}>{role}</li>
@@ -124,7 +124,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                 {item.tools && (
                     <div className="flex-1 pb-4 ">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>TOOLS</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>TOOLS</div>
                         <ul>
                             {item?.tools?.map((tools, index) => (
                                 <li key={index}>{tools}</li>
@@ -135,14 +135,14 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                 {item.duration && (
                     <div className="flex-1 pb-4 ">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>DURATION</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>DURATION</div>
                         <div> {item?.duration}</div>
                     </div>
                 )}
 
                 {item.team && (
                     <div className="flex-1 pb-4 ">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>TEAM</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>TEAM</div>
                         <ul>
                             {item?.team?.map((team, index) => (
                                 <li key={index}>{team}</li>
@@ -153,7 +153,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                 {item.media && (
                     <div className="flex-1 pb-4 ">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
                         <ul>
                             {item?.media?.map((media, index) => (
                                 <li key={index}>{media}</li>
@@ -164,7 +164,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                 {item.dimensions && (
                     <div className="flex-1 pb-4 ">
-                        <div className={` opacity-50 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
+                        <div className={` text-neutral-500 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
                         <div> {item?.dimensions}</div>
                     </div>
                 )}
@@ -354,7 +354,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 <div className={`hideScrollText items-center text-center z-10 bottom-0 w-full pb-6 leading-6 justify-between text-neutral-500 text-sm ${satoshi.className}`}>
                     <div className="justify-center ml-auto  pointer-events-auto ">
                         <p>
-                            <a href={`/${nextItem.slug}`} className="underline underline-offset-4 hover:text-neutral-950">next project ({nextItem.description})</a>
+                            <a href={`/${nextItem.slug}`} className="underline underline-offset-4 hover:text-neutral-950">next project ({nextItem.title} - {nextItem.description})</a>
                         </p>
                     </div>
                 </div>

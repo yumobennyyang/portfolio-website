@@ -677,7 +677,7 @@ export default function PortfolioIndex() {
           <span>Built with Next.js on Vercel.</span>
           <span className="flashing">_</span>
           <br></br>
-          <span>©yang Last updated: 2024-06-02</span>
+          <span>© 2024 Yang Last updated 06-02</span>
         </p>
       </div>
 

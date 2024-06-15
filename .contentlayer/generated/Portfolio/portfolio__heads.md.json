@@ -20,12 +20,9 @@
     "_raw": {}
   },
   "overview": "The manipulation of a foam fead in the form of sculpture.",
-  "media": [
-    "Found Objects"
-  ],
   "body": {
-    "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n\n",
-    "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\n </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\n </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\"></p>"
+    "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n",
+    "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>"
   },
   "_id": "portfolio/heads.md",
   "_raw": {
