@@ -201,12 +201,13 @@ export default function PortfolioIndex() {
       const mainText1 = document.querySelector('#mainText');
       const portfolioCard = document.querySelector('#portfolioCard');
       const elementHeight = (mainText1 as HTMLElement).clientHeight;
+      console.log(elementHeight);
 
 
       if (mainText1 && portfolioCard) {
 
         const changeX = 56 / portfolioCard.clientWidth;
-        const changeY = 56 / elementHeight;
+        const changeY = 56 / mainText1.clientHeight;
 
 
 
