@@ -214,14 +214,16 @@ export default function PortfolioIndex() {
         gsap.fromTo(element,
           {
 
-            scale: 1,
+            scaleX: 1,
+            scaleY: 1,
             top: 0,
             filter: "blur(0px)",
 
           },
           {
 
-            scale: `${changeX},${changeY}`,
+            scaleX: changeX,
+            scaleY: changeY * window.innerHeight / elementHeight / 3,
             top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
             filter: "blur(0px)",
             scrollTrigger: {
