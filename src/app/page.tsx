@@ -224,7 +224,8 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50%)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
