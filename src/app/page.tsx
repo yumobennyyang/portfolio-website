@@ -252,8 +252,10 @@ export default function PortfolioIndex() {
               trigger: element,
               // start: 650 + window.innerHeight * (scrollSpeed - 1),
               // end: window.innerHeight * scrollSpeed,
-              start: window.innerHeight - 150,
-              end: window.innerHeight,
+              // start: window.innerHeight - 150,
+              // end: window.innerHeight,
+              start: window.innerHeight - 175,
+              end: window.innerHeight - 150,
               scrub: true,
               markers: false
             }
