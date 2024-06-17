@@ -509,7 +509,6 @@ export default function PortfolioIndex() {
 
 
     function handleResize() {
-      interaction();
       ScrollTrigger.refresh();
 
     }
