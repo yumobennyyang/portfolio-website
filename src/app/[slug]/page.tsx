@@ -201,7 +201,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                         <span className=" font-bold">Three.js</span>
                         <br></br>
 
-                        <span className="opacity-80">Gidd is an interactive blob who has a mysterious connection to your cursor. </span>
+                        <span className="opacity-80">Gidd is an interactive blob with an inexplicable connection to your cursor. </span>
                         <br></br>
                         <span className="opacity-50">Try moving your cursor around Gidd.</span>
                         <br></br>
