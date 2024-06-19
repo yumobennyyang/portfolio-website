@@ -60,30 +60,30 @@ export default function PortfolioIndex() {
   function interaction() {
 
 
-    const saturateVideo = document.querySelectorAll('.saturateVideo')
+    // const saturateVideo = document.querySelectorAll('.saturateVideo')
 
-    saturateVideo.forEach((element) => {
-      gsap.to(element as HTMLElement, {
-        scrollTrigger: {
-          trigger: element,
-          start: 0,
-          // end: window.innerHeight * scrollSpeed,
-          end: window.innerHeight,
-          scrub: true,
-          markers: false,
-          onUpdate: self => {
-            // Calculate the current saturation based on the scroll progress
-            const progress = self.progress;
-            // Apply an easing function to make the progress non-linear
-            const easedProgress = gsap.parseEase("power4.in")(progress);
-            const linearProgress = gsap.parseEase("power1.in")(progress);
-            const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
-            const currentHue = gsap.utils.interpolate(0, 0, linearProgress);
-            (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
-          }
-        }
-      });
-    });
+    // saturateVideo.forEach((element) => {
+    //   gsap.to(element as HTMLElement, {
+    //     scrollTrigger: {
+    //       trigger: element,
+    //       start: 0,
+    //       // end: window.innerHeight * scrollSpeed,
+    //       end: window.innerHeight,
+    //       scrub: true,
+    //       markers: false,
+    //       onUpdate: self => {
+    //         // Calculate the current saturation based on the scroll progress
+    //         const progress = self.progress;
+    //         // Apply an easing function to make the progress non-linear
+    //         const easedProgress = gsap.parseEase("power4.in")(progress);
+    //         const linearProgress = gsap.parseEase("power1.in")(progress);
+    //         const currentSaturation = gsap.utils.interpolate(1, 1, easedProgress);
+    //         const currentHue = gsap.utils.interpolate(0, 0, linearProgress);
+    //         (element as HTMLElement).style.filter = `saturate(${currentSaturation}) hue-rotate(${currentHue}deg)`;
+    //       }
+    //     }
+    //   });
+    // });
 
 
 
@@ -557,7 +557,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div className=" -z-50 fixed h-screen  pointer-events-none  w-screen items-center  saturateVideo bg-white">
+      <div className="{saturateVideo} -z-50 fixed h-screen  pointer-events-none  w-screen items-center   bg-white">
 
         <video
           autoPlay
@@ -636,7 +636,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.1 hover:decoration-2">
+          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
             ↗ art
             {/* <span>↗</span>*/}
           </p>
@@ -648,7 +648,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-0 hover:decoration-2">
+          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
             ↗ cv
           </p>
 
@@ -690,14 +690,14 @@ export default function PortfolioIndex() {
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>I&apos;m on </span>
-          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Twitter</a>
+          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Twitter</a>
           <span> </span>
-          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Linkedin</a>
+          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Cosmos</a>
+          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
-          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">yy3204@columbia.edu</a>
+          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">yy3204@columbia.edu</a>
         </p>
       </div>
 
