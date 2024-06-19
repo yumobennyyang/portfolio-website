@@ -1,8 +1,8 @@
 ---
-image:
-  src: /images/portfolio/valorant.png
-  width: 2000
-  height: 2000
+video:
+  src: /images/portfolio/valorant.mp4
+  width: 1374
+  height: 1374
 
 preview:
   src: /images/valorant/valorant1.png
