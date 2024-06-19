@@ -224,8 +224,8 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50px)',
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px + 12px)',
+            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50px)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
@@ -253,10 +253,10 @@ export default function PortfolioIndex() {
               trigger: element,
               // start: 650 + window.innerHeight * (scrollSpeed - 1),
               // end: window.innerHeight * scrollSpeed,
-              // start: window.innerHeight - 150,
-              // end: window.innerHeight,
-              start: window.innerHeight - 175,
-              end: window.innerHeight - 150,
+               start: window.innerHeight - 150,
+               end: window.innerHeight,
+              //start: window.innerHeight - 175,
+              //end: window.innerHeight - 150,
               scrub: true,
               markers: false
             }
@@ -612,7 +612,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}`}
+          className={`  hideText left-1/2 -translate-x-1/2 fixed leading-6 justify-between pt-20 text-neutral-50 text-sm ${benny.className}`}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
