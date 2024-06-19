@@ -2,11 +2,11 @@
   "title": "Valorant",
   "date": "2023-01-17T00:00:00.000Z",
   "slug": "valorant",
-  "image": {
-    "src": "/images/portfolio/valorant.png",
-    "width": 2000,
-    "height": 2000,
-    "type": "Image",
+  "video": {
+    "src": "/images/portfolio/valorant.mp4",
+    "width": 1374,
+    "height": 1374,
+    "type": "Video",
     "_raw": {}
   },
   "description": "Promotional Graphics",
