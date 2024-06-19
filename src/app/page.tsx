@@ -224,8 +224,8 @@ export default function PortfolioIndex() {
 
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px + 12px)',
-            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50px)',
+            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
+            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50px)',
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
@@ -253,10 +253,10 @@ export default function PortfolioIndex() {
               trigger: element,
               // start: 650 + window.innerHeight * (scrollSpeed - 1),
               // end: window.innerHeight * scrollSpeed,
-               start: window.innerHeight - 150,
-               end: window.innerHeight,
-              //start: window.innerHeight - 175,
-              //end: window.innerHeight - 150,
+              // start: window.innerHeight - 150,
+              // end: window.innerHeight,
+              start: window.innerHeight - 175,
+              end: window.innerHeight - 150,
               scrub: true,
               markers: false
             }
@@ -612,7 +612,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  hideText left-1/2 -translate-x-1/2 fixed leading-6 justify-between pt-20 text-neutral-50 text-sm ${benny.className}`}
+          className={`  hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}`}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
@@ -636,7 +636,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">
+          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.1 hover:decoration-2">
             ↗ art
             {/* <span>↗</span>*/}
           </p>
@@ -648,7 +648,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">
+          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-0 hover:decoration-2">
             ↗ cv
           </p>
 
@@ -690,14 +690,14 @@ export default function PortfolioIndex() {
 
         <p className=" justify-center px-4 py-2  w-auto ">
           <span>I&apos;m on </span>
-          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">Twitter</a>
+          <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Twitter</a>
           <span> </span>
-          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">Linkedin</a>
+          <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Linkedin</a>
           <span> </span>
-          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">Cosmos</a>
+          <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">Cosmos</a>
           <br></br>
           <span>Let&apos;s chat </span>
-          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.1px] hover:decoration-2">yy3204@columbia.edu</a>
+          <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-0 hover:decoration-2">yy3204@columbia.edu</a>
         </p>
       </div>
 
