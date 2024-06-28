@@ -11,11 +11,11 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
     return < Link href={"/" + item.slug}>
 
-        <div className=" w-full ">
+        <div className=" w-full backdrop-blur-2xl">
 
 
 
-            <div id="portfolioCard" className=" bg-white/10 backdrop-blur-lg hover:bg-white/50 transition duration-200 w-full flex-col relative flex rounded-sm  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/50 ">
+            <div id="portfolioCard" className=" bg-white/10  hover:bg-white/50 transition duration-200 w-full flex-col relative flex rounded-sm  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/50 ">
 
 
 
@@ -44,8 +44,8 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                 )}
 
                 <div className="z-20 px-4 py-3 relative w-full flex-row">
-                    <div className="text-neutral-900 w-full font-medium truncate">{item.title}</div>
-                    <div className="text-neutral-400 w-full font-medium truncate ">{item.description}</div>
+                    <div className="text-zinc-900 w-full font-medium truncate">{item.title}</div>
+                    <div className="text-zinc-400 w-full font-medium truncate ">{item.description}</div>
 
 
                 </div>

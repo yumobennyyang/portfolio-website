@@ -19,7 +19,7 @@ const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
-const text = localFont({ src: '../fonts/PPNeueMontreal-Book.otf' })
+const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
 
 
 
