@@ -7,7 +7,7 @@ import "../globals.css";
 import { motion } from 'framer-motion';
 
 const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Book.otf' });
-const text = localFont({ src: '../../fonts/PPNeueMontreal-book.otf' });
+const text = localFont({ src: '../../fonts/PPNeueMontreal-Book.otf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
 const boldd = localFont({ src: '../../fonts/PPNeueMontrealMono-Bold.otf' });
