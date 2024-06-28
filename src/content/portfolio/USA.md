@@ -26,7 +26,7 @@ overview: A look into the makeup of social and political powers in America. (res
 
 &nbsp;
 
-**Timeline** 
+TIMELINE
 
 &nbsp;
 
@@ -51,7 +51,7 @@ Both results are displayed.
 
 &nbsp;
 
-**Spiritual Power** 
+SPIRITUAL POWER
 
 &nbsp;
 
@@ -111,7 +111,7 @@ David Lane - Social-Conservative Activist
 
 &nbsp;
 
-**Monetary Power** 
+MONETARY POWER
 
 &nbsp;
 
@@ -171,7 +171,7 @@ John Franklin Mars - Mars
 
 &nbsp;
 
-**Military Power** 
+MILITARY POWER
 
 &nbsp;
 
@@ -231,7 +231,7 @@ Charles Ray - Vice Commandant of the Coast Guard
 
 &nbsp;
 
-**Legislative Power** 
+LEGISLATIVE POWER
 
 &nbsp;
 
@@ -291,7 +291,7 @@ Lisa Murkowski - since December 20, 2002
 
 &nbsp;
 
-**Educational Power** 
+EDUCATIONAL POWER
 
 &nbsp;
 

@@ -31,7 +31,7 @@ tools: [Figma, Glyphs]
 
 &nbsp;
 
-**Background** 
+BACKGROUND
 
 &nbsp;
 
@@ -57,7 +57,7 @@ Contemporary adaptations of the movement’s design principals further embrace t
 
 &nbsp;
 
-**Initial Sketches**
+INITIAL SKETCHES
 
 &nbsp;
 
@@ -76,7 +76,7 @@ To stay true to Bauhaus philosophy, I want to make the typeface monospaced, with
 
 &nbsp;
 
-**Digital Construction**
+DIGITAL RECONSTRUCTION
 
 &nbsp;
 
@@ -88,7 +88,7 @@ On the computer I started to experiment with two different construction guidelin
 
 &nbsp;
 
-The result came out as follows. The faintlier makred ones are questionable, but I was generally happy with the legibility of most forms.
+The result came out as follows. The faintlier marked ones are questionable, but I was generally happy with the legibility of most forms.
 
 &nbsp;
 
@@ -146,7 +146,7 @@ These and many more were all attempts to make the perfect F:
 
 &nbsp;
 
-**Final Glyph Catalog**
+FINAL GLYPH CATALOG
 
 &nbsp;
 
@@ -172,7 +172,7 @@ On the other hand, period, grave, asterisk, and asciicircum as circles in four p
 
 &nbsp;
 
-**Gallery**
+GALLERY
 
 &nbsp;
 

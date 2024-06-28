@@ -2,30 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    
+  --background-end-rgb: 230, 235, 238;
 }
 
 @layer utilities {
@@ -35,18 +16,35 @@ body {
 }
 
 
+/*
 
 
 * {
   cursor: url("/images/cursors/cursor.svg"), auto !important;
 }
-
 */
+
+
+
+.vercelBackground {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))),
+    rgb(var(--background-start-rgb));
+}
+
+hr,
+::before,
+::after {
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 1;
+
+}
 
 
 html {
   scroll-behavior: smooth;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 }
 
 #scrollSection {
@@ -54,12 +52,11 @@ html {
   /* Default for smaller screens */
 }
 
-/* @media (min-width: 768px) {
-  #scrollSection {
-    height: calc(100vh * 7); */
-    /* For screens with a minimum width of 768px */
-  /* } */
-/* } */
+.markdown p {
+  border: 2px solid #000 !important;
+  /* Adjust the border thickness and color as needed */
+}
+
 
 
 
@@ -189,23 +186,22 @@ html {
 }
 
 
+
 * {
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
 }
 
 *::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
+  /* display: none; */
 }
+
 
 
 
 ::selection {
-  background-color: rgba(0, 0, 0, 20);
-  color: rgb(0,0,0);
+  /* background-color: rgba(0, 0, 0, 20);
+  color: rgb(0, 0, 0); */
 }
 
 
@@ -386,6 +382,18 @@ html {
     0 8px 16px hsl(0deg 0% 0% / 0.03);
 
 }
+
+img {
+
+  box-shadow:
+    0 0.5px 1px hsl(0deg 0% 0% / 0.01),
+    0 1px 2px hsl(0deg 0% 0% / 0.01),
+    0 2px 4px hsl(0deg 0% 0% / 0.01),
+    0 4px 8px hsl(0deg 0% 0% / 0.01),
+    0 8px 16px hsl(0deg 0% 0% / 0.01);
+
+}
+
 
 
 
