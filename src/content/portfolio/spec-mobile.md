@@ -33,7 +33,7 @@ tools: [Figma]
 
 &nbsp;
 
-**Context** 
+CONTEXT
 
 &nbsp;
 
@@ -74,7 +74,7 @@ Thus, the product team at Spectator, for which I serve as Head Product Designer,
 
 &nbsp;
 
-**Oppurtunities for Improvement**
+OPPURTUNITIES FOR IMPROVEMENT
 
 &nbsp;
 
@@ -107,7 +107,7 @@ Potential Impact
 
 &nbsp;
 
-**Demand Analysis**
+DEMAND ANALYSIS
 
 &nbsp;
 
@@ -135,7 +135,7 @@ We also found Existing Research on mobile app demand and trends from American Pr
 
 &nbsp;
 
-**Competitive Landscape**
+COMPETITIVE LANDSCAPE
 
 &nbsp;
 
@@ -163,7 +163,7 @@ Together with the results we received from surveys, we now have a good understan
 
 &nbsp;
 
-**Styles Revamp**
+STYLES REVAMP
 
 &nbsp;
 
@@ -185,7 +185,7 @@ I simplified the palette from the CDS website to the brand color and 5 greys, an
 
 &nbsp;
 
-**Design Library**
+DESIGN LIBRARY
 
 &nbsp;
 
@@ -203,7 +203,7 @@ Visual components for article layouts and a brand new articles navigating intera
 
 &nbsp;
 
-**Alternative Designs**
+ALTERNATIVE DESIGNS
 
 &nbsp;
 
@@ -237,7 +237,7 @@ An inital UI of black navigation bars and previews with images on the left was r
 
 &nbsp;
 
-**Final High Fidelity Prototypes**
+FINAL HIGH FIDELITY PROTOTYPES
 
 &nbsp;
 

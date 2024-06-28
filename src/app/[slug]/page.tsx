@@ -3,9 +3,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
+import "../globals.css";
+import { motion } from 'framer-motion';
 
 const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Book.otf' });
-const text = localFont({ src: '../../fonts/PPNeueMontreal-Variable.ttf' });
+const text = localFont({ src: '../../fonts/PPNeueMontreal-book.otf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
 const boldd = localFont({ src: '../../fonts/PPNeueMontrealMono-Bold.otf' });
@@ -35,8 +37,13 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
     const nextItem = allPortfolios.find((portfolio) => portfolio.orderIndex === currentIndex + 1);
 
 
-    return <div className={`leading-6 text-neutral-900  tracking-wide ${text.className}`}>
+    return <div className={` leading-6 text-black  ${text.className}`}>
 
+        <div className="brightness-95 flex vercelBackground pointer-events-none  -z-40 w-full h-screen fixed">
+
+            <div className="opacity-70 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
+            </div>
+        </div>
 
         <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center  mix-blend-difference">
             <Image
@@ -55,7 +62,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 className={` justify-between hover:text-neutral-50`}
                 href="/#portfolio"
             >
-                <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4">
+                <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
                     return home
                 </p>
 
@@ -72,7 +79,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 href="https://read.cv/bennyyyang"
                 target="_blank"
             >
-                <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4">
+                <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
                     ↗ cv
                 </p>
 
@@ -97,8 +104,8 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-        <div className="w-full !h-1/2 object-contain" >
-            <Image className="w-full px-4 sm:px-8 pt-[104px]" src={item?.preview?.src ?? ''} alt={item?.title} width={item?.preview?.width} height={item?.preview?.height} />
+        <div className="w-full !h-1/2 px-4 sm:px-8 pt-[104px] object-contain" >
+            <Image className="w-full" src={item?.preview?.src ?? ''} alt={item?.title} width={item?.preview?.width} height={item?.preview?.height} />
         </div>
 
         <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
@@ -182,7 +189,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-            <div className={`markDown pb-24 !tracking-wider [&_*]:rounded  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+            <div className={`markDown pb-24 !tracking-wider [&_*]:  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
 
 
 

@@ -28,7 +28,7 @@ tools: [Photoshop, Figma, CSS]
 
 &nbsp;
 
-**Select Old UI Screenshots** 
+SELECT OLD UI SCREENSHOTS
 
 &nbsp;
 
@@ -42,7 +42,7 @@ tools: [Photoshop, Figma, CSS]
 
 &nbsp;
 
-**The Problem** 
+THE PROBLEM
 
 &nbsp;
 
@@ -60,7 +60,7 @@ I was quite surprised to see the site in such bad shape since hundreds of employ
 
 &nbsp;
 
-**UX Restructuring**
+UX RESTRUCTURING
 
 &nbsp;
 
@@ -75,7 +75,7 @@ I was quite surprised to see the site in such bad shape since hundreds of employ
 
 &nbsp;
 
-**New Style Guide**
+NEW STYLE GUIDE
 
 &nbsp;
 
@@ -111,7 +111,7 @@ Visual Identity Development
 
 &nbsp;
 
-**Responsive Layout Grid**
+RESPONSIVE LAYOUT GRID
 
 &nbsp;
 
@@ -126,7 +126,7 @@ Visual Identity Development
 
 &nbsp;
 
-**Home**
+HOME
 
 &nbsp;
 
@@ -140,7 +140,7 @@ Visual Identity Development
 
 &nbsp;
 
-**Table**
+TABLE
 
 &nbsp;
 
@@ -154,7 +154,7 @@ Visual Identity Development
 
 &nbsp;
 
-**Form**
+FORM
 
 &nbsp;
 
@@ -168,7 +168,7 @@ Visual Identity Development
 
 &nbsp;
 
-**Navigation**
+NAVIGATION
 
 &nbsp;
 
