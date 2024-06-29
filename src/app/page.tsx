@@ -719,6 +719,7 @@ export default function PortfolioIndex() {
         </div>
 
 
+
         <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 pb-40 sm:pb-32 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
           <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
 

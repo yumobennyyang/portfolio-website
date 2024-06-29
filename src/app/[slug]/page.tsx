@@ -5,12 +5,14 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import "../globals.css";
 import { motion } from 'framer-motion';
+import Transition from "../template";
 
 const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Book.otf' });
 const text = localFont({ src: '../../fonts/PPNeueMontreal-Book.otf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
 const boldd = localFont({ src: '../../fonts/PPNeueMontrealMono-Bold.otf' });
+
 
 interface Params {
     params: {
@@ -102,11 +104,10 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
 
 
-
-
         <div className="w-full !h-1/2 px-4 sm:px-8 pt-[104px] object-contain" >
             <Image className="w-full" src={item?.preview?.src ?? ''} alt={item?.title} width={item?.preview?.width} height={item?.preview?.height} />
         </div>
+
 
         <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
             <div className={` z-30 py-8 text-xl  font-medium`}>{item?.title}</div>

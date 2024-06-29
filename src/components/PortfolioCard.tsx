@@ -2,6 +2,7 @@ import { Portfolio } from "contentlayer/generated";
 import Image from "next/image";
 import Video from "next/image";
 import Link from "next/link";
+import { AnimatePresence } from "framer-motion";
 
 interface PortfolioCardProps {
     item: Portfolio
@@ -10,6 +11,7 @@ interface PortfolioCardProps {
 export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
     return < Link href={"/" + item.slug}>
+
 
         <div className=" w-full backdrop-blur-2xl">
 
