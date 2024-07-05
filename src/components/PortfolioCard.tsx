@@ -23,7 +23,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
                 {item.image && (
                     <div className=" transition duration-200  overflow-hidden  rounded-t-sm">
-                        <Image className=" object-cover  " src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
+                        <Image className=" object-cover  !border-none !rounded-none" src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
                     </div>
                 )}
 
