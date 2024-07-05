@@ -86,7 +86,26 @@ export default function PortfolioIndex() {
     // });
 
 
+    const revealTypes = document.querySelectorAll('.reveal-type')
 
+    revealTypes.forEach((char) => {
+
+      const text = new SplitType(char as HTMLElement, { types: 'chars' });
+
+      gsap.from(text.chars, {
+        scrollTrigger: {
+          trigger: char,
+          start: 0,
+          // end: 300 + window.innerHeight * (scrollSpeed - 1),
+          end: window.innerHeight - 400,
+          scrub: true,
+          markers: false
+        },
+        opacity: 0,
+        stagger: 100,
+
+      })
+    })
 
 
     const hideScrollText = document.querySelectorAll('.hideScrollText');
