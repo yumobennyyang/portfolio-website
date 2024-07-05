@@ -355,5 +355,17 @@ differenceToNormal.forEach((element) => {
 });
 
 
+const textWidth = document.querySelectorAll('#portfolioCard')
+
+textWidth.forEach((element: Element) => {
+  const width = (element as HTMLElement).clientWidth;
+
+  const changeWidth = document.querySelectorAll('.mainText')
+
+  changeWidth.forEach((element: Element) => {
+    const htmlElement = element as HTMLElement; // Cast 'element' to 'HTMLElement'
+    htmlElement.style.width = width + 'px';
+  })
+})
 
 
