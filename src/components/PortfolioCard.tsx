@@ -13,7 +13,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
     return < Link href={"/" + item.slug}>
 
 
-        <div className=" w-full backdrop-blur-2xl">
+        <div className=" w-full backdrop-blur-2xl tracking-wide">
 
 
 
