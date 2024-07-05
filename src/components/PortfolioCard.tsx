@@ -13,23 +13,23 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
     return < Link href={"/" + item.slug}>
 
 
-        <div className=" w-full backdrop-blur-2xl tracking-wide">
+        <div className=" w-full backdrop-blur-2xl tracking-wide ">
 
 
 
-            <div id="portfolioCard" className=" bg-white/10  hover:bg-white/50 transition duration-200 w-full flex-col relative flex rounded-sm  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/50 ">
+            <div id="portfolioCard" className=" bg-white/10  hover:bg-white/50 transition duration-300 w-full flex-col relative flex rounded-sm  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border !border-white/50 ">
 
 
 
                 {item.image && (
-                    <div className=" transition duration-200  overflow-hidden  rounded-t-sm">
+                    <div className=" transition duration-300  overflow-hidden  rounded-t-sm">
                         <Image className=" object-cover  !border-none !rounded-none" src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
                     </div>
                 )}
 
 
                 {item.video && ( 
-                    <div className="transition duration-200 overflow-hidden  ">
+                    <div className="transition duration-300 overflow-hidden  ">
                         <video
                             playsInline
                             autoPlay
