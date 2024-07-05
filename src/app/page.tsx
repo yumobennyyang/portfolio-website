@@ -89,10 +89,43 @@ export default function PortfolioIndex() {
 
 
 
+    const hideScrollText = document.querySelectorAll('.hideScrollText');
+
+    hideScrollText.forEach((element) => {
+      gsap.fromTo(element,
+        {
+          opacity: 1,
+          transition: 'opacity 0.5s ease-in-out'
+
+        },
+        {
+          opacity: 0,
+          transition: 'opacity 0.5s ease-in-out',
+
+          scrollTrigger: {
+            trigger: element,
+            start: 0,
+            end: 1,
+            scrub: true,
+            markers: false
+          }
+        }
+      );
+    });
 
 
+    const textWidth = document.querySelectorAll('#portfolioCard')
 
+    textWidth.forEach((element: Element) => {
+      const width = (element as HTMLElement).clientWidth;
 
+      const changeWidth = document.querySelectorAll('.mainText')
+
+      changeWidth.forEach((element: Element) => {
+        const htmlElement = element as HTMLElement; // Cast 'element' to 'HTMLElement'
+        htmlElement.style.width = width + 'px';
+      })
+    })
 
 
   }
