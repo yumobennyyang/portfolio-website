@@ -109,7 +109,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
 
-        <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wider ">
+        <div className="mx-auto max-w-3xl px-4 sm:px-8 tracking-wide ">
             <div className={` z-30 py-8 text-xl  font-medium`}>{item?.title}</div>
             <div className={` text-neutral-500 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
             <div className="pb-4"> {item?.overview}</div>
@@ -190,7 +190,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-            <div className={`markDown pb-24 !tracking-wider [&_*]:  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+            <div className={`markDown pb-24 !tracking-wide [&_*]:  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
 
 
 
