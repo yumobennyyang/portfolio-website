@@ -1,5 +1,7 @@
+'use client';
+
 import { Portfolio, allPortfolios } from "contentlayer/generated";
-import { notFound } from "next/navigation";
+import { notFound, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
@@ -20,11 +22,40 @@ interface Params {
     }
 }
 
+
+
 const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
+    const currentPath = usePathname();
 
+    const navItems = [
+        {
+            category: 'INTERFACES',
+            items: [
+                { href: '/tencent', label: 'Tencent', description: 'Interaction Design Internship' },
+                { href: '/spec-mobile', label: 'Spectator 1.0', description: 'Mobile UI/UX' },
+                { href: '/playground', label: 'Playground', description: 'Interactive Experiments' },
+            ],
+        },
+        {
+            category: 'COMPOSITIONS',
+            items: [
+                { href: '/neo-tetra', label: 'Neo Tetra', description: 'Typeface Design' },
+                { href: '/valorant', label: 'Valorant', description: 'Promotional Graphics' },
+                { href: '/usa', label: 'United States of Achromatism', description: 'Photoshop Project' },
+            ],
+        },
+        {
+            category: 'CRAFTS',
+            items: [
+                { href: '/sleep', label: 'Euphemism for a Good Night\'s Sleep', description: '2023' },
+                { href: '/paintings', label: 'Flat Collection', description: '2019 - 2024' },
+                { href: '/heads', label: 'Heads', description: '2020 - 2024' },
+            ],
+        },
+    ];
 
 
 
@@ -58,7 +89,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
 
-        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 left-0 top-0 fixed w-auto leading-6 text-zinc-500 text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 left-0 top-0 fixed w-auto leading-6 text-zinc-400 text-sm ${satoshi.className}`}>
 
             <a
                 className={` justify-between hover:text-zinc-50`}
@@ -73,7 +104,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
 
-        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-500  text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-400  text-sm ${satoshi.className}`}>
 
 
             <a
@@ -110,76 +141,30 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
         <div className="flex tracking-[0.015rem]">
-            <div className={` px-8 sticky top-0 left-0 w-1/3 h-screen pt-[104px] sm:block hidden `}>
-
-                <div className={` text-zinc-500  pb-1 text-xs ${satoshi.className}`}>INTERFACES</div>
-                <div className="pb-4">
-                    <div className="flex ">
-                        <a href="/tencent" className="hover-item ">Tencent</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Interaction Design Internship</div>
+            <div className={`px-8 sticky top-0 left-0 w-1/3 h-screen pt-[104px] sm:block hidden`}>
+                {navItems.map((section) => (
+                    <div key={section.category}>
+                        <div className={`text-zinc-400 pb-1 text-xs ${satoshi.className}`}>{section.category}</div>
+                        <div className="pb-4">
+                            {section.items.map((item) => (
+                                <div className="flex" key={item.href}>
+                                    <a
+                                        href={item.href}
+                                        className={`hover-item ${currentPath === item.href ? ' pointer-events-none arrowbefore' : ''}`}
+                                    >
+                                        {item.label}
+                                    </a>
+                                    <div className={`hover-menu text-zinc-400 truncate ${currentPath === item.href ? 'hidden' : ''}`}>&nbsp;{item.description}</div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-
-                    <div className=" flex ">
-                        <a href="/spec-mobile" className="hover-item " >Spectator 1.0</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Mobile UI/UX</div>
-
-                    </div>
-
-                    <div className=" flex ">
-                        <a href="/playground" className="hover-item ">Playground</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Interactive Experiments</div>
-
-                    </div>
-
-                </div>
-
-                <div className={` text-zinc-500  pb-1 text-xs ${satoshi.className}`}>COMPOSITIONS</div>
-                <div className="pb-4">
-                    <div className="flex  ">
-                        <a href="/neo-tetra" className="hover-item  ">Neo Tetra</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Typeface Design</div>
-                    </div>
-
-                    <div className=" flex ">
-                        <a href="/valorant" className="hover-item " >Valorant</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Promotional Graphics</div>
-
-                    </div>
-
-                    <div className=" flex  ">
-                        <a href="/usa" className="hover-item ">United States of Achromatism</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;Photshop Project</div>
-
-                    </div>
-
-                </div>
-
-                <div className={` text-zinc-500  pb-1 text-xs ${satoshi.className}`}>CRAFTS</div>
-                <div className="pb-4">
-                    <div className="flex ">
-                        <a href="/sleep" className="hover-item ">Euphemism for a Good Night&apos;s Sleep</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;2023</div>
-                    </div>
-
-                    <div className=" flex ">
-                        <a href="/paintings" className="hover-item " >Flat Collection</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;2019 - 2024</div>
-
-                    </div>
-
-                    <div className=" flex">
-                        <a href="/heads" className="hover-item ">Heads</a>
-                        <div className="hover-menu text-zinc-400 truncate">&nbsp;2020 - 2024</div>
-
-                    </div>
-
-                </div>
-
+                ))}
             </div>
 
             <div className=" max-w-3xl px-4 sm:px-8   ">
                 <div className={` z-30 py-8 text-4xl  font-medium !tracking-[0.015rem] ${boldd.className}`}>{item?.title}</div>
-                <div className={` text-zinc-500 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
+                <div className={` text-zinc-400 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
                 <div className="pb-4"> {item?.overview}</div>
 
 
@@ -188,7 +173,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.role && (
                         <div className="flex-1 pb-4">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>ROLE</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>ROLE</div>
                             <ul>
                                 {item?.role?.map((role, index) => (
                                     <li key={index}>{role}</li>
@@ -200,7 +185,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.tools && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>TOOLS</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>TOOLS</div>
                             <ul>
                                 {item?.tools?.map((tools, index) => (
                                     <li key={index}>{tools}</li>
@@ -211,14 +196,14 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.duration && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>DURATION</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>DURATION</div>
                             <div> {item?.duration}</div>
                         </div>
                     )}
 
                     {item.team && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>TEAM</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>TEAM</div>
                             <ul>
                                 {item?.team?.map((team, index) => (
                                     <li key={index}>{team}</li>
@@ -229,7 +214,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.media && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
                             <ul>
                                 {item?.media?.map((media, index) => (
                                     <li key={index}>{media}</li>
@@ -240,7 +225,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.dimensions && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-500 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
+                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
                             <div> {item?.dimensions}</div>
                         </div>
                     )}
@@ -436,7 +421,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
         {nextItem && (
-            <div className={`hidden hideScrollText px-8 z-10 bottom-0 w-full pb-6 leading-6 justify-between text-zinc-500 text-sm ${satoshi.className}`}>
+            <div className={`hidden hideScrollText px-8 z-10 bottom-0 w-full pb-6 leading-6 justify-between text-zinc-400 text-sm ${satoshi.className}`}>
                 <div className="justify-center  pointer-events-auto ">
                     <p>
                         <a href={`/${nextItem.slug}`} className="underline underline-offset-4 hover:text-zinc-950">next project ({nextItem.title} - {nextItem.description})</a>
