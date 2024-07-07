@@ -504,7 +504,7 @@ export default function PortfolioIndex() {
     };
 
     handleResize2(); // Initial check
-    
+
 
     // const lenis = new Lenis({
     // })
@@ -613,6 +613,7 @@ export default function PortfolioIndex() {
         <div className=" logoAppear fixed my-6 h-14 w-14  self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
           <a href="#top" onClick={goToLanding}>
             <Image
+              className=" !rounded-none"
               src="/images/portfolio/logo.gif"
               alt="Yang Logo"
               fill={true}
@@ -625,7 +626,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-neutral-50 text-sm ${benny.className}        `}
+          className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
@@ -641,7 +642,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-neutral-50  text-sm ${satoshi.className}`}>
+      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-50  text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between `}
@@ -672,7 +673,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 absolute sm:fixed w-full leading-6 justify-between text-neutral-950 text-sm ${satoshi.className}`}
+        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 absolute sm:fixed w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
           <div className="scrolldown opacity-30 !scale-75"></div>
@@ -729,7 +730,7 @@ export default function PortfolioIndex() {
         <div>
 
           <div
-            className={` revealText pb-0 sm:m-4 -z-10 left-0 bottom-0 relative sm:fixed  sm:w-1/2 w-full leading-6 justify-between text-neutral-950  text-sm ${satoshi.className}`}
+            className={` revealText pb-0 sm:m-4 -z-10 left-0 bottom-0 relative sm:fixed  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
@@ -741,7 +742,7 @@ export default function PortfolioIndex() {
           </div>
 
           <div
-            className={`pb-4 revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:fixed sm:w-auto w-full leading-6 justify-between text-neutral-950 text-sm ${satoshi.className} `}
+            className={`pb-4 revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:fixed sm:w-auto w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
