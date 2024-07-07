@@ -60,11 +60,6 @@ html {
   /* Default for smaller screens */
 }
 
-.markdown p {
-  border: 2px solid #000 !important;
-  /* Adjust the border thickness and color as needed */
-}
-
 
 
 
@@ -384,9 +379,10 @@ html {
 
   box-shadow:
 
-  rgba(28, 29, 33, 0.133) 0px 0.602187px 0.602187px -1.16667px, rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px, rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px
-
-
+    rgba(28, 29, 33, 0.133) 0px 0.602187px 0.602187px -1.16667px,
+    rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px,
+    rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px,
+    rgba(223, 224, 225, 0.3) 0px 0px 0px 0px
 }
 
 img {
@@ -406,10 +402,22 @@ img {
 @media (min-width: 768px) {
   .layer-shadow-hover:hover {
     box-shadow:
-      0 1px 2px hsl(0deg 0% 0% / 0.05),
-      0 2px 4px hsl(0deg 0% 0% / 0.05),
-      0 4px 8px hsl(0deg 0% 0% / 0.05),
-      0 8px 16px hsl(0deg 0% 0% / 0.05),
-      0 16px 32px hsl(0deg 0% 0% / 0.05);
+      rgba(28, 29, 33, 0.133) 0px 2px 4px -1px,
+      rgba(28, 29, 33, 0.12) 0px 5px 15px -3px,
+      rgba(28, 29, 33, 0.06) 0px 15px 30px -5px,
+      rgba(223, 224, 225, 0.3) 0px 0px 0px 0px;
   }
+}
+
+.hover-menu {
+  opacity: 0;
+  transform: scale(0.7, 0.7);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.hover-item:hover+.hover-menu {
+
+  opacity: 1;
+  transform: scaleX(1);
 }
