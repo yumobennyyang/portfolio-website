@@ -16,7 +16,7 @@ slug: paintings
 description: 2019 - 2024
 orderIndex: 8
 
-overview: Two dimensional artwork made throuhgout the years.
+overview: Two dimensional artwork made throughout the years.
 
 ---
 
