@@ -402,9 +402,9 @@ img {
 @media (min-width: 768px) {
   .layer-shadow-hover:hover {
     box-shadow:
-      rgba(28, 29, 33, 0.133) 0px 2px 4px -1px,
-      rgba(28, 29, 33, 0.12) 0px 5px 15px -3px,
-      rgba(28, 29, 33, 0.06) 0px 15px 30px -5px,
+      rgba(28, 29, 33, 0.067) 0px 0.60219px 2.04744px -0.5px,
+      rgba(28, 29, 33, 0.08) 0px 2.28853px 7.78101px -1px,
+      rgba(28, 29, 33, 0.14) 0px 10px 34px -1.5px,
       rgba(223, 224, 225, 0.3) 0px 0px 0px 0px;
   }
 }
