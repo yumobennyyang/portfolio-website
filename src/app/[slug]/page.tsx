@@ -157,7 +157,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 <div className={` text-zinc-500  pb-1 text-xs ${satoshi.className}`}>CRAFTS</div>
                 <div className="pb-4">
                     <div className="flex ">
-                        <a href="/sleep" className="hover-item ">Euphemism for a Good Night's Sleep</a>
+                        <a href="/sleep" className="hover-item ">Euphemism for a Good Night&apos;s Sleep</a>
                         <div className="hover-menu text-zinc-400 truncate">&nbsp;2023</div>
                     </div>
 
