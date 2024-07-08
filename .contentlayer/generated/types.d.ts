@@ -31,6 +31,7 @@ export type Portfolio = {
   team?: string[] | undefined
   textarea?: boolean | undefined
   isPlayground?: boolean | undefined
+  faintText?: boolean | undefined
   /** Markdown file body */
   body: Markdown
 

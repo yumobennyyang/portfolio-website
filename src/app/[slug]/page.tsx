@@ -51,7 +51,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             category: 'CRAFTS',
             items: [
                 { href: '/sleep', label: 'Euphemism for a Good Night\'s Sleep', description: '2023' },
-                { href: '/paintings', label: 'Flat Collection', description: '2019 - 2024' },
+                { href: '/paintings', label: 'Flat Collection', description: 'Paintings and Works on Paper' },
                 { href: '/heads', label: 'Heads', description: '2020 - 2024' },
             ],
         },
@@ -243,7 +243,9 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-                <div className={`markDown pb-24 !tracking-wide [&_*]:  `} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
+
+
+                <div className={`markDown pb-24 !tracking-wide [&_*]:  ${item.faintText ? 'text-zinc-500' : ''}`} dangerouslySetInnerHTML={{ __html: item?.body?.html }} />
 
 
 
@@ -255,27 +257,22 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
                 {item.isPlayground && (
-                    <div className="-translate-y-24" >
+                    <div className="-translate-y-24 !tracking-wide" >
 
                         <div>
                             <br></br>
-                            <span className=" font-bold">Three.js</span>
-                            <br></br>
-
-                            <span className="opacity-80">Gidd is an interactive blob with an inexplicable connection to your cursor. </span>
-                            <br></br>
-                            <span className="opacity-50">Try moving your cursor around Gidd.</span>
+                            <span className="">THREE.JS</span>
                             <br></br>
                             <br></br>
-
-
+                            <span className="">Gidd is an interactive blob with an inexplicable connection to your cursor. </span>
+                            <br></br>
+                            <br></br>
+                            <span className="text-zinc-500">Try moving your cursor around Gidd.</span>
+                            <br></br>
 
                             <div className="iframe-container rounded layer-shadow">
                                 <iframe src="https://yumobennyyang.github.io/gidd-blob/" width="100%" height="375px" className="iframe  " />
                             </div>
-
-
-
 
                             <br></br>
                             <br></br>
@@ -289,12 +286,13 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <div>
                             <br></br>
-                            <span className=" font-bold">Pure CSS</span>
+                            <span className="">PURE CSS</span>
                             <br></br>
-                            <span className="opacity-80">A 3d effect...</span>
                             <br></br>
-                            <span className="opacity-50">Hover cursor over the image.</span>
+                            <span className="">A 3d effect...</span>
                             <br></br>
+                            <br></br>
+                            <span className="text-zinc-500">Hover cursor over the image.</span>
                             <br></br>
 
 
@@ -316,17 +314,18 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <div>
                             <br></br>
-                            <span className=" font-bold">Vanilla Javascript</span>
+                            <span className="">VANILLA JAVASCRIPT</span>
                             <br></br>
-                            <span className="opacity-80">What if responsive sites are designed like that hospital from&nbsp;
+                            <br></br>
+                            <span className="">What if responsive sites are designed like that hospital from&nbsp;
                                 <a className="underline underline-offset-4 italic hover:opacity-80" href="https://www.google.com/search?sca_esv=b32a931cfe3322f6&sxsrf=ADLYWIJmm7dqlSqfd2-1UDaQIsPBqf-emQ:1717042113497&q=Hospital+from+Idiocracy&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiI3PSpwLSGAxUfEFkFHXl-AaEQ0pQJegQICxAB&biw=1476&bih=839&dpr=2#imgrc=mRoYrEfpOGD_PM">
                                     Idiocracy
                                 </a>
                                 &nbsp;?
                             </span>
                             <br></br>
-                            <span className="opacity-50">Drag the bottom right corner of the window to resize.</span>
                             <br></br>
+                            <span className="text-zinc-500">Drag the bottom right corner of the window to resize.</span>
                             <br></br>
 
 
@@ -348,13 +347,14 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <div>
                             <br></br>
-                            <span className=" font-bold">Interaction Prototyping</span>
+                            <span className=" ">INTERACTION PROTOTYPING</span>
                             <br></br>
-                            <span className="opacity-80">An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
                             <br></br>
-                            <span className="opacity-50">Prototyped with Figma</span>
+                            <span className="">An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content.</span>
+                            <br></br>
+                            <br></br>
+                            <span className="text-zinc-500">Prototyped with Figma</span>
 
-                            <br></br>
                             <br></br>
 
 
@@ -385,12 +385,13 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                         <div>
                             <br></br>
-                            <span className=" font-bold">Figma Illustrations</span>
+                            <span className=" ">FIGMA ILLUSTRATIONS</span>
                             <br></br>
-                            <span className="opacity-80">Some gradient explorations with figma aiming to create realistic renders.</span>
                             <br></br>
-                            <span className="opacity-50">yee</span>
+                            <span className="">Some gradient explorations with figma aiming to create realistic renders.</span>
                             <br></br>
+                            <br></br>
+                            <span className="text-zinc-500">yee</span>
                             <br></br>
 
 
