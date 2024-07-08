@@ -32,11 +32,11 @@ export default function PortfolioIndex() {
 
   const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
 
-  const interfaces = allPortfolios.slice(0, 3);
+  const interfaces = sortedItems.slice(0, 3);
 
-  const graphics = allPortfolios.slice(3, 6);
+  const graphics = sortedItems.slice(3, 6);
 
-  const crafts = allPortfolios.slice(6, 9);
+  const crafts = sortedItems.slice(6, 9);
 
   // let scrollSpeed = 1;
 

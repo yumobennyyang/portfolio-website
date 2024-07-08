@@ -44,7 +44,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             items: [
                 { href: '/neo-tetra', label: 'Neo Tetra', description: 'Typeface Design' },
                 { href: '/valorant', label: 'Valorant', description: 'Promotional Graphics' },
-                { href: '/usa', label: 'United States of Achromatism', description: 'Photoshop Project' },
+                { href: '/renderings', label: 'Renderings', description: 'Photoshop, Blender, etc.' },
             ],
         },
         {
