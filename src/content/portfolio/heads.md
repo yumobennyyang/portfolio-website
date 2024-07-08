@@ -15,6 +15,7 @@ title: Heads
 slug: heads
 description: 2020 - 2024
 orderIndex: 9
+faintText: true
 
 overview: The manipulation of a foam fead in the form of sculpture.
 

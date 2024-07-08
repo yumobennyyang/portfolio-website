@@ -57,6 +57,7 @@
       "_raw": {}
     },
     "overview": "The manipulation of a foam fead in the form of sculpture.",
+    "faintText": true,
     "body": {
       "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n",
       "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>"
@@ -123,7 +124,7 @@
       "type": "Image",
       "_raw": {}
     },
-    "description": "2019 - 2024",
+    "description": "Paintings and Works on Paper",
     "enabled": true,
     "orderIndex": 8,
     "preview": {
@@ -134,9 +135,10 @@
       "_raw": {}
     },
     "overview": "Two dimensional artwork made throughout the years.",
+    "faintText": true,
     "body": {
-      "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
-      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\">\nAquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
+      "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
+      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\"></p>\n<p>Aquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
     },
     "_id": "portfolio/paintings.md",
     "_raw": {
@@ -188,6 +190,42 @@
       "sourceFileDir": "portfolio",
       "contentType": "markdown",
       "flattenedPath": "portfolio/playground"
+    },
+    "type": "Portfolio"
+  },
+  {
+    "title": "Renderings",
+    "date": "2023-01-17T00:00:00.000Z",
+    "slug": "renderings",
+    "image": {
+      "src": "/images/portfolio/renderings.png",
+      "width": 2000,
+      "height": 2000,
+      "type": "Image",
+      "_raw": {}
+    },
+    "description": "Photoshop, Blender, etc.",
+    "enabled": true,
+    "orderIndex": 6,
+    "preview": {
+      "src": "/images/renderings/renderings0.png",
+      "width": 3840,
+      "height": 2160,
+      "type": "Image",
+      "_raw": {}
+    },
+    "overview": "Static images created with various tools.",
+    "body": {
+      "raw": "\n&nbsp;\n\n---\n\n&nbsp;\n\nGREEN MACHINE - photoshop\n\n&nbsp;\n\nA Gift to Deerfield Academy.\n\n&nbsp;\n\n![Renderings1](/images/renderings/renderings1.png \"renderings1\")\n\n&nbsp;\n\n&nbsp;\n\n---\n&nbsp;\n\nSKY BEHIND THE FENCE - photoshop\n\n&nbsp;\n\nPart of a larger photography series about fences.\n\n&nbsp;\n\n![Renderings2](/images/renderings/renderings2.png \"renderings2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nPLASTIC FISH - blender\n\n&nbsp;\n\nAn Homage to Jumping Trout (1889) by Winslow Homer.\n\n&nbsp;\n\n![Renderings3](/images/renderings/renderings3.png \"renderings3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nDONUT - dalle2, photoshop\n\n&nbsp;\n\nComponent of an album cover commission.\n\n&nbsp;\n\n![Rendering41](/images/renderings/renderings4.png \"renderings4\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nUNITED STATES OF ACHROMATISM - photoshop\n\n&nbsp;\n\nI merged the faces of the 100 most powerful people in the US, 20 each from fields of religion, wealth, military, legislation, and education.\n\n&nbsp;\n\n![Renderings5](/images/renderings/renderings5.png \"renderings5\")\n\n&nbsp;\n\n![Renderings6](/images/renderings/renderings6.png \"renderings6\")\n\n&nbsp;\n\n&nbsp;\n\n",
+      "html": "<p> </p>\n<hr>\n<p> </p>\n<p>GREEN MACHINE - photoshop</p>\n<p> </p>\n<p>A Gift to Deerfield Academy.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings1.png\" alt=\"Renderings1\" title=\"renderings1\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>SKY BEHIND THE FENCE - photoshop</p>\n<p> </p>\n<p>Part of a larger photography series about fences.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings2.png\" alt=\"Renderings2\" title=\"renderings2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>PLASTIC FISH - blender</p>\n<p> </p>\n<p>An Homage to Jumping Trout (1889) by Winslow Homer.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings3.png\" alt=\"Renderings3\" title=\"renderings3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>DONUT - dalle2, photoshop</p>\n<p> </p>\n<p>Component of an album cover commission.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings4.png\" alt=\"Rendering41\" title=\"renderings4\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>UNITED STATES OF ACHROMATISM - photoshop</p>\n<p> </p>\n<p>I merged the faces of the 100 most powerful people in the US, 20 each from fields of religion, wealth, military, legislation, and education.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings5.png\" alt=\"Renderings5\" title=\"renderings5\"></p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings6.png\" alt=\"Renderings6\" title=\"renderings6\"></p>\n<p> </p>\n<p> </p>"
+    },
+    "_id": "portfolio/renderings.md",
+    "_raw": {
+      "sourceFilePath": "portfolio/renderings.md",
+      "sourceFileName": "renderings.md",
+      "sourceFileDir": "portfolio",
+      "contentType": "markdown",
+      "flattenedPath": "portfolio/renderings"
     },
     "type": "Portfolio"
   },
@@ -311,8 +349,8 @@
     ],
     "duration": "2 months",
     "body": {
-      "raw": "\n\n---\n\n&nbsp;\n\nSELECT OLD UI SCREENSHOTS\n\n&nbsp;\n\n![Tencent2](/images/tencent/tencent2.png \"tencent2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nTHE PROBLEM\n\n&nbsp;\n\nThe UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.\n\n&nbsp;\n\nI was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nUX RESTRUCTURING\n\n&nbsp;\n\n\n![Tencent3](/images/tencent/tencent3.png \"tencent3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nNEW STYLE GUIDE\n\n&nbsp;\n\nLogo Update\n\n![Tencent4](/images/tencent/tencent4.png \"tencent4\")\n\n&nbsp;\n\nPalette\n\n![Tencent5](/images/tencent/tencent5.png \"tencent5\")\n\n&nbsp;\n\nType\n\n![Tencent6](/images/tencent/tencent6.png \"tencent6\")\n\n&nbsp;\n\nVisual Identity Development\n\n![Tencent7](/images/tencent/tencent7.png \"tencent7\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n\n\n&nbsp;\n\nRESPONSIVE LAYOUT GRID\n\n&nbsp;\n\n![Tencent8](/images/tencent/tencent8.png \"tencent8\")\n\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nHOME\n\n&nbsp;\n\n![Tencent9](/images/tencent/tencent9.png \"tencent9\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nTABLE\n\n&nbsp;\n\n![Tencent10](/images/tencent/tencent10.png \"tencent10\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nFORM\n\n&nbsp;\n\n![Tencent11](/images/tencent/tencent11.png \"tencent11\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nNAVIGATION\n\n&nbsp;\n\n![Tencent12](/images/tencent/tencent12.png \"tencent12\")\n\n&nbsp;\n\n&nbsp;\n",
-      "html": "<hr>\n<p> </p>\n<p>SELECT OLD UI SCREENSHOTS</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent2.png\" alt=\"Tencent2\" title=\"tencent2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>THE PROBLEM</p>\n<p> </p>\n<p>The UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.</p>\n<p> </p>\n<p>I was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.</p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>UX RESTRUCTURING</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent3.png\" alt=\"Tencent3\" title=\"tencent3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>NEW STYLE GUIDE</p>\n<p> </p>\n<p>Logo Update</p>\n<p><img src=\"/images/tencent/tencent4.png\" alt=\"Tencent4\" title=\"tencent4\"></p>\n<p> </p>\n<p>Palette</p>\n<p><img src=\"/images/tencent/tencent5.png\" alt=\"Tencent5\" title=\"tencent5\"></p>\n<p> </p>\n<p>Type</p>\n<p><img src=\"/images/tencent/tencent6.png\" alt=\"Tencent6\" title=\"tencent6\"></p>\n<p> </p>\n<p>Visual Identity Development</p>\n<p><img src=\"/images/tencent/tencent7.png\" alt=\"Tencent7\" title=\"tencent7\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>RESPONSIVE LAYOUT GRID</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent8.png\" alt=\"Tencent8\" title=\"tencent8\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>HOME</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent9.png\" alt=\"Tencent9\" title=\"tencent9\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>TABLE</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent10.png\" alt=\"Tencent10\" title=\"tencent10\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>FORM</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent11.png\" alt=\"Tencent11\" title=\"tencent11\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>NAVIGATION</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent12.png\" alt=\"Tencent12\" title=\"tencent12\"></p>\n<p> </p>\n<p> </p>"
+      "raw": "\n\n---\n\n&nbsp;\n\nSELECT OLD UI SCREENSHOTS\n\n&nbsp;\n\n![Tencent2](/images/tencent/tencent2.png \"tencent2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nTHE PROBLEM\n\n&nbsp;\n\nThe UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.\n\n&nbsp;\n\nI was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nUX RESTRUCTURING\n\n&nbsp;\n\n\n![Tencent3](/images/tencent/tencent3.png \"tencent3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nNEW STYLE GUIDE\n\n&nbsp;\n\n![Tencent4](/images/tencent/tencent4.png \"tencent4\")\n\n&nbsp;\n\n![Tencent5](/images/tencent/tencent5.png \"tencent5\")\n\n&nbsp;\n\n![Tencent6](/images/tencent/tencent6.png \"tencent6\")\n\n&nbsp;\n\n![Tencent7](/images/tencent/tencent7.png \"tencent7\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n\n\n&nbsp;\n\nRESPONSIVE LAYOUT GRID\n\n&nbsp;\n\n![Tencent8](/images/tencent/tencent8.png \"tencent8\")\n\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nHOME\n\n&nbsp;\n\n![Tencent9.1](/images/tencent/tencent9.1.png \"tencent9.1\")\n\n&nbsp;\n\n![Tencent9.2](/images/tencent/tencent9.2.png \"tencent9.2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nTABLE\n\n&nbsp;\n\n![Tencent10](/images/tencent/tencent10.png \"tencent10\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nFORM\n\n&nbsp;\n\n![Tencent11](/images/tencent/tencent11.png \"tencent11\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nNAVIGATION\n\n&nbsp;\n\n![Tencent12](/images/tencent/tencent12.png \"tencent12\")\n\n&nbsp;\n\n&nbsp;\n",
+      "html": "<hr>\n<p> </p>\n<p>SELECT OLD UI SCREENSHOTS</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent2.png\" alt=\"Tencent2\" title=\"tencent2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>THE PROBLEM</p>\n<p> </p>\n<p>The UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.</p>\n<p> </p>\n<p>I was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.</p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>UX RESTRUCTURING</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent3.png\" alt=\"Tencent3\" title=\"tencent3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>NEW STYLE GUIDE</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent4.png\" alt=\"Tencent4\" title=\"tencent4\"></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent5.png\" alt=\"Tencent5\" title=\"tencent5\"></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent6.png\" alt=\"Tencent6\" title=\"tencent6\"></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent7.png\" alt=\"Tencent7\" title=\"tencent7\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>RESPONSIVE LAYOUT GRID</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent8.png\" alt=\"Tencent8\" title=\"tencent8\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>HOME</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent9.1.png\" alt=\"Tencent9.1\" title=\"tencent9.1\"></p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent9.2.png\" alt=\"Tencent9.2\" title=\"tencent9.2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>TABLE</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent10.png\" alt=\"Tencent10\" title=\"tencent10\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>FORM</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent11.png\" alt=\"Tencent11\" title=\"tencent11\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>NAVIGATION</p>\n<p> </p>\n<p><img src=\"/images/tencent/tencent12.png\" alt=\"Tencent12\" title=\"tencent12\"></p>\n<p> </p>\n<p> </p>"
     },
     "_id": "portfolio/tencent.md",
     "_raw": {
@@ -345,7 +383,7 @@
       "type": "Image",
       "_raw": {}
     },
-    "overview": "Promotional graphics published in app on 07/04/2023 for VALORANT’s China launch in summer 2023 - Layouts, visuals, and information on Agents, Weapons, Game modes, etc. The research process involved understanding the brand's styles and collecting the brand's decorative components to be recreated or repurposed.",
+    "overview": "Promotional graphics published in app on 07/04/2023 for VALORANT’s China launch in summer 2023 - Layouts, visuals, and information on Agents, Weapons, Game modes, etc. The research process involved understanding the brand's visual identity and repurposing the brand's decorative components.",
     "tools": [
       "Photoshop",
       "Figma"
@@ -362,42 +400,6 @@
       "sourceFileDir": "portfolio",
       "contentType": "markdown",
       "flattenedPath": "portfolio/valorant"
-    },
-    "type": "Portfolio"
-  },
-  {
-    "title": "Renderings",
-    "date": "2023-01-17T00:00:00.000Z",
-    "slug": "renderings",
-    "image": {
-      "src": "/images/portfolio/renderings.png",
-      "width": 2000,
-      "height": 2000,
-      "type": "Image",
-      "_raw": {}
-    },
-    "description": "Photoshop, Blender, etc.",
-    "enabled": true,
-    "orderIndex": 6,
-    "preview": {
-      "src": "/images/renderings/renderings0.png",
-      "width": 3840,
-      "height": 2160,
-      "type": "Image",
-      "_raw": {}
-    },
-    "overview": "Static images created with various tools.",
-    "body": {
-      "raw": "\n&nbsp;\n\n---\n\n&nbsp;\n\nGREEN MACHINE - photoshop\n\n&nbsp;\n\nA Gift to Deerfield Academy.\n\n&nbsp;\n\n![Renderings1](/images/renderings/renderings1.png \"renderings1\")\n\n&nbsp;\n\n&nbsp;\n\n---\n&nbsp;\n\nSKY BEHIND THE FENCE - photoshop\n\n&nbsp;\n\nPart of a larger photography series about fences.\n\n&nbsp;\n\n![Renderings2](/images/renderings/renderings2.png \"renderings2\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nPLASTIC FISH - blender\n\n&nbsp;\n\nAn Homage to Jumping Trout (1889) by Winslow Homer.\n\n&nbsp;\n\n![Renderings3](/images/renderings/renderings3.png \"renderings3\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nDONUT - dalle2, photoshop\n\n&nbsp;\n\nComponent of an album cover commission.\n\n&nbsp;\n\n![Rendering41](/images/renderings/renderings4.png \"renderings4\")\n\n&nbsp;\n\n&nbsp;\n\n---\n\n&nbsp;\n\nUNITED STATES OF ACHROMATISM - photoshop\n\n&nbsp;\n\nI merged the faces of the 100 most powerful people in the US, 20 each from fields of religion, wealth, military, legislation, and education.\n\n&nbsp;\n\n![Renderings5](/images/renderings/renderings5.png \"renderings5\")\n\n&nbsp;\n\n![Renderings6](/images/renderings/renderings6.png \"renderings6\")\n\n&nbsp;\n\n&nbsp;\n\n",
-      "html": "<p> </p>\n<hr>\n<p> </p>\n<p>GREEN MACHINE - photoshop</p>\n<p> </p>\n<p>A Gift to Deerfield Academy.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings1.png\" alt=\"Renderings1\" title=\"renderings1\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>SKY BEHIND THE FENCE - photoshop</p>\n<p> </p>\n<p>Part of a larger photography series about fences.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings2.png\" alt=\"Renderings2\" title=\"renderings2\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>PLASTIC FISH - blender</p>\n<p> </p>\n<p>An Homage to Jumping Trout (1889) by Winslow Homer.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings3.png\" alt=\"Renderings3\" title=\"renderings3\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>DONUT - dalle2, photoshop</p>\n<p> </p>\n<p>Component of an album cover commission.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings4.png\" alt=\"Rendering41\" title=\"renderings4\"></p>\n<p> </p>\n<p> </p>\n<hr>\n<p> </p>\n<p>UNITED STATES OF ACHROMATISM - photoshop</p>\n<p> </p>\n<p>I merged the faces of the 100 most powerful people in the US, 20 each from fields of religion, wealth, military, legislation, and education.</p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings5.png\" alt=\"Renderings5\" title=\"renderings5\"></p>\n<p> </p>\n<p><img src=\"/images/renderings/renderings6.png\" alt=\"Renderings6\" title=\"renderings6\"></p>\n<p> </p>\n<p> </p>"
-    },
-    "_id": "portfolio/renderings.md",
-    "_raw": {
-      "sourceFilePath": "portfolio/renderings.md",
-      "sourceFileName": "renderings.md",
-      "sourceFileDir": "portfolio",
-      "contentType": "markdown",
-      "flattenedPath": "portfolio/renderings"
     },
     "type": "Portfolio"
   }

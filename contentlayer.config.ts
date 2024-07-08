@@ -42,6 +42,7 @@ export const Portfolio = defineDocumentType(() => ({
         team: { type: "list", of: { type: "string" }, required: false },
         textarea: { type: "boolean", required: false },
         isPlayground: { type: "boolean", required: false },
+        faintText: { type: "boolean", required: false },
 
 
     },

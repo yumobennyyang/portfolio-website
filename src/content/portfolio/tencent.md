@@ -79,25 +79,17 @@ NEW STYLE GUIDE
 
 &nbsp;
 
-Logo Update
-
 ![Tencent4](/images/tencent/tencent4.png "tencent4")
 
 &nbsp;
-
-Palette
 
 ![Tencent5](/images/tencent/tencent5.png "tencent5")
 
 &nbsp;
 
-Type
-
 ![Tencent6](/images/tencent/tencent6.png "tencent6")
 
 &nbsp;
-
-Visual Identity Development
 
 ![Tencent7](/images/tencent/tencent7.png "tencent7")
 
@@ -130,7 +122,11 @@ HOME
 
 &nbsp;
 
-![Tencent9](/images/tencent/tencent9.png "tencent9")
+![Tencent9.1](/images/tencent/tencent9.1.png "tencent9.1")
+
+&nbsp;
+
+![Tencent9.2](/images/tencent/tencent9.2.png "tencent9.2")
 
 &nbsp;
 

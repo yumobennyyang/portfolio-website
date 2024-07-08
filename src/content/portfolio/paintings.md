@@ -13,8 +13,9 @@ date: 2023-01-17
 enabled: true
 title: Flat Collection
 slug: paintings
-description: 2019 - 2024
+description: Paintings and Works on Paper
 orderIndex: 8
+faintText: true
 
 overview: Two dimensional artwork made throughout the years.
 
@@ -26,6 +27,7 @@ overview: Two dimensional artwork made throughout the years.
 &nbsp;
 
 ![Paint1](/images/paintings/paint1.png "paint1")
+
 Aquarium, oil on canvas, 2024, 12"x 20"
 
 &nbsp;
