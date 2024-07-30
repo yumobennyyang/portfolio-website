@@ -742,7 +742,7 @@ export default function PortfolioIndex() {
           </div>
 
           <div
-            className={`pb-4 revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:fixed sm:w-auto w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
+            className={`pb-4 sm:pb-0 revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:fixed sm:w-auto w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
