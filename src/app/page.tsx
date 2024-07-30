@@ -678,7 +678,7 @@ export default function PortfolioIndex() {
         <div className="flex flex-col items-center">
           <div className="scrolldown opacity-30 !scale-75"></div>
 
-          <p className="justify-center  ml-auto mr-auto px-4 py-2">
+          <p className="hidden justify-center  ml-auto mr-auto px-4 py-2">
             <span>scroll for more</span>
           </p>
         </div>
