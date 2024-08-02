@@ -613,7 +613,7 @@ export default function PortfolioIndex() {
         <div className=" logoAppear fixed my-6 h-14 w-14  self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
           <a href="#top" onClick={goToLanding}>
             <Image
-              className=" !rounded-none"
+              className=" !rounded-none !border-none"
               src="/images/portfolio/logo.gif"
               alt="Yang Logo"
               fill={true}
@@ -650,7 +650,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
+          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
             ↗ art
             {/* <span>↗</span>*/}
           </p>
@@ -662,7 +662,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
+          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
             ↗ cv
           </p>
 
@@ -698,9 +698,9 @@ export default function PortfolioIndex() {
 
 
         <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 sm:pb-24 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
-          <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div>
+          {/* <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div> */}
 
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
+          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-2 !pointer-events-auto ">
 
 
             {interfaces.map((item, index) => <PortfolioCard key={index} item={item} />)}
@@ -708,15 +708,16 @@ export default function PortfolioIndex() {
 
           </div>
 
-          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>COMPOSITIONS</div>
+          {/* <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>COMPOSITIONS</div> */}
+          
 
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
+          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-2 !pointer-events-auto ">
 
             {graphics.map((item, index) => <PortfolioCard key={index} item={item} />)}
 
           </div>
 
-          <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>CRAFTS</div>
+          {/* <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>CRAFTS</div> */}
 
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
@@ -747,14 +748,14 @@ export default function PortfolioIndex() {
 
             <p className=" justify-center px-4 py-2  w-auto ">
               <span>I&apos;m on </span>
-              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Twitter</a>
+              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Twitter</a>
               <span> </span>
-              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Linkedin</a>
+              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Linkedin</a>
               <span> </span>
-              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">Cosmos</a>
+              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Cosmos</a>
               <br></br>
               <span>Let&apos;s chat </span>
-              <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">yy3204@columbia.edu</a>
+              <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">yy3204@columbia.edu</a>
             </p>
           </div>
 

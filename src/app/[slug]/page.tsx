@@ -95,7 +95,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 className={` justify-between hover:text-zinc-50`}
                 href="/#portfolio"
             >
-                <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
+                <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
                     return home
                 </p>
 
@@ -112,7 +112,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                 href="https://read.cv/bennyyyang"
                 target="_blank"
             >
-                <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:decoration-2">
+                <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
                     ↗ cv
                 </p>
 
