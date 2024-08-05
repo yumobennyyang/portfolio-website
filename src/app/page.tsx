@@ -635,7 +635,7 @@ export default function PortfolioIndex() {
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
               <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website. Enjoy!</span>
+              <br></br><br></br>Benny coded this website and is constantly updating it...</span>
           </div>
 
         </div>
