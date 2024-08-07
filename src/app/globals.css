@@ -425,3 +425,11 @@ img {
 .arrowbefore::before{
   content: "• ";
 }
+
+
+.squircle {
+  --smooth-corners: 3;
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+  background: #d01257; /* So you can see it */
+}
