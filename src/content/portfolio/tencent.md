@@ -1,8 +1,8 @@
 ---
-video:
-  src: /images/portfolio/tencent.mp4
-  width: 1374
-  height: 1374
+image:
+  src: /images/portfolio/tencent.png
+  width: 2000
+  height: 2000
 
 preview:
   src: /images/tencent/tencent1.png
