@@ -1,6 +1,6 @@
 ---
 video:
-  src: /images/portfolio/playground.mp4
+  src: /images/portfolio/valorant.mp4
   width: 1080
   height: 1080
 
