@@ -366,11 +366,11 @@
         "title": "Tencent",
         "date": "2023-10-10T00:00:00.000Z",
         "slug": "tencent",
-        "video": {
-          "src": "/images/portfolio/tencent.mp4",
-          "width": 1374,
-          "height": 1374,
-          "type": "Video",
+        "image": {
+          "src": "/images/portfolio/tencent.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
           "_raw": {}
         },
         "description": "Interaction Design Internship",
@@ -404,7 +404,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1720471631374",
+      "documentHash": "1723005080338",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
