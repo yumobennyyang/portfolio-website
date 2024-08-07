@@ -5,8 +5,11 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 230, 235, 238;
+  /* --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 230, 235, 238; */
+
+    --background-start-rgb: 242, 242, 246;
+  --background-end-rgb: 245, 245, 247; 
 
 }
 
