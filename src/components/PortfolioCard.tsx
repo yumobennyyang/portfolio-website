@@ -17,19 +17,19 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-            <div id="portfolioCard" className=" bg-white  transition ease-in duration-250 w-full flex-col relative flex rounded  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border-b !border-white/40 ">
+            <div id="portfolioCard" className=" bg-white  transition ease-in duration-250 w-full flex-col relative flex rounded-2xl  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border-b !border-white/40 ">
 
 
 
                 {item.image && (
-                    <div className=" transition duration-250 ease-in overflow-hidden  rounded-t">
+                    <div className=" transition duration-250 ease-in overflow-hidden  rounded-t-2xl">
                         <Image className=" object-cover  !border-none !rounded-none" src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
                     </div>
                 )}
 
 
                 {item.video && ( 
-                    <div className="transition duration-250 ease-in overflow-hidden  rounded-t">
+                    <div className="transition duration-250 ease-in overflow-hidden  rounded-t-2xl">
                         <video
                             playsInline
                             autoPlay
