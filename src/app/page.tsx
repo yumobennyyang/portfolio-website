@@ -29,7 +29,7 @@ const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
 
 export default function PortfolioIndex() {
 
-  
+
 
 
 
@@ -64,7 +64,7 @@ export default function PortfolioIndex() {
 
   function interaction() {
 
-    
+
 
 
     // const saturateVideo = document.querySelectorAll('.saturateVideo')
@@ -200,55 +200,40 @@ export default function PortfolioIndex() {
 
 
 
+    const hideTextElements = document.querySelectorAll<HTMLElement>('.hideText');
 
-    const hideTextElements = document.querySelectorAll('.hideText');
+    const mainText1 = document.querySelector<HTMLElement>('#mainText');
+    const portfolioCard = document.querySelector<HTMLElement>('#portfolioCard');
 
+    if (mainText1 && portfolioCard) {
+      const elementHeight = mainText1.clientHeight;
+      const changeX = 56 / portfolioCard.clientWidth;
+      const changeY = 56 / mainText1.clientHeight;
 
-    hideTextElements.forEach((element) => {
-
-      const mainText1 = document.querySelector('#mainText');
-      const portfolioCard = document.querySelector('#portfolioCard');
-      const elementHeight = (mainText1 as HTMLElement).clientHeight;
-      console.log(elementHeight);
-
-
-      if (mainText1 && portfolioCard) {
-
-        const changeX = 56 / portfolioCard.clientWidth;
-        const changeY = 56 / mainText1.clientHeight;
-
-
-
-        gsap.fromTo(element,
+      hideTextElements.forEach((element) => {
+        gsap.fromTo(
+          element,
           {
-
             scaleX: 1,
             scaleY: 1,
             top: 0,
             filter: "blur(0px)",
-
           },
           {
-
             scaleX: changeX,
             scaleY: changeY,
-            top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px)',
-            //top: 'calc(-' + (elementHeight - 56) / 2 + 'px - 56px - 24px - 50px)',
+            top: `calc(-${(elementHeight - 56) / 2}px - 56px - 24px)`,
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
-
-              // start: 450 + window.innerHeight * (scrollSpeed - 1),
-              // end: 650 + window.innerHeight * (scrollSpeed - 1),
               start: window.innerHeight - 300,
               end: window.innerHeight - 150,
               scrub: true,
-              markers: false
+              markers: false,
             },
-            ease: "power1.in"
+            ease: "power1.in",
           }
         );
-
         gsap.fromTo(element,
           {
             opacity: 1,
@@ -270,9 +255,12 @@ export default function PortfolioIndex() {
             }
           }
         );
-      }
+      });
+    }
 
-    });
+
+
+
 
 
     const revealTextElements = document.querySelectorAll('.revealText');
@@ -322,13 +310,12 @@ export default function PortfolioIndex() {
         {
           top: '50%',
           transform: 'translateY(-' + offset + 'px)',
-          transformOrigin: 'top center',
+
 
         },
         {
           top: '0',
           ease: 'outIn',
-          transformOrigin: 'top center',
 
           transform: 'translateY(0%)',  // Equivalent to 'none' in this context
           scrollTrigger: {
@@ -590,7 +577,7 @@ export default function PortfolioIndex() {
 
   return (
 
-    
+
 
 
     <main className=" flex  justify-center  w-screen m-auto ">
@@ -682,8 +669,8 @@ export default function PortfolioIndex() {
         >
 
           <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
-          <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
-          <span>&nbsp; art</span>
+            <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp; art</span>
             {/* <span>↗</span>*/}
           </p>
 
@@ -695,7 +682,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
           <p className=" justify-center pr-4 pl-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
-          <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+            <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp; cv</span>
           </p>
 
@@ -743,7 +730,7 @@ export default function PortfolioIndex() {
           </div>
 
           {/* <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>COMPOSITIONS</div> */}
-          
+
 
           <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-2 !pointer-events-auto ">
 
