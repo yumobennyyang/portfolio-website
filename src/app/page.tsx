@@ -322,11 +322,13 @@ export default function PortfolioIndex() {
         {
           top: '50%',
           transform: 'translateY(-' + offset + 'px)',
+          transformOrigin: 'top center',
 
         },
         {
           top: '0',
           ease: 'outIn',
+          transformOrigin: 'top center',
 
           transform: 'translateY(0%)',  // Equivalent to 'none' in this context
           scrollTrigger: {
