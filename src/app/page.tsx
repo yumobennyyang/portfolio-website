@@ -218,12 +218,12 @@ export default function PortfolioIndex() {
             scaleY: 1,
             top: 0,
             filter: "blur(0px)",
-            transformOrigin: " center 500px",
+            transformOrigin: " center -500px",
           },
           {
             scaleX: changeX,
             scaleY: changeY,
-            transformOrigin: " center 500px",
+            transformOrigin: " center -500px",
             top: `calc(-${(elementHeight - 56) / 2}px - 56px - 24px)`,
             filter: "blur(0px)",
             scrollTrigger: {
