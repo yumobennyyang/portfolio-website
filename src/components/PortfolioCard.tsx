@@ -3,6 +3,9 @@ import Image from "next/image";
 import Video from "next/image";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
+import localFont from "next/font/local";
+
+const regularText = localFont({ src: '../fonts/PPNeueMontreal-Book.otf' })
 
 interface PortfolioCardProps {
     item: Portfolio
@@ -17,19 +20,19 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-            <div id="portfolioCard" className=" bg-white  transition ease-in duration-250 w-full flex-col relative flex rounded-xl  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.005] border-b !border-white/40 ">
+            <div id="portfolioCard" className=" bg-white  duration-300 ease-[cubic-bezier(0,0,.5,1)] w-full flex-col relative flex rounded-xl  overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] border !border-zinc-200 ">
 
 
 
                 {item.image && (
-                    <div className=" transition duration-250 ease-in overflow-hidden  rounded-t-xl">
+                    <div className="overflow-hidden  rounded-t-xl">
                         <Image className=" object-cover  !border-none !rounded-none" src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
                     </div>
                 )}
 
 
                 {item.video && ( 
-                    <div className="transition duration-250 ease-in overflow-hidden  rounded-t-xl">
+                    <div className="overflow-hidden  rounded-t-xl">
                         <video
                             playsInline
                             autoPlay
@@ -46,8 +49,8 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                 )}
 
                 <div className="z-20 px-4 py-3 relative w-full flex-row">
-                    <div className="text-zinc-900 w-full font-medium truncate">{item.title}</div>
-                    <div className="text-zinc-400 w-full font-medium truncate ">{item.description}</div>
+                    <div className="text-zinc-900 w-full pl-2 pb-1 truncate text-xl ">{item.title}</div>
+                    <div className={`text-zinc-400 opacity-80 w-full pl-2 pb-2 truncate text-xs uppercase ${regularText.className}`}>{item.description}</div>
 
 
                 </div>
