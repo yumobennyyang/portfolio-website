@@ -234,7 +234,9 @@ export default function PortfolioIndex() {
             ease: "power1.in",
           }
         );
-        gsap.fromTo(element,
+
+        gsap.fromTo(
+          element,
           {
             opacity: 1,
 
