@@ -41,48 +41,6 @@
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
-    "portfolio/heads.md": {
-      "document": {
-        "title": "Heads",
-        "date": "2023-01-17T00:00:00.000Z",
-        "slug": "heads",
-        "image": {
-          "src": "/images/portfolio/head.png",
-          "width": 4032,
-          "height": 4032,
-          "type": "Image",
-          "_raw": {}
-        },
-        "description": "2020 - 2024",
-        "enabled": true,
-        "orderIndex": 9,
-        "preview": {
-          "src": "/images/heads/head0.png",
-          "width": 3840,
-          "height": 2160,
-          "type": "Image",
-          "_raw": {}
-        },
-        "overview": "The manipulation of a foam fead in the form of sculpture.",
-        "faintText": true,
-        "body": {
-          "raw": "\n\n---\n\n&nbsp;\n\n![Head1](/images/heads/head1.png \"head1\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n\n&nbsp;\n\n![Head2](/images/heads/head2.png \"head2\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n&nbsp;\n\n![Head3](/images/heads/head3.png \"head3\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n",
-          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/heads/head1.png\" alt=\"Head1\" title=\"head1\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head2.png\" alt=\"Head2\" title=\"head2\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/heads/head3.png\" alt=\"Head3\" title=\"head3\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>"
-        },
-        "_id": "portfolio/heads.md",
-        "_raw": {
-          "sourceFilePath": "portfolio/heads.md",
-          "sourceFileName": "heads.md",
-          "sourceFileDir": "portfolio",
-          "contentType": "markdown",
-          "flattenedPath": "portfolio/heads"
-        },
-        "type": "Portfolio"
-      },
-      "documentHash": "1720409680781",
-      "hasWarnings": false,
-      "documentTypeName": "Portfolio"
-    },
     "portfolio/neo-tetra.md": {
       "document": {
         "title": "Neo Tetra",
@@ -220,7 +178,7 @@
     },
     "portfolio/sleep.md": {
       "document": {
-        "title": "Euphemism for a Good Night's Sleep",
+        "title": "Volumes",
         "date": "2023-01-17T00:00:00.000Z",
         "slug": "sleep",
         "image": {
@@ -261,7 +219,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1720377270945",
+      "documentHash": "1723082042610",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -316,6 +274,48 @@
         "type": "Portfolio"
       },
       "documentHash": "1720336479759",
+      "hasWarnings": false,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/surfaces.md": {
+      "document": {
+        "title": "Surfaces",
+        "date": "2023-01-17T00:00:00.000Z",
+        "slug": "surfaces",
+        "image": {
+          "src": "/images/portfolio/paint.png",
+          "width": 2000,
+          "height": 2000,
+          "type": "Image",
+          "_raw": {}
+        },
+        "description": "Paintings and Works on Paper",
+        "enabled": true,
+        "orderIndex": 8,
+        "preview": {
+          "src": "/images/surfaces/paint0.png",
+          "width": 3840,
+          "height": 2160,
+          "type": "Image",
+          "_raw": {}
+        },
+        "overview": "Two dimensional artwork made throughout the years.",
+        "faintText": true,
+        "body": {
+          "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
+          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\"></p>\n<p>Aquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
+        },
+        "_id": "portfolio/surfaces.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/surfaces.md",
+          "sourceFileName": "surfaces.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/surfaces"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1723079474269",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -412,45 +412,45 @@
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
-    "portfolio/surfaces.md": {
+    "portfolio/volumes.md": {
       "document": {
-        "title": "Surfaces",
+        "title": "Heads",
         "date": "2023-01-17T00:00:00.000Z",
-        "slug": "surfaces",
+        "slug": "heads",
         "image": {
-          "src": "/images/portfolio/paint.png",
-          "width": 2000,
-          "height": 2000,
+          "src": "/images/portfolio/head.png",
+          "width": 4032,
+          "height": 4032,
           "type": "Image",
           "_raw": {}
         },
-        "description": "Paintings and Works on Paper",
+        "description": "2020 - 2024",
         "enabled": true,
-        "orderIndex": 8,
+        "orderIndex": 9,
         "preview": {
-          "src": "/images/surfaces/paint0.png",
+          "src": "/images/heads/head0.png",
           "width": 3840,
           "height": 2160,
           "type": "Image",
           "_raw": {}
         },
-        "overview": "Two dimensional artwork made throughout the years.",
+        "overview": "The manipulation of a foam fead in the form of sculpture.",
         "faintText": true,
         "body": {
-          "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
-          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\"></p>\n<p>Aquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
+          "raw": "\n\n---\n\n&nbsp;\n\n![Volume1](/images/volumes/volume1.png \"volume1\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n\n&nbsp;\n\n![Volume2](/images/volumes/volume2.png \"volume2\")\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"\n\n\n&nbsp;\n\n![Volume3](/images/volumes/volume3.png \"volume3\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n\n&nbsp;\n\n![Volume4](/images/volumes/volume4.png \"volume4\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n",
+          "html": "<hr>\n<p> </p>\n<p><img src=\"/images/volumes/volume1.png\" alt=\"Volume1\" title=\"volume1\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume2.png\" alt=\"Volume2\" title=\"volume2\">\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume3.png\" alt=\"Volume3\" title=\"volume3\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume4.png\" alt=\"Volume4\" title=\"volume4\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>"
         },
-        "_id": "portfolio/surfaces.md",
+        "_id": "portfolio/volumes.md",
         "_raw": {
-          "sourceFilePath": "portfolio/surfaces.md",
-          "sourceFileName": "surfaces.md",
+          "sourceFilePath": "portfolio/volumes.md",
+          "sourceFileName": "volumes.md",
           "sourceFileDir": "portfolio",
           "contentType": "markdown",
-          "flattenedPath": "portfolio/surfaces"
+          "flattenedPath": "portfolio/volumes"
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723079474269",
+      "documentHash": "1723080301327",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     }

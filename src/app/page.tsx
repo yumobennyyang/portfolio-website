@@ -15,6 +15,8 @@ import { allPortfolios } from 'contentlayer/generated';
 import Image from 'next/image'
 import localFont from 'next/font/local'
 
+import LastCommitTime from '../components/LastCommitTime';
+
 const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
@@ -26,6 +28,8 @@ const text = localFont({ src: '../fonts/PPNeueMontreal-medium.otf' })
 
 
 export default function PortfolioIndex() {
+
+  
 
 
 
@@ -59,6 +63,8 @@ export default function PortfolioIndex() {
 
 
   function interaction() {
+
+    
 
 
     // const saturateVideo = document.querySelectorAll('.saturateVideo')
@@ -496,6 +502,8 @@ export default function PortfolioIndex() {
   }
 
   useEffect(() => {
+
+
     // updateScrollSpeed();
 
     const handleResize2 = () => {
@@ -741,7 +749,9 @@ export default function PortfolioIndex() {
               <span>Built with Next.js on Vercel.</span>
               <span className="flashing">_</span>
               <br></br>
-              <span>© 2024 Yang Last updated 07-06</span>
+              <span>Copyright © 2024 Benny Yang</span>
+              <br></br>
+              <span>Last updated </span><LastCommitTime />
             </p>
           </div>
 

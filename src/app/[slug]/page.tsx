@@ -9,7 +9,7 @@ import "../globals.css";
 import { motion } from 'framer-motion';
 import Transition from "../template";
 
-const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Book.otf' });
+const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Thin.otf' });
 const text = localFont({ src: '../../fonts/PPNeueMontreal-Book.otf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
@@ -51,8 +51,8 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             category: 'CRAFTS',
             items: [
                 { href: '/sleep', label: 'Euphemism for a Good Night\'s Sleep', description: '2023' },
-                { href: '/paintings', label: 'Flat Collection', description: 'Paintings and Works on Paper' },
-                { href: '/heads', label: 'Heads', description: '2020 - 2024' },
+                { href: '/surfaces', label: 'Surfaces', description: 'Paintings and Works on Paper' },
+                { href: '/volumes', label: 'Volumes', description: 'Sculptures and Works in Space' },
             ],
         },
     ];
@@ -89,10 +89,10 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
         </div>
 
-        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 left-0 top-0 fixed w-auto leading-6 text-zinc-400 text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 left-0 top-0 fixed w-auto leading-6 text-zinc-50 text-sm ${satoshi.className}`}>
 
             <a
-                className={` justify-between hover:text-zinc-50`}
+                className={` justify-between `}
                 href="/#portfolio"
             >
                 <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
@@ -104,11 +104,11 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
         </div>
 
 
-        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-400  text-sm ${satoshi.className}`}>
+        <div className={`flex mix-blend-difference sm:mx-4 my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-50 text-sm ${satoshi.className}`}>
 
 
             <a
-                className={` justify-between hover:text-zinc-50`}
+                className={` justify-between `}
                 href="https://read.cv/bennyyyang"
                 target="_blank"
             >
