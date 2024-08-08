@@ -648,7 +648,7 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  pt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
+          className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
