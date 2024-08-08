@@ -22,7 +22,7 @@ const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
 
-const text = localFont({ src: '../fonts/PPNeueMontreal-medium.otf' })
+const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
 
 
 
