@@ -679,8 +679,9 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
-            ↗ art
+          <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
+          <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+          <span>&nbsp; art</span>
             {/* <span>↗</span>*/}
           </p>
 
@@ -691,8 +692,9 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-2 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">
-            ↗ cv
+          <p className=" justify-center pr-4 pl-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
+          <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp; cv</span>
           </p>
 
         </a>
