@@ -44,15 +44,15 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             items: [
                 { href: '/neo-tetra', label: 'Neo Tetra', description: 'Typeface Design' },
                 { href: '/valorant', label: 'Valorant', description: 'Promotional Graphics' },
-                { href: '/renderings', label: 'Renderings', description: 'Photoshop, Blender, etc.' },
+                { href: '/renderings', label: 'Renderings', description: 'Digitals and Forms as Pixels' },
             ],
         },
         {
             category: 'CRAFTS',
             items: [
                 { href: '/sleep', label: 'Euphemism for a Good Night\'s Sleep', description: '2023' },
-                { href: '/surfaces', label: 'Surfaces', description: 'Paintings and Works on Paper' },
-                { href: '/volumes', label: 'Volumes', description: 'Sculptures and Works in Space' },
+                { href: '/surfaces', label: 'Surfaces', description: 'Paintings and Forms on Paper' },
+                { href: '/volumes', label: 'Volumes', description: 'Sculptures and Forms in Space' },
             ],
         },
     ];

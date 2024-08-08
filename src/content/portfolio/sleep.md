@@ -11,11 +11,11 @@ preview:
 
 
 date: 2023-01-17
-enabled: true
-title: Volumes
+enabled: false
+title: Sleep
 slug: sleep
 description: '2023'
-orderIndex: 7
+orderIndex: 10
 
 overview: Sleep is popularly used as a euphemism for the violent concept of death. What then would be the euphemism for sleep, a notion already so peaceful and emotionless, even delightful at times. This piece is about finding the almost imperceptible middle ground between stress and relaxation. The head seems constrained in the box, but there’s no barrier blocking it from interacting with the outside world. The box itself seems to suspend the weight of the head, but how much of it is being carried by the longer ropes that hang from the ceiling? I explore into objects that lack the state of motion but whose state of immobility is only temporary.
 

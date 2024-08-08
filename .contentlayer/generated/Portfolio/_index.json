@@ -11,7 +11,7 @@
       "_raw": {}
     },
     "description": "Photoshop Project",
-    "enabled": true,
+    "enabled": false,
     "orderIndex": 10,
     "preview": {
       "src": "/images/usa/usa1.png",
@@ -130,7 +130,7 @@
       "type": "Image",
       "_raw": {}
     },
-    "description": "Photoshop, Blender, etc.",
+    "description": "Digitals and Forms as Pixels",
     "enabled": true,
     "orderIndex": 6,
     "preview": {
@@ -156,7 +156,7 @@
     "type": "Portfolio"
   },
   {
-    "title": "Volumes",
+    "title": "Sleep",
     "date": "2023-01-17T00:00:00.000Z",
     "slug": "sleep",
     "image": {
@@ -167,8 +167,8 @@
       "_raw": {}
     },
     "description": "2023",
-    "enabled": true,
-    "orderIndex": 7,
+    "enabled": false,
+    "orderIndex": 10,
     "preview": {
       "src": "/images/sleep/sleep1.png",
       "width": 3840,
@@ -257,7 +257,7 @@
       "type": "Image",
       "_raw": {}
     },
-    "description": "Paintings and Works on Paper",
+    "description": "Paintings and Forms on Paper",
     "enabled": true,
     "orderIndex": 8,
     "preview": {
@@ -270,8 +270,8 @@
     "overview": "Two dimensional artwork made throughout the years.",
     "faintText": true,
     "body": {
-      "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/paintings/paint1.png \"paint1\")\n\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/paintings/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/paintings/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/paintings/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/paintings/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/paintings/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/paintings/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/paintings/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/paintings/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/paintings/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
-      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/paintings/paint1.png\" alt=\"Paint1\" title=\"paint1\"></p>\n<p>Aquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/paintings/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
+      "raw": "\n\n---\n\n&nbsp;\n\n![Paint1](/images/surfaces/paint1.png \"paint1\")\n\nAquarium, oil on canvas, 2024, 12\"x 20\"\n\n&nbsp;\n\n![Paint2](/images/surfaces/paint2.png \"paint2\")\nDagim, oil on panel, 2024, 12\"x 12\"\n\n&nbsp;\n\n![Paint3](/images/surfaces/paint3.png \"paint3\")\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"\n\n&nbsp;\n\n![Paint4](/images/surfaces/paint4.png \"paint4\")\nThe Forum, oil on canvas, 2022, 18\"x 18\"\n\n&nbsp;\n\n![Paint5](/images/surfaces/paint5.png \"paint5\")\n老人, oil on canvas, 2022, 16”x 20”\n\n&nbsp;\n\n![Paint6](/images/surfaces/paint6.png \"paint6\")\nFinale, pastel on linen, 2022, 24\"x 36\"\n\n&nbsp;\n\n![Paint7](/images/surfaces/paint7.png \"paint7\")\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"\n\n&nbsp;\n\n![Paint8](/images/surfaces/paint8.png \"paint8\")\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"\n\n&nbsp;\n\n![Paint9](/images/surfaces/paint9.png \"paint9\")\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)\n\n&nbsp;\n\n![Paint10](/images/surfaces/paint10.png \"paint10\")\nSelf Portrait, white charcoal, 2019, 19\"x 25\"\n\n\n",
+      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/surfaces/paint1.png\" alt=\"Paint1\" title=\"paint1\"></p>\n<p>Aquarium, oil on canvas, 2024, 12\"x 20\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint2.png\" alt=\"Paint2\" title=\"paint2\">\nDagim, oil on panel, 2024, 12\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint3.png\" alt=\"Paint3\" title=\"paint3\">\nCharlie is Back, oil on canvas, 2023, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint4.png\" alt=\"Paint4\" title=\"paint4\">\nThe Forum, oil on canvas, 2022, 18\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint5.png\" alt=\"Paint5\" title=\"paint5\">\n老人, oil on canvas, 2022, 16”x 20”</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint6.png\" alt=\"Paint6\" title=\"paint6\">\nFinale, pastel on linen, 2022, 24\"x 36\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint7.png\" alt=\"Paint7\" title=\"paint7\">\nStudy of a Plant on a Sphere, woodcut print, 2022, 15\"x 18\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint8.png\" alt=\"Paint8\" title=\"paint8\">\nNights and Streets and Winds and Lights, charcoal, 2020, 14\"x 17\"</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint9.png\" alt=\"Paint9\" title=\"paint9\">\nInhabitation I II III, oil on canvas, 2020, 10\"x 20\"(x3)</p>\n<p> </p>\n<p><img src=\"/images/surfaces/paint10.png\" alt=\"Paint10\" title=\"paint10\">\nSelf Portrait, white charcoal, 2019, 19\"x 25\"</p>"
     },
     "_id": "portfolio/surfaces.md",
     "_raw": {
@@ -367,21 +367,21 @@
     "type": "Portfolio"
   },
   {
-    "title": "Heads",
+    "title": "Volumes",
     "date": "2023-01-17T00:00:00.000Z",
-    "slug": "heads",
+    "slug": "volumes",
     "image": {
-      "src": "/images/portfolio/head.png",
+      "src": "/images/portfolio/volumes.png",
       "width": 4032,
       "height": 4032,
       "type": "Image",
       "_raw": {}
     },
-    "description": "2020 - 2024",
+    "description": "Sculptures and Forms in Space",
     "enabled": true,
-    "orderIndex": 9,
+    "orderIndex": 7,
     "preview": {
-      "src": "/images/heads/head0.png",
+      "src": "/images/volumes/head0.png",
       "width": 3840,
       "height": 2160,
       "type": "Image",

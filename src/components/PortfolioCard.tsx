@@ -13,7 +13,12 @@ interface PortfolioCardProps {
 
 export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
+    if (!item.enabled) {
+        return null;
+    }
+
     return < Link href={"/" + item.slug}>
+
 
 
         <div className=" w-full backdrop-blur-2xl tracking-wide ">

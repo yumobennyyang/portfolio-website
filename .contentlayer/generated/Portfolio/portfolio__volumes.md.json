@@ -1,19 +1,19 @@
 {
-  "title": "Heads",
+  "title": "Volumes",
   "date": "2023-01-17T00:00:00.000Z",
-  "slug": "heads",
+  "slug": "volumes",
   "image": {
-    "src": "/images/portfolio/head.png",
+    "src": "/images/portfolio/volumes.png",
     "width": 4032,
     "height": 4032,
     "type": "Image",
     "_raw": {}
   },
-  "description": "2020 - 2024",
+  "description": "Sculptures and Forms in Space",
   "enabled": true,
-  "orderIndex": 9,
+  "orderIndex": 7,
   "preview": {
-    "src": "/images/heads/head0.png",
+    "src": "/images/volumes/head0.png",
     "width": 3840,
     "height": 2160,
     "type": "Image",
