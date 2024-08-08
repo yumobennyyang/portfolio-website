@@ -346,7 +346,7 @@ export default function PortfolioIndex() {
             start: 0,
             end: 1,
             scrub: true,
-            markers: false
+            markers: false,
           }
         }
       );
