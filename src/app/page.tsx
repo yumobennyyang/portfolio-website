@@ -19,7 +19,8 @@ const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
-const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
+
+const text = localFont({ src: '../fonts/PPNeueMontreal-medium.otf' })
 
 
 
@@ -561,6 +562,8 @@ export default function PortfolioIndex() {
 
   return (
 
+    
+
 
     <main className=" flex  justify-center  w-screen m-auto ">
 
@@ -586,12 +589,12 @@ export default function PortfolioIndex() {
 
       <div className="hidden sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
 
-        <div className="opacity-70 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
+        <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
         </div>
       </div>
 
-      <div className="gradient gradient-background z-20  w-screen   pointer-events-none  fixed " />
-      <div className="gradient gradient-blur z-20  w-screen   pointer-events-none  fixed ">
+      <div className="gradient gradient-background z-20  w-screen   pointer-events-none  fixed hidden" />
+      <div className="gradient gradient-blur z-20  w-screen   pointer-events-none  fixed hidden">
         <div></div>
         <div></div>
         <div></div>

@@ -5,14 +5,14 @@ image:
   height: 2000
 
 preview:
-  src: /images/paintings/paint0.png
+  src: /images/surfaces/paint0.png
   width: 3840
   height: 2160
 
 date: 2023-01-17
 enabled: true
-title: Flat Collection
-slug: paintings
+title: Surfaces
+slug: surfaces
 description: Paintings and Works on Paper
 orderIndex: 8
 faintText: true
