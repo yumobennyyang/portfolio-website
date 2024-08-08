@@ -1,20 +1,20 @@
 ---
 image:
-  src: /images/portfolio/head.png
+  src: /images/portfolio/volumes.png
   width: 4032
   height: 4032
 
 preview:
-  src: /images/heads/head0.png
+  src: /images/volumes/head0.png
   width: 3840
   height: 2160
 
 date: 2023-01-17
 enabled: true
-title: Heads
-slug: heads
-description: 2020 - 2024
-orderIndex: 9
+title: Volumes
+slug: volumes
+description: Sculptures and Forms in Space
+orderIndex: 7
 faintText: true
 
 overview: The manipulation of a foam fead in the form of sculpture.

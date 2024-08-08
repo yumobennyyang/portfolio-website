@@ -13,7 +13,7 @@ date: 2023-01-17
 enabled: true
 title: Renderings
 slug: renderings
-description: Photoshop, Blender, etc.
+description: Digitals and Forms as Pixels
 orderIndex: 6
 
 overview: Static images created with various tools.

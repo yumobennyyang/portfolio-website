@@ -339,6 +339,24 @@ export default function PortfolioIndex() {
           }
         }
       );
+
+      gsap.fromTo(element,
+        {
+          position: '',
+
+        },
+        {
+          position: 'fixed',
+
+          scrollTrigger: {
+            trigger: element,
+            start: 0,
+            end: 1,
+            scrub: true,
+            markers: false
+          }
+        }
+      );
     });
 
 
@@ -618,7 +636,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div id="logo" className="logoOffset  mix-blend-difference z-40 absolute sm:fixed  w-full  h-auto pointer-events-none   px-4 ">
+      <div id="logo" className="logoOffset  mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
 
 
         <div className=" logoAppear fixed my-6 h-14 w-14  self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
@@ -645,8 +663,8 @@ export default function PortfolioIndex() {
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
-              <br></br><br></br>After working with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website and is constantly updating it...</span>
+              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
+              <br></br><br></br>Benny coded this website with love, and help from ChatGPT.</span>
           </div>
 
         </div>
@@ -687,7 +705,8 @@ export default function PortfolioIndex() {
         className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 absolute sm:fixed w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
-          <div className="scrolldown opacity-30 !scale-75"></div>
+          <div className="hidden scrolldown opacity-30 !scale-75"></div>
+          <div className="arrow !scale-75"></div>
 
           <p className="hidden justify-center  ml-auto mr-auto px-4 py-2">
             <span>scroll for more</span>
@@ -746,8 +765,8 @@ export default function PortfolioIndex() {
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
-              <span>Built with Next.js on Vercel.</span>
-              <span className="flashing">_</span>
+              <span>Built with Next.js on Vercel</span>
+              {/* <span className="flashing">_</span> */}
               <br></br>
               <span>Copyright © 2024 Benny Yang</span>
               <br></br>

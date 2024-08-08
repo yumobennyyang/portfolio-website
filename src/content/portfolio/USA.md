@@ -10,7 +10,7 @@ preview:
   height: 2160
 
 date: 2023-01-17
-enabled: true
+enabled: false
 title: United States of Achromaticism
 slug: usa
 description: Photoshop Project

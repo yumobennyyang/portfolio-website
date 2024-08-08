@@ -10,7 +10,7 @@
     "_raw": {}
   },
   "description": "Photoshop Project",
-  "enabled": true,
+  "enabled": false,
   "orderIndex": 10,
   "preview": {
     "src": "/images/usa/usa1.png",
