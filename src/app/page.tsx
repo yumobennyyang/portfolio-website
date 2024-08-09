@@ -723,7 +723,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 sm:pb-24 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-4 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
 
           <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
@@ -736,10 +736,10 @@ export default function PortfolioIndex() {
 
 
 
-        <div>
+        <div className="sm:flex">
 
           <div
-            className={` revealText pb-0 sm:m-4 -z-10 left-0 bottom-0 relative sm:fixed  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
+            className={`  pb-0 sm:m-4 -z-10 left-0 bottom-0 relative  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
@@ -753,7 +753,7 @@ export default function PortfolioIndex() {
           </div>
 
           <div
-            className={`pb-4 sm:pb-0 revealText sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:fixed sm:w-auto w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
+            className={`pb-4 sm:text-right items-end sm:pb-0 sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:w-1/2 w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
           >
 
             <p className=" justify-center px-4 py-2  w-auto ">
