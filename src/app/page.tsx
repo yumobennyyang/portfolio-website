@@ -589,7 +589,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div className="{saturateVideo} -z-50 fixed h-screen  pointer-events-none  w-screen items-center   bg-white">
+      <div className="sm:block hidden {saturateVideo} -z-50 fixed h-screen  pointer-events-none  w-screen items-center   bg-white">
 
         <video
           autoPlay
