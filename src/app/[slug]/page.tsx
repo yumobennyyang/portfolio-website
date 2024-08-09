@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 import Transition from "../template";
 
 const satoshi = localFont({ src: '../../fonts/PPNeueMontrealMono-Thin.otf' });
-const text = localFont({ src: '../../fonts/PPNeueMontreal-Book.otf' });
+const regularText = localFont({ src: '../../fonts/PPNeueMontreal-Book.otf' });
 const neoTetra = localFont({ src: '../../fonts/NeoTetra-Regular.ttf' });
 
 const boldd = localFont({ src: '../../fonts/PPNeueMontreal-Medium.otf' });
@@ -70,11 +70,11 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
     const nextItem = allPortfolios.find((portfolio) => portfolio.orderIndex === currentIndex + 1);
 
 
-    return <div className={` leading-6 text-zinc-900  ${text.className}`}>
+    return <div className={` leading-6 text-zinc-900  ${regularText.className}`}>
 
         <div className="brightness-95 flex vercelBackground pointer-events-none  -z-40 w-full h-screen fixed">
 
-            <div className="opacity-70 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
+            <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
             </div>
         </div>
 
@@ -144,7 +144,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             <div className={`px-8 sticky top-0 left-0 w-1/3 h-screen pt-[104px] sm:block hidden`}>
                 {navItems.map((section) => (
                     <div key={section.category}>
-                        <div className={`text-zinc-400 pb-1 text-xs ${satoshi.className}`}>{section.category}</div>
+                        <div className={`text-zinc-400 pb-1 text-xs uppercase tracking-wider ${regularText.className}`}>{section.category}</div>
                         <div className="pb-4">
                             {section.items.map((item) => (
                                 <div className="flex" key={item.href}>
@@ -164,7 +164,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
             <div className=" max-w-3xl px-4 sm:px-8   ">
                 <div className={` z-30 py-8 text-4xl  font-medium !tracking-[0.015rem] ${boldd.className}`}>{item?.title}</div>
-                <div className={` text-zinc-400 pb-1 text-xs ${satoshi.className}`} >OVERVIEW</div>
+                <div className={` text-zinc-400 pb-1 text-xs uppercase tracking-wider ${regularText.className}`} >OVERVIEW</div>
                 <div className="pb-4"> {item?.overview}</div>
 
 
@@ -173,7 +173,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.role && (
                         <div className="flex-1 pb-4">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>ROLE</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>ROLE</div>
                             <ul>
                                 {item?.role?.map((role, index) => (
                                     <li key={index}>{role}</li>
@@ -185,7 +185,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.tools && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>TOOLS</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>TOOLS</div>
                             <ul>
                                 {item?.tools?.map((tools, index) => (
                                     <li key={index}>{tools}</li>
@@ -196,14 +196,14 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.duration && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>DURATION</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>DURATION</div>
                             <div> {item?.duration}</div>
                         </div>
                     )}
 
                     {item.team && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>TEAM</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>TEAM</div>
                             <ul>
                                 {item?.team?.map((team, index) => (
                                     <li key={index}>{team}</li>
@@ -214,7 +214,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.media && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>MEDIA</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>MEDIA</div>
                             <ul>
                                 {item?.media?.map((media, index) => (
                                     <li key={index}>{media}</li>
@@ -225,7 +225,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
                     {item.dimensions && (
                         <div className="flex-1 pb-4 ">
-                            <div className={` text-zinc-400 text-xs pb-1 ${satoshi.className}`}>DIMENSIONS</div>
+                            <div className={` text-zinc-400 text-xs uppercase tracking-wider ${regularText.className}`}>DIMENSIONS</div>
                             <div> {item?.dimensions}</div>
                         </div>
                     )}

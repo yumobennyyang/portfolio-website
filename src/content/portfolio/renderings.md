@@ -14,7 +14,7 @@ enabled: true
 title: Renderings
 slug: renderings
 description: Digitals and Forms as Pixels
-orderIndex: 6
+orderIndex: 3
 
 overview: Static images created with various tools.
 

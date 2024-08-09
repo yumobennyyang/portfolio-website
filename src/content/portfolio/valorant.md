@@ -1,8 +1,8 @@
 ---
 video:
   src: /images/portfolio/valorant.mp4
-  width: 1374
-  height: 1374
+  width: 1368
+  height: 912
 
 preview:
   src: /images/valorant/valorant1.png
@@ -15,7 +15,7 @@ enabled: true
 title: Valorant
 slug: valorant
 description: Promotional Graphics
-orderIndex: 5
+orderIndex: 6
 
 overview: Promotional graphics published in app on 07/04/2023 for VALORANT’s China launch in summer 2023 - Layouts, visuals, and information on Agents, Weapons, Game modes, etc. The research process involved understanding the brand's visual identity and repurposing the brand's decorative components.
 tools: [Photoshop, Figma]

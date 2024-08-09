@@ -12,7 +12,7 @@
     },
     "description": "Photoshop Project",
     "enabled": false,
-    "orderIndex": 10,
+    "orderIndex": 3,
     "preview": {
       "src": "/images/usa/usa1.png",
       "width": 3840,
@@ -48,7 +48,7 @@
     },
     "description": "Typeface Design",
     "enabled": true,
-    "orderIndex": 4,
+    "orderIndex": 2,
     "preview": {
       "src": "/images/neo-tetra/neotetra1.png",
       "width": 3840,
@@ -89,7 +89,7 @@
     },
     "description": "Interactive Experiments",
     "enabled": true,
-    "orderIndex": 3,
+    "orderIndex": 7,
     "preview": {
       "src": "/images/playground/playground1.png",
       "width": 3840,
@@ -132,7 +132,7 @@
     },
     "description": "Digitals and Forms as Pixels",
     "enabled": true,
-    "orderIndex": 6,
+    "orderIndex": 3,
     "preview": {
       "src": "/images/renderings/renderings0.png",
       "width": 3840,
@@ -210,7 +210,7 @@
     },
     "description": "Mobile UI/UX",
     "enabled": true,
-    "orderIndex": 2,
+    "orderIndex": 4,
     "preview": {
       "src": "/images/spec-mobile/specmobile1.png",
       "width": 3840,
@@ -331,14 +331,14 @@
     "slug": "valorant",
     "video": {
       "src": "/images/portfolio/valorant.mp4",
-      "width": 1374,
-      "height": 1374,
+      "width": 1368,
+      "height": 912,
       "type": "Video",
       "_raw": {}
     },
     "description": "Promotional Graphics",
     "enabled": true,
-    "orderIndex": 5,
+    "orderIndex": 6,
     "preview": {
       "src": "/images/valorant/valorant1.png",
       "width": 3840,
@@ -379,7 +379,7 @@
     },
     "description": "Sculptures and Forms in Space",
     "enabled": true,
-    "orderIndex": 7,
+    "orderIndex": 5,
     "preview": {
       "src": "/images/volumes/head0.png",
       "width": 3840,

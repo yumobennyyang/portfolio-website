@@ -14,7 +14,7 @@ enabled: true
 title: Volumes
 slug: volumes
 description: Sculptures and Forms in Space
-orderIndex: 7
+orderIndex: 5
 faintText: true
 
 overview: The manipulation of a foam fead in the form of sculpture.

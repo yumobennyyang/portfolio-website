@@ -15,7 +15,7 @@ enabled: true
 title: Neo Tetra
 slug: neo-tetra
 description: Typeface Design
-orderIndex: 4
+orderIndex: 2
 textarea: true
 
 overview: Inspired by the extraordinary geometric abstractions of Bauhaus, Neo Tetra is a typographic study that reimagines 26 letters, 10 numbers, and 12 symbols as geometric forms comprised of primitive shapes. 
