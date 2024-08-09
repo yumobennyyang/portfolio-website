@@ -4,7 +4,7 @@
 
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0; */
   /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 230, 235, 238; */
 
@@ -31,7 +31,7 @@
 
 
 .vercelBackground {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))),
@@ -55,7 +55,7 @@ img {
 
 html {
   scroll-behavior: smooth;
-  background-color: #ffffff
+  background-color: rgb(242, 242, 246)
 }
 
 #scrollSection {
