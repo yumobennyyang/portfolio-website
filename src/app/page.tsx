@@ -273,7 +273,7 @@ export default function PortfolioIndex() {
       gsap.fromTo(element,
         {
           opacity: 0,
-          zIndex: -10,
+          zIndex: 0,
         },
         {
           opacity: 1,
