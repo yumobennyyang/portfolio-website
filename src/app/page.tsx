@@ -723,7 +723,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-4 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-0 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
 
           <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
