@@ -21,11 +21,11 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
 
 
 
-        <div className=" w-full backdrop-blur-2xl tracking-wide ">
+        <div className=" w-full backdrop-blur-2xl tracking-wide mb-4 ">
 
 
 
-            <div id="portfolioCard" className=" bg-white  duration-300 ease-[cubic-bezier(0,0,.5,1)] w-full flex-col relative flex rounded-xl overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] border !border-zinc-100 ">
+            <div id="portfolioCard" className=" bg-white  duration-300 ease-[cubic-bezier(0,0,.5,1)] w-full flex-col relative flex rounded-xl overflow-hidden group layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01]  ">
 
 
 
@@ -43,7 +43,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                             autoPlay
                             muted
                             loop
-                            className="aspect-square object-cover "
+                            className=" object-cover "
                             width={item.video.width}
                             height={item.video.height}>
 
@@ -53,9 +53,9 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                     </div>
                 )}
 
-                <div className="z-20 px-4 py-3 relative w-full flex-row">
-                    <div className="text-zinc-900 w-full pl-2 pb-1 truncate text-xl ">{item.title}</div>
-                    <div className={`text-zinc-400 opacity-80 w-full pl-2 pb-2 truncate text-xs uppercase ${regularText.className}`}>{item.description}</div>
+                <div className="z-20 px-4 pb-3 relative w-full flex-row">
+                    <div className="text-zinc-950 w-full pl-2 pb-1 truncate text-xl ">{item.title}</div>
+                    <div className={`text-zinc-400 opacity-80 w-full pl-2 pb-2 truncate text-xs uppercase tracking-wider ${regularText.className}`}>{item.description}</div>
 
 
                 </div>

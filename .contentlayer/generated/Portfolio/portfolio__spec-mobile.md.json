@@ -11,7 +11,7 @@
   },
   "description": "Mobile UI/UX",
   "enabled": true,
-  "orderIndex": 2,
+  "orderIndex": 4,
   "preview": {
     "src": "/images/spec-mobile/specmobile1.png",
     "width": 3840,

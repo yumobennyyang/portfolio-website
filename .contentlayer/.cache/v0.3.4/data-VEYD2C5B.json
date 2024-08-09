@@ -14,7 +14,7 @@
         },
         "description": "Photoshop Project",
         "enabled": false,
-        "orderIndex": 10,
+        "orderIndex": 3,
         "preview": {
           "src": "/images/usa/usa1.png",
           "width": 3840,
@@ -37,7 +37,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723084378122",
+      "documentHash": "1723169665584",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -55,7 +55,7 @@
         },
         "description": "Typeface Design",
         "enabled": true,
-        "orderIndex": 4,
+        "orderIndex": 2,
         "preview": {
           "src": "/images/neo-tetra/neotetra1.png",
           "width": 3840,
@@ -83,7 +83,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1719592909439",
+      "documentHash": "1723169618884",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -101,7 +101,7 @@
         },
         "description": "Interactive Experiments",
         "enabled": true,
-        "orderIndex": 3,
+        "orderIndex": 7,
         "preview": {
           "src": "/images/playground/playground1.png",
           "width": 3840,
@@ -131,7 +131,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723041556247",
+      "documentHash": "1723169629426",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -149,7 +149,7 @@
         },
         "description": "Digitals and Forms as Pixels",
         "enabled": true,
-        "orderIndex": 6,
+        "orderIndex": 3,
         "preview": {
           "src": "/images/renderings/renderings0.png",
           "width": 3840,
@@ -172,7 +172,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723084060705",
+      "documentHash": "1723169706428",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -237,7 +237,7 @@
         },
         "description": "Mobile UI/UX",
         "enabled": true,
-        "orderIndex": 2,
+        "orderIndex": 4,
         "preview": {
           "src": "/images/spec-mobile/specmobile1.png",
           "width": 3840,
@@ -273,7 +273,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1720336479759",
+      "documentHash": "1723160124634",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -373,14 +373,14 @@
         "slug": "valorant",
         "video": {
           "src": "/images/portfolio/valorant.mp4",
-          "width": 1374,
-          "height": 1374,
+          "width": 1368,
+          "height": 912,
           "type": "Video",
           "_raw": {}
         },
         "description": "Promotional Graphics",
         "enabled": true,
-        "orderIndex": 5,
+        "orderIndex": 6,
         "preview": {
           "src": "/images/valorant/valorant1.png",
           "width": 3840,
@@ -408,7 +408,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1720472089637",
+      "documentHash": "1723169676426",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -426,7 +426,7 @@
         },
         "description": "Sculptures and Forms in Space",
         "enabled": true,
-        "orderIndex": 7,
+        "orderIndex": 5,
         "preview": {
           "src": "/images/volumes/head0.png",
           "width": 3840,
@@ -450,7 +450,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723083583403",
+      "documentHash": "1723160178406",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     }

@@ -701,6 +701,7 @@ export default function PortfolioIndex() {
       >
         <div className="flex flex-col items-center">
           <div className="hidden scrolldown opacity-30 !scale-75"></div>
+          
           <div className="arrow !scale-75"></div>
 
           <p className="hidden justify-center  ml-auto mr-auto px-4 py-2">
@@ -722,36 +723,18 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-16 sm:pb-24 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
-          {/* <div className={`px-2 pt-3 inline-block text-sm text-black ${satoshi.className}`}>INTERFACES</div> */}
+        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 sm:pb-24 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
 
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-2 !pointer-events-auto ">
+          <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
-
-            {interfaces.map((item, index) => <PortfolioCard key={index} item={item} />)}
-
-
-          </div>
-
-          {/* <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>COMPOSITIONS</div> */}
-
-
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-2 !pointer-events-auto ">
-
-            {graphics.map((item, index) => <PortfolioCard key={index} item={item} />)}
-
-          </div>
-
-          {/* <div className={`px-2 inline-block text-sm text-black ${satoshi.className}`}>CRAFTS</div> */}
-
-          <div className="w-full grid sm:grid-cols-3 p-2 gap-4 pb-8 !pointer-events-auto ">
-
-            {crafts.map((item, index) => <PortfolioCard key={index} item={item} />)}
+          {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
 
           </div>
 
 
         </div>
+
+
 
         <div>
 
@@ -787,6 +770,8 @@ export default function PortfolioIndex() {
           </div>
 
         </div>
+
+
 
 
       </section>

@@ -14,7 +14,7 @@ enabled: false
 title: United States of Achromaticism
 slug: usa
 description: Photoshop Project
-orderIndex: 10
+orderIndex: 3
 
 overview: A look into the makeup of social and political powers in America. (research data accurate as of June 2020)
 

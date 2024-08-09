@@ -4,14 +4,14 @@
   "slug": "valorant",
   "video": {
     "src": "/images/portfolio/valorant.mp4",
-    "width": 1374,
-    "height": 1374,
+    "width": 1368,
+    "height": 912,
     "type": "Video",
     "_raw": {}
   },
   "description": "Promotional Graphics",
   "enabled": true,
-  "orderIndex": 5,
+  "orderIndex": 6,
   "preview": {
     "src": "/images/valorant/valorant1.png",
     "width": 3840,

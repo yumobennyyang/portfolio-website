@@ -16,7 +16,7 @@ enabled: true
 title: Playground
 slug: playground
 description: Interactive Experiments 
-orderIndex: 3
+orderIndex: 7
 
 isPlayground: true
 overview: A collection of little things I prototyped for fun.
