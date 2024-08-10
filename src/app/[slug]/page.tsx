@@ -72,7 +72,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
     return <div className={` leading-6 text-zinc-900  ${regularText.className}`}>
 
-        <div className="brightness-95 flex vercelBackground pointer-events-none  -z-40 w-full h-screen fixed">
+        <div className="bg-white brightness-100 flex vvercelBackground pointer-events-none  -z-40 w-full h-screen fixed">
 
             <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
             </div>
