@@ -526,26 +526,24 @@ export default function PortfolioIndex() {
     handleResize2(); // Initial check
 
 
-    // const lenis = new Lenis({
+
+
+    // const lenis = new Lenis()
+
+    // lenis.on('scroll', (e: any) => {
+    //   console.log(e)
     // })
-
-
-    // let timeMultiplier = 2000;
-
-
+    
     // lenis.on('scroll', ScrollTrigger.update)
-
-    // gsap.ticker.add((time) => {
-    //   lenis.raf(time * timeMultiplier)
+    
+    // gsap.ticker.add((time)=>{
+    //   lenis.raf(time * 1000)
     // })
-
+    
     // gsap.ticker.lagSmoothing(0)
 
 
-
-
-
-
+    
     // function updateScrollSpeed() {
     //   if (window.innerWidth >= 768) {
     //     scrollSpeed = 1;
@@ -701,7 +699,7 @@ export default function PortfolioIndex() {
       >
         <div className="flex flex-col items-center">
           <div className="hidden scrolldown opacity-30 !scale-75"></div>
-          
+
           <div className="arrow !scale-75"></div>
 
           <p className="hidden justify-center  ml-auto mr-auto px-4 py-2">
@@ -727,7 +725,7 @@ export default function PortfolioIndex() {
 
           <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
-          {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
+            {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
 
           </div>
 

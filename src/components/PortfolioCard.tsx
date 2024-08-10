@@ -53,9 +53,9 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => {
                     </div>
                 )}
 
-                <div className="z-20 px-4 pb-3 relative w-full flex-row">
-                    <div className="text-zinc-950 w-full pl-2 pb-1 truncate text-xl ">{item.title}</div>
-                    <div className={`text-zinc-400 opacity-80 w-full pl-2 pb-2 truncate text-xs uppercase tracking-wider ${regularText.className}`}>{item.description}</div>
+                <div className="z-20 px-6 pb-4 relative w-full flex-row">
+                    <div className="text-zinc-950 w-full pt-1 pb-1 truncate text-xl border-t">{item.title}</div>
+                    <div className={`text-zinc-400 opacity-80 w-full  pb-1 truncate text-xs uppercase tracking-wider ${regularText.className}`}>{item.description}</div>
 
 
                 </div>
