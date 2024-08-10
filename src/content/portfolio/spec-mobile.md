@@ -19,7 +19,7 @@ orderIndex: 4
 
 
 
-overview: Columbia University’s self-sustaining news publication, the Daily Spectator, publishes online five days a week and in physical editions once a week. Our team designed and shipped an app to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.
+overview: Columbia University’s self-sustaining news publication, the Daily Spectator, publishes online five days a week and in physical editions once a week. As Head Product Designer of the organization, I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.
 duration: 15 weeks
 team: [Philippe Wu, Christina Su, Muchen Guo]
 role: [Design Systems, UI/UX]
