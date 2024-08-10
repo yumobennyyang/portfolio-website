@@ -46,11 +46,11 @@ THE PROBLEM
 
 &nbsp;
 
-The UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links pointing to the exact same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.
+The UI is very outdated, with almost no consideration for reponsiveness, scattering out the layout and creating overflows when the window is even slightly adjusted. The UX went through many bandaid solutions, resulting in stray buttons and links that serve the same purpose or point to the same pages, making navigating through the forms very confusing. The design under each section is also quite different as each section was worked on by different engineers at different times without a designer overseeing the conformity.
 
 &nbsp;
 
-I was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site concurred and gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency. Gold and Holographic Gradients, that is.
+I was quite surprised to see the site in such bad shape since hundreds of employees are actively using it on a daily basis. The product manager of this site gave me complete creative freedom in the design. Though, as requested by my team leader, I am to base the color palette off of the larger entreprise that the platform serves under, Tencent Games Joy Club, for brand consistency.
 
 &nbsp;
 
