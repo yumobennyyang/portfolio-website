@@ -123,7 +123,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
 
 
 
-        <div className="gradient gradient-blur z-20 w-screen   pointer-events-none  fixed ">
+        <div className="hidden gradient gradient-blur z-20 w-screen   pointer-events-none  fixed ">
             <div></div>
             <div></div>
             <div></div>
@@ -132,7 +132,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             <div></div>
         </div>
 
-        <div className="gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
+        <div className="hidden gradient gradient-background z-20 w-screen   pointer-events-none  fixed " />
 
 
         <div className="w-full !h-1/2 px-4 sm:px-8 pt-[104px] object-contain" >
