@@ -115,7 +115,7 @@ Do people want a mobile app?
 
 &nbsp;
 
-We sent out surveys with discreet and explicit questions about news consumptions
+We sent out surveys with both discreet and explicit questions about news consumptions
   * • To Spectator Staff (they spend half their life on the spectator website and have a full understanding of the site down to its tiniest problems)
   * • To other Columbia undergraduate students (our main target audience, who can provide good general feedback for the current method of viewing Spectator news)
 
