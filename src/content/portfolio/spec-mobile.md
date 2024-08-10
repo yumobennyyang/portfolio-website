@@ -64,7 +64,7 @@ Interactive Issues:
 
 &nbsp;
 
-Thus, the product team at Spectator, for which I serve as Head Product Designer, began ideating a different news viewing experience to replace the web browser: a mobile app.
+Thus, the product team at Spectator began ideating a different news viewing experience to replace the web browser: a mobile app.
 
 &nbsp;
 
