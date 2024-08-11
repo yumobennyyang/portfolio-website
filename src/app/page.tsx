@@ -8,7 +8,7 @@ import SplitType from 'split-type';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PortfolioCard } from '@/components/PortfolioCard';
 import { allPortfolios } from 'contentlayer/generated';
 
@@ -16,6 +16,10 @@ import Image from 'next/image'
 import localFont from 'next/font/local'
 
 import LastCommitTime from '../components/LastCommitTime';
+
+import ProjectsList from '../components/ProjectsList';
+import ProjectView from '../components/ProjectView';
+import Modal from '../components/Modal';
 
 const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
@@ -30,8 +34,12 @@ const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
 export default function PortfolioIndex() {
 
 
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
 
 
+  const handleClose = () => {
+    setSelectedProjectId(null);
+  };
 
   const items = allPortfolios;
 
@@ -533,17 +541,17 @@ export default function PortfolioIndex() {
     // lenis.on('scroll', (e: any) => {
     //   console.log(e)
     // })
-    
+
     // lenis.on('scroll', ScrollTrigger.update)
-    
+
     // gsap.ticker.add((time)=>{
     //   lenis.raf(time * 1000)
     // })
-    
+
     // gsap.ticker.lagSmoothing(0)
 
 
-    
+
     // function updateScrollSpeed() {
     //   if (window.innerWidth >= 768) {
     //     scrollSpeed = 1;
@@ -653,9 +661,9 @@ export default function PortfolioIndex() {
             <span id="intro" className="split-type ">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He loves building interactive and fluid interfaces that, more often than not, end up being functionless. However, he has recently come to terms with the fact that he needs to make useful ones as well.
+            <span className="reveal-type">He loves building interactive and fluid interfaces that are completely functionless. Though, he recently discovered a passion for building ones that are highly useful and human-centered.
               <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website with love, and help from ChatGPT.</span>
+              <br></br><br></br>Benny coded this website with love, and help from ChatGPT ☃</span>
           </div>
 
         </div>
@@ -729,6 +737,13 @@ export default function PortfolioIndex() {
 
           </div>
 
+          <div className="hidden !pointer-events-auto ">
+            <ProjectsList onSelect={setSelectedProjectId} />
+            <Modal isOpen={!!selectedProjectId} onClose={handleClose}>
+              {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
+            </Modal>
+
+          </div>
 
         </div>
 
