@@ -9,7 +9,7 @@ const ProjectView = ({ projectId }) => {
 
   return (
     <div>
-      <h2>{project.title}</h2>
+      <span>{project.title}</span>
       {project.content.map((item, index) => {
         if (item.type === 'image') {
           return <img key={index} src={item.src} alt={`Project ${project.id} Image ${index + 1}`} style={{ maxWidth: '100%', margin: '10px 0' }} />;
