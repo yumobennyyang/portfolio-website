@@ -17,7 +17,7 @@ import localFont from 'next/font/local'
 
 import LastCommitTime from '../components/LastCommitTime';
 
-import ProjectsList from '../components/ProjectsList';
+import ProjectList from '../components/ProjectList';
 import ProjectView from '../components/ProjectView';
 import Modal from '../components/Modal';
 
@@ -40,6 +40,8 @@ export default function PortfolioIndex() {
   const handleClose = () => {
     setSelectedProjectId(null);
   };
+
+
 
   const items = allPortfolios;
 
@@ -737,13 +739,15 @@ export default function PortfolioIndex() {
 
           </div>
 
-          <div className="hidden !pointer-events-auto ">
-            <ProjectsList onSelect={setSelectedProjectId} />
-            <Modal isOpen={!!selectedProjectId} onClose={handleClose}>
-              {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
-            </Modal>
 
-          </div>
+
+        </div>
+
+        <div className=" hidden !pointer-events-auto">
+          <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
+          <Modal isOpen={!!selectedProjectId} onClose={handleClose}>
+            {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
+          </Modal>
 
         </div>
 
