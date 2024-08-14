@@ -21,6 +21,8 @@ import ProjectList from '../components/ProjectList';
 import ProjectView from '../components/ProjectView';
 import Modal from '../components/Modal';
 
+
+
 const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
@@ -40,6 +42,8 @@ export default function PortfolioIndex() {
   const handleClose = () => {
     setSelectedProjectId(null);
   };
+
+  
 
 
 
@@ -522,6 +526,8 @@ export default function PortfolioIndex() {
 
   }
 
+  
+
   useEffect(() => {
 
 
@@ -561,6 +567,8 @@ export default function PortfolioIndex() {
     //     scrollSpeed = 1;
     //   }
     // }
+
+
 
 
 
@@ -664,8 +672,8 @@ export default function PortfolioIndex() {
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that are completely functionless. Though, he recently discovered a passion for building ones that are highly useful and human-centered.
-              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website with love, and help from ChatGPT ☃</span>
+              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
+              <br></br><br></br>Benny coded this website with love, and help from ChatGPT ˛(´ཀ`)˒</span>
           </div>
 
         </div>
@@ -705,7 +713,7 @@ export default function PortfolioIndex() {
       </div>
 
       <div
-        className={`hideScrollText items-center text-center pointer-events-none m-4 z-10 bottom-0 absolute sm:fixed w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className}`}
+        className={`hideScrollText  items-center text-center pointer-events-none m-4 z-10 bottom-0 absolute sm:fixed w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className}`}
       >
         <div className="flex flex-col items-center">
           <div className="hidden scrolldown opacity-30 !scale-75"></div>
@@ -743,9 +751,11 @@ export default function PortfolioIndex() {
 
         </div>
 
-        <div className=" hidden !pointer-events-auto">
-          <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
-          <Modal isOpen={!!selectedProjectId} onClose={handleClose}>
+        
+
+        <div className=" !pointer-events-auto">
+          <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId}  />
+          <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
             {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
           </Modal>
 
@@ -765,7 +775,7 @@ export default function PortfolioIndex() {
               <br></br>
               <span>Copyright © 2024 Benny Yang</span>
               <br></br>
-              <span>Last updated </span><LastCommitTime />
+              {/* <span>Last updated </span><LastCommitTime /> */}
             </p>
           </div>
 
