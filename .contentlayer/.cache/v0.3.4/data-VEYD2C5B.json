@@ -49,7 +49,7 @@
         "image": {
           "src": "/images/portfolio/neo-tetra.png",
           "width": 2000,
-          "height": 2000,
+          "height": 300,
           "type": "Image",
           "_raw": {}
         },
@@ -83,7 +83,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723169618884",
+      "documentHash": "1723642111125",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -229,7 +229,7 @@
         "date": "2023-02-14T00:00:00.000Z",
         "slug": "spec-mobile",
         "image": {
-          "src": "/images/portfolio/spec-mobile.png",
+          "src": "/images/portfolio/spectator.png",
           "width": 2000,
           "height": 2000,
           "type": "Image",
@@ -273,7 +273,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723276501582",
+      "documentHash": "1723729284532",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },
@@ -372,11 +372,11 @@
         "title": "Valorant",
         "date": "2023-01-17T00:00:00.000Z",
         "slug": "valorant",
-        "video": {
-          "src": "/images/portfolio/valorant.mp4",
-          "width": 1368,
-          "height": 912,
-          "type": "Video",
+        "image": {
+          "src": "/images/portfolio/valorant.png",
+          "width": 2000,
+          "height": 1000,
+          "type": "Image",
           "_raw": {}
         },
         "description": "Promotional Graphics",
@@ -409,7 +409,7 @@
         },
         "type": "Portfolio"
       },
-      "documentHash": "1723274614788",
+      "documentHash": "1723687726554",
       "hasWarnings": false,
       "documentTypeName": "Portfolio"
     },

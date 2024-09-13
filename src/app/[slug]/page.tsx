@@ -151,7 +151,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
                                 <div className="flex" key={item.href}>
                                     <a
                                         href={item.href}
-                                        className={`hover-item ${currentPath === item.href ? ' pointer-events-none arrowbefore' : ''}`}
+                                        className={`hover-item ${currentPath === item.href ? ' pointer-events-none arrowbefore opacity-50' : ''}`}
                                     >
                                         {item.label}
                                     </a>

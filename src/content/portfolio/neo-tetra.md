@@ -2,7 +2,7 @@
 image:
   src: /images/portfolio/neo-tetra.png
   width: 2000
-  height: 2000
+  height: 300
 
 preview:
   src: /images/neo-tetra/neotetra1.png
