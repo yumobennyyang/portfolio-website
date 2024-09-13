@@ -28,7 +28,10 @@ const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
 
 
-const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' })
+//const regularText = localFont({ src: '../fonts/PPNeueMontreal-Book.otf' });
+const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
+//const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' });
+const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 
 
 
@@ -645,7 +648,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div id="logo" className="logoOffset  mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
+      <div id="logo" className="logoOffset mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
 
 
         <div className=" logoAppear fixed my-6 h-14 w-14  self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
@@ -753,13 +756,13 @@ export default function PortfolioIndex() {
 
         
 
-        <div className="hidden !pointer-events-auto">
+        {/* <div className=" !pointer-events-auto">
           <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId}  />
           <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
             {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
           </Modal>
 
-        </div>
+        </div> */}
 
 
 
@@ -775,7 +778,7 @@ export default function PortfolioIndex() {
               <br></br>
               <span>Copyright © 2024 Benny Yang</span>
               <br></br>
-              {/* <span>Last updated </span><LastCommitTime /> */}
+             <span>Last updated </span><LastCommitTime /> 
             </p>
           </div>
 

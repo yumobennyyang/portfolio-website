@@ -414,6 +414,8 @@ html {
 
 
 
+
+
 .hover-menu {
   opacity: 0;
   transform: translateX(-30px) scale(0.3,0.7);
@@ -428,7 +430,7 @@ html {
 }
 
 .arrowbefore::before{
-  content: "• ";
+  content: " ";
 }
 
 

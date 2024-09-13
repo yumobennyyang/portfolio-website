@@ -1,6 +1,6 @@
 ---
 image:
-  src: /images/portfolio/spec-mobile.png
+  src: /images/portfolio/spectator.png
   width: 2000
   height: 2000
 

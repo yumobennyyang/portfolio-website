@@ -3,44 +3,73 @@ import React, { useEffect, useState } from 'react';
 import styles from './Modal.module.css';
 
 const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
-  const [showModalContent, setShowModalContent] = useState(false);
+    const [showModalContent, setShowModalContent] = useState(false);
+    const [makeClickable, setMakeClickable] = useState(false);
 
-  useEffect(() => {
-    let timer;
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-      setShowModalContent(false); // Ensure content is hidden initially
+    const logoDiv = document.getElementById('logo');
 
-      timer = setTimeout(() => {
-        setShowModalContent(true);
-      
 
-      }, 299);// 0.5-second delay for modal content
-    } else {
-      setShowModalContent(false);
-      document.body.style.overflow = '';
-    }
+    useEffect(() => {
+        let timer;
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+            
+            setShowModalContent(false); // Ensure content is hidden initially
+            //setMakeClickable(false);
+            logoDiv.style.opacity = '0';
+            logoDiv.style.pointerEvents = 'none';
+            logoDiv.style.transition = '250ms';
 
-    return () => {
-      clearTimeout(timer);
-      document.body.style.overflow = ''; // Ensure scrolling is enabled again on unmount
-    };
-  }, [isOpen]);
+            timer = setTimeout(() => {
+                setShowModalContent(true);
+                //setMakeClickable(true);
+                
 
-  if (!isOpen) return null;
+            }, 500);// 0.5-second delay for modal content
 
-  return (
-    <div className={`${styles.modalOverlay} layer-shadow-hovered`}  onClick={onClose}>
-      {showModalContent && (
-        <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-          <button className={styles.closeButton} onClick={onClose}>
-            &times;
-          </button>
-          <div className={styles.modalBody}>{children}</div>
+
+        } else {
+            
+            if (logoDiv){
+            logoDiv.style.opacity = '';
+            logoDiv.style.pointerEvents = '';
+            logoDiv.style.transition = '';
+            }
+            setShowModalContent(false);
+            //setMakeClickable(false);
+            
+            document.body.style.overflow = '';
+         
+            
+
+        }
+
+        return () => {
+            clearTimeout(timer);
+            document.body.style.overflow = ''; // Ensure scrolling is enabled again on unmount
+            if (logoDiv){
+                logoDiv.style.opacity = '';
+                logoDiv.style.pointerEvents = '';
+                logoDiv.style.transition = '';
+                }
+
+        };
+    }, [isOpen]);
+
+    if (!isOpen) return null;
+
+    return (
+        <div className={`${styles.modalOverlay} layerShadowDarkk `} onClick={onClose}>
+            {showModalContent && (
+                <div className={`${styles.modalContent} `} onClick={(e) => e.stopPropagation()}>
+                    <button className={styles.closeButton} onClick={onClose}>
+                        &times;
+                    </button>
+                    <div className={styles.modalBody}>{children}</div>
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export default Modal;
