@@ -120,7 +120,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             </a>
 
         </div>
-
+ 
 
 
 
