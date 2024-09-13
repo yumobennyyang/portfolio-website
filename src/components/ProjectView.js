@@ -133,7 +133,7 @@ const ProjectView = ({ projectId }) => {
                     return <div className="px-[10%] tracking-[-.15px] text-sm text-zinc-400 mb-3" key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
-                    return <div className="bg-[#f5f5f5] mx-[2%] mb-3"><img className="px-[10%] py-8" key={index} src={item.src} alt={`Project ${project.id} Image ${index + 1}`}  /></div>;
+                    return <div className="bg-[#f5f5f5] mx-[2%] mb-3" key={index} ><img className="px-[10%] py-8"  src={item.src} alt={`Project ${project.id} Image ${index + 1}`}  /></div>;
                 }
                 if (item.type === 'line') {
                     return <div className="border-b border-zinc-200  mt-10 mb-4" key={index}></div>;
