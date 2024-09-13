@@ -78,7 +78,7 @@ const Page: React.FC<Params> = ({ params: { slug } }) => {
             </div>
         </div>
 
-        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2  -translate-x-1/2  place-items-center  mix-blend-difference">
+        <div className="z-50 absolute my-6 h-14 w-14  self-center flex left-1/2 !rounded-3xl  -translate-x-1/2  place-items-center  mix-blend-difference">
             <Image
                 src="/images/portfolio/logo.gif"
                 alt="Yang Logo"
