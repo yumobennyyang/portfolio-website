@@ -1,5 +1,5 @@
 // components/ProjectDetails.js
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { projects } from '../data/projects';
 
 import localFont from "next/font/local";
@@ -15,26 +15,11 @@ const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 
 const ProjectView = ({ projectId }) => {
 
-    const [modalWidth, setModalWidth] = useState(960);
-    const [maxH, setMaxH] = useState((960 / 3) * 2);
-
-    useEffect(() => {
-        // Calculate modal width and max height on client-side only
-        const updateDimensions = () => {
-            const width = Math.min(window.innerWidth - 64, 960);
-            setModalWidth(width);
-            setMaxH((width / 3) * 2);
-        };
-
-        updateDimensions(); // Initial calculation on mount
-
-        // Update dimensions when window is resized
-        window.addEventListener('resize', updateDimensions);
-        return () => window.removeEventListener('resize', updateDimensions);
-    }, []);
 
     const project = projects.find((p) => p.id === projectId);
-    if (!project) return null; // Return null if project is not found
+
+    if (!project) return null;
+
 
 
     return (
