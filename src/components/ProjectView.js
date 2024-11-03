@@ -146,12 +146,12 @@ const ProjectView = ({ projectId }) => {
                     return <div className="border-b border-zinc-200  mt-10 mb-4" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
-                    return <div className="iframe-container rounded layer-shadow px-[10%] " style={item.containerStyling}>
+                    return <div className="iframe-container rounded layer-shadow px-[10%] " key={index} style={item.containerStyling}>
                         <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling}/>
                     </div>
                 }
                 if (item.type === 'video') {
-                    return <div className="mx-[10%] max-w-[80%] w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50" >
+                    return <div className="mx-[10%] max-w-[80%] w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50"key={index} >
                         <video
                             playsInline
                             muted
