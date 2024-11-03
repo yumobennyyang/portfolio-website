@@ -1,5 +1,5 @@
 // components/ProjectDetails.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { projects } from '../data/projects';
 
 import localFont from "next/font/local";
@@ -18,14 +18,28 @@ const ProjectView = ({ projectId }) => {
 
     if (!project) return null;
 
-    const modalWidth = Math.min(window.innerWidth - 64, 960);
+    const [modalWidth, setModalWidth] = useState(960);
+    const [maxH, setMaxH] = useState((960 / 3) * 2);
 
-    const maxH = modalWidth / 3 * 2;
+    useEffect(() => {
+        // Calculate modal width and max height on client-side only
+        const updateDimensions = () => {
+            const width = Math.min(window.innerWidth - 64, 960);
+            setModalWidth(width);
+            setMaxH((width / 3) * 2);
+        };
+
+        updateDimensions(); // Initial calculation on mount
+
+        // Update dimensions when window is resized
+        window.addEventListener('resize', updateDimensions);
+        return () => window.removeEventListener('resize', updateDimensions);
+    }, []);
 
 
     return (
         <div className={`${regularText.className} text-zinc-950 `}>
-            
+
 
             {project.image && (
                 <div className="overflow-hidden  rounded-t-xl">
@@ -147,11 +161,11 @@ const ProjectView = ({ projectId }) => {
                 }
                 if (item.type === 'iframe') {
                     return <div className="iframe-container rounded layer-shadow px-[10%] " key={index} style={item.containerStyling}>
-                        <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling}/>
+                        <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling} />
                     </div>
                 }
                 if (item.type === 'video') {
-                    return <div className="mx-[10%] max-w-[80%] w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50"key={index} >
+                    return <div className="mx-[10%] max-w-[80%] w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50" key={index} >
                         <video
                             playsInline
                             muted
@@ -165,8 +179,8 @@ const ProjectView = ({ projectId }) => {
                         </video>
                     </div>
                 }
-                    return null;
-                })}
+                return null;
+            })}
         </div>
 
 
