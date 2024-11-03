@@ -14,9 +14,6 @@ const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 
 
 const ProjectView = ({ projectId }) => {
-    const project = projects.find((p) => p.id === projectId);
-
-    if (!project) return null;
 
     const [modalWidth, setModalWidth] = useState(960);
     const [maxH, setMaxH] = useState((960 / 3) * 2);
@@ -35,6 +32,9 @@ const ProjectView = ({ projectId }) => {
         window.addEventListener('resize', updateDimensions);
         return () => window.removeEventListener('resize', updateDimensions);
     }, []);
+
+    const project = projects.find((p) => p.id === projectId);
+    if (!project) return null; // Return null if project is not found
 
 
     return (
