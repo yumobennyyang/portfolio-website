@@ -61,7 +61,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
     return (
         <div className={`${styles.modalOverlay} layerShadowDarkk `} onClick={onClose}>
             {showModalContent && (
-                <div className={`${styles.modalContent} `} onClick={(e) => e.stopPropagation()}>
+                <div className={`${styles.modalContent} mx-3 sm:mx-7 `} onClick={(e) => e.stopPropagation()}>
                     <button className={styles.closeButton} onClick={onClose}>
                         &times;
                     </button>

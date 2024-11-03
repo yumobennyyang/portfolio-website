@@ -1,6 +1,6 @@
 // data/projects/project2.js
 const neoTetra = {
-  id: 2,
+  id: 1,
   title: "Neo Tetra",
   image: {
     src: "/images/portfolio/neo-tetra.png",
@@ -10,8 +10,12 @@ const neoTetra = {
   overview: "Neo Tetra is a typographic study that reimagines 26 letters, 10 numbers, and 12 symbols as geometric forms comprised of primitive shapes.",
   tools: ["Figma", "Glyphs"],
   duration: "2 weeks",
+  description: "Typeface Design",
 
   content: [
+    { "type": "textarea"},
+
+
     { "type": "line", "text": "" },
     { "type": "section", "text": "Context" },
 
@@ -61,7 +65,7 @@ const neoTetra = {
     { "type": "image", "src": "/images/neo-tetra/neo12.png" }
   ]
   ,
-  description: "Typeface Design",
+
 };
 
 export default neoTetra;

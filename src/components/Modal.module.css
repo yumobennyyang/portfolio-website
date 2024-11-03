@@ -28,9 +28,8 @@
 
 
 .modalContent {
-    max-height: calc(100vh - 52px);
-    top: 52px;
-    margin: 0px 32px;
+    max-height: calc(100vh - 20px);
+    top: 20px;
     background: white;
     border-radius: 12px 12px 0 0;
     max-width: 960px;
@@ -38,7 +37,6 @@
     position: absolute;
     z-index: 10002;
     scrollbar-width: none;
-    border: 1px solid #c6c6c6;
 
 
 }
@@ -55,13 +53,14 @@
 
 
 .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    height: 0;
+    top: 12px;
+    left: 18px;
     background: transparent;
     border: none;
-    font-size: 24px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .modalBody {
@@ -72,18 +71,10 @@
 
 .hidden{
     opacity:0 !important;
+    pointer-events: none;
 }
 
 
-/* components/ProjectList.module.css */
-.projectGrid {
-    columns: 3;
-    /* Three equal columns */
-    gap: 16px;
-    /* Adjust gap between items as needed */
-    padding: 32px;
-    /* Optional: Add padding around the grid */
-}
 
 .projectItem {
     position: relative;
@@ -92,11 +83,10 @@
     align-items: center;
     /* Adjust height as needed */
     /* Optional: Add a background color */
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11), opacity 0s ease-in !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11), opacity 0s ease-in;
     cursor: pointer;
     width: 100%;
     max-width: none;
-    margin-bottom: 16px;
     transform-origin: 50% 0;
 
 
