@@ -46,7 +46,7 @@ export default function PortfolioIndex() {
     setSelectedProjectId(null);
   };
 
-  
+
 
 
 
@@ -529,7 +529,7 @@ export default function PortfolioIndex() {
 
   }
 
-  
+
 
   useEffect(() => {
 
@@ -676,7 +676,7 @@ export default function PortfolioIndex() {
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces that are completely functionless. Though, he recently discovered a passion for building ones that are highly useful and human-centered.
               <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
-              <br></br><br></br>Benny coded this website with love, and help from ChatGPT ˛(´ཀ`)˒</span>
+            </span>
           </div>
 
         </div>
@@ -742,7 +742,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={`blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-0 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={`!opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-0 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
 
           <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
 
@@ -754,15 +754,15 @@ export default function PortfolioIndex() {
 
         </div>
 
-        
 
-        {/* <div className=" !pointer-events-auto">
-          <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId}  />
+
+        <div className=" !pointer-events-auto sm:px-5 px-1 pt-24">
+          <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
           <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
             {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
           </Modal>
 
-        </div> */}
+        </div>
 
 
 
@@ -778,7 +778,7 @@ export default function PortfolioIndex() {
               <br></br>
               <span>Copyright © 2024 Benny Yang</span>
               <br></br>
-             <span>Last updated </span><LastCommitTime /> 
+              <span>Last updated </span><LastCommitTime />
             </p>
           </div>
 

@@ -8,8 +8,8 @@
   /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 230, 235, 238; */
 
-    --background-start-rgb: 242, 242, 246;
-  --background-end-rgb: 245, 245, 247; 
+  --background-start-rgb: 242, 242, 246;
+  --background-end-rgb: 245, 245, 247;
 
 }
 
@@ -174,19 +174,19 @@ html {
   height: 104px;
   background-image: linear-gradient(to bottom,
 
-      hsla(240, 20%,  96%, calc(0.2 * 1.000)) 0%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.738)) 19%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.541))34%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.382))47%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.278)) 56.5%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.194)) 65%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.126)) 73%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.075)) 80.2%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.042)) 86.1%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.021)) 91%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.008)) 95.2%,
-      hsla(240, 20%,  96%, calc(0.2 * 0.002)) 98.2%,
-      hsla(240, 20%,  96%, calc(0.2 * 0)) 100%);
+      hsla(240, 20%, 96%, calc(0.2 * 1.000)) 0%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.738)) 19%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.541))34%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.382))47%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.278)) 56.5%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.194)) 65%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.126)) 73%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.075)) 80.2%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.042)) 86.1%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.021)) 91%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.008)) 95.2%,
+      hsla(240, 20%, 96%, calc(0.2 * 0.002)) 98.2%,
+      hsla(240, 20%, 96%, calc(0.2 * 0)) 100%);
 
 
 }
@@ -378,7 +378,7 @@ html {
 
 
 
-.layer-shadow {
+.layer-shadow-unused {
 
   box-shadow:
 
@@ -387,6 +387,8 @@ html {
     rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px,
     rgba(28, 29, 33, 0.9) 0px 0px 0px 0px
 }
+
+
 
 .imgg {
 
@@ -403,12 +405,20 @@ html {
 
 
 @media (min-width: 768px) {
-  .layer-shadow-hover:hover {
+  .layer-shadow-hover-unused:hover {
     box-shadow:
       rgba(28, 29, 33, 0.067) 0px 0.60219px 2.04744px -0.5px,
       rgba(28, 29, 33, 0.08) 0px 2.28853px 7.78101px -1px,
       rgba(28, 29, 33, 0.14) 0px 10px 34px -1.5px,
       rgba(28, 29, 33, 0.3) 0px 0px 0px 0px;
+  }
+
+  .layer-shadow-hover:hover {
+    box-shadow:
+      rgba(28, 29, 33, 0.133) 0px 0.602187px 0.602187px -1.16667px,
+      rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px,
+      rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px,
+      rgba(28, 29, 33, 0.9) 0px 0px 0px 0px
   }
 }
 
@@ -418,7 +428,7 @@ html {
 
 .hover-menu {
   opacity: 0;
-  transform: translateX(-30px) scale(0.3,0.7);
+  transform: translateX(-30px) scale(0.3, 0.7);
   transform-origin: left;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -429,7 +439,7 @@ html {
   transform: translateX(5px) scale(1);
 }
 
-.arrowbefore::before{
+.arrowbefore::before {
   content: " ";
 }
 
@@ -439,50 +449,52 @@ html {
 
 .arrow {
 
-	width: 0;
-	height: 70px;
-	border: 0.5px solid  #27272a;
-	position: relative;
-	animation: scroll 3s infinite;
-	-webkit-animation: scroll 3s infinite;
-	&::after {
-		content: '';
+  width: 0;
+  height: 70px;
+  border: 0.5px solid #27272a;
+  position: relative;
+  animation: scroll 3s infinite;
+  -webkit-animation: scroll 3s infinite;
+
+  &::after {
+    content: '';
     display: block;
     position: absolute;
     top: 100%;
     left: -5px;
     width: 1px;
     height: 10px;
-		
+
     border-top: 10px solid #27272a;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-	}
+  }
 }
 
 @keyframes scroll {
-	0% {
-		height: 70px;
-	}
-	35% {
-		height: 40px;
-	}
-	60% {
-		height: 70px;
-	}
+  0% {
+    height: 70px;
+  }
+
+  35% {
+    height: 40px;
+  }
+
+  60% {
+    height: 70px;
+  }
 }
 
 @-webkit-keyframes scroll {
-	0% {
-		height: 70px;
-	}
-	35% {
-		height: 40px;
-	}
-	60% {
-		height: 70px;
-	}
+  0% {
+    height: 70px;
+  }
+
+  35% {
+    height: 40px;
+  }
+
+  60% {
+    height: 70px;
+  }
 }
-
-
-

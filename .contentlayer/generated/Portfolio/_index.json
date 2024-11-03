@@ -327,6 +327,43 @@
     "type": "Portfolio"
   },
   {
+    "title": "Volumes",
+    "date": "2023-01-17T00:00:00.000Z",
+    "slug": "volumes",
+    "image": {
+      "src": "/images/portfolio/volumes.png",
+      "width": 4032,
+      "height": 4032,
+      "type": "Image",
+      "_raw": {}
+    },
+    "description": "Sculptures and Forms in Space",
+    "enabled": true,
+    "orderIndex": 5,
+    "preview": {
+      "src": "/images/volumes/head0.png",
+      "width": 3840,
+      "height": 2160,
+      "type": "Image",
+      "_raw": {}
+    },
+    "overview": "The manipulation of a foam fead in the form of sculpture.",
+    "faintText": true,
+    "body": {
+      "raw": "\n\n---\n\n&nbsp;\n\n![Volume1](/images/volumes/volume1.png \"volume1\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n\n&nbsp;\n\n![Volume2](/images/volumes/volume2.png \"volume2\")\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"\n\n\n&nbsp;\n\n![Volume3](/images/volumes/volume3.png \"volume3\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n\n&nbsp;\n\n![Volume4](/images/volumes/volume4.png \"volume4\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n",
+      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/volumes/volume1.png\" alt=\"Volume1\" title=\"volume1\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume2.png\" alt=\"Volume2\" title=\"volume2\">\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume3.png\" alt=\"Volume3\" title=\"volume3\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume4.png\" alt=\"Volume4\" title=\"volume4\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>"
+    },
+    "_id": "portfolio/volumes.md",
+    "_raw": {
+      "sourceFilePath": "portfolio/volumes.md",
+      "sourceFileName": "volumes.md",
+      "sourceFileDir": "portfolio",
+      "contentType": "markdown",
+      "flattenedPath": "portfolio/volumes"
+    },
+    "type": "Portfolio"
+  },
+  {
     "title": "Valorant",
     "date": "2023-01-17T00:00:00.000Z",
     "slug": "valorant",
@@ -364,43 +401,6 @@
       "sourceFileDir": "portfolio",
       "contentType": "markdown",
       "flattenedPath": "portfolio/valorant"
-    },
-    "type": "Portfolio"
-  },
-  {
-    "title": "Volumes",
-    "date": "2023-01-17T00:00:00.000Z",
-    "slug": "volumes",
-    "image": {
-      "src": "/images/portfolio/volumes.png",
-      "width": 4032,
-      "height": 4032,
-      "type": "Image",
-      "_raw": {}
-    },
-    "description": "Sculptures and Forms in Space",
-    "enabled": true,
-    "orderIndex": 5,
-    "preview": {
-      "src": "/images/volumes/head0.png",
-      "width": 3840,
-      "height": 2160,
-      "type": "Image",
-      "_raw": {}
-    },
-    "overview": "The manipulation of a foam fead in the form of sculpture.",
-    "faintText": true,
-    "body": {
-      "raw": "\n\n---\n\n&nbsp;\n\n![Volume1](/images/volumes/volume1.png \"volume1\")\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"\n\n\n&nbsp;\n\n![Volume2](/images/volumes/volume2.png \"volume2\")\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"\n\n\n&nbsp;\n\n![Volume3](/images/volumes/volume3.png \"volume3\")\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"\n\n\n&nbsp;\n\n![Volume4](/images/volumes/volume4.png \"volume4\")\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"\n",
-      "html": "<hr>\n<p> </p>\n<p><img src=\"/images/volumes/volume1.png\" alt=\"Volume1\" title=\"volume1\">\n小丑的自塑像, found objects, 2024, 6\"x 6\"x 12\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume2.png\" alt=\"Volume2\" title=\"volume2\">\nEuphemism for a Good Night's Sleep, ceramics, metalwork, 2023, 22\"x 22\"x 60\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume3.png\" alt=\"Volume3\" title=\"volume3\">\nPeril through the Lookingglass, found objects, 2021, 18\"x 11\"x 13\"</p>\n<p> </p>\n<p><img src=\"/images/volumes/volume4.png\" alt=\"Volume4\" title=\"volume4\">\nWatchdog in the Kitsch, found objects, 2020, 22\"x 13\"x 16\"</p>"
-    },
-    "_id": "portfolio/volumes.md",
-    "_raw": {
-      "sourceFilePath": "portfolio/volumes.md",
-      "sourceFileName": "volumes.md",
-      "sourceFileDir": "portfolio",
-      "contentType": "markdown",
-      "flattenedPath": "portfolio/volumes"
     },
     "type": "Portfolio"
   }
