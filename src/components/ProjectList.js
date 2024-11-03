@@ -21,39 +21,43 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
   useEffect(() => {
     if (selectedProjectId && selectedElementRef.current) {
       const elem = selectedElementRef.current;
-      const minWidth = window.matchMedia("(min-width: 768px)").matches
-        ? Math.min(window.innerWidth - 56, 960)
-        : window.innerWidth - 24;
 
-      const scaleX = minWidth / elem.offsetWidth;
-      const scaleY = (window.innerHeight - 20) / elem.offsetHeight + 1; // 20 is the top margin
+      if (typeof window !== "undefined") {
 
-      setScaleValues({ scaleX, scaleY });
+        const minWidth = window.matchMedia("(min-width: 768px)").matches
+          ? Math.min(window.innerWidth - 56, 960)
+          : window.innerWidth - 24;
 
-      const rect = elem.getBoundingClientRect();
-      const offsetTop = rect.top;
-      const translateY = 20 - offsetTop; //20 is the top margin
+        const scaleX = minWidth / elem.offsetWidth;
+        const scaleY = (window.innerHeight - 20) / elem.offsetHeight + 1; // 20 is the top margin
 
-      const offsetLeft = rect.left;
-      const elemCenterX = offsetLeft + rect.width / 2;
-      const screenCenterX = window.innerWidth / 2;
-      const translateX = screenCenterX - elemCenterX;
+        setScaleValues({ scaleX, scaleY });
 
-      setTranslateValues({ translateX, translateY });
+        const rect = elem.getBoundingClientRect();
+        const offsetTop = rect.top;
+        const translateY = 20 - offsetTop; //20 is the top margin
 
+        const offsetLeft = rect.left;
+        const elemCenterX = offsetLeft + rect.width / 2;
+        const screenCenterX = window.innerWidth / 2;
+        const translateX = screenCenterX - elemCenterX;
 
-
-
-      // Calculate itemScale with the conditional adjustment
-      const itemScale = minWidth / (elem.offsetHeight - 84) / 3 * 2;
+        setTranslateValues({ translateX, translateY });
 
 
-      setItemScale({ itemScale });
 
-      // Delay hiding the element by 0.5 seconds
-      setTimeout(() => {
-        setIsHidden(true);
-      }, 500);
+
+        // Calculate itemScale with the conditional adjustment
+        const itemScale = minWidth / (elem.offsetHeight - 84) / 3 * 2;
+
+
+        setItemScale({ itemScale });
+
+        // Delay hiding the element by 0.5 seconds
+        setTimeout(() => {
+          setIsHidden(true);
+        }, 500);
+      }
     } else {
       // Reset the hidden state when deselecting
       setIsHidden(false);
