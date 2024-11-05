@@ -67,6 +67,7 @@
     
     z-index: 999999999999 !important;
     overflow-y: auto;
+    margin-bottom: 64px;
 }
 
 .hidden{
