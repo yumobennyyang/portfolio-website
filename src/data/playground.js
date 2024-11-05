@@ -3,8 +3,8 @@ const playground = {
   title: "Playground",
   video: {
     src: "/images/portfolio/playground.mp4",
-    width: 1000,
-    height: 1000,
+    width: 1080,
+    height: 1080,
   },
   overview: "A collection of little things I prototyped just for fun.",
   description: "Interactive Experiments",
