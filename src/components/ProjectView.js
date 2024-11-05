@@ -16,6 +16,10 @@ const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 const ProjectView = ({ projectId }) => {
 
 
+
+    const modalWidth = Math.min(window.innerWidth - 64, 960);
+    const maxH = modalWidth / 3 * 2;
+
     const project = projects.find((p) => p.id === projectId);
 
     if (!project) return null;
