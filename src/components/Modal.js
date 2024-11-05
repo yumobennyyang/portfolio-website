@@ -6,7 +6,8 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
     const [showModalContent, setShowModalContent] = useState(false);
     const [makeClickable, setMakeClickable] = useState(false);
 
-    const logoDiv = document.getElementById('logo');
+    const logoDiv = typeof window !== "undefined" ? document.getElementById('logo') : null;
+
 
 
     useEffect(() => {
