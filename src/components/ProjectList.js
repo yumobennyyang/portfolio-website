@@ -56,7 +56,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         <div
           key={project.id}
           ref={selectedProjectId === project.id ? selectedElementRef : null}
-          className={`project  pb-4 ${styles.projectItem} ${selectedProjectId === project.id ? `${styles.scaled} ${styles.layerShadowDark}` : ''} ${isHidden && selectedProjectId === project.id ? styles.hidden : ''}`}
+          className={`project  pb-4 ${styles.projectItem} ${selectedProjectId === project.id ? `${styles.scaled}` : ''} ${isHidden && selectedProjectId === project.id ? styles.hidden : ''}`}
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
 
