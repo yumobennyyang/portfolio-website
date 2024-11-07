@@ -61,16 +61,16 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           style={{ breakInside: 'avoid' }}
 
         >
-          <div className=" w-full text-zinc-950 tracking-wide  rounded-xl  ">
+          <div className=" w-full  text-zinc-950 tracking-wide  rounded-xl  ">
             <div
-              className={`${styles.projectItem} w-full flex-col relative flex group bg-white rounded-xl layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-300 ease-[cubic-bezier(0,0,.5,1)]`}
-              style={selectedProjectId === project.id ? { pointerEvents: 'none', borderRadius: `${6}px`, transform: ` translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY}) ` } : {}}
+              className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-300 ease-[cubic-bezier(0,0,.5,1)]`}
+              style={selectedProjectId === project.id ? {borderWidth:'0px', pointerEvents: 'none', borderRadius: `${6}px`, transform: ` translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY}) ` } : {}}
             >
 
               {project.image && (
-                <div className="  overflow-hidden rounded-xl  duration-300  origin-top "
+                <div className=" overflow-hidden rounded-xl  duration-300  origin-top "
                   style={selectedProjectId === project.id
-                    ? { transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
+                    ? {  transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
                     : {}}>
                   <img className="object-cover !border-none !rounded-none" src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
                 </div>
