@@ -1,23 +1,10 @@
 /* components/Modal.module.css */
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    
     background: rgba(0, 0, 0, 0);
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    z-index: 10000;
     animation: fadeInOverlay 0.3s forwards;
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease-in-out;
-
-    
-
-
-
+   
 }
 
 @keyframes fadeInOverlay {
@@ -27,19 +14,7 @@
 }
 
 
-.modalContent {
-    max-height: calc(100vh - 20px);
-    top: 20px;
-    background: white;
-    border-radius: 12px 12px 0 0;
-    max-width: 960px;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 10002;
-    scrollbar-width: none;
 
-
-}
 
 
 .layerShadowDark {
@@ -52,23 +27,8 @@
 
 
 
-.closeButton {
-    position: fixed;
-    height: 0;
-    top: 12px;
-    left: 18px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-}
 
-.modalBody {
-    
-    z-index: 999999999999 !important;
-    overflow-y: auto;
-    margin-bottom: 64px;
-}
+
 
 .hidden{
     opacity:0 !important;
