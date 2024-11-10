@@ -67,11 +67,12 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
         <div className={`${styles.modalOverlay} layerShadowDark fixed inset-0 w-screen h-screen flex items-end justify-center z-[10000] transition-all duration-300 ease-in-out`} onClick={onClose}>
             {showModalContent && (
                 <div className={`${styles.modalContent} max-h-[calc(100vh-20px)] top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto absolute z-[10002]  mx-3 sm:mx-7 `} onClick={(e) => e.stopPropagation()}>
-                    <button className={` fixed h-0 top-4 left-4 bg-transparent border-none cursor-pointer text-black ${benny.className}`} onClick={onClose}>
-                        <div className={`flex sm:mx-2  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
+                    <button className={` fixed h-0 top-4 left-4 bg-transparent border-none cursor-pointer text-neutral-950 ${benny.className}`} onClick={onClose}>
+                        <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
 
 
-                            <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
+                            <p className=" justify-center pl-4 pr-1 py-2  w-auto">
+
                                 <span>close</span>
                                 {/* <span>↗</span>*/}
                             </p>
@@ -79,11 +80,19 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
 
 
                         </div>
+                        <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
 
 
+                            <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
+
+                                <span>close</span>
+                                {/* <span>↗</span>*/}
+                            </p>
+
+
+
+                        </div>
                     </button>
-
-
 
 
 
