@@ -62,11 +62,11 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
     return (
         <div className={`${styles.modalOverlay} layerShadowDark fixed inset-0 w-screen h-screen flex items-end justify-center z-[10000] transition-all duration-300 ease-in-out`} onClick={onClose}>
             {showModalContent && (
-                <div className={`max-h-[calc(100vh-20px)] top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto absolute z-[10002] scrollbar-hide mx-3 sm:mx-7 `} onClick={(e) => e.stopPropagation()}>
+                <div className={`${styles.modalContent} max-h-[calc(100vh-20px)] top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto absolute z-[10002]  mx-3 sm:mx-7 `}  onClick={(e) => e.stopPropagation()}>
                     <button className="fixed h-0 top-3 left-4 bg-transparent border-none cursor-pointer text-2xl" onClick={onClose}>
                         &times;
                     </button>
-                    <div className="z-[999999999999] overflow-y-auto mb-16">{children}</div>
+                    <div className="z-[999999999999] overflow-y-auto mb-16 ">{children}</div>
                 </div>
             )}
         </div>

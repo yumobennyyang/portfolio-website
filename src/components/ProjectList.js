@@ -70,7 +70,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               {project.image && (
                 <div className=" overflow-hidden rounded-xl  duration-300  origin-top "
                   style={selectedProjectId === project.id
-                    ? {  transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
+                    ? {borderBottomLeftRadius: `${0}px`, borderBottomRightRadius: `${0}px`,  transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
                     : {}}>
                   <img className="object-cover !border-none !rounded-none" src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
                 </div>
