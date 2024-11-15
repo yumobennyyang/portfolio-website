@@ -3,7 +3,7 @@ import { projects } from '../data/projects';
 import localFont from 'next/font/local';
 import Image from 'next/image';
 
-const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
+const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Light.otf' });
 const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
 const section = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
 const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
@@ -27,7 +27,7 @@ const ProjectView = ({ projectId }) => {
 
 
     return (
-        <div className={`${regularText.className} text-zinc-950 `}>
+        <div className={`${regularText.className} text-black `}>
 
 
             {project.image && (
@@ -58,14 +58,14 @@ const ProjectView = ({ projectId }) => {
             <div className="z-20  pb-4 relative w-full flex-row ">
                 {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
 
-                <div className={` px-[10%] text-4xl text-zinc-950 mb-3 pb-4 ${title.className}`}> {project?.title}</div>
+                <div className={` px-[10%] text-4xl text-black mb-3 pb-4 ${title.className}`}> {project?.title}</div>
 
                 <div className={`px-[10%] text-zinc-400 opacity-80 text-xs uppercase tracking-wider mb-1 ${regularText.className}`} >Overview</div>
-                <div className=" px-[10%] tracking-[-.016em] text-zinc-950 mb-3 pb-4 "> {project?.overview}</div>
+                <div className=" px-[10%] tracking-[-.016em] text-black mb-3 pb-4 text-sm"> {project?.overview}</div>
 
 
 
-                <div className="flex justify-between space-x-4 pb-4 px-[10%] text-zinc-950 *:tracking-[-.016em] ">
+                <div className="flex justify-between space-x-4 pb-4 px-[10%] text-black text-sm">
 
                     {project.role && (
                         <div className="flex-1 ">
@@ -137,10 +137,10 @@ const ProjectView = ({ projectId }) => {
                     return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
-                    return <div className={`text-zinc-950 tracking-[.07px] text-2xl  px-[10%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
+                    return <div className={`text-black tracking-[.07px] text-lg  px-[10%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'text') {
-                    return <div className="px-[10%] tracking-[-.15px] text-[15px]  text-zinc-400 mb-3" key={index}>{item.text}</div>;
+                    return <div className="px-[10%]  text-sm text-zinc-500 mb-3" key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
                     return <div className=" mb-1" key={index} ><img className="px-[10%] pt-8" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
@@ -154,7 +154,7 @@ const ProjectView = ({ projectId }) => {
                     </div>
                 }
                 if (item.type === 'video') {
-                    return <div className="mx-[10%] max-w-[80%] w-full h-auto rounded  overflow-hidden layer-shadow border border-white/50" key={index} >
+                    return <div className="mx-[10%] max-w-[80%] pt-8 w-full h-auto  overflow-hidden layer-shadow border border-white/50" key={index} >
                         <video
                             playsInline
                             muted
