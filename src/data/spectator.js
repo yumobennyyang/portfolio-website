@@ -11,7 +11,7 @@ const spectator = {
   team: ["Philippe Wu", "Christina Su", "Muchen Guo"],
   role: ["Design Systems", "UI/UX"],
   tools: ["Figma"],
-
+  description: "Mobile UI/UX",
   content: [
     { "type": "line", "text": "" },
     { "type": "section", "text": "Context" },
@@ -84,7 +84,7 @@ const spectator = {
 
 
   ],
-  description: "Mobile UI/UX",
+
 };
 
 export default spectator;
