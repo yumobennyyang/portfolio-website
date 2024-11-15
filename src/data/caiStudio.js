@@ -104,7 +104,7 @@ const caiStudio = {
     { "type": "section", "text": "Miscellaneous" },
     { "type": "image", "src": "/images/cai-studio/cai-blender.png" },
     { "type": "text", "text": "Blender" },
-    { "type": "image", "src": "/images/cai-studio/cai-autoCAD.png" },
+    { "type": "image", "src": "/images/cai-studio/cai-AutoCAD.png" },
     { "type": "text", "text": "AutoCAD" },
     { "type": "image", "src": "/images/cai-studio/cai-illustrator.png" },
     { "type": "text", "text": "Illustator" },
