@@ -34,7 +34,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 84)) * (2 / 3);
+        const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); //change here if height of title is changed
         setItemScale({ itemScale });
 
         setTimeout(() => {
@@ -100,7 +100,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               ? { opacity: '0', transition: 'opacity 0.1s' }
               : {}}
               className="z-20 px-1 pb-2 relative w-full flex-row">
-              <div className={` w-full pt-[10px] pb-[1px] truncate text-2xl tracking-[.007em] ${text.className}`}>{project.title}</div>
+              <div className={` w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] ${text.className}`}>{project.title}</div>
               <div className={` text-zinc-500 opacity-80 w-full truncate  text-xs uppercase tracking-wider ${regularText.className}`}>{project.description}</div>
             </div>
           </div>
