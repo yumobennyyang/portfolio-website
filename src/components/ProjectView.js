@@ -141,19 +141,19 @@ const ProjectView = ({ projectId }) => {
                     return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
-                    return <div className={`text-black tracking-[.07px] text-lg  px-[10%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
+                    return <div className={`text-black tracking-[.07px] text-lg  px-[5%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'text') {
-                    return <div className="px-[10%]  text-sm text-zinc-600 mb-3" key={index}>{item.text}</div>;
+                    return <div className="px-[5%]  text-sm text-zinc-600 mb-3" key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
-                    return <div className=" mb-1" key={index} ><img className="px-[10%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                    return <div className=" mb-1" key={index} ><img className="px-[5%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
                 if (item.type === 'line') {
                     return <div className="border-b border-zinc-200  mt-10 mb-4" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
-                    return <div className="mb-1 iframe-container layer-shadow px-[10%] " key={index} style={item.containerStyling}>
+                    return <div className="mb-1 iframe-container layer-shadow px-[5%] " key={index} style={item.containerStyling}>
                         <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling} />
                     </div>
                 }

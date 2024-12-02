@@ -15,10 +15,11 @@ const plasticFish = {
     { "type": "image", "src": "/images/plastic-fish/plasticfish1.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish2.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish3.png" },
+
     { "type": "image", "src": "/images/plastic-fish/plasticfish4.png" },
+
     { "type": "image", "src": "/images/plastic-fish/plasticfish7.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish6.png" },
-
     { "type": "image", "src": "/images/plastic-fish/plasticfish8.png" },
 
     { "type": "video", "src": "/images/plastic-fish/plasticfish5.mp4", autoplay: true, looping: true, },
