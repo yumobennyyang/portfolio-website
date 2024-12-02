@@ -133,6 +133,10 @@ const ProjectView = ({ projectId }) => {
 
             {project.content.map((item, index) => {
 
+                if (item.type === 'spacing') {
+                    return <div className={`py-3`} key={index}></div>;
+                }
+
                 if (item.type === 'textarea') {
                     return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
@@ -140,33 +144,62 @@ const ProjectView = ({ projectId }) => {
                     return <div className={`text-black tracking-[.07px] text-lg  px-[10%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'text') {
-                    return <div className="px-[10%]  text-sm text-zinc-500 mb-3" key={index}>{item.text}</div>;
+                    return <div className="px-[10%]  text-sm text-zinc-600 mb-3" key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
-                    return <div className=" mb-1" key={index} ><img className="px-[10%] pt-8" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                    return <div className=" mb-1" key={index} ><img className="px-[10%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
                 if (item.type === 'line') {
                     return <div className="border-b border-zinc-200  mt-10 mb-4" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
-                    return <div className="iframe-container rounded layer-shadow px-[10%] " key={index} style={item.containerStyling}>
+                    return <div className="mb-1 iframe-container layer-shadow px-[10%] " key={index} style={item.containerStyling}>
                         <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling} />
                     </div>
                 }
                 if (item.type === 'video') {
-                    return <div className="mx-[10%] max-w-[80%] pt-8 w-full h-auto  overflow-hidden layer-shadow border border-white/50" key={index} >
-                        <video
-                            playsInline
-                            muted
-                            controls
-                            className=" object-contain rounded"
-                            width="100%"
-                            height="auto">
 
-                            <source src={item.src} />
-
-                        </video>
-                    </div>
+                    const { autoplay, looping } = item; // Get video-specific properties
+                    if (autoplay && looping) {
+                        // Video that auto-plays and loops without controls
+                        return (
+                            <div
+                                className="mb-1 mx-[10%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                key={index}
+                            >
+                                <video
+                                    playsInline
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className="object-contain"
+                                    width="100%"
+                                    height="auto"
+                                >
+                                    <source src={item.src} />
+                                </video>
+                            </div>
+                        );
+                    } else {
+                        // Video with controls
+                        return (
+                            <div
+                                className="mb-1 mx-[10%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                key={index}
+                            >
+                                <video
+                                    playsInline
+                                    muted
+                                    controls
+                                    className="object-contain"
+                                    width="100%"
+                                    height="auto"
+                                >
+                                    <source src={item.src} />
+                                </video>
+                            </div>
+                        );
+                    }
                 }
                 return null;
             })}

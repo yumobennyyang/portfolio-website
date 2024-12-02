@@ -39,7 +39,7 @@ const playground = {
     },
     { "type": "text", "text": "Drag the window to see what it would be like if responsive sites were designed like that hospital in the movie Idiocracy." },
 
-    { "type": "video", "src": "/images/playground/playground3.mp4" },
+    { "type": "video", "src": "/images/playground/playground3.mp4", autoplay: false, looping: false, },
     { "type": "text", "text": "An experimental AI interface centered around an entity that self-chromatizes as it incrementally takes in instructions to create content." },
 
   ],
