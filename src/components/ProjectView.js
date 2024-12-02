@@ -138,7 +138,7 @@ const ProjectView = ({ projectId }) => {
                 }
 
                 if (item.type === 'textarea') {
-                    return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
+                    return <div contentEditable className={`mx-[5%] max-w-[90%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
                     return <div className={`text-black tracking-[.07px] text-lg  px-[5%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
@@ -164,7 +164,7 @@ const ProjectView = ({ projectId }) => {
                         // Video that auto-plays and loops without controls
                         return (
                             <div
-                                className="mb-1 mx-[5%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="mb-1 mx-[5%] max-w-[90%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video
@@ -184,7 +184,7 @@ const ProjectView = ({ projectId }) => {
                         // Video with controls
                         return (
                             <div
-                                className="mb-1 mx-[5%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="mb-1 mx-[5%] max-w-[90%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video
