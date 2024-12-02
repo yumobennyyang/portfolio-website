@@ -164,7 +164,7 @@ const ProjectView = ({ projectId }) => {
                         // Video that auto-plays and loops without controls
                         return (
                             <div
-                                className="mb-1 mx-[10%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="mb-1 mx-[5%] max-w-[80%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video
