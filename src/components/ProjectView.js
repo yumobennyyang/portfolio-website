@@ -62,7 +62,7 @@ const ProjectView = ({ projectId }) => {
 
                 <div className={` px-[10%] text-4xl text-black mb-3 pb-4 ${title.className}`}> {project?.title}</div>
 
-                <div className={`px-[10%] text-zinc-400 opacity-80 text-xs uppercase tracking-wider mb-1 ${regularText.className}`} >Overview</div>
+                <div className={`px-[10%] text-zinc-500 opacity-80 text-xs uppercase tracking-wider mb-1 ${regularText.className}`} >Overview</div>
                 <div className=" px-[10%] tracking-[-.016em] text-black mb-3 pb-4 text-sm"> {project?.overview}</div>
 
 
@@ -71,7 +71,7 @@ const ProjectView = ({ projectId }) => {
 
                     {project.role && (
                         <div className="flex-1 ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>ROLE</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>ROLE</div>
                             <ul>
                                 {project?.role?.map((role, index) => (
                                     <li key={index}>{role}</li>
@@ -83,7 +83,7 @@ const ProjectView = ({ projectId }) => {
 
                     {project.tools && (
                         <div className="flex-1  ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>TOOLS</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>TOOLS</div>
                             <ul>
                                 {project?.tools?.map((tools, index) => (
                                     <li key={index}>{tools}</li>
@@ -94,14 +94,14 @@ const ProjectView = ({ projectId }) => {
 
                     {project.duration && (
                         <div className="flex-1  ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>DURATION</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>DURATION</div>
                             <div> {project?.duration}</div>
                         </div>
                     )}
 
                     {project.team && (
                         <div className="flex-1 ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>TEAM</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>TEAM</div>
                             <ul>
                                 {project?.team?.map((team, index) => (
                                     <li key={index}>{team}</li>
@@ -112,7 +112,7 @@ const ProjectView = ({ projectId }) => {
 
                     {project.media && (
                         <div className="flex-1 ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>MEDIA</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>MEDIA</div>
                             <ul>
                                 {project?.media?.map((media, index) => (
                                     <li key={index}>{media}</li>
@@ -123,7 +123,7 @@ const ProjectView = ({ projectId }) => {
 
                     {project.dimensions && (
                         <div className="flex-1 ">
-                            <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  mb-1`}>DIMENSIONS</div>
+                            <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  mb-1`}>DIMENSIONS</div>
                             <div> {project?.dimensions}</div>
                         </div>
                     )}
@@ -143,7 +143,7 @@ const ProjectView = ({ projectId }) => {
                     return <div contentEditable className={`mx-[5%] max-w-[90%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
-                    return <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  my-1  px-[10%] `} key={index}>{item.text}</div>;
+                    return <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  my-1  px-[10%] `} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'text') {
                     return <div className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm`} key={index}>{item.text}</div>;
