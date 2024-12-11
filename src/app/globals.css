@@ -193,6 +193,10 @@ html {
 
 
 
+.clipped {
+  clip-path: path("M0,16 Q0,0 16,0 Hcalc(100% - 16px) Q100%,0 100%,16 V100% H0 Z");
+}
+
 * {
   /* -ms-overflow-style: none;
   scrollbar-width: none; */

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Light.otf' });
 const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
-const section = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
+const section = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-regular.otf' });
 const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 
 const ProjectView = ({ projectId }) => {
@@ -28,6 +28,8 @@ const ProjectView = ({ projectId }) => {
 
     return (
         <div className={`${regularText.className} text-black `}>
+
+
 
 
             {project.image && (
@@ -141,19 +143,19 @@ const ProjectView = ({ projectId }) => {
                     return <div contentEditable className={`mx-[5%] max-w-[90%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
-                    return <div className={`text-black tracking-[.07px] text-lg  px-[5%]  mt-10 mb-2 ${section.className}`} key={index}>{item.text}</div>;
+                    return <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  my-1  px-[10%] `} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'text') {
-                    return <div className="px-[5%]  text-sm text-zinc-600 mb-3" key={index}>{item.text}</div>;
+                    return <div className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm`} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
-                    return <div className=" mb-1" key={index} ><img className="px-[5%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                    return <div className=" my-2.5" key={index} ><img className="px-[2%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
                 if (item.type === 'line') {
-                    return <div className="border-b border-zinc-200  mt-10 mb-4" key={index}></div>;
+                    return <div className=" mx-[10%] border-b border-zinc-200  mt-10" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
-                    return <div className="mb-1 iframe-container layer-shadow px-[5%] " key={index} style={item.containerStyling}>
+                    return <div className="mb-1 iframe-container layer-shadow px-[2%] " key={index} style={item.containerStyling}>
                         <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling} />
                     </div>
                 }
@@ -164,7 +166,7 @@ const ProjectView = ({ projectId }) => {
                         // Video that auto-plays and loops without controls
                         return (
                             <div
-                                className="mb-1 mx-[5%] max-w-[90%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="mb-1 mx-[2%] max-w-[96%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video
@@ -184,7 +186,7 @@ const ProjectView = ({ projectId }) => {
                         // Video with controls
                         return (
                             <div
-                                className="mb-1 mx-[5%] max-w-[90%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="mb-1 mx-[2%] max-w-[96%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video

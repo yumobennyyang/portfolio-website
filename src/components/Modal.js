@@ -66,8 +66,26 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
     return (
         <div className={`${styles.modalOverlay} layerShadowDark fixed inset-0 w-screen h-screen flex items-end justify-center z-[10000] transition-all duration-300 ease-in-out`} onClick={onClose}>
             {showModalContent && (
-                <div className={`${styles.modalContent} max-h-[calc(100vh-20px)] top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto absolute z-[10002]  mx-3 sm:mx-7 `} onClick={(e) => e.stopPropagation()}>
+                <div className={`${styles.modalContent} overflow-x-hidden max-h-[calc(100vh-20px)] top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto absolute z-[10002]  mx-3 sm:mx-7 `} onClick={(e) => e.stopPropagation()}>
+
+                        <div className="hidden mx-auto gradient h-full gradient-background z-20 mt-5  w-full max-w-[960px]  pointer-events-none rounded-t-2xl fixed clipped" />
+                        <div className="hidden mx-auto gradient h-full  gradient-blur z-20 mt-5  w-full  max-w-[960px] pointer-events-none rounded-t-2xl fixed clipped">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+
+
                     <button className={` fixed h-0 top-4 left-4 bg-transparent border-none cursor-pointer text-neutral-950 ${benny.className}`} onClick={onClose}>
+
+
+
+
+
                         <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
 
 
@@ -96,7 +114,11 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
 
 
 
-                    <div className="z-[999999999999] overflow-y-auto mb-16 ">{children}</div>
+                    <div className="z-[999999999999] overflow-y-auto mb-16 ">
+
+
+                        {children}
+                    </div>
                 </div>
             )}
         </div>
