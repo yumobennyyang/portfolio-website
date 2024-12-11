@@ -13,19 +13,19 @@ const tencent = {
   content: [
     { "type": "line", "text": "" },
 
-    //{ "type": "section", "text": "Old UI" },
+    { "type": "section", "text": "Old UI" },
     { "type": "image", "src": "images/tencent/tencent1.png" },
 
     //{ "type": "line", "text": "" },
     //{ "type": "section", "text": "Problems" },
     { "type": "image", "src": "images/tencent/tencent2.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "UX Restructuring" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "UX Restructuring" },
     { "type": "image", "src": "images/tencent/tencent3.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "Logo Type" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Design Guidelines" },
     { "type": "image", "src": "images/tencent/tencent4.png" },
 
     //{ "type": "line", "text": "" },
@@ -44,21 +44,21 @@ const tencent = {
     //{ "type": "section", "text": "Responsive Layout" },
     { "type": "image", "src": "images/tencent/tencent8.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "Home" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Home" },
     { "type": "image", "src": "images/tencent/tencent9.png" },
     { "type": "image", "src": "images/tencent/tencent10.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "Table" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Table Items" },
     { "type": "image", "src": "images/tencent/tencent11.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "Form" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Form Items" },
     { "type": "image", "src": "images/tencent/tencent12.png" },
 
-    //{ "type": "line", "text": "" },
-    //{ "type": "section", "text": "Menu" },
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Menu Navigation" },
     { "type": "image", "src": "images/tencent/tencent13.png" },
 
 
