@@ -6,7 +6,7 @@ const plasticFish = {
     width: 2000,
     height: 2000,
   },
-  overview: "Branding for a music label commisioned by a friend.",
+  overview: "Branding for a music label - just for fun.",
   tools: ["Figma", "Photoshop", "Blender"],
   description: "Brand Design",
   content: [
