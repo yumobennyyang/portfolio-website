@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Light.otf' });
 const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
-const section = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-regular.otf' });
 const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 
 const ProjectView = ({ projectId }) => {
@@ -140,7 +139,7 @@ const ProjectView = ({ projectId }) => {
                 }
 
                 if (item.type === 'textarea') {
-                    return <div contentEditable className={`mx-[5%] max-w-[90%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
+                    return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
                     return <div className={` text-zinc-500 opacity-80 text-xs uppercase tracking-wider  my-1  px-[10%] `} key={index}>{item.text}</div>;
