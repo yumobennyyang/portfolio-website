@@ -154,8 +154,27 @@ const ProjectView = ({ projectId }) => {
                     return <div className=" mx-[10%] border-b border-zinc-200  mt-10" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
-                    return <div className="mb-1 iframe-container layer-shadow px-[2%] " key={index} style={item.containerStyling}>
-                        <iframe src={item.src} width="100%" height="400px" className="iframe" style={item.iframeStyling} />
+                    const ratio = 1080 / 1920; // 1920:1080 aspect ratio
+
+                    return <div className="mb-1 iframe-container layer-shadow mx-[2%] " key={index}
+                        style={{
+                            ...item.containerStyling,
+                            position: 'relative',
+                            paddingBottom: `${ratio * 96}%`, // Maintain aspect ratio
+                            height: 0,
+                        }}>
+                        <iframe
+                            src={item.src}
+                            className="iframe"
+                            style={{
+                                ...item.iframeStyling,
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '96%',
+                                height: '100%',
+                            }}
+                        />
                     </div>
                 }
                 if (item.type === 'video') {
