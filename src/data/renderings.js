@@ -46,6 +46,12 @@ const renderings = {
     { "type": "image", "src": "/images/renderings/render6.png" },
 
 
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Frosted Six, Figma, 2023." },
+    { "type": "text", "text": "Illustrating with just Figma." },
+    { "type": "image", "src": "/images/renderings/render7.png" },
+
+
   ],
 
 };
