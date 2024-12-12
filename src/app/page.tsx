@@ -625,9 +625,9 @@ export default function PortfolioIndex() {
 
 
 
-      <div className="hidden sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
+      <div className=" sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
 
-        <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-50 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-purple-50 after:blur-3xl after:content-[''] ">
+        <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-100 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-purple-200 after:blur-3xl after:content-[''] ">
         </div>
       </div>
 
@@ -651,7 +651,7 @@ export default function PortfolioIndex() {
       <div id="logo" className="logoOffset mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
 
 
-        <div className=" logoAppear fixed my-6 h-14 w-14  self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
+        <div className=" logoAppear fixed my-6 sm:h-14 sm:w-14 h-10 w-10 self-center flex sm:left-1/2 makeClickable sm:-translate-x-1/2  place-items-center hover:!opacity-100">
           <a href="#top" onClick={goToLanding}>
             <Image
               className=" !rounded-none !border-none"

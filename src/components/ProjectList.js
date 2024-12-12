@@ -17,34 +17,38 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
   useEffect(() => {
     if (selectedProjectId && selectedElementRef.current) {
-      const elem = selectedElementRef.current;
+        const elem = selectedElementRef.current;
 
-      // Ensure window is defined (client-side execution)
-      if (typeof window !== 'undefined') {
-        const minWidth = window.matchMedia('(min-width: 768px)').matches
-          ? Math.min(window.innerWidth - 56, 960)
-          : window.innerWidth - 24;
+        // Ensure window is defined (client-side execution)
+        if (typeof window !== 'undefined') {
+            const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
+            const marginTop = isMinWidth768 ? 20 : 48;
 
-        const scaleX = minWidth / elem.offsetWidth;
-        const scaleY = (window.innerHeight - 20) / elem.offsetHeight + 1; // 20 is the top margin
-        setScaleValues({ scaleX, scaleY });
+            const minWidth = isMinWidth768
+                ? Math.min(window.innerWidth - 56, 960)
+                : window.innerWidth - 24;
 
-        const rect = elem.getBoundingClientRect();
-        const translateY = 20 - rect.top; // 20 is the top margin
-        const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
-        setTranslateValues({ translateX, translateY });
+            const scaleX = minWidth / elem.offsetWidth;
+            const scaleY = (window.innerHeight - marginTop) / elem.offsetHeight + 1;
+            setScaleValues({ scaleX, scaleY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); //change here if height of title is changed
-        setItemScale({ itemScale });
+            const rect = elem.getBoundingClientRect();
+            const translateY = marginTop - rect.top;
+            const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
+            setTranslateValues({ translateX, translateY });
 
-        setTimeout(() => {
-          setIsHidden(true);
-        }, 500);
-      }
+            const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); //change here if height of title is changed
+            setItemScale({ itemScale });
+
+            setTimeout(() => {
+                setIsHidden(true);
+            }, 500);
+        }
     } else {
-      setIsHidden(false);
+        setIsHidden(false);
     }
-  }, [selectedProjectId]);
+}, [selectedProjectId]);
+
 
   const handleClick = (id) => {
     onSelect(id);
