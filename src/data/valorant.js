@@ -10,6 +10,7 @@ const valorant = {
     tools: ["Photoshop", "Figma"],
     duration: "3 days",
     description: "Promotional Graphics",
+    year: "2023",
     content: [
       { "type": "line", "text": "" },
   

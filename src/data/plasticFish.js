@@ -9,6 +9,7 @@ const plasticFish = {
   overview: "Branding for a music label - just for fun.",
   tools: ["Figma", "Photoshop", "Blender"],
   description: "Brand Design",
+  year: "2024",
   content: [
     { "type": "line", "text": "" },
 

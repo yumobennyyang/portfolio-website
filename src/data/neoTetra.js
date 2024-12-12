@@ -11,6 +11,7 @@ const neoTetra = {
   tools: ["Figma", "Glyphs"],
   duration: "2 weeks",
   description: "Typeface Design",
+  year: "2023",
 
   content: [
     { "type": "textarea"},

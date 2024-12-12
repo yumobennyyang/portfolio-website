@@ -8,6 +8,7 @@ const renderings = {
   },
   overview: "Static images created with various tools.",
   description: "Digitals and Forms as Pixels",
+  year: "2021-",
   content: [
 
 

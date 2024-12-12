@@ -67,9 +67,9 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div className="w-full text-zinc-950 tracking-wide rounded-xl">
+          <div className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
             <div
-              className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-300 ease-[cubic-bezier(0,0,.5,1)]`}
+              className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl  `}
               style={
                 selectedProjectId === project.id
                   ? {
@@ -83,10 +83,11 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
             >
               {project.image && (
                 <div
-                  className="overflow-hidden rounded-xl duration-300 origin-top"
+                  className="overflow-hidden rounded-xl duration-[250ms] origin-top projectImage select-none"
                   style={
                     selectedProjectId === project.id
                       ? {
+                        boxShadow: '0px 0px 0px 0px rgba(0, 0, 0, 0)',
                         borderBottomLeftRadius: '0px',
                         borderBottomRightRadius: '0px',
                         transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
@@ -95,7 +96,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
                   }
                 >
                   <img
-                    className="object-cover !border-none !rounded-none"
+                    className="object-cover !border-none !rounded-none select-none"
                     src={project.image.src}
                     alt={project.title}
                     width={project.image.width}
@@ -105,10 +106,11 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               )}
               {project.video && (
                 <div
-                  className="overflow-hidden rounded-xl duration-300 origin-top"
+                  className="overflow-hidden rounded-xl duration-[250ms] origin-top projectImage select-none"
                   style={
                     selectedProjectId === project.id
                       ? {
+                        boxShadow: '0px 0px 0px 0px rgba(0, 0, 0, 0)',
                         transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
                       }
                       : {}
@@ -119,7 +121,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
                     autoPlay
                     muted
                     loop
-                    className="object-cover"
+                    className="object-cover select-none"
                     width={project.video.width}
                     height={project.video.height}
                   >
@@ -137,9 +139,12 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               className="z-20 px-1 pb-2 relative w-full flex-row"
             >
               <div
-                className={`w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] ${text.className}`}
+                className={`flex w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] justify-between ${text.className}`}
               >
                 {project.title}
+
+                <div className="opacity-20"> {project.year} </div>
+
               </div>
               <div
                 className={`text-zinc-500 opacity-80 w-full truncate text-xs uppercase tracking-wider ${regularText.className}`}

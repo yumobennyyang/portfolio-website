@@ -9,6 +9,7 @@ const playground = {
   overview: "A collection of little things I prototyped just for fun.",
   description: "Interactive Experiments",
   tools: ["Figma", "Swift", "Three.js", "HTML/CSS/JS"],
+  year: "2021-",
   content: [
 
     { "type": "line", "text": "" },

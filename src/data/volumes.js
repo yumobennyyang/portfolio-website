@@ -8,6 +8,7 @@ const volumes = {
   },
   overview: "The manipulation of a foam fead in the form of sculpture.",
   description: "Sculptures and Forms in Space",
+  year: "2021-",
   content: [
 
 
