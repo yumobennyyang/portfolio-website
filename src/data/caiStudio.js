@@ -13,108 +13,108 @@ const caiStudio = {
   content: [
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "EchoAnta" },
+    { "type": "section", "text": "EchoAnta - renderings" },
     { "type": "image", "src": "/images/cai-studio/cai1.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Blur Smoke Positioning" },
-    { "type": "spacing" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "EchoAnta - animations" },
     { "type": "video", "src": "/images/cai-studio/EchoAnta-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Blue Smoke Animation" },
-    { "type": "spacing" },
-    { "type": "image", "src": "/images/cai-studio/cai2.png" },
-    { "type": "text", "text": "Drone View" },
-    { "type": "spacing" },
-    { "type": "image", "src": "/images/cai-studio/cai3.png" },
-    { "type": "text", "text": "Guest View" },
-    { "type": "spacing" },
     { "type": "image", "src": "/images/cai-studio/EchoAnta1.gif" },
-    { "type": "text", "text": "Guest View Animation" },
-    { "type": "spacing" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "EchoAnta - final" },
     { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mov" },
-    { "type": "text", "text": "Final Result" },
+
+
+
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "SynthView" },
-    { "type": "image", "src": "/images/cai-studio/cai4.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Yellow Smoke Positioning" },
+    { "type": "section", "text": "SynthView - renderings" },
+    { "type": "image", "src": "/images/cai-studio/cai2.png" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "SynthView - animations" },
     { "type": "video", "src": "/images/cai-studio/SynthView-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Yellow Smoke Animation" },
-    { "type": "image", "src": "/images/cai-studio/cai5.png" },
-    { "type": "text", "text": "Drone View" },
-    { "type": "image", "src": "/images/cai-studio/cai6.png" },
-    { "type": "text", "text": "Guest View" },
     { "type": "image", "src": "/images/cai-studio/SynthView1.gif" },
-    { "type": "text", "text": "Guest View Animation" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "SynthView - final" },
     { "type": "video", "src": "/images/cai-studio/SynthView-final.mov" },
-    { "type": "text", "text": "Final Result" },
+
+
+
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "AltCog" },
-    { "type": "image", "src": "/images/cai-studio/cai7.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Purple Smoke Positioning" },
+    { "type": "section", "text": "AltCog - renderings" },
+    { "type": "image", "src": "/images/cai-studio/cai3.png" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "AltCog - animations" },
     { "type": "video", "src": "/images/cai-studio/AltCog-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Purple Smoke Animation" },
-    { "type": "image", "src": "/images/cai-studio/cai8.png" },
-    { "type": "text", "text": "Drone View" },
-    { "type": "image", "src": "/images/cai-studio/cai9.png" },
-    { "type": "text", "text": "Guest View" },
     { "type": "image", "src": "/images/cai-studio/AltCog1.gif" },
-    { "type": "text", "text": "Guest View Animation" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "AltCog - final" },
     { "type": "video", "src": "/images/cai-studio/AltCog-final.mov" },
-    { "type": "text", "text": "Final Result" },
+
+
+
+
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "LogicLoom" },
-    { "type": "image", "src": "/images/cai-studio/cai10.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Green Smoke Positioning" },
+    { "type": "section", "text": "LogicLoom - renderings" },
+    { "type": "image", "src": "/images/cai-studio/cai4.png" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "LogicLoom - animations" },
     { "type": "video", "src": "/images/cai-studio/LogicLoom-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Green Smoke Animation" },
-    { "type": "image", "src": "/images/cai-studio/cai11.png" },
-    { "type": "text", "text": "Drone View" },
-    { "type": "image", "src": "/images/cai-studio/cai12.png" },
-    { "type": "text", "text": "Guest View" },
     { "type": "image", "src": "/images/cai-studio/LogicLoom1.gif" },
-    { "type": "text", "text": "Guest View Animation" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "LogicLoom - final" },
     { "type": "video", "src": "/images/cai-studio/LogicLoom-final.mov" },
-    { "type": "text", "text": "Final Result" },
+
+
+
+
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "HumaVisor" },
-    { "type": "image", "src": "/images/cai-studio/cai13.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Black Smoke Positioning" },
+    { "type": "section", "text": "HumaVisor - renderings" },
+    { "type": "image", "src": "/images/cai-studio/cai5.png" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "HumaVisor - animations" },
     { "type": "video", "src": "/images/cai-studio/HumaVisor-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Green Smoke Animation" },
-    { "type": "image", "src": "/images/cai-studio/cai14.png" },
-    { "type": "text", "text": "Drone View" },
-    { "type": "image", "src": "/images/cai-studio/cai15.png" },
-    { "type": "text", "text": "Guest View" },
     { "type": "image", "src": "/images/cai-studio/HumaVisor1.gif" },
-    { "type": "text", "text": "Guest View Animation" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "LogicLoom - final" },
     { "type": "video", "src": "/images/cai-studio/HumaVisor-final.mov" },
-    { "type": "text", "text": "Final Result" },
+
+
+
+
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "Snake Matrix & Snake Run" },
-    { "type": "image", "src": "/images/cai-studio/cai16.png" },
-    { "type": "text", "text": "Low Smoke Airburst & Green Smoke Positioning" },
+    { "type": "section", "text": "Snake Matrix & Snake Run - renderings" },
+    { "type": "image", "src": "/images/cai-studio/cai6.png" },
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "HumaVisor - animations" },
     { "type": "video", "src": "/images/cai-studio/tanchishe-p5.mov" },
-    { "type": "text", "text": "Low Smoke Airburst & Green Smoke Animation" },
-    { "type": "image", "src": "/images/cai-studio/cai17.png" },
-    { "type": "text", "text": "High Smoke Airburst Positioning" },
-    { "type": "video", "src": "/images/cai-studio/tanchishe-final.mp4" },
-    { "type": "text", "text": "Final Result" },
-
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "Miscellaneous" },
-    { "type": "image", "src": "/images/cai-studio/cai-blender.png" },
-    { "type": "text", "text": "Blender" },
-    { "type": "image", "src": "/images/cai-studio/cai-AutoCAD.png" },
-    { "type": "text", "text": "AutoCAD" },
-    { "type": "image", "src": "/images/cai-studio/cai-illustrator.png" },
-    { "type": "text", "text": "Illustator" },
+    { "type": "section", "text": "EchoAnta - final" },
+    { "type": "video", "src": "/images/cai-studio/tanchishe-final.mp4" },
 
+
+    
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Miscellaneous Blender + AutoCAD work" },
+    { "type": "image", "src": "/images/cai-studio/cai7.png" },
+    { "type": "image", "src": "/images/cai-studio/cai8.png" },
 
 
 
