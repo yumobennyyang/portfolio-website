@@ -17,74 +17,103 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
   useEffect(() => {
     if (selectedProjectId && selectedElementRef.current) {
-        const elem = selectedElementRef.current;
+      const elem = selectedElementRef.current;
 
-        // Ensure window is defined (client-side execution)
-        if (typeof window !== 'undefined') {
-            const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
-            const marginTop = isMinWidth768 ? 20 : 48;
+      if (typeof window !== 'undefined') {
+        const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
+        const isMinWidth640 = window.matchMedia('(min-width: 640px)').matches;
 
-            const minWidth = isMinWidth768
-                ? Math.min(window.innerWidth - 56, 960)
-                : window.innerWidth - 24;
+        const marginTop = isMinWidth768 ? 20 : 48;
 
-            const scaleX = minWidth / elem.offsetWidth;
-            const scaleY = (window.innerHeight - marginTop) / elem.offsetHeight + 1;
-            setScaleValues({ scaleX, scaleY });
+        const minWidth = isMinWidth768
+          ? Math.min(window.innerWidth - 56, 960)
+          : isMinWidth640
+            ? window.innerWidth - 56
+            : window.innerWidth - 24;
 
-            const rect = elem.getBoundingClientRect();
-            const translateY = marginTop - rect.top;
-            const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
-            setTranslateValues({ translateX, translateY });
+        const scaleX = minWidth / elem.offsetWidth;
+        const scaleY = (window.innerHeight - marginTop) / elem.offsetHeight + 1;
+        setScaleValues({ scaleX, scaleY });
 
-            const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); //change here if height of title is changed
-            setItemScale({ itemScale });
+        const rect = elem.getBoundingClientRect();
+        const translateY = marginTop - rect.top;
+        const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
+        setTranslateValues({ translateX, translateY });
 
-            setTimeout(() => {
-                setIsHidden(true);
-            }, 500);
-        }
+        const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); // change 80 if height of title is changed.
+        setItemScale({ itemScale });
+
+        setTimeout(() => {
+          setIsHidden(true);
+        }, 500);
+      }
     } else {
-        setIsHidden(false);
+      setIsHidden(false);
     }
-}, [selectedProjectId]);
-
+  }, [selectedProjectId]);
 
   const handleClick = (id) => {
     onSelect(id);
   };
 
   return (
-    <div id="project-list" className="sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 ">
+    <div id="project-list" className="sm:columns-2 lg:columns-3 p-2 gap-4 pb-8">
       {projects.map((project) => (
         <div
           key={project.id}
           ref={selectedProjectId === project.id ? selectedElementRef : null}
-          className={`project  pb-4 ${styles.projectItem} ${selectedProjectId === project.id ? `${styles.scaled}` : ''} ${isHidden && selectedProjectId === project.id ? styles.hidden : ''}`}
+          className={`project pb-4 ${styles.projectItem} ${selectedProjectId === project.id ? `${styles.scaled}` : ''
+            } ${isHidden && selectedProjectId === project.id ? styles.hidden : ''}`}
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
-
         >
-          <div className=" w-full  text-zinc-950 tracking-wide  rounded-xl  ">
+          <div className="w-full text-zinc-950 tracking-wide rounded-xl">
             <div
               className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl layer-shadow layer-shadow-hover sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-300 ease-[cubic-bezier(0,0,.5,1)]`}
-              style={selectedProjectId === project.id ? {borderWidth:'0px', pointerEvents: 'none', borderRadius: `${6}px`, transform: ` translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY}) ` } : {}}
+              style={
+                selectedProjectId === project.id
+                  ? {
+                    borderWidth: '0px',
+                    pointerEvents: 'none',
+                    borderRadius: '6px',
+                    transform: `translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY})`,
+                  }
+                  : {}
+              }
             >
-
               {project.image && (
-                <div className=" overflow-hidden rounded-xl  duration-300  origin-top "
-                  style={selectedProjectId === project.id
-                    ? {borderBottomLeftRadius: `${0}px`, borderBottomRightRadius: `${0}px`,  transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
-                    : {}}>
-                  <img className="object-cover !border-none !rounded-none" src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
+                <div
+                  className="overflow-hidden rounded-xl duration-300 origin-top"
+                  style={
+                    selectedProjectId === project.id
+                      ? {
+                        borderBottomLeftRadius: '0px',
+                        borderBottomRightRadius: '0px',
+                        transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
+                      }
+                      : {}
+                  }
+                >
+                  <img
+                    className="object-cover !border-none !rounded-none"
+                    src={project.image.src}
+                    alt={project.title}
+                    width={project.image.width}
+                    height={project.image.height}
+                  />
                 </div>
               )}
               {project.video && (
-                <div className="overflow-hidden rounded-xl  duration-300  origin-top"
-                  style={selectedProjectId === project.id
-                    ? { transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale}) ` }
-                    : {}}>
-
+                <div
+                  className="overflow-hidden rounded-xl duration-300 origin-top"
+                  style={
+                    selectedProjectId === project.id
+                      ? {
+                        transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
+                      }
+                      : {}
+                  }
+                >
                   <video
                     playsInline
                     autoPlay
@@ -98,17 +127,27 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
                   </video>
                 </div>
               )}
-
             </div>
-            <div style={selectedProjectId === project.id
-              ? { opacity: '0', transition: 'opacity 0.1s' }
-              : {}}
-              className="z-20 px-1 pb-2 relative w-full flex-row">
-              <div className={` w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] ${text.className}`}>{project.title}</div>
-              <div className={` text-zinc-500 opacity-80 w-full truncate  text-xs uppercase tracking-wider ${regularText.className}`}>{project.description}</div>
+            <div
+              style={
+                selectedProjectId === project.id
+                  ? { opacity: '0', transition: 'opacity 0.1s' }
+                  : {}
+              }
+              className="z-20 px-1 pb-2 relative w-full flex-row"
+            >
+              <div
+                className={`w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] ${text.className}`}
+              >
+                {project.title}
+              </div>
+              <div
+                className={`text-zinc-500 opacity-80 w-full truncate text-xs uppercase tracking-wider ${regularText.className}`}
+              >
+                {project.description}
+              </div>
             </div>
           </div>
-
         </div>
       ))}
     </div>

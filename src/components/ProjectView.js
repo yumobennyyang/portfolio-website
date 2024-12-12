@@ -13,8 +13,20 @@ const ProjectView = ({ projectId }) => {
     const project = projects.find((p) => p.id === projectId);
 
     useEffect(() => {
+
+
+
         if (typeof window !== 'undefined') {
-            const calcModalWidth = Math.min(window.innerWidth - 64, 960);
+
+            const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
+            const isMinWidth640 = window.matchMedia('(min-width: 640px)').matches;
+
+
+            const calcModalWidth = isMinWidth768
+                ? Math.min(window.innerWidth - 56, 960)
+                : isMinWidth640
+                    ? window.innerWidth - 56
+                    : window.innerWidth - 24;
             const calcMaxH = (calcModalWidth / 3) * 2;
             setModalWidth(calcModalWidth);
             setMaxH(calcMaxH);
