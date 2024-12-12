@@ -412,7 +412,9 @@ html {
       rgba(28, 29, 33, 0.3) 0px 0px 0px 0px;
   }
 
-  .layer-shadow-hover:hover {
+
+
+  .projectCard:hover .projectImage{
     box-shadow:
       rgba(28, 29, 33, 0.133) 0px 0.602187px 0.602187px -1.16667px,
       rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px,

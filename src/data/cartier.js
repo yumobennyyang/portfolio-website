@@ -9,6 +9,7 @@ const cartier = {
   overview: "Cartier: The Power of Magic features 300 iconic Cartier collection pieces and archives in dialogue with over 30 Chinese cultural relics, all under the Visual Direction of cAI™, the AI model custom-developed by Cai studio. I designed display backdrops by tweaking and compositing visuals from cAI™, tailoring the compositions to complement the specific window shapes and jewelry placements, and also incorporating three types of carvings: Relief, Shadow, and Openwork for the manufactoring process.",
   description: "Exhibition Display Design",
   tools: ["cAI™", "Photoshop"],
+  year: "2024",
   content: [
 
 

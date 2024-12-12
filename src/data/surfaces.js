@@ -8,6 +8,7 @@ const surfaces = {
     },
     overview: "Two dimensional artwork made throughout the years.",
     description: "Paintings and Forms on Paper",
+    year: "2021-",
     content: [
       { "type": "line", "text": "" },
       { "type": "section", "text": "Aquarium, oil on canvas, 2024, 12x20" },

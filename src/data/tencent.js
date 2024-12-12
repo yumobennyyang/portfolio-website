@@ -10,6 +10,7 @@ const tencent = {
   tools: ["Photoshop", "Figma", "CSS", "Midjourney"],
   duration: "2 months",
   description: "Interaction Design Internship",
+  year: "2023",
   content: [
     { "type": "line", "text": "" },
 

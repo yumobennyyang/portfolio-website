@@ -674,7 +674,7 @@ export default function PortfolioIndex() {
             <span id="intro" className="split-type ">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He loves building interactive and fluid interfaces that are completely functionless. Though, he recently discovered a passion for building ones that are highly useful and human-centered.
+            <span className="reveal-type">He loves building interactive and fluid interfaces, both ones that are completely functionless and ones that are highly useful and human-centered.
               <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
             </span>
           </div>

@@ -10,6 +10,7 @@ const caiStudio = {
   tools: ["p5.js", "Figma", "Photoshop", "Illustrator", "Blender", "AutoCAD"],
   duration: "6 weeks",
   description: "Daytime Firework",
+  year: "2024",
   content: [
 
     { "type": "line", "text": "" },
@@ -19,7 +20,7 @@ const caiStudio = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "EchoAnta - animations" },
     { "type": "video", "src": "/images/cai-studio/EchoAnta-p5.mov" },
-    { "type": "image", "src": "/images/cai-studio/EchoAnta1.gif" },
+    { "type": "video", "src": "/images/cai-studio/EchoAnta1.mov" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "EchoAnta - final" },
@@ -36,7 +37,7 @@ const caiStudio = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "SynthView - animations" },
     { "type": "video", "src": "/images/cai-studio/SynthView-p5.mov" },
-    { "type": "image", "src": "/images/cai-studio/SynthView1.gif" },
+    { "type": "video", "src": "/images/cai-studio/SynthView1.mov" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "SynthView - final" },
@@ -52,7 +53,7 @@ const caiStudio = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "AltCog - animations" },
     { "type": "video", "src": "/images/cai-studio/AltCog-p5.mov" },
-    { "type": "image", "src": "/images/cai-studio/AltCog1.gif" },
+    { "type": "video", "src": "/images/cai-studio/AltCog1.mov" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "AltCog - final" },
@@ -69,7 +70,7 @@ const caiStudio = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "LogicLoom - animations" },
     { "type": "video", "src": "/images/cai-studio/LogicLoom-p5.mov" },
-    { "type": "image", "src": "/images/cai-studio/LogicLoom1.gif" },
+    { "type": "video", "src": "/images/cai-studio/LogicLoom1.mov" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "LogicLoom - final" },
@@ -86,7 +87,7 @@ const caiStudio = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "HumaVisor - animations" },
     { "type": "video", "src": "/images/cai-studio/HumaVisor-p5.mov" },
-    { "type": "image", "src": "/images/cai-studio/HumaVisor1.gif" },
+    { "type": "video", "src": "/images/cai-studio/HumaVisor1.mov" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "LogicLoom - final" },
@@ -102,15 +103,15 @@ const caiStudio = {
     { "type": "image", "src": "/images/cai-studio/cai6.png" },
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "HumaVisor - animations" },
+    { "type": "section", "text": "Snake Matrix & Snake Run - animations" },
     { "type": "video", "src": "/images/cai-studio/tanchishe-p5.mov" },
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "EchoAnta - final" },
+    { "type": "section", "text": "Snake Matrix & Snake Run - final" },
     { "type": "video", "src": "/images/cai-studio/tanchishe-final.mp4" },
 
 
-    
+
     { "type": "line", "text": "" },
     { "type": "section", "text": "Miscellaneous Blender + AutoCAD work" },
     { "type": "image", "src": "/images/cai-studio/cai7.png" },

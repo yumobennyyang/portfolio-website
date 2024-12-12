@@ -12,6 +12,7 @@ const spectator = {
   role: ["Design Systems", "UI/UX", "Product Management"],
   tools: ["Figma"],
   description: "Mobile UI/UX",
+  year: "2022",
   content: [
     { "type": "line", "text": "" },
     { "type": "section", "text": "Context" },
