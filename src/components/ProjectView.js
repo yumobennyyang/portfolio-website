@@ -148,7 +148,7 @@ const ProjectView = ({ projectId }) => {
                     return <div className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm`} key={index}>{item.text}</div>;
                 }
                 if (item.type === 'image') {
-                    return <div className=" my-2.5" key={index} ><img className="px-[2%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                    return <div className=" my-3" key={index} ><img className="px-[2%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
                 if (item.type === 'line') {
                     return <div className=" mx-[10%] border-b border-zinc-200  mt-10" key={index}></div>;

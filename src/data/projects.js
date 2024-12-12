@@ -8,7 +8,8 @@ import renderings from './renderings'
 import playground from './playground'
 import caiStudio from './caiStudio'
 import plasticFish from './plasticFish'
+import cartier from './cartier'
 
 // Import other projects as needed
 
-export const projects = [tencent, neoTetra, renderings, spectator, plasticFish, caiStudio, valorant, playground, surfaces, volumes];
+export const projects = [tencent, neoTetra, cartier, renderings, spectator, plasticFish, caiStudio, valorant, playground, surfaces, volumes];
