@@ -742,9 +742,9 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={`!opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 pt-24 smm:pb-24 sm:pb-0 z-0 go-dark leading-6 flex w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={` !opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 ppt-24 smm:pb-24 ssm:pb-0 z-0 go-dark leading-6 w-full flex-col items-start justify-between ${text.className}`}>
 
-          <div className="w-full sm:columns-2 lg:columns-3 p-2 gap-4 pb-8 !pointer-events-auto ">
+          <div className=" !pointer-events-none w-full sm:columns-2 lg:columns-3 pp-2 gap-4 ppb-8 ">
 
             {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
 
