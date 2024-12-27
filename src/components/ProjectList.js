@@ -25,8 +25,10 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
         const marginTop = isMinWidth768 ? 20 : 48;
 
+
+
         const minWidth = isMinWidth768
-          ? Math.min(window.innerWidth - 56, 960)
+          ? Math.min(window.innerWidth - 56, 960 )
           : isMinWidth640
             ? window.innerWidth - 56
             : window.innerWidth - 24;
@@ -45,7 +47,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
         setTimeout(() => {
           setIsHidden(true);
-        }, 500);
+        }, 300);
       }
     } else {
       setIsHidden(false);
