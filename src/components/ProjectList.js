@@ -69,7 +69,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
+          <div id= "projectCard" className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
             <div
               className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl  `}
               style={
