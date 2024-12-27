@@ -100,8 +100,18 @@
 .modalFadeIn {
     opacity: 0;
     transition: opacity 300ms ease-in-out;
-  }
-  
-  .modalVisible {
+}
+
+.modalVisible {
     opacity: 1;
-  }
+}
+
+.detailsTransition {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.detailsVisible {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
