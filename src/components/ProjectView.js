@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { projects } from '../data/projects';
 import localFont from 'next/font/local';
+
 import Image from 'next/image';
+
+import styles from './Modal.module.css';
 
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Light.otf' });
 const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Semibold.otf' });
@@ -11,6 +14,7 @@ const ProjectView = ({ projectId }) => {
     const [modalWidth, setModalWidth] = useState(0);
     const [maxH, setMaxH] = useState(0);
     const project = projects.find((p) => p.id === projectId);
+    const [detailsVisible, setDetailsVisible] = useState(false);
 
     useEffect(() => {
 
@@ -30,6 +34,8 @@ const ProjectView = ({ projectId }) => {
             const calcMaxH = (calcModalWidth / 3) * 2;
             setModalWidth(calcModalWidth);
             setMaxH(calcMaxH);
+
+            setTimeout(() => setDetailsVisible(true), 500);
         }
     }, []);
 
@@ -68,7 +74,7 @@ const ProjectView = ({ projectId }) => {
                 </div>
             )}
 
-            <div className="z-20  pb-4 relative w-full flex-row ">
+            <div className={`z-20 pb-4 relative w-full flex-row ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'}`}>
                 {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
 
                 <div className={` px-[10%] text-4xl text-black mb-3 pb-4 ${title.className}`}> {project?.title}</div>
