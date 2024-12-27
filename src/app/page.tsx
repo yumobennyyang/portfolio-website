@@ -7,10 +7,7 @@ import gsap from 'gsap';
 import SplitType from 'split-type';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import Script from 'next/script';
 import React, { useEffect, useState } from 'react';
-import { PortfolioCard } from '@/components/PortfolioCard';
-import { allPortfolios } from 'contentlayer/generated';
 
 import Image from 'next/image'
 import localFont from 'next/font/local'
@@ -45,20 +42,6 @@ export default function PortfolioIndex() {
   const handleClose = () => {
     setSelectedProjectId(null);
   };
-
-
-
-
-
-  const items = allPortfolios;
-
-  const sortedItems = items.sort((a, b) => a.orderIndex - b.orderIndex);
-
-  const interfaces = sortedItems.slice(0, 3);
-
-  const graphics = sortedItems.slice(3, 6);
-
-  const crafts = sortedItems.slice(6, 9);
 
   // let scrollSpeed = 1;
 
@@ -742,17 +725,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={` hidden !opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 ppt-24 smm:pb-24 ssm:pb-0 z-0 go-dark leading-6 w-full flex-col items-start justify-between ${text.className}`}>
 
-          <div className=" !pointer-events-none w-full sm:columns-2 lg:columns-3 pp-2 gap-4 ppb-8 ">
-
-            {sortedItems.map((item, index) => <PortfolioCard key={index} item={item} />)}
-
-          </div>
-
-
-
-        </div>
 
 
 
