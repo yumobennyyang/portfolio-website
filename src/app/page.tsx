@@ -220,7 +220,7 @@ export default function PortfolioIndex() {
     const hideTextElements = document.querySelectorAll<HTMLElement>('.hideText');
 
     const mainText1 = document.querySelector<HTMLElement>('#mainText');
-    const portfolioCard = document.querySelector<HTMLElement>('#portfolioCard');
+    const portfolioCard = document.querySelector<HTMLElement>('#projectCard');
 
     if (mainText1 && portfolioCard) {
       const elementHeight = mainText1.clientHeight;
@@ -506,7 +506,7 @@ export default function PortfolioIndex() {
 
 
 
-    const textWidth = document.querySelectorAll('#portfolioCard')
+    const textWidth = document.querySelectorAll('#projectCard')
 
     textWidth.forEach((element: Element) => {
       const width = (element as HTMLElement).clientWidth;
@@ -742,7 +742,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div id="portfolio" className={` !opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 ppt-24 smm:pb-24 ssm:pb-0 z-0 go-dark leading-6 w-full flex-col items-start justify-between ${text.className}`}>
+        <div id="portfolio" className={` hidden !opacity-0 h-0 blurToNotBlur !pointer-events-none  relative sm:px-6 px-2 ppt-24 smm:pb-24 ssm:pb-0 z-0 go-dark leading-6 w-full flex-col items-start justify-between ${text.className}`}>
 
           <div className=" !pointer-events-none w-full sm:columns-2 lg:columns-3 pp-2 gap-4 ppb-8 ">
 
