@@ -21,7 +21,7 @@ const lab = {
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "System Design" },
+    { "type": "section", "text": "System Design - Courtesy of Vivian Liu" },
     { "type": "image", "src": "/images/lab/lab2.png" },
 
 
