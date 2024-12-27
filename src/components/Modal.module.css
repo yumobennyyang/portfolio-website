@@ -1,7 +1,7 @@
 /* components/Modal.module.css */
 .modalOverlay {
 
-    background: rgba(0, 0, 0, 0);
+    background: rgba(116, 116, 116, 0);
     animation: fadeInOverlay 0.3s forwards;
     backdrop-filter: blur(10px);
 
@@ -10,7 +10,7 @@
 
 @keyframes fadeInOverlay {
     to {
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(116, 116, 116, 0.2);
     }
 }
 
