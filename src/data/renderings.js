@@ -42,7 +42,7 @@ const renderings = {
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "The Cloud That Just Learned How To Fly, photoshop, 2024." },
+    { "type": "section", "text": "A Cloud That Just Learned How To Fly, photoshop, 2024." },
     { "type": "text", "text": "Prototype of a sculpture I plan on building out." },
     { "type": "image", "src": "/images/renderings/render6.png" },
 

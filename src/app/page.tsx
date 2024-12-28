@@ -729,7 +729,7 @@ export default function PortfolioIndex() {
 
 
 
-        <div className=" !pointer-events-auto sm:px-5 px-1 pt-24">
+        <div className=" !pointer-events-auto sm:px-5 px-1 pt-48">
           <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
           <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
             {selectedProjectId && <ProjectView projectId={selectedProjectId} />}

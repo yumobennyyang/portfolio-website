@@ -149,7 +149,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
               </div>
               <div
-                className={`text-zinc-500 opacity-80 w-full truncate text-xs uppercase tracking-wider ${regularText.className}`}
+                className={`text-zinc-400 opacity-80 w-full truncate text-xs uppercase tracking-wider ${regularText.className}`}
               >
                 {project.description}
               </div>
