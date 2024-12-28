@@ -78,6 +78,11 @@ const spectator = {
     { "type": "section", "text": "High Fidelity - Search" },
     { "type": "image", "src": "/images/spec-mobile/spec11.png" },
 
+
+    { "type": "line", "text": "" },
+    { "type": "section", "text": "Reflection" },
+    { "type": "text", "text": "This project marked my first experience shipping a product all the way from stakeholder interviews before wireframing to user testings after launch, deepening my understanding of the complexities involved in designing an app. Through continuous communication with the engineering team, I learned to navigate technical limitations and integrate this knowledge into the design process. The successful launch enhanced my skills in balancing design aspirations with practical application constraints, which, in my opinion, set a strong foundation for my future projects with 0->1 startups." },
+
   ],
 
 };
