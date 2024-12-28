@@ -14,9 +14,11 @@ const playground = {
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Gidd - Three.js" },
-    { "type": "text", "text": "An interactive blob with an inexplicable connection to your cursor." },
+    { "type": "text", "text": "An interactive blob that is attracted to your cursor. Built with 70000 particles and lots of math." },
 
     { "type": "iframe", "src": "https://yumobennyyang.github.io/gidd-blob/" },
+    { "type": "image", "src": "/images/playground/playground1.png" },
+
 
 
     { "type": "line", "text": "" },

@@ -13,4 +13,20 @@ import lab from './lab'
 
 // Import other projects as needed
 
-export const projects = [tencent, neoTetra, cartier, renderings, spectator, lab, caiStudio, volumes,  playground,  plasticFish, surfaces, valorant];
+export const projects = [
+    tencent, 
+    neoTetra, 
+    cartier, 
+    volumes,  
+
+
+    spectator, 
+    playground,  
+    plasticFish, 
+    renderings, 
+
+    lab, 
+    caiStudio, 
+    surfaces, 
+    valorant
+];
