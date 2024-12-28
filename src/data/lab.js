@@ -9,7 +9,7 @@ const lab = {
     height: 1080,
   },
   overview: "I studied HCI under Professor Lydia Chilton at Columbia's Computational Design Lab. Generative Disco is an AI system that helps generate music visualizations with large language models and text-to-video generation. I experimented with workflows that automated the storytelling process and enabled users to build coherent visual narratives. I also worked on designing different interactions for the new Generative Disco interface.",
-  description: "HCI Research for Computational Design Lab",
+  description: "HCI & AI Research",
   year: "2024-",
   tools: ["Figma", "Python", "Javascript"],
   team: ["Lydia Chilton", "Vivian Liu", "Jiaxin Yang", "Lulu Wang", "Claudia Tang"],

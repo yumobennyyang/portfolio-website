@@ -46,13 +46,10 @@ const spectator = {
     { "type": "section", "text": "Conclusion" },
     { "type": "text", "text": "An app is easier to access, easier to browse, and easier to share, resulting in an increased user activity and a more profound brand influence & mobile presence. An app also allows for expanded functionalities including story-telling through more specific sections and subsections, tighter integration between print and mobile formats, customizable notifications system, personalization of feed, offline reading, etc." },
 
-
-
     { "type": "line", "text": "" },
     { "type": "section", "text": "Style Revamp" },
     { "type": "image", "src": "/images/spec-mobile/spec4.png" },
     { "type": "image", "src": "/images/spec-mobile/spec5.png" },
-
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Components Library" },
@@ -77,7 +74,6 @@ const spectator = {
     { "type": "line", "text": "" },
     { "type": "section", "text": "High Fidelity - Search" },
     { "type": "image", "src": "/images/spec-mobile/spec11.png" },
-
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Reflection" },
