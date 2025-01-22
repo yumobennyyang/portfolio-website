@@ -18,6 +18,7 @@ const playground = {
 
     { "type": "iframe", "src": "https://yumobennyyang.github.io/gidd-blob/" },
     { "type": "image", "src": "/images/playground/playground1.png" },
+    { "type": "image", "src": "/images/playground/playground2.png" },
 
 
 
@@ -26,6 +27,8 @@ const playground = {
     { "type": "text", "text": "Hover over the image for a fabricated 3D effect." },
 
     { "type": "iframe", "src": "https://hover-lighting.vercel.app/" },
+    { "type": "image", "src": "/images/playground/playground3.png" },
+    { "type": "image", "src": "/images/playground/playground4.png" },
 
 
     
@@ -50,6 +53,9 @@ const playground = {
 
       }
     },
+
+    { "type": "image", "src": "/images/playground/playground5.png" },
+    { "type": "image", "src": "/images/playground/playground6.png" },
    
 
 

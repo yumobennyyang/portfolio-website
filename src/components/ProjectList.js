@@ -42,7 +42,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 80)) * (2 / 3); // change 80 if height of title is changed.
+        const itemScale = (minWidth / (elem.offsetHeight - 80 + 18)) * (2 / 3); // change 80 if height of title is changed.
         setItemScale({ itemScale });
 
         setTimeout(() => {
