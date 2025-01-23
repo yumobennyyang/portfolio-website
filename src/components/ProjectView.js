@@ -174,7 +174,7 @@ const ProjectView = ({ projectId }) => {
                 if (item.type === 'iframe') {
                     const ratio = 1080 / 1920; // 1920:1080 aspect ratio
 
-                    return <div className="mb-1 iframe-container layer-shadow mx-[2%] " key={index}
+                    return <div className="mb-1 iframe-container layer-shadow mx-[2%] hidden md:flex" key={index}
                         style={{
                             ...item.containerStyling,
                             position: 'relative',
