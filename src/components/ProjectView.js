@@ -165,6 +165,12 @@ const ProjectView = ({ projectId }) => {
                 if (item.type === 'text') {
                     return <div className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm`} key={index}>{item.text}</div>;
                 }
+
+                if (item.type === 'link') {
+                    return <a href={item.text} className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
+                }
+
+
                 if (item.type === 'image') {
                     return <div className=" my-3" key={index} ><img className="px-[2%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
