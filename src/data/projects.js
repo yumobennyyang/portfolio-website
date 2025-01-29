@@ -10,6 +10,7 @@ import caiStudio from './caiStudio'
 import plasticFish from './plasticFish'
 import cartier from './cartier'
 import lab from './lab'
+import gabble from './gabble'
 
 // Import other projects as needed
 
@@ -26,6 +27,7 @@ export const projects = [
     renderings, 
 
     lab, 
+    gabble,
     caiStudio, 
     surfaces, 
     valorant
