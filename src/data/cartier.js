@@ -36,6 +36,7 @@ const cartier = {
     { "type": "section", "text": "Exhibition shots, courtesy of Cai Studio" },
     { "type": "image", "src": "/images/cartier/cartier13.png" },
 
+    
   ],
 
 };

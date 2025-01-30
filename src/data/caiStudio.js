@@ -14,108 +14,33 @@ const caiStudio = {
   content: [
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "EchoAnta - renderings" },
+    { "type": "section", "text": "Sequence Visuaization - p5.js" },
     { "type": "image", "src": "/images/cai-studio/cai1.png" },
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "EchoAnta - animations" },
-    { "type": "video", "src": "/images/cai-studio/EchoAnta-p5.mov" },
-    { "type": "video", "src": "/images/cai-studio/EchoAnta1.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "EchoAnta - final" },
-    { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mov" },
-
-
-
-
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "SynthView - renderings" },
+    { "type": "section", "text": "Viewpoint Rendering - Figma" },
     { "type": "image", "src": "/images/cai-studio/cai2.png" },
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "SynthView - animations" },
-    { "type": "video", "src": "/images/cai-studio/SynthView-p5.mov" },
-    { "type": "video", "src": "/images/cai-studio/SynthView1.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "SynthView - final" },
-    { "type": "video", "src": "/images/cai-studio/SynthView-final.mov" },
-
-
+    { "type": "section", "text": "Final Scenes" },
+    { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mov" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/SynthView-final.mov" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/AltCog-final.mov" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/LogicLoom-final.mov" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/HumaVisor-final.mov" , autoplay: true, looping: true},
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "AltCog - renderings" },
+    { "type": "section", "text": "Snake Matrix, Snake Run Full Map" },
     { "type": "image", "src": "/images/cai-studio/cai3.png" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "AltCog - animations" },
-    { "type": "video", "src": "/images/cai-studio/AltCog-p5.mov" },
-    { "type": "video", "src": "/images/cai-studio/AltCog1.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "AltCog - final" },
-    { "type": "video", "src": "/images/cai-studio/AltCog-final.mov" },
-
-
+    { "type": "video", "src": "/images/cai-studio/tanchishe-final.mp4", autoplay: true, looping: true },
 
 
 
     { "type": "line", "text": "" },
-    { "type": "section", "text": "LogicLoom - renderings" },
+    { "type": "section", "text": "Miscellaneous - Blender, AutoCAD" },
     { "type": "image", "src": "/images/cai-studio/cai4.png" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "LogicLoom - animations" },
-    { "type": "video", "src": "/images/cai-studio/LogicLoom-p5.mov" },
-    { "type": "video", "src": "/images/cai-studio/LogicLoom1.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "LogicLoom - final" },
-    { "type": "video", "src": "/images/cai-studio/LogicLoom-final.mov" },
-
-
-
-
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "HumaVisor - renderings" },
     { "type": "image", "src": "/images/cai-studio/cai5.png" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "HumaVisor - animations" },
-    { "type": "video", "src": "/images/cai-studio/HumaVisor-p5.mov" },
-    { "type": "video", "src": "/images/cai-studio/HumaVisor1.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "LogicLoom - final" },
-    { "type": "video", "src": "/images/cai-studio/HumaVisor-final.mov" },
-
-
-
-
-
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "Snake Matrix & Snake Run - renderings" },
-    { "type": "image", "src": "/images/cai-studio/cai6.png" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "Snake Matrix & Snake Run - animations" },
-    { "type": "video", "src": "/images/cai-studio/tanchishe-p5.mov" },
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "Snake Matrix & Snake Run - final" },
-    { "type": "video", "src": "/images/cai-studio/tanchishe-final.mp4" },
-
-
-
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "Miscellaneous Blender + AutoCAD work" },
-    { "type": "image", "src": "/images/cai-studio/cai7.png" },
-    { "type": "image", "src": "/images/cai-studio/cai8.png" },
 
 
 
