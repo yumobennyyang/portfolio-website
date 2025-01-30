@@ -18,6 +18,7 @@ const gabble = {
     { "type": "line", "text": "" },
     { "type": "link", "text": "www.gabble.world" }
 
+    
   ],
 
 };
