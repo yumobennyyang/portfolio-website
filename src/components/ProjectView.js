@@ -167,7 +167,7 @@ const ProjectView = ({ projectId }) => {
                 }
 
                 if (item.type === 'link') {
-                    return <a href={item.src} className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
+                    return <a href={item.url} className={`px-[10%] tracking-[-.016em] text-black mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
                 }
 
 
