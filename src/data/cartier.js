@@ -12,7 +12,6 @@ const cartier = {
   year: "2024",
   content: [
 
-
     { "type": "line", "text": "" },
     { "type": "section", "text": "Renderings" },
     { "type": "image", "src": "/images/cartier/cartier8.png" },
@@ -27,7 +26,6 @@ const cartier = {
     { "type": "image", "src": "/images/cartier/cartier6.png" },
     { "type": "image", "src": "/images/cartier/cartier7.png" },
 
-
     { "type": "line", "text": "" },
     { "type": "section", "text": "Process shots, courtesy of Cai Studio" },
     { "type": "image", "src": "/images/cartier/cartier12.png" },
@@ -36,9 +34,8 @@ const cartier = {
     { "type": "section", "text": "Exhibition shots, courtesy of Cai Studio" },
     { "type": "image", "src": "/images/cartier/cartier13.png" },
 
-    
   ],
-
+  
 };
 
 export default cartier;
