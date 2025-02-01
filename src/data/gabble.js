@@ -16,7 +16,7 @@ const gabble = {
   content: [
 
     { "type": "line", "text": "" },
-    { "type": "link", "text": "www.gabble.world" }
+    { "type": "link", "text": "www.gabble.world", "url": "www.gabble.world" }
 
     
   ],
