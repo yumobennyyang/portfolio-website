@@ -15,7 +15,15 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
   const [isHidden, setIsHidden] = useState(false);
   const selectedElementRef = useRef(null);
 
+  const springWobbly = (t) => {
+    return -0.5 * Math.exp(-6 * t) * (-2 * Math.exp(6 * t) + Math.sin(12 * t) + 2 * Math.cos(12 * t));
+};
+
   useEffect(() => {
+
+    
+
+    
     if (selectedProjectId && selectedElementRef.current) {
       const elem = selectedElementRef.current;
 
