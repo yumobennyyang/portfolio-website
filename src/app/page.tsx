@@ -211,7 +211,7 @@ export default function PortfolioIndex() {
     if (mainText1 && portfolioCard) {
       const elementHeight = mainText1.clientHeight;
       const changeX = 56 / portfolioCard.clientWidth;
-      const changeY = 56 / mainText1.clientHeight;
+      const changeY = 56 / mainText1.clientHeight * 0.67;
 
       hideTextElements.forEach((element) => {
         gsap.fromTo(
