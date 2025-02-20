@@ -656,7 +656,7 @@ export default function PortfolioIndex() {
           className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
-          <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5">
+          <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5 origin-top">
             <span id="intro" className="split-type ">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
