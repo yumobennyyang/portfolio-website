@@ -129,6 +129,9 @@ export default function PortfolioIndex() {
     })
 
 
+
+
+
     const darkBackgroundElements = document.querySelectorAll('.darkBackground');
 
     darkBackgroundElements.forEach((element) => {
@@ -224,7 +227,7 @@ export default function PortfolioIndex() {
             scaleX: changeX,
             scaleY: changeY,
 
-            top: `calc(-${(elementHeight - 56) / 2}px - 56px - 24px)`,
+            top: `calc(-${(elementHeight - 56) / 2}px - 56px - 24px - 56px)`,
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: element,
