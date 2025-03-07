@@ -113,7 +113,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
 
 
 
-                <div className="z-[999999999999] overflow-y-auto mb-16 ">
+                <div className="z-[999999999999]  overflow-y-auto mb-16 ">
 
 
                     {children}

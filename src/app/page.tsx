@@ -729,17 +729,13 @@ export default function PortfolioIndex() {
 
 
 
-
-
-
-        <div className=" !pointer-events-auto sm:px-5 px-1 pt-48">
+        <div className=" !pointer-events-auto sm:px-5 px-1 pt-48 ">
           <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
           <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
             {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
           </Modal>
 
         </div>
-
 
 
         <div className="sm:flex">
@@ -754,7 +750,7 @@ export default function PortfolioIndex() {
               <br></br>
               <span>Copyright © 2024 Benny Yang</span>
               <br></br>
-              <span>Last updated </span><LastCommitTime />
+              <span>Last updated </span><LastCommitTime/>
             </p>
           </div>
 

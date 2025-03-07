@@ -8,7 +8,7 @@ const gabble = {
     width: 2000,
     height: 2000,
   },
-  overview: "I co-founded Gabble, and we are currently building an app that gamifies the experience of online discourse by placing users in fast-paced rounds of debate to discuss current-affairs topics with strangers.",
+  overview: "I am building Gabble, an app that gamifies the experience of online discourse by placing users in fast-paced rounds of debate to discuss current-affairs topics with strangers.",
   description: "0->1 Product",
   year: "2024-",
   tools: ["Figma", "Swift", "Framer"],
