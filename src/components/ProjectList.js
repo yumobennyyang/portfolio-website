@@ -7,6 +7,7 @@ import localFont from 'next/font/local';
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
 const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 const description = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Bold.otf' });
+const title = localFont({ src: '../fonts/Satoshi-Variable.ttf' });
 
 const ProjectList = ({ onSelect, selectedProjectId }) => {
   const [scaleValues, setScaleValues] = useState({ scaleX: 1, scaleY: 1 });
@@ -149,7 +150,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               className="z-20 px-1 pb-2 relative w-full flex-row"
             >
               <div
-                className={`flex w-full pt-[6px] pb-[1px] truncate text-2xl tracking-[.007em] justify-between ${text.className}`}
+                className={`flex w-full pt-[6px] pb-[1px] font-medium truncate text-2xl ttracking-[.007em] justify-between ${title.className}`}
               >
                 {project.title}
 
