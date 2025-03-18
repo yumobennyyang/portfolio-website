@@ -16,7 +16,7 @@
 
 
 .modalContent { 
-    
+
 
     scrollbar-width: none;
 
@@ -26,9 +26,9 @@
     outline-color: #e6e6eb;
     outline-width: 4px;
 
-    -webkit-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.37);
-    -moz-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.37);
-    box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.1);
 
 
 }
