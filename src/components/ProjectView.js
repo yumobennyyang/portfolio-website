@@ -7,7 +7,7 @@ import Image from 'next/image';
 import styles from './Modal.module.css';
 
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Light.otf' });
-const title = localFont({ src: '../fonts/Satoshi-Variable.ttf' });
+const title = localFont({ src: '../fonts/PPMondwest-Regular.otf' });
 const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 
 const ProjectView = ({ projectId }) => {
@@ -77,7 +77,7 @@ const ProjectView = ({ projectId }) => {
             <div className={`z-20 pb-4 relative w-full flex-row ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'}`}>
                 {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
 
-                <div className={` px-[10%] text-4xl font-semibold mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
+                <div className={` px-[10%] text-5xl font-semibold mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
 
                 <div className={`px-[10%] text-zinc-400 opacity-80 text-xs uppercase tracking-wider mb-1 ${regularText.className}`} >Overview</div>
                 <div className=" px-[10%] tracking-[-.016em]  mb-3 pb-4 text-sm"> {project?.overview}</div>
@@ -160,24 +160,30 @@ const ProjectView = ({ projectId }) => {
                     return <div contentEditable className={`mx-[10%] max-w-[80%] px-3 leading-[49px] text-5xl rounded-sm py-2 pb-4 bg-[#F5F5F5] text-[#D93A34] border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here...</div>;
                 }
                 if (item.type === 'section') {
-                    return <div className={` text-zinc-400 opacity-80 text-xs uppercase tracking-wider  my-1  px-[10%] `} key={index}>{item.text}</div>;
+                    return (
+                        <div className="flex justify-center items-center w-full" key={index}>
+                            <div className={`md:px-[6rem] px-[2rem] text-zinc-400 opacity-80 text-xs uppercase tracking-wider mb-1 mt-[5rem]`}>
+                                {item.text}
+                            </div>
+                        </div>
+                    );
                 }
                 if (item.type === 'text') {
-                    return <div className={`px-[10%] tracking-[-.016em] mb-3 text-sm`} key={index}>{item.text}</div>;
+                    return <div className={`md:px-[6rem] px-[2rem] tracking-[-.016em] mb-3 text-sm`} key={index}>{item.text}</div>;
                 }
 
                 if (item.type === 'link') {
-                    return <a href={item.url} className={`px-[10%] tracking-[-.016em] mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
+                    return <a href={item.url} className={`md:px-[6rem] px-[2rem] tracking-[-.016em] mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
                 }
 
 
                 if (item.type === 'image') {
 
 
-                    return <div className=" my-1" key={index} ><img className="px-[2%]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                    return <div className=" my-1" key={index} ><img className="px-1" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
                 if (item.type === 'line') {
-                    return <div className=" mx-[10%] border-b border-zinc-200  mt-10" key={index}></div>;
+                    return <div className=" md:px-[6rem] px-[2rem] border-b border-zinc-200  mt-10" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
                     const ratio = 1080 / 1920; // 1920:1080 aspect ratio

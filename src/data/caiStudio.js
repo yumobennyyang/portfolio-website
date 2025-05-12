@@ -23,11 +23,11 @@ const caiStudio = {
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Final Scenes" },
-    { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mov" , autoplay: true, looping: true},
-    { "type": "video", "src": "/images/cai-studio/SynthView-final.mov" , autoplay: true, looping: true},
-    { "type": "video", "src": "/images/cai-studio/AltCog-final.mov" , autoplay: true, looping: true},
-    { "type": "video", "src": "/images/cai-studio/LogicLoom-final.mov" , autoplay: true, looping: true},
-    { "type": "video", "src": "/images/cai-studio/HumaVisor-final.mov" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mp4" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/SynthView-final.mp4" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/AltCog-final.mp4" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/LogicLoom-final.mp4" , autoplay: true, looping: true},
+    { "type": "video", "src": "/images/cai-studio/HumaVisor-final.mp4" , autoplay: true, looping: true},
 
 
     { "type": "line", "text": "" },
@@ -37,10 +37,10 @@ const caiStudio = {
 
 
 
-    { "type": "line", "text": "" },
-    { "type": "section", "text": "Miscellaneous - Blender, AutoCAD" },
-    { "type": "image", "src": "/images/cai-studio/cai4.png" },
-    { "type": "image", "src": "/images/cai-studio/cai5.png" },
+    // { "type": "line", "text": "" },
+    // { "type": "section", "text": "Miscellaneous - Blender, AutoCAD" },
+    // { "type": "image", "src": "/images/cai-studio/cai4.png" },
+    // { "type": "image", "src": "/images/cai-studio/cai5.png" },
 
 
 

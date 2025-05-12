@@ -1,7 +1,15 @@
 /* components/Modal.module.css */
 .modalOverlay {
 
-    background: rgba(245, 245, 245, 0);
+    
+    /* background: rgba(245, 245, 245, 0); */
+
+    background: linear-gradient(to bottom, 
+                transparent, 
+                rgb(var(--background-end-rgb))),
+              rgb(var(--background-start-rgb));
+
+
     animation: fadeInOverlay 0.3s forwards;
     backdrop-filter: blur(10px);
 
@@ -15,6 +23,7 @@
 }
 
 
+
 .modalContent { 
 
 
@@ -22,9 +31,10 @@
 
     border: #d4d4d9 0.5px solid !important;
 
-    outline-style: solid;
+
+    /* outline-style: solid;
     outline-color: #e6e6eb;
-    outline-width: 4px;
+    outline-width: 4px; */
 
     -webkit-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.1);
@@ -76,7 +86,7 @@
     max-width: 960px;
     z-index: 10001;
     margin-bottom: 0 !important;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.16), opacity 0s ease-in !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11), opacity 0s ease-in !important;
 
 }
 

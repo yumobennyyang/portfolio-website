@@ -7,7 +7,7 @@ import localFont from 'next/font/local';
 const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
 const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 const description = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Bold.otf' });
-const title = localFont({ src: '../fonts/Satoshi-Variable.ttf' });
+const title = localFont({ src: '../fonts/PPMondwest-Regular.otf' });
 
 const ProjectList = ({ onSelect, selectedProjectId }) => {
   const [scaleValues, setScaleValues] = useState({ scaleX: 1, scaleY: 1 });
@@ -18,13 +18,13 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
   const springWobbly = (t) => {
     return -0.5 * Math.exp(-6 * t) * (-2 * Math.exp(6 * t) + Math.sin(12 * t) + 2 * Math.cos(12 * t));
-};
+  };
 
   useEffect(() => {
 
-    
 
-    
+
+
     if (selectedProjectId && selectedElementRef.current) {
       const elem = selectedElementRef.current;
 
@@ -37,7 +37,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
 
 
         const minWidth = isMinWidth768
-          ? Math.min(window.innerWidth - 56, 960 )
+          ? Math.min(window.innerWidth - 56, 960)
           : isMinWidth640
             ? window.innerWidth - 56
             : window.innerWidth - 24;
@@ -78,7 +78,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div id= "projectCard" className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
+          <div id="projectCard" className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
             <div
               className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl  `}
               style={
@@ -150,7 +150,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               className="z-20 px-1 pb-2 relative w-full flex-row"
             >
               <div
-                className={`flex w-full pt-[6px] pb-[1px] font-medium truncate text-2xl ttracking-[.007em] justify-between ${title.className}`}
+                className={`flex w-full pt-[6px] pb-[1px] font-bold truncate text-3xl  justify-between ${title.className}`}
               >
                 {project.title}
 

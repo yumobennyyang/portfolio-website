@@ -26,7 +26,7 @@ export const projects = [
     plasticFish, 
     renderings, 
 
-    lab, 
+    //lab, 
     gabble,
     caiStudio, 
     surfaces, 

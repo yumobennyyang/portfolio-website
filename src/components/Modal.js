@@ -66,6 +66,8 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
     return (
         <div className={`${styles.modalOverlay} layerShadowDark fixed inset-0 w-screen h-screen flex items-end justify-center z-[10000] transition-all duration-300 ease-in-out`} onClick={onClose}>
 
+
+
             <div className={`${styles.modalContent} ${styles.modalFadeIn} ${showModalContent ? styles.modalVisible : ''} aboslute overflow-x-hidden md:max-h-[calc(100vh-20px)] max-h-[calc(100vh-48px)] top-12 md:top-5 bg-white rounded-t-2xl max-w-[960px] overflow-y-auto z-[10002]  mx-3 sm:mx-7 ${makeClickable ? '' : 'pointer-events-none'}`} onClick={(e) => e.stopPropagation()}>
 
 
