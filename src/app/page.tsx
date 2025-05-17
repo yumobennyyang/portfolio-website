@@ -690,7 +690,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
+          <p className=" justify-center pr-4 pl-1 py-2 w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group ">
             <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp; cv</span>
           </p>
@@ -748,9 +748,9 @@ export default function PortfolioIndex() {
               <span>Built with Next.js on Vercel</span>
               {/* <span className="flashing">_</span> */}
               <br></br>
-              <span>Copyright © 2024 Benny Yang</span>
-              <br></br>
-              <span>Last updated </span><LastCommitTime/>
+               {/* <span>Copyright © 2024 Benny Yang</span>
+              <br></br>*/}
+              <span>Last updated </span><LastCommitTime />
             </p>
           </div>
 
@@ -758,16 +758,19 @@ export default function PortfolioIndex() {
             className={`pb-4 sm:text-right items-end sm:pb-0 sm:m-4 -z-10 sm:right-0 sm:left-auto left-0 bottom-0 relative sm:w-1/2 w-full leading-6 justify-between text-zinc-950 text-sm ${satoshi.className} `}
           >
 
+
+            
+
             <p className=" justify-center px-4 py-2  w-auto ">
               <span>I&apos;m on </span>
-              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Twitter</a>
+              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Twitter</a>
               <span> </span>
-              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Linkedin</a>
+              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Linkedin</a>
               <span> </span>
-              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">Cosmos</a>
+              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Cosmos</a>
               <br></br>
-              <span>Let&apos;s chat </span>
-              <a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">yy3204@columbia.edu</a>
+              <span>Let&apos;s chat yy3204@columbia.edu</span>
+              {/*<a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">yy3204@columbia.edu</a>*/}
             </p>
           </div>
 
