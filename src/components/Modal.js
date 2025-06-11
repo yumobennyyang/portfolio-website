@@ -30,7 +30,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
                 setMakeClickable(true);
 
 
-            }, 0);// 0.1-second delay for modal content
+            }, 300);// 0.3-second delay for modal content
 
 
         } else {

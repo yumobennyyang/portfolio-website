@@ -43,7 +43,8 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
             : window.innerWidth - 24;
 
         const scaleX = minWidth / elem.offsetWidth;
-        const scaleY = (window.innerHeight - marginTop) / elem.offsetHeight + 1;
+        const scaleY = (window.innerHeight - marginTop) / elem.offsetHeight * 1.5;
+        console.log("scaleX: ", scaleX, " scaleY: ", scaleY, " minWidth: ", minWidth, " elem.offsetWidth: ", elem.offsetWidth, " elem.offsetHeight: ", elem.offsetHeight, " window.innerHeight: ", window.innerHeight, " marginTop: ", marginTop);
         setScaleValues({ scaleX, scaleY });
 
         const rect = elem.getBoundingClientRect();
@@ -51,12 +52,12 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 80 + 18)) * (2 / 3); // change 80 if height of title is changed.
+        const itemScale = (minWidth / (elem.offsetHeight - 83 + 16)) * (2 / 3); // change 80 if height of title is changed.
         setItemScale({ itemScale });
 
         setTimeout(() => {
           setIsHidden(true);
-        }, 300);
+        }, 600);
       }
     } else {
       setIsHidden(false);
@@ -78,9 +79,9 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div id="projectCard" className="projectCard w-full text-zinc-950 tracking-wide rounded-xl sm:hover:scale-[1.01] sm:hover:scale-z-[1.01] duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]">
+          <div id="projectCard" className={`projectCard w-full text-zinc-950 tracking-wide rounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
             <div
-              className={`${styles.projectItem} border w-full flex-col relative flex group bg-white rounded-xl  `}
+              className={`${styles.projectItem} bborder  w-full flex-col relative flex group bg-white rounded-xl  `}
               style={
                 selectedProjectId === project.id
                   ? {

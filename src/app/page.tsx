@@ -611,7 +611,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div className=" sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
+      <div className="hidden sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
 
         <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-100 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-purple-200 after:blur-3xl after:content-[''] ">
         </div>
@@ -657,11 +657,11 @@ export default function PortfolioIndex() {
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5 ">
-            <span id="intro" className="split-type ">Benny is an artist and designer currently studying computer science and visual arts at Columbia University.</span>
+            <span id="intro" className="split-type ">Benny graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP. </span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces, both ones that are completely functionless and ones that are highly useful and human-centered.
-              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups and researching at the Computational Design Lab — prototyping micro-interactions and scaling design systems.
+              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups — prototyping micro-interactions and scaling design systems.
             </span>
           </div>
 

@@ -8,6 +8,7 @@
                 transparent, 
                 rgb(var(--background-end-rgb))),
               rgb(var(--background-start-rgb));
+              
 
 
     animation: fadeInOverlay 0.3s forwards;
@@ -29,10 +30,14 @@
 
     scrollbar-width: none;
 
-    border: #d4d4d9 0.5px solid !important;
+    /* 
+    background-color: black;*/
 
+    
+    border: #d4d4d9 0px solid !important;
 
-    /* outline-style: solid;
+ /* 
+    outline-style: solid;
     outline-color: #e6e6eb;
     outline-width: 4px; */
 
@@ -72,7 +77,7 @@
     align-items: center;
     /* Adjust height as needed */
     /* Optional: Add a background color */
-   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11), opacity 0s ease-in;
+   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0s ease-in;
     cursor: pointer;
     width: 100%;
     max-width: none;
@@ -86,7 +91,7 @@
     max-width: 960px;
     z-index: 10001;
     margin-bottom: 0 !important;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11), opacity 0s ease-in !important;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0s ease-in !important;
 
 }
 
