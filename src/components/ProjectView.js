@@ -182,13 +182,19 @@ const ProjectView = ({ projectId }) => {
 
                     return <div className=" my-1" key={index} ><img className="px-1" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
                 }
+
+                if (item.type === 'smallImage'){
+                    return <div className=" my-1" key={index} ><img className="md:px-[6rem] px-[2rem]" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                }
+
+
                 if (item.type === 'line') {
                     return <div className=" md:px-[6rem] px-[2rem] border-b border-zinc-200  mt-10" key={index}></div>;
                 }
                 if (item.type === 'iframe') {
                     const ratio = 1080 / 1920; // 1920:1080 aspect ratio
 
-                    return <div className="mb-1 iframe-container layer-shadow mx-[2%] hidden md:flex" key={index}
+                    return <div className="my-1 mx-1 iframe-container layer-shadow hidden md:flex" key={index}
                         style={{
                             ...item.containerStyling,
                             position: 'relative',
@@ -203,7 +209,7 @@ const ProjectView = ({ projectId }) => {
                                 position: 'absolute',
                                 top: 0,
                                 left: 0,
-                                width: '96%',
+                                width: 'calc(100% - 8px)',
                                 height: '100%',
                             }}
                         />
@@ -216,7 +222,7 @@ const ProjectView = ({ projectId }) => {
                         // Video that auto-plays and loops without controls
                         return (
                             <div
-                                className="mb-1 mx-[2%] max-w-[96%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="my-1 px-1  w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video
@@ -236,7 +242,7 @@ const ProjectView = ({ projectId }) => {
                         // Video with controls
                         return (
                             <div
-                                className="mb-1 mx-[2%] max-w-[96%] w-full h-auto overflow-hidden layer-shadow border border-white/50"
+                                className="my-1 px-1  w-full h-auto overflow-hidden layer-shadow border border-white/50"
                                 key={index}
                             >
                                 <video

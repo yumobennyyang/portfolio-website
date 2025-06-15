@@ -15,11 +15,11 @@ const caiStudio = {
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Sequence Visuaization - p5.js" },
-    { "type": "image", "src": "/images/cai-studio/cai1.png" },
+    { "type": "smallImage", "src": "/images/cai-studio/cai1.png" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Viewpoint Rendering - Figma" },
-    { "type": "image", "src": "/images/cai-studio/cai2.png" },
+    { "type": "smallImage", "src": "/images/cai-studio/cai2.png" },
 
     { "type": "line", "text": "" },
     { "type": "section", "text": "Final Scenes" },

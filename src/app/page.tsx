@@ -523,7 +523,7 @@ export default function PortfolioIndex() {
     // updateScrollSpeed();
 
     const handleResize2 = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1) { //768
         interaction();
       }
     };
@@ -637,7 +637,7 @@ export default function PortfolioIndex() {
       <div id="logo" className="logoOffset mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
 
 
-        <div className=" logoAppear fixed my-6 sm:h-14 sm:w-14 h-10 w-10 self-center flex sm:left-1/2 makeClickable sm:-translate-x-1/2  place-items-center hover:!opacity-100">
+        <div className=" logoAppear fixed my-6 sm:h-14 sm:w-14 h-10 w-10 self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
           <a href="#top" onClick={goToLanding}>
             <Image
               className=" !rounded-none !border-none"
@@ -657,7 +657,7 @@ export default function PortfolioIndex() {
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5 ">
-            <span id="intro" className="split-type ">Benny graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP. </span>
+            <span id="intro" className="split-type ">Benny graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He loves building interactive and fluid interfaces, both ones that are completely functionless and ones that are highly useful and human-centered.

@@ -6,7 +6,7 @@ const tencent = {
     width: 1024,
     height: 1024,
   },
-  overview: "During the summer of 2023 I interned at Tencent’s Interactive Entertainment Group (IEG) as an interface and interaction designer. I was assigned the solo task of a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps. On this page are snippets of my redesign of the Dora Platform, a formerly-in-bad-shape web app actively used by 500+ employees.",
+  overview: "During the summer of 2023 I interned at Tencent’s Interactive Entertainment Group (IEG) as an interface and interaction designer. I was assigned the solo task of a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps. On this page are snippets of my redesign of the Dora Platform, a reconditioned web app actively used by 500+ employees.",
   tools: ["Photoshop", "Figma", "CSS", "Midjourney"],
   duration: "2 months",
   description: "Interaction Design Internship",
@@ -19,7 +19,7 @@ const tencent = {
 
     //{ "type": "line", "text": "" },
     //{ "type": "section", "text": "Problems" },
-    { "type": "image", "src": "images/tencent/tencent2.png" },
+    { "type": "smallImage", "src": "images/tencent/tencent2.png" },
 
     
     { "type": "section", "text": "UX Restructuring" },
@@ -27,18 +27,18 @@ const tencent = {
 
 
     { "type": "section", "text": "Rebrand Guidelines" },
-    { "type": "image", "src": "images/tencent/tencent4.png" },
+    { "type": "smallImage", "src": "images/tencent/tencent4.png" },
 
-    { "type": "image", "src": "images/tencent/tencent5.png" },
-
-
-    { "type": "image", "src": "images/tencent/tencent6.png" },
+    { "type": "smallImage", "src": "images/tencent/tencent5.png" },
 
 
-    { "type": "image", "src": "images/tencent/tencent7.png" },
+    { "type": "smallImage", "src": "images/tencent/tencent6.png" },
 
 
-    { "type": "image", "src": "images/tencent/tencent8.png" },
+    { "type": "smallImage", "src": "images/tencent/tencent7.png" },
+
+
+    //{ "type": "image", "src": "images/tencent/tencent8.png" },
 
 
     { "type": "section", "text": "Home" },
