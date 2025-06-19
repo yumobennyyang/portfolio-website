@@ -81,25 +81,10 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
                     <div></div>
                 </div>
 
-                <button className={` fixed h-0 top-4 left-4 bg-transparent border-none cursor-pointer text-neutral-950 ${benny.className}`} onClick={onClose}>
+                <button className={` fixed h-0 top-4 left-4 bg-transparent border-none cursor-pointer text-black ${benny.className}`} onClick={onClose}>
 
 
-
-
-
-                    <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
-
-
-                        <p className=" justify-center pl-4 pr-1 py-2  w-auto">
-
-                            <span>close</span>
-                            {/* <span>↗</span>*/}
-                        </p>
-
-
-
-                    </div>
-                    <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
+                    <div className={`flex sm:mx-4  py-2 sm:my-2 z-50 left-0 top-0 fixed w-auto leading-6  text-sm `}>
 
 
                         <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">

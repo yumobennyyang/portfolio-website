@@ -77,7 +77,7 @@ const ProjectView = ({ projectId }) => {
             <div className={`z-20 pb-4 relative w-full flex-row ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'}`}>
                 {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
 
-                <div className={` px-[10%] text-5xl font-semibold mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
+                <div className={` px-[10%] text-3xl font-semibold mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
 
                 <div className={`px-[10%] text-zinc-400 opacity-80 text-xs uppercase tracking-wider mb-1 ${regularText.className}`} >Overview</div>
                 <div className=" px-[10%] tracking-[-.016em]  mb-3 pb-4 text-sm"> {project?.overview}</div>

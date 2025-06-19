@@ -669,7 +669,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div className={`flex sm:mx-4  px-3 py-6 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
+      <div className={`flex sm:mx-4  sm:my-2 px-3 py-4 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between `}

@@ -52,7 +52,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 67)) * (2 / 3); // change 67 if height of title is changed.
+        const itemScale = (minWidth / (elem.offsetHeight - 54)) * (2 / 3); // change 54 if height of title is changed.
         setItemScale({ itemScale });
 
         setTimeout(() => {
@@ -148,10 +148,10 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
                   ? { opacity: '0', transition: 'opacity 0.1s' }
                   : {}
               }
-              className="z-20 px-1 pb-2 relative w-full flex-row"
+              className="z-20 pb-2 relative w-full flex-row"
             >
               <div
-                className={`flex w-full pt-[6px] pb-[1px] font-bold truncate text-3xl  justify-between ${title.className}`}
+                className={`flex w-full pt-[6px] -mb-1 font-bold truncate text-xl uppercase justify-between ${title.className}`}
               >
                 {project.title}
 
