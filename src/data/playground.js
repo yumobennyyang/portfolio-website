@@ -32,6 +32,14 @@ const playground = {
 
     { "type": "video", "src": "/images/playground/playground1.mov", autoplay: true, looping: true, },
 
+
+    
+
+    { "type": "section", "text": "If responsive sites were designed like that hospital in the movie Idiocracy - Javascript" },
+
+    { "type": "video", "src": "/images/playground/playground5.mov", autoplay: true, looping: true, },
+
+
     // { "type": "iframe", "src": "https://yumobennyyang.github.io/gidd-blob/" },
     // { "type": "image", "src": "/images/playground/playground1.png" },
     // { "type": "image", "src": "/images/playground/playground2.png" },
@@ -54,10 +62,7 @@ const playground = {
 
     
 
-    { "type": "section", "text": "If responsive sites were designed like that hospital in the movie Idiocracy - Javascript" },
 
-
-    { "type": "video", "src": "/images/playground/playground5.mov", autoplay: true, looping: true, },
 
     // {
     //   "type": "iframe",

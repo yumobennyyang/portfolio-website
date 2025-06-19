@@ -613,7 +613,7 @@ export default function PortfolioIndex() {
 
       <div className="hidden sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
 
-        <div className="opacity-30 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-100 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-purple-200 after:blur-3xl after:content-[''] ">
+        <div className="opacity-0 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-100 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-purple-200 after:blur-3xl after:content-[''] ">
         </div>
       </div>
 
@@ -669,7 +669,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div className={`flex mix-blend-difference sm:mx-4  my-2 z-50 right-0 top-0 fixed w-auto leading-6 text-zinc-50  text-sm ${satoshi.className}`}>
+      <div className={`flex sm:mx-4  px-3 py-6 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between `}
@@ -677,22 +677,23 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center pl-4 pr-1 py-2  w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group">
-            <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
-            <span>&nbsp; art</span>
+          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0.4px] rounded-lg hover:text-white outline outline-[0.5px] outline-black  w-auto   group">
+            <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp;art</span>
             {/* <span>↗</span>*/}
           </p>
 
         </a>
+
 
         <a
           className={` justify-between`}
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center pr-4 pl-1 py-2 w-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline group ">
-            <span className="translate-x-[9px] group-hover:translate-x-[12px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
-            <span>&nbsp; cv</span>
+          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0px] rounded-lg hover:text-white outline outline-[0.5px] outline-black w-auto group ">
+            <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp;cv</span>
           </p>
 
         </a>
@@ -763,11 +764,11 @@ export default function PortfolioIndex() {
 
             <p className=" justify-center px-4 py-2  w-auto ">
               <span>I&apos;m on </span>
-              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Twitter</a>
+              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Twitter</a>
               <span> </span>
-              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Linkedin</a>
+              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Linkedin</a>
               <span> </span>
-              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -m-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Cosmos</a>
+              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Cosmos</a>
               <br></br>
               <span>Let&apos;s chat yy3204@columbia.edu</span>
               {/*<a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">yy3204@columbia.edu</a>*/}

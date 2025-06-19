@@ -79,15 +79,15 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div id="projectCard" className={`projectCard w-full text-zinc-950 tracking-wide rounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
+          <div id="projectCard" className={`projectCard w-full text-zinc-950 tracking-wide rrounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
             <div
-              className={`${styles.projectItem} bborder  w-full flex-col relative flex group bg-white rounded-xl  `}
+              className={`${styles.projectItem} bborder  w-full flex-col relative flex group bg-white rrounded-xl  `}
               style={
                 selectedProjectId === project.id
                   ? {
                     borderWidth: '0px',
                     pointerEvents: 'none',
-                    borderRadius: '6px',
+                    borderRadius: '0px',
                     transform: `translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY})`,
                   }
                   : {}
@@ -95,7 +95,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
             >
               {project.image && (
                 <div
-                  className="overflow-hidden rounded-xl duration-[250ms] origin-top projectImage select-none"
+                  className="overflow-hidden rrounded-xl duration-[250ms] origin-top projectImage select-none"
                   style={
                     selectedProjectId === project.id
                       ? {
@@ -108,7 +108,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
                   }
                 >
                   <img
-                    className="object-cover !border-none !rounded-none select-none"
+                    className="object-cover !border-none !rrounded-none select-none"
                     src={project.image.src}
                     alt={project.title}
                     width={project.image.width}
@@ -118,7 +118,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               )}
               {project.video && (
                 <div
-                  className="overflow-hidden rounded-xl duration-[250ms] origin-top projectImage select-none"
+                  className="overflow-hidden rrounded-xl duration-[250ms] origin-top projectImage select-none"
                   style={
                     selectedProjectId === project.id
                       ? {
