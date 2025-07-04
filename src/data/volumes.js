@@ -11,23 +11,23 @@ const volumes = {
   year: "2021-",
   content: [
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "抽雪茄的人, found objects, 2025, 12x12x14" },
     { "type": "image", "src": "/images/volumes/sculpt5.png" },
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "小丑的自塑像, found objects, 2024, 8x8x12" },
     { "type": "image", "src": "/images/volumes/sculpt1.png" },
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Euphemism for a Good Night's Sleep, ceramics + metalwork, 2023, 22x22x60" },
     { "type": "image", "src": "/images/volumes/sculpt2.png" },
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Peril through the Lookingglass, found objects, 2021, 18x11x13" },
     { "type": "image", "src": "/images/volumes/sculpt4.png" },
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Watchdog in the Kitsch, found objects, 2020, 22x13x16" },
     { "type": "image", "src": "/images/volumes/sculpt3.png" },
 

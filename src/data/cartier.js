@@ -12,7 +12,7 @@ const cartier = {
   year: "2024",
   content: [
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Renderings" },
     { "type": "image", "src": "/images/cartier/cartier8.png" },
     { "type": "image", "src": "/images/cartier/cartier9.png" },

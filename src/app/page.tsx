@@ -634,7 +634,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div id="logo" className="logoOffset mix-blend-difference z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
+      <div id="logo" className="logoOffset invert z-40 absolute  w-full  h-auto pointer-events-none   px-4 ">
 
 
         <div className=" logoAppear fixed my-6 sm:h-14 sm:w-14 h-10 w-10 self-center flex left-1/2 makeClickable -translate-x-1/2  place-items-center hover:!opacity-100">
@@ -656,12 +656,12 @@ export default function PortfolioIndex() {
           className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
-          <div id="mainText" className="mainText justify-center mx-auto my-6  p-0.5 ">
-            <span id="intro" className="split-type ">Benny graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.</span>
+          <div id="mainText" className="mainText justify-center mx-auto my-6 ">
+            <span id="intro" className="split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He loves building interactive and fluid interfaces, both ones that are completely functionless and ones that are highly useful and human-centered.
-              <br></br><br></br>After working for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator, he is now designing for various startups — prototyping micro-interactions and scaling design systems.
+            <span className="reveal-type">He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.
+              <br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems.
             </span>
           </div>
 
@@ -677,7 +677,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0.4px] rounded-lg hover:text-white outline outline-[0.5px] outline-black  w-auto   group">
+          <p className=" justify-center  hover:bg-black py-[0.5px] px-1 mx-[0.4px] pr-2 rounded-lg hover:text-white outline outline-[0.5px] outline-black  w-auto   group">
             <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp;art</span>
             {/* <span>↗</span>*/}
@@ -691,7 +691,7 @@ export default function PortfolioIndex() {
           href="https://read.cv/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0px] rounded-lg hover:text-white outline outline-[0.5px] outline-black w-auto group ">
+          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0px] pr-2 rounded-lg hover:text-white outline outline-[0.5px] outline-black w-auto group ">
             <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp;cv</span>
           </p>

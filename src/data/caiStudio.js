@@ -13,7 +13,7 @@ const caiStudio = {
   year: "2024",
   content: [
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Sequence Visuaization - p5.js" },
     { "type": "smallImage", "src": "/images/cai-studio/cai1.png" },
 

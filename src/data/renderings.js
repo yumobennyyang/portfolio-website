@@ -12,7 +12,7 @@ const renderings = {
   content: [
 
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Green Machine, photoshop, 2021." },
     { "type": "text", "text": "A gift to Deerfield Academy." },
     { "type": "image", "src": "/images/renderings/render1.png" },

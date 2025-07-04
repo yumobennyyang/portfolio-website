@@ -13,7 +13,7 @@ const playground = {
   content: [
 
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Red String Board - Figma" },
 
     { "type": "video", "src": "/images/playground/playground00.mov", autoplay: true, looping: true, },

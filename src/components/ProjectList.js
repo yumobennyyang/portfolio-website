@@ -4,10 +4,10 @@ import styles from './Modal.module.css';
 import Image from 'next/image';
 import localFont from 'next/font/local';
 
-const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
+const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro.ttf' });
 const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 const description = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Bold.otf' });
-const title = localFont({ src: '../fonts/PPMondwest-Regular.otf' });
+const title = localFont({ src: '../fonts/SF-Pro/SF-Pro.ttf' });
 
 const ProjectList = ({ onSelect, selectedProjectId }) => {
   const [scaleValues, setScaleValues] = useState({ scaleX: 1, scaleY: 1 });
@@ -52,7 +52,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 54)) * (2 / 3); // change 54 if height of title is changed.
+        const itemScale = (minWidth / (elem.offsetHeight - 48)) * (2 / 3); // change 48 if height of title is changed.
         setItemScale({ itemScale });
 
         setTimeout(() => {
@@ -79,7 +79,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
           onClick={() => handleClick(project.id)}
           style={{ breakInside: 'avoid' }}
         >
-          <div id="projectCard" className={`projectCard w-full text-zinc-950 tracking-wide rrounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
+          <div id="projectCard" className={`brightness-[99%] hover:brightness-100 projectCard w-full text-zinc-950 tracking-wide rrounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
             <div
               className={`${styles.projectItem} bborder  w-full flex-col relative flex group bg-white rrounded-xl  `}
               style={
@@ -151,15 +151,15 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               className="z-20 pb-2 relative w-full flex-row"
             >
               <div
-                className={`flex w-full pt-[6px] -mb-1 font-bold truncate text-xl uppercase justify-between ${title.className}`}
+                className={`flex w-full pt-[2px] uppercase -mb-[2px] font-medium truncate text-md   justify-between ${title.className}`}
               >
                 {project.title}
 
-                <div className="opacity-20"> {project.year} </div>
+                <div className="font-light opacity-30"> {project.year} </div>
 
               </div>
               <div
-                className={`text-zinc-400 opacity-80 w-full truncate text-xs uppercase tracking-wider ${regularText.className}`}
+                className={` opacity-40 w-full font-light truncate text-xs uppercase tracking-wider ${regularText.className}`}
               >
                 {project.description}
               </div>

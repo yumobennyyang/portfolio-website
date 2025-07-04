@@ -12,7 +12,7 @@ const valorant = {
     description: "Promotional Graphics",
     year: "2023",
     content: [
-      { "type": "line", "text": "" },
+
   
       { "type": "image", "src": "/images/valorant/val1.png" },
       { "type": "image", "src": "/images/valorant/val2.png" },

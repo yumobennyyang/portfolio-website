@@ -11,6 +11,11 @@
   --background-start-rgb: 242, 242, 246;
   --background-end-rgb: 245, 245, 247;
 
+
+  --background-start-rgb: 245, 245, 245;
+  --background-end-rgb: 245, 245, 245;
+
+
 }
 
 @layer utilities {

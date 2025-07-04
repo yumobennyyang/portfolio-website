@@ -15,7 +15,7 @@ const gabble = {
   role: ["Frontend Development", "Brand Design", "UI/UX Design"],
   content: [
 
-    { "type": "line", "text": "" },
+    
     { "type": "link", "text": "www.gabble.world", "url": "https://www.gabble.world" }
 
     

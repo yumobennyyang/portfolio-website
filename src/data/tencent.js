@@ -12,7 +12,7 @@ const tencent = {
   description: "Interaction Design Internship",
   year: "2023",
   content: [
-    { "type": "line", "text": "" },
+
 
     { "type": "section", "text": "Problems" },
    // { "type": "image", "src": "images/tencent/tencent1.png" },

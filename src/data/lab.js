@@ -15,7 +15,7 @@ const lab = {
   team: ["Lydia Chilton", "Vivian Liu", "Jiaxin Yang", "Lulu Wang", "Claudia Tang"],
   content: [
 
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Abstract" },
     { "type": "image", "src": "/images/lab/lab1.png" },
 

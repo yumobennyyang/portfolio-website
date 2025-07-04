@@ -6,7 +6,7 @@ const spectator = {
     width: 1024,
     height: 1024,
   },
-  overview: "Columbia University’s self-sustaining news publication, the Daily Spectator, publishes online five days a week and in physical editions once a week. As Head Product Designer of the organization, I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.",
+  overview: "As Head Product Designer of Columbia University’s self-sustaining news publication - the Daily Spectator - I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.",
   duration: "15 weeks",
   team: ["Philippe Wu", "Christina Su", "Muchen Guo"],
   role: ["Design Systems", "UI/UX", "Product Management"],
@@ -14,7 +14,7 @@ const spectator = {
   description: "Mobile UI/UX",
   year: "2022",
   content: [
-    { "type": "line", "text": "" },
+
     { "type": "section", "text": "Context" },
 
     { "type": "text", "text": "Spectator’s Engagement analytics report an increasing consumption of Spectator articles on mobile devices, with more and more users being directed to the Spectator’s mobile website from the organization’s instagram posts. However, a quick scan of the CDS website on mobile phones yields many problems as the visual layout on a desktop does not translate well onto a smaller screen. Thus, the product team at Spectator began ideating a different news viewing experience to replace the web browser: a mobile app." },
@@ -31,8 +31,6 @@ const spectator = {
 
     { "type": "text", "text": "We found existing research on mobile app demand and trends, and also sent out surveys about news consumption to 1) Spectator Staff, who spend half their life on the spectator website and have a full understanding of the site down to its tiniest inefficiencies and 2) other Columbia undergraduate students, who is our main target audience and can provide good general feedback for the current method of viewing Spectator news." },
     { "type": "image", "src": "/images/spec-mobile/spec2.png" },
-
-
 
 
 
