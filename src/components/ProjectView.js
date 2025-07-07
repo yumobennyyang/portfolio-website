@@ -158,8 +158,8 @@ const ProjectView = ({ projectId }) => {
                     }
 
                     if (item.type === 'textarea') {
-                        return <div className="w-full bg-white pb-16">
-                            <div contentEditable className={`md:mx-[6rem] mx-[2rem] px-1 max-w-[80%] leading-[48px] text-5xl py-0 rounded pb-2 bg-[#F5F5F5] text-[#D93A34] border-[#D93A34]  border layer-shadow textareaElement ${neoTetra.className}`} key={index}>Try here</div>
+                        return <div className="w-full bg-white pb-16" key={index}>
+                            <div contentEditable className={`md:mx-[6rem] mx-[2rem] px-1 max-w-[80%] leading-[48px] text-5xl py-0 rounded pb-2 bg-[#F5F5F5] text-[#D93A34] border-[#D93A34]  border layer-shadow textareaElement ${neoTetra.className}`} >Try here</div>
                         </div>
                     }
                     if (item.type === 'section') {
