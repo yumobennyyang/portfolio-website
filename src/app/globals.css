@@ -3,6 +3,41 @@
 @tailwind utilities;
 
 
+
+body{
+  overflow: hidden;
+}
+
+/* remove this after redesign is done */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
   /* --foreground-rgb: 0, 0, 0; */
   /* --background-start-rgb: 214, 219, 220;
@@ -17,6 +52,9 @@
 
 
 }
+
+
+
 
 @layer utilities {
   .text-balance {

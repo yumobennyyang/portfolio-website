@@ -24,7 +24,6 @@ export const projects = [
     spectator, 
     playground,  
     plasticFish, 
-    renderings, 
 
     //lab, 
     gabble,

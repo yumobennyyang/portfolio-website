@@ -657,7 +657,8 @@ export default function PortfolioIndex() {
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6 ">
-            <span id="intro" className="split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.</span>
+            <span id="intro" className="hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.</span>
+            <span id="intro" className=" split-type -translate-y-4">Benny designs fluid interfaces that oscillate between function and playful futility. He is currenlty rebuilding this website. Please check back soon.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className="reveal-type">He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.
@@ -717,7 +718,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <section className=" z-0 w-screen h-auto !pointer-events-none ">
+      <section  className=" z-0 w-screen h-auto !pointer-events-none ">
         <div id="scrollSection"
           className="z-10 relative !pointer-events-none w-full justify-between "
         >
