@@ -4,8 +4,8 @@ const neoTetra = {
   title: "Neo Tetra",
   image: {
     src: "/images/portfolio/neo-tetra.png",
-    width: 1024,
-    height: 1024,
+    width: 1200,
+    height: 800,
   },
   overview: "Neo Tetra is a typographic study that reimagines 26 letters, 10 numbers, and 12 symbols as geometric forms comprised of primitive shapes.",
   tools: ["Figma", "Glyphs"],

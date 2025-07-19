@@ -3,8 +3,8 @@ const surfaces = {
     title: "Surfaces",
     image: {
       src: "/images/portfolio/paint.png",
-      width: 2000,
-      height: 2000,
+      width: 1200,
+      height: 800,
     },
     overview: "Two dimensional artwork made throughout the years.",
     description: "Paintings and Forms on Paper",

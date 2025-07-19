@@ -3,8 +3,8 @@ const renderings = {
   title: "Renderings",
   image: {
     src: "/images/portfolio/renderings.png",
-    width: 2000,
-    height: 2000,
+    width: 1200,
+    height: 800,
   },
   overview: "Static images created with various tools.",
   description: "Digitals and Forms as Pixels",

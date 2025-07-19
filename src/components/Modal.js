@@ -68,7 +68,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
 
 
 
-            <div className={`${styles.modalContent} ${styles.modalFadeIn} ${showModalContent ? styles.modalVisible : ''} aboslute overflow-x-hidden md:max-h-[calc(100vh-20px)] max-h-[calc(100vh-48px)] top-12 md:top-5 bg-white rrounded-t-2xl max-w-[960px] overflow-y-auto z-[10002]  mx-3 sm:mx-7 ${makeClickable ? '' : 'pointer-events-none'}`} onClick={(e) => e.stopPropagation()}>
+            <div className={`${styles.modalContent} ${styles.modalFadeIn} ${showModalContent ? styles.modalVisible : ''} aboslute overflow-x-hidden md:max-h-[calc(100vh-20px)] max-h-[calc(100vh-48px)] top-12 md:top-5 rrounded-t-2xl max-w-[960px] overflow-y-auto z-[10002]  mx-3 sm:mx-7 ${makeClickable ? '' : 'pointer-events-none'}`} onClick={(e) => e.stopPropagation()}>
 
 
                 <div className="hidden mx-auto gradient h-full gradient-background z-20 mt-5  w-full max-w-[960px]  pointer-events-none rrounded-t-2xl fixed clipped" />

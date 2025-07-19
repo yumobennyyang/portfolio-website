@@ -3,8 +3,8 @@ const tencent = {
   title: "Tencent",
   image: {
     src: "/images/portfolio/tencent.png",
-    width: 1024,
-    height: 1024,
+    width: 1200,
+    height: 800,
   },
   overview: "During the summer of 2023 I interned at Tencent’s Interactive Entertainment Group (IEG) as an interface and interaction designer. I was assigned the solo task of a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps. On this page are snippets of my redesign of the Dora Platform, a reconditioned web app actively used by 500+ employees.",
   tools: ["Photoshop", "Figma", "CSS", "Midjourney"],

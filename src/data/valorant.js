@@ -3,8 +3,8 @@ const valorant = {
     title: "Valorant",
     image: {
       src: "/images/portfolio/valorant.png",
-      width: 2000,
-      height: 1000,
+      width: 1200,
+      height: 800,
     },
     overview: "Promotional graphics published in app on 07/04/2023 for Valorant's launch in China during the summer of 2023. Since the brand's visual identity was already well-established, I repurposed its decorative elements and created layouts and components that aligned with the existing aesthetic, fine-tuning the information hierarchy to cater specifically to a Chinese audience.",
     tools: ["Photoshop", "Figma"],

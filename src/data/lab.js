@@ -5,8 +5,8 @@ const lab = {
   title: "Lab",
   video: {
     src: "/images/portfolio/lab.mp4",
-    width: 1920,
-    height: 1080,
+    width: 1200,
+    height: 800,
   },
   overview: "I studied HCI under Professor Lydia Chilton at Columbia's Computational Design Lab. Generative Disco is an AI system that helps generate music visualizations with large language models and text-to-video generation. I experimented with workflows that automated the storytelling process and enabled users to build coherent visual narratives. I also worked on designing different interactions for the new Generative Disco interface.",
   description: "HCI & AI Research",

@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 import styles from './Modal.module.css';
 
-const regularText = localFont({ src: '../fonts/SF-Pro.ttf' });
-const title = localFont({ src: '../fonts/SF-Pro.ttf' });
+const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Light.otf' });
+const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Light.otf' });
 const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
-const labels = localFont({ src: '../fonts/SF-Pro.ttf' })
+const labels = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Light.otf' })
 
 const ProjectView = ({ projectId }) => {
     const [modalWidth, setModalWidth] = useState(0);
@@ -51,14 +51,14 @@ const ProjectView = ({ projectId }) => {
 
 
             {project.image && (
-                <div className="overflow-hidden  rounded-t-xl ">
-                    <img style={{ height: `${maxH}px` }} className={` h-[${maxH}px] object-contain  !border-none !rounded-none `} src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
+                <div className="overflow-hidden  rrounded-t-xl ">
+                    <img style={{ height: `${maxH}px` }} className={` h-[${maxH}px] object-contain  !border-none !rrounded-none `} src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
                 </div>
             )}
 
 
             {project.video && (
-                <div className="overflow-hidden  rounded-t-xl ">
+                <div className="overflow-hidden  rrounded-t-xl ">
                     <video
                         playsInline
                         autoPlay
@@ -78,14 +78,14 @@ const ProjectView = ({ projectId }) => {
             <div className={` z-20 pb-16 relative w-full flex-row ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'}`}>
                 {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
 
-                <div className={` md:px-[6rem] px-[2rem] text-3xl tracking-wide  font-medium mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
+                <div className={` px-0 text-3xl tracking-wide  font-medium mb-3 pb-4 text-zinc-900 ${title.className}`}> {project?.title}</div>
 
-                <div className={`md:px-[6rem] px-[2rem] text-zinc-400 opacity-80 text-xs font-light  uppercase tracking-wider  ${labels.className}`} >Overview</div>
-                <div className=" md:px-[6rem] px-[2rem] tracking-[-.014em]  font-light mb-3 pb-4 text-[16px]  "> {project?.overview}</div>
+                <div className={`px-0 text-zinc-400 opacity-80 text-xs font-light  uppercase tracking-wider  ${labels.className}`} >Overview</div>
+                <div className=" px-0 tracking-[-.014em]  font-light mb-3 pb-4 text-[16px]  "> {project?.overview}</div>
 
 
 
-                <div className="flex justify-between space-x-4 md:px-[6rem] px-[2rem] pb-3 text-[16px]">
+                <div className="flex justify-between space-x-4 px-0 px-0 pb-3 text-[16px]">
 
                     {project.role && (
                         <div className="flex-1 "> 
@@ -158,7 +158,7 @@ const ProjectView = ({ projectId }) => {
                     }
 
                     if (item.type === 'textarea') {
-                        return <div className="w-full bg-white pb-16" key={index}>
+                        return <div className="w-full pb-16" key={index}>
                             <div contentEditable className={`md:mx-[6rem] mx-[2rem] px-1 max-w-[80%] leading-[48px] text-5xl py-0 rounded pb-2 bg-[#F5F5F5] text-[#D93A34] border-[#D93A34]  border layer-shadow textareaElement ${neoTetra.className}`} >Try here</div>
                         </div>
                     }

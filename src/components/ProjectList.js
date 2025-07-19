@@ -4,10 +4,10 @@ import styles from './Modal.module.css';
 import Image from 'next/image';
 import localFont from 'next/font/local';
 
-const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro.ttf' });
+const subtitle = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
 const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 const description = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Bold.otf' });
-const title = localFont({ src: '../fonts/SF-Pro/SF-Pro.ttf' });
+const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Regular.otf' });
 
 const ProjectList = ({ onSelect, selectedProjectId }) => {
   const [scaleValues, setScaleValues] = useState({ scaleX: 1, scaleY: 1 });
@@ -52,7 +52,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
         setTranslateValues({ translateX, translateY });
 
-        const itemScale = (minWidth / (elem.offsetHeight - 48)) * (2 / 3); // change 48 if height of title is changed.
+        const itemScale = (minWidth / (elem.offsetHeight - 43.5)) * (2 / 3); // change 48 if height of title is changed.
         setItemScale({ itemScale });
 
         setTimeout(() => {
@@ -81,7 +81,7 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
         >
           <div id="projectCard" className={`brightness-[99%] hover:brightness-100 projectCard w-full text-zinc-950 tracking-wide rrounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
             <div
-              className={`${styles.projectItem} bborder  w-full flex-col relative flex group bg-white rrounded-xl  `}
+              className={`${styles.projectItem} bborder  w-full flex-col relative flex grouprrounded-xl  `}
               style={
                 selectedProjectId === project.id
                   ? {
@@ -151,15 +151,15 @@ const ProjectList = ({ onSelect, selectedProjectId }) => {
               className="z-20 pb-2 relative w-full flex-row"
             >
               <div
-                className={`flex w-full pt-[2px] uppercase -mb-[2px] font-medium truncate text-md   justify-between ${title.className}`}
+                className={`flex w-full pt-[2px] uppercase -mb-[2px] font-medium truncate text-sm   justify-between ${title.className}`}
               >
                 {project.title}
 
-                <div className="font-light opacity-30"> {project.year} </div>
+                <div className="font-light opacity-20"> {project.year} </div>
 
               </div>
               <div
-                className={` opacity-40 w-full font-light truncate text-xs uppercase tracking-wider ${regularText.className}`}
+                className={` opacity-30 w-full font-light truncate text-xs uppercase ${subtitle.className}`}
               >
                 {project.description}
               </div>

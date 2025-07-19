@@ -3,8 +3,8 @@ const playground = {
   title: "Playground",
   video: {
     src: "/images/portfolio/playground.mp4",
-    width: 1080,
-    height: 1080,
+    width: 1200,
+    height: 800,
   },
   overview: "A collection of little things I prototyped.",
   description: "Interactive Experiments",
@@ -17,7 +17,7 @@ const playground = {
     { "type": "section", "text": "Red String Board - Figma" },
 
     { "type": "video", "src": "/images/playground/playground00.mov", autoplay: true, looping: true, },
-    { "type": "video", "src": "/images/playground/playground0.mov", autoplay: true, looping: true, },
+    // { "type": "video", "src": "/images/playground/playground0.mov", autoplay: true, looping: true, },
 
 
 

@@ -3,8 +3,8 @@ const volumes = {
   title: "Volumes",
   image: {
     src: "/images/portfolio/volumes.png",
-    width: 2000,
-    height: 2000,
+    width: 1200,
+    height: 800,
   },
   overview: "The manipulation of a foam fead in the form of sculpture.",
   description: "Sculptures and Forms in Space",

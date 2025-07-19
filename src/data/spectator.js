@@ -3,8 +3,8 @@ const spectator = {
   title: "Spectator",
   image: {
     src: "/images/portfolio/spectator.png",
-    width: 1024,
-    height: 1024,
+    width: 1200,
+    height: 800,
   },
   overview: "As Head Product Designer of Columbia University’s self-sustaining news publication - the Daily Spectator - I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.",
   duration: "15 weeks",

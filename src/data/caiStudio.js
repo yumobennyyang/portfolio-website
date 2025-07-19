@@ -2,9 +2,9 @@ const caiStudio = {
   id: 9,
   title: "Cai Studio",
   video: {
-    src: "/images/portfolio/caistudio.mp4",
-    width: 2100,
-    height: 1400,
+    src: "/images/portfolio/caistudio.mov",
+    width: 1200,
+    height: 800,
   },
   overview: "I worked as studio assistant to Cai Guo-Qiang during the summer of 2024 in preparation for his daytime fire work event commisioned by Getty Museum in the LA Memorial Coliseum. I was responsible for the design of the second act of the event, which required precise positionings of around 8500 explosives to form letters and other visuals.",
   tools: ["p5.js", "Figma", "Photoshop", "Illustrator", "Blender", "AutoCAD"],
