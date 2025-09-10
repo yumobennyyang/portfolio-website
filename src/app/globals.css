@@ -4,9 +4,9 @@
 
 
 
-body{
+/* body{
   overflow: hidden;
-}
+} */
 
 /* remove this after redesign is done */
 
@@ -43,12 +43,12 @@ body{
   /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 230, 235, 238; */
 
-  --background-start-rgb: 242, 242, 246;
-  --background-end-rgb: 245, 245, 247;
+  /* --background-start-rgb: 242, 242, 246;
+  --background-end-rgb: 245, 245, 247; */
 
 
-  --background-start-rgb: 245, 245, 245;
-  --background-end-rgb: 245, 245, 245;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 
 
 }
@@ -107,7 +107,7 @@ hr,
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(242, 242, 246)
+  background-color: rgb(241, 241, 241)
 }
 
 #scrollSection {
@@ -116,6 +116,18 @@ html {
 }
 
 
+
+.textarea[contenteditable="true"]:focus {
+  outline: 2px solid #D93A34 !important;
+
+}
+
+.textareaElement:empty::before {
+  content: attr(data-placeholder);
+  color: rgb(194, 194, 194); /* gray placeholder */
+  pointer-events: none;
+  display: block;
+}
 
 
 .gradient-blur {

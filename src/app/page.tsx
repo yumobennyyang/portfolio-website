@@ -7,7 +7,7 @@ import gsap from 'gsap';
 import SplitType from 'split-type';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import Image from 'next/image'
 import localFont from 'next/font/local'
@@ -20,23 +20,36 @@ import Modal from '../components/Modal';
 
 
 
-const satoshi = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
-const benny = localFont({ src: '../fonts/PPNeueMontrealMono-Thin.otf' })
 
+const satoshi = localFont({ src: '../fonts/TT_Commons_Pro_Mono_VF_Trial.ttf' })
+const benny = localFont({ src: '../fonts/TT_Commons_Pro_Mono_VF_Trial.ttf' })
 
-
-//const regularText = localFont({ src: '../fonts/PPNeueMontreal-Book.otf' });
-const regularText = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
-//const text = localFont({ src: '../fonts/PPNeueMontreal-Medium.otf' });
-const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
 
 
 
 
 export default function PortfolioIndex() {
 
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('yy3204@columbia.edu');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
 
   const [selectedProjectId, setSelectedProjectId] = useState(null);
+  const splitTypeInstancesRef = useRef<any[]>([]);
+
+  function cleanupSplitType() {
+    splitTypeInstancesRef.current.forEach(instance => {
+      if (instance && typeof instance.revert === 'function') {
+        instance.revert();
+      }
+    });
+    splitTypeInstancesRef.current = [];
+  }
 
 
   const handleClose = () => {
@@ -98,34 +111,49 @@ export default function PortfolioIndex() {
 
 
 
+    // CLEANUP: Revert previous SplitType splits
+    cleanupSplitType();
+
+    // CLEANUP: Kill all previous ScrollTriggers
+    if (typeof ScrollTrigger !== 'undefined') {
+      ScrollTrigger.getAll().forEach((st: any) => st.kill());
+    }
+
+
     const revealTypes = document.querySelectorAll('.reveal-type')
 
     revealTypes.forEach((char) => {
 
-      const text = new SplitType(char as HTMLElement, { types: 'chars' });
+      if (!(char as HTMLElement).querySelector('.char')) {
+        const text = new SplitType(char as HTMLElement, { types: 'chars' });
+        splitTypeInstancesRef.current.push(text);
 
-      gsap.from(text.chars, {
-        scrollTrigger: {
-          trigger: char,
-          start: 0,
-          // end: 300 + window.innerHeight * (scrollSpeed - 1),
-          end: window.innerHeight - 400,
-          scrub: true,
-          markers: false
-        },
-        opacity: 0,
-        stagger: 100,
+        gsap.from(text.chars, {
+          scrollTrigger: {
+            trigger: char,
+            start: 0,
+            // end: 300 + window.innerHeight * (scrollSpeed - 1),
+            end: window.innerHeight - 400,
+            scrub: true,
+            markers: false
+          },
+          opacity: 0,
+          stagger: 100,
 
-      })
+        })
+      }
     })
 
     const splitTypes = document.querySelectorAll('.split-type')
 
     splitTypes.forEach((char) => {
 
-      new SplitType(char as HTMLElement, { types: 'chars' });
+      if (!(char as HTMLElement).querySelector('.char')) {
+        const text = new SplitType(char as HTMLElement, { types: 'chars' });
+        splitTypeInstancesRef.current.push(text);
 
 
+      }
     })
 
 
@@ -392,7 +420,7 @@ export default function PortfolioIndex() {
       // Create the GSAP animation with ScrollTrigger
       gsap.fromTo(element,
         {
-          filter: "blur(1200px) ",
+          filter: "blur(100px) ",
           opacity: 0,
         },
         {
@@ -517,16 +545,26 @@ export default function PortfolioIndex() {
 
 
 
+  // Debounce utility
+  function debounce<T extends (...args: any[]) => void>(func: T, wait: number) {
+    let timeout: ReturnType<typeof setTimeout>;
+    return (...args: Parameters<T>) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  }
+
+
   useEffect(() => {
 
 
     // updateScrollSpeed();
 
-    const handleResize2 = () => {
+    const handleResize2 = debounce(() => {
       if (window.innerWidth >= 1) { //768
         interaction();
       }
-    };
+    }, 150);
 
     handleResize2(); // Initial check
 
@@ -573,9 +611,12 @@ export default function PortfolioIndex() {
     // window.addEventListener('resize', updateScrollSpeed);
 
     return () => {
+      cleanupSplitType();
+      if (typeof ScrollTrigger !== 'undefined') {
+        ScrollTrigger.getAll().forEach((st: any) => st.kill());
+      }
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('resize', handleResize2);
-      ScrollTrigger.getAll().forEach(st => st.kill()); // Cleanup all ScrollTriggers on component unmount
     };
 
 
@@ -589,7 +630,7 @@ export default function PortfolioIndex() {
 
 
 
-    <main className=" flex  justify-center  w-screen m-auto ">
+    <main className=" flex  justify-center  w-screen m-auto font-[200] ">
 
 
 
@@ -653,15 +694,15 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={`  mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
+          className={` mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6 ">
-            <span id="intro" className=" hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.</span>
+            <span id="intro" className=" hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.<br></br><br></br>He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.<br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems.</span>
             <span id="intro" className=" split-type ">Benny designs fluid interfaces that oscillate between function and playful futility. He is currenlty rebuilding this website. Please check back soon.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
-            <span className="reveal-type">He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.
+            <span className=" reveal-type">He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.
               <br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems.
             </span>
           </div>
@@ -670,7 +711,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div className={`flex sm:mx-4  sm:my-2 px-3 py-4 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
+      <div id="top-links" className={`flex sm:mx-4  sm:my-2 px-3 py-4 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between `}
@@ -678,9 +719,9 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center  hover:bg-black py-[0.5px] px-1 mx-[0.4px] pr-2 rounded-lg hover:text-white outline outline-[0.5px] outline-black  w-auto   group">
-            <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
-            <span>&nbsp;art</span>
+          <p className=" justify-center  bg-black py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-white  w-auto   group">
+            <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp;Instagram</span>
             {/* <span>↗</span>*/}
           </p>
 
@@ -692,9 +733,9 @@ export default function PortfolioIndex() {
           href="https://twitter.com/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center hover:bg-black py-[0.5px] px-1 mx-[0px] pr-2 rounded-lg hover:text-white outline outline-[0.5px] outline-black w-auto group ">
-            <span className="translate-x-[2px] group-hover:translate-x-[5px] group-hover:translate-y-[-3px] inline-block transition-transform ease duration-100">↗</span>
-            <span>&nbsp;twitter</span>
+          <p className=" justify-center bg-black py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-white w-auto group ">
+            <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+            <span>&nbsp;Twitter</span>
           </p>
 
         </a>
@@ -718,7 +759,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <section  className=" z-0 w-screen h-auto !pointer-events-none ">
+      <section className=" z-0 w-screen h-auto !pointer-events-none ">
         <div id="scrollSection"
           className="z-10 relative !pointer-events-none w-full justify-between "
         >
@@ -731,29 +772,35 @@ export default function PortfolioIndex() {
 
 
 
-        <div className=" !pointer-events-auto sm:px-5 px-1 pt-48 ">
+        <div className=" !pointer-events-auto sm:px-5 px-1 pt-48 blurToNotBlur  ">
           <ProjectList onSelect={setSelectedProjectId} selectedProjectId={selectedProjectId} />
-          <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
-            {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
-          </Modal>
+
 
         </div>
 
+        <div className="z-[9999999999999] !pointer-events-auto">
+          <Modal isOpen={!!selectedProjectId} onClose={handleClose} selectedProjectId={selectedProjectId}>
+            {selectedProjectId && <ProjectView projectId={selectedProjectId} />}
+          </Modal>
+        </div>
 
-        <div className="sm:flex">
+
+        <div className="sm:flex ">
 
           <div
-            className={`  pb-0 sm:m-4 -z-10 left-0 bottom-0 relative  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
+            className={`  pb-4 sm:m-4 -z-10 left-0 bottom-0 relative  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
           >
 
-            <p className=" justify-center px-4 py-2  w-auto ">
-              <span>Built with Next.js on Vercel</span>
+            <div className=" justify-center px-4 py-2  w-auto ">
+              <span>Built with Next.js on Vercel<span className="inline-block text-2xl  h-[18.5px] leading-[18.5px] translate-x-[3px] translate-y-[1.8px] ">▴</span></span>
               {/* <span className="flashing">_</span> */}
               <br></br>
-               {/* <span>Copyright © 2024 Benny Yang</span>
+              {/* <span>Copyright © 2024 Benny Yang</span>
               <br></br>*/}
-              <span>Last updated </span><LastCommitTime />
-            </p>
+              <div className="mt-1">
+                <span>Last updated </span><LastCommitTime />
+              </div>
+            </div>
           </div>
 
           <div
@@ -761,19 +808,56 @@ export default function PortfolioIndex() {
           >
 
 
-            
 
-            <p className=" justify-center px-4 py-2  w-auto ">
-              <span>I&apos;m on </span>
-              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Twitter</a>
-              <span> </span>
-              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Linkedin</a>
-              <span> </span>
-              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  hover:bg-black p-1 -mx-1 rounded-lg hover:text-white outline outline-[0.5px] outline-black">Cosmos</a>
+
+            <div className=" justify-center px-3 py-2 w-auto ">
+              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+                <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+                <span>&nbsp;Cosmos</span>
+              </a>
+
+              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+                <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+                <span>&nbsp;Linkedin</span>
+              </a>
+
+              <a href="https://boxd.it/4NuTP" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+                <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+                <span>&nbsp;Letterboxd</span>
+              </a>
               <br></br>
-              <span>Let&apos;s chat yy3204@columbia.edu</span>
+
+              <button
+                onClick={handleCopyEmail}
+                className="!pointer-events-auto bg-black py-[1px] mt-1 px-2 pr-[11px] rounded-full text-white group relative w-auto"
+              >
+
+
+
+                <span className="inline-block translate-x-[4px] translate-y-[-2px] group-hover:translate-x-[5px]  transition-transform ease  duration-150">
+                  <div className="w-2 h-2 bg-black border-white border-1px border outline-black outline-1px outline rounded-sm"></div>
+
+                </span>
+                <span className="inline-block translate-x-[1px] translate-y-[1px] group-hover:translate-x-[0px] transition-transform ease  duration-150">
+                  <div className="w-2 h-2 bg-black border-white border-1px border outline-black outline-1px outline rounded-sm"></div>
+                </span>
+
+
+                {copied && (
+
+                <span>&nbsp;copied to clipboard</span>
+
+                )}
+
+                {!copied && (
+                  <span>&nbsp;yy3204@columbia.edu</span>
+                )}
+
+
+
+              </button>
               {/*<a href="mailto:yy3204@columbia.edu" target="_blank" className="!pointer-events-auto underline underline-offset-4 decoration-[0.2px] hover:no-underline">yy3204@columbia.edu</a>*/}
-            </p>
+            </div>
           </div>
 
         </div>

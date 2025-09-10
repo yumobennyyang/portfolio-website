@@ -1,6 +1,6 @@
 const spectator = {
   id: 3,
-  title: "Spectator",
+  title: "Spectator Mobile",
   image: {
     src: "/images/portfolio/spectator.png",
     width: 1200,

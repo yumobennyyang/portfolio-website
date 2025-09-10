@@ -1,31 +1,32 @@
 /* components/Modal.module.css */
 .modalOverlay {
 
-    
+
     /* background: rgba(245, 245, 245, 0); */
 
-    background: linear-gradient(to bottom, 
-                transparent, 
-                rgb(var(--background-end-rgb))),
-              rgb(var(--background-start-rgb));
-              
 
+    background: rgba(241, 241, 241, 0);
 
-    animation: fadeInOverlay 0.3s forwards;
+    animation: fadeInOverlay 0.3s ease;
     backdrop-filter: blur(10px);
 
 
 }
 
+
 @keyframes fadeInOverlay {
     to {
-        background: rgba(245, 245, 245, 1);
+        background: rgba(241, 241, 241, 1);
     }
 }
 
 
+.toFront {
+    z-index: 999999999999999999999999999999;
+}
 
-.modalContent { 
+
+.modalContent {
 
 
     scrollbar-width: none;
@@ -33,26 +34,25 @@
     /* 
     background-color: black;*/
 
-    
-    border: #d4d4d9 0px solid !important;
-
- /* 
+    /* 
     outline-style: solid;
     outline-color: #e6e6eb;
     outline-width: 4px; */
 
 
-     /*0.1*/
+    /*0.1*/
     -webkit-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.0);
     -moz-box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.0);
     box-shadow: 0px 30px 84px 6px rgba(0, 0, 0, 0.0);
 
+    cursor: auto;
+    /* or cursor: default; */
 
 }
 
 
 
- /*0.067,0.08,0.14,0.3*/
+/*0.067,0.08,0.14,0.3*/
 .layerShadowDark {
     box-shadow:
         rgba(28, 29, 33, 0.0) 0px 0.60219px 2.04744px -0.5px,
@@ -80,18 +80,19 @@
     align-items: center;
     /* Adjust height as needed */
     /* Optional: Add a background color */
-   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0s ease-in;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0s ease-in;
     cursor: pointer;
     width: 100%;
     max-width: none;
     transform-origin: 50% 0;
+    background: #f1f1f1;
 
 
 
 }
 
 .scaled {
-    max-width: 960px;
+    max-width: 800px;
     z-index: 10001;
     margin-bottom: 0 !important;
     transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0s ease-in !important;
@@ -134,3 +135,23 @@
     opacity: 1;
     transition: opacity 300ms ease-in-out;
 }
+
+.ooverlayBackCursor {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='28' viewBox='0 0 60 28'><rect x='0' y='0' width='60' height='28' rx='14' ry='14' fill='black'/><text x='30' y='15' font-size='12' font-family='monospace' font-weight='200' fill='white' text-anchor='middle' dominant-baseline='middle'>close</text></svg>") 30 14, auto;
+}
+
+.projectFadeOut {
+    opacity: 0;
+    transition: opacity 250ms;
+    pointer-events: none;
+}
+
+.projectListFadeIn {
+    opacity: 1;
+    transition: opacity 350ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+#project-list {
+    opacity: 0;
+}
+

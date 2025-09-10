@@ -16,6 +16,9 @@ const gabble = {
   content: [
 
     
+    { "type": "section", "text": "Closed Beta Launch" },
+    { "type": "video", "src": "/images/gabble/gabble_launch.mov", autoplay: false, looping: false, },
+
     { "type": "link", "text": "www.gabble.world", "url": "https://www.gabble.world" }
 
     

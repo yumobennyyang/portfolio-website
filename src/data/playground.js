@@ -2,9 +2,12 @@ const playground = {
   id: 8,
   title: "Playground",
   video: {
-    src: "/images/portfolio/playground.mp4",
+    src: "/images/portfolio/playground.mov",
     width: 1200,
     height: 800,
+    filter: "brightness(102%) contrast(98%) saturate(90%)"
+
+
   },
   overview: "A collection of little things I prototyped.",
   description: "Interactive Experiments",
@@ -22,7 +25,7 @@ const playground = {
 
 
 
-    { "type": "section", "text": "Self-chromatizes AI CUI - Figma" },
+    { "type": "section", "text": "Self-chromatizing AI CUI - Figma" },
     { "type": "video", "src": "/images/playground/playground3.mp4", autoplay: true, looping: true, },
 
 
@@ -33,7 +36,7 @@ const playground = {
     { "type": "video", "src": "/images/playground/playground1.mov", autoplay: true, looping: true, },
 
 
-    
+
 
     { "type": "section", "text": "If responsive sites were designed like that hospital in the movie Idiocracy - Javascript" },
 
@@ -60,7 +63,7 @@ const playground = {
     // { "type": "image", "src": "/images/playground/playground4.png" },
 
 
-    
+
 
 
 
@@ -84,13 +87,13 @@ const playground = {
 
     // { "type": "image", "src": "/images/playground/playground5.png" },
     // { "type": "image", "src": "/images/playground/playground6.png" },
-   
 
 
-        
 
 
-   
+
+
+
 
   ],
 
