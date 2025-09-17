@@ -13,7 +13,7 @@ const branding = {
   content: [
 
     { "type": "section", "text": "Chink House Mafia - 2025" },
-    { "type": "image", "src": "/images/branding/branding1.png" },
+    { "type": "image", "src": "/images/branding/chm1.png" },
 
     { "type": "section", "text": "Sunday Studio - 2025" },
     { "type": "video", "src": "/images/branding/sunday1.mp4", autoplay: true, looping: true, },
