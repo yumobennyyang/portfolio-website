@@ -352,7 +352,7 @@ export default function PortfolioIndex() {
           top: '0',
           ease: 'outIn',
 
-          transform: 'translateY(0%)',  // Equivalent to 'none' in this context
+          transform: 'translateY(52px)',  // Equivalent to 'none' in this context
           scrollTrigger: {
             trigger: element,
             start: 0,  // Starts when the top of the viewport hits the top of the element
