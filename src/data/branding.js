@@ -6,7 +6,7 @@ const branding = {
     width: 1200,
     height: 800,
   },
-  overview: "Commisions and case studies.",
+  overview: "Commisions.",
   tools: ["Figma", "Photoshop", "Illustrator", "Final Cut Pro"],
   description: "Visual Identities",
   year: "2022-",
