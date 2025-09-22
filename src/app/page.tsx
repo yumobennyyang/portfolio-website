@@ -698,8 +698,8 @@ export default function PortfolioIndex() {
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6 ">
-            <span id="intro" className=" hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.<br></br><br></br>He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.<br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems.</span>
-            <span id="intro" className=" split-type ">Benny designs fluid interfaces that oscillate between function and playful futility. He is currenlty rebuilding this website. Please check back soon.</span>
+            <span id="intro" className=" split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.<br></br><br></br>He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.<br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems.</span>
+            <span id="intro" className="hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility. He is currenlty rebuilding this website. Please check back soon.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
             <span className=" reveal-type">He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.
