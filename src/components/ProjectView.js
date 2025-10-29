@@ -93,8 +93,8 @@ const ProjectView = ({ projectId }) => {
 
                     {project.tools && (
                         <div className="flex-1  ">
-                            <div className={`  text-neutral-400 text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-neutral-200">TOOLS</span>
+                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
+                                <span className="px-2 py-1 rounded bg-black">TOOLS</span>
                             </div>
                             <ul className="font-light ">
                                 {project?.tools?.map((tools, index) => (
@@ -106,8 +106,8 @@ const ProjectView = ({ projectId }) => {
 
                     {project.duration && (
                         <div className="flex-1  ">
-                            <div className={` text-neutral-400 text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-neutral-200">DURATION</span>
+                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
+                                <span className="px-2 py-1 rounded bg-black">DURATION</span>
                             </div>
                             <div className="font-light "> {project?.duration}</div>
                         </div>
@@ -115,8 +115,8 @@ const ProjectView = ({ projectId }) => {
 
                     {project.team && (
                         <div className="flex-1 ">
-                            <div className={`  text-neutral-400 text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-neutral-200">TEAM</span>
+                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
+                                <span className="px-2 py-1 rounded bg-black">TEAM</span>
                             </div>
                             <ul className="font-light">
                                 {project?.team?.map((team, index) => (
@@ -128,8 +128,8 @@ const ProjectView = ({ projectId }) => {
 
                     {project.role && (
                         <div className="flex-1">
-                            <div className={`   text-neutral-400 text-xs uppercase  font-light tracking-wide pb-2  ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-neutral-200">ROLE</span>
+                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
+                                <span className="px-2 py-1 rounded bg-black">ROLE</span>
                             </div>
                             <ul className="font-light  ">
                                 {project?.role?.map((role, index) => (

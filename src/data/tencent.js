@@ -16,12 +16,7 @@ const tencent = {
 
     { "type": "section", "text": "Problems" },
 
-    { "type": "text", "text": "Outdated Styling - The web app was created years ago with out-of-style aesthetics." },
-    { "type": "text", "text": "Poor Responsiveness- Layout breaks and overflows occur with minor window adjustments." },
-    { "type": "text", "text": "Inconsistent Design - Sections vary visually due to lack of unified oversight." },
-    { "type": "text", "text": "Confusing Navigation - Deeply nested links and redundant buttons with identical functions." },
-    { "type": "text", "text": "Patchwork Solutions - Quick fixes over time have led to a disjointed user experience." },
-    { "type": "text", "text": "Lack of Cohesion - Every page was worked on by separate engineers." },
+        { "type": "text", "text": "Outdated styling, Poor responsiveness, Inconsistent design, Confusing navigation, Prior patchwork solutions." },
 
     { "type": "smallImage", "src": "images/tencent/tencent2.png" },
 
@@ -40,10 +35,10 @@ const tencent = {
 
 
     { "type": "section", "text": "Design System" },
-    { "type": "text", "text": "Palette, font, grid." },
+    { "type": "text", "text": "Palette, typography, grid." },
 
     { "type": "smallImage", "src": "images/tencent/tencent6.png" },
-
+    { "type": "smallImage", "src": "images/tencent/tencent6.5.png" },
 
     { "type": "smallImage", "src": "images/tencent/tencent7.png" },
 
@@ -53,15 +48,16 @@ const tencent = {
 
     { "type": "section", "text": "Home" },
     { "type": "image", "src": "images/tencent/tencent9.png" },
-    { "type": "image", "src": "images/tencent/tencent10.png" },
 
 
     { "type": "section", "text": "Table Items" },
     { "type": "image", "src": "images/tencent/tencent11.png" },
+        { "type": "image", "src": "images/tencent/tencent11.5.png" },
 
 
-    { "type": "section", "text": "Form Items" },
+    { "type": "section", "text": "Modal Form Items" },
     { "type": "image", "src": "images/tencent/tencent12.png" },
+        { "type": "image", "src": "images/tencent/tencent12.5.png" },
 
 
     { "type": "section", "text": "Menu Navigation" },
