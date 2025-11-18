@@ -635,7 +635,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div className="sm:block hidden {saturateVideo} -z-50 fixed h-screen  pointer-events-none  w-screen items-center   bg-white">
+      <div className="sm:block {saturateVideo} -z-50 fixed h-screen  pointer-events-none  w-screen items-center   bg-white">
 
         <video
           autoPlay
@@ -652,7 +652,7 @@ export default function PortfolioIndex() {
 
 
 
-      <div className="hidden sm:flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
+      <div className="flex brightness-100 vercelBackground darkBackground pointer-events-none  -z-40 w-full h-full fixed">
 
         <div className="opacity-0 m-auto relative flex place-items-center before:absolute before:h-[700px] before:w-[900px] before:-translate-x-full before:rounded-full before:bg-gradient-radial before:from-rose-100 before:to-transparent before:blur-3xl before:content-[''] after:absolute after:-z-20 after:h-[400px] after:w-[700px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-purple-200 after:blur-3xl after:content-[''] ">
         </div>
@@ -694,13 +694,13 @@ export default function PortfolioIndex() {
 
 
         <div
-          className={` mt-[104px] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
+          className={` mt-[104px] font-[300] hideText left-1/2 -translate-x-1/2 relative leading-6 justify-between  text-zinc-50 text-sm ${benny.className}        `}
         >
 
           <div id="mainText" className="mainText justify-center mx-auto my-6 ">
             <span id="intro" className=" split-type ">Benny designs fluid interfaces that oscillate between function and playful futility.
               {/* <br></br><br></br>He graduated from Columbia University with B.A.s in Computer Science and Visual Arts. He is now pursuing an M.S.in Computational Design at Columbia GSAPP.<br></br><br></br>He has worked for artists like Jeff Koons and Cai Guo-Qiang and with product teams at Tencent and Spectator. Today, he designs for various startups — prototyping micro-interactions and scaling design systems. */}
-              </span>
+            </span>
             <span id="intro" className="hidden split-type ">Benny designs fluid interfaces that oscillate between function and playful futility. He is currenlty rebuilding this website. Please check back soon.</span>
             <span className="flashing disappear">_</span>
             <br></br><br></br>
@@ -713,7 +713,7 @@ export default function PortfolioIndex() {
       </div>
 
 
-      <div id="top-links" className={`flex sm:mx-4  sm:my-2 px-3 py-4 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
+      <div id="top-links" className={` hidden flexx sm:mx-4  sm:my-2 px-3 py-4 z-50 right-0 top-0 fixed w-auto leading-6 text-black text-sm ${satoshi.className}`}>
 
         <a
           className={` justify-between `}
@@ -721,7 +721,7 @@ export default function PortfolioIndex() {
           target="_blank"
         >
 
-          <p className=" justify-center  bg-black py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-white  w-auto   group">
+          <p className=" justify-center  bg-[#e1e1e1] py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-black  w-auto   group">
             <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp;Instagram</span>
             {/* <span>↗</span>*/}
@@ -735,7 +735,7 @@ export default function PortfolioIndex() {
           href="https://twitter.com/bennyyyang"
           target="_blank"
         >
-          <p className=" justify-center bg-black py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-white w-auto group ">
+          <p className=" justify-center bg-[#e1e1e1]  py-[1px] px-2 mx-[0px] pr-[11px] rounded-full text-black w-auto group ">
             <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
             <span>&nbsp;Twitter</span>
           </p>
@@ -790,10 +790,10 @@ export default function PortfolioIndex() {
         <div className="sm:flex ">
 
           <div
-            className={`  pb-4 sm:m-4 -z-10 left-0 bottom-0 relative  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className}`}
+            className={`  pb-4 sm:m-4 -z-10 left-0 bottom-0 relative  sm:w-1/2 w-full leading-6 justify-between text-zinc-950  text-sm ${satoshi.className} font-[300]`}
           >
 
-            <div className=" justify-center px-4 py-2  w-auto ">
+            <div className=" justify-center px-3 py-2  w-auto ">
               <span>Built with Next.js on Vercel<span className="inline-block text-2xl  h-[18.5px] leading-[18.5px] translate-x-[3px] translate-y-[1.8px] ">▴</span></span>
               {/* <span className="flashing">_</span> */}
               <br></br>
@@ -812,42 +812,59 @@ export default function PortfolioIndex() {
 
 
 
-            <div className=" justify-center px-3 py-2 w-auto ">
-              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+
+
+            <div className=" justify-center px-[9px] py-2 w-auto font-[300] ">
+
+
+              <a href="https://instagram.com/yangyart" target="_blank" className="!pointer-events-auto  bg-[#eeeeee] py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-black group  w-auto">
                 <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
-                <span>&nbsp;Cosmos</span>
+                <span>&nbsp;Instagram</span>
               </a>
 
-              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+              <a href="https://twitter.com/bennyyyang" target="_blank" className="!pointer-events-auto  bg-[#eeeeee] py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-black group  w-auto">
+                <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+                <span>&nbsp;Twitter</span>
+              </a>
+
+
+
+              <a href="https://linkedin.com/in/yumo-benny-yang" target="_blank" className="!pointer-events-auto  bg-[#eeeeee] py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-black group  w-auto">
                 <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
                 <span>&nbsp;Linkedin</span>
               </a>
 
-              <a href="https://boxd.it/4NuTP" target="_blank" className="!pointer-events-auto  bg-black py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-white group  w-auto">
+
+              <a href="https://cosmos.so/bennyyyang" target="_blank" className="!pointer-events-auto  bg-[#eeeeee] py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-black group  w-auto">
+                <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
+                <span>&nbsp;Cosmos</span>
+              </a>
+
+              {/* <a href="https://boxd.it/4NuTP" target="_blank" className="!pointer-events-auto  bg-[#eeeeee] py-[3.75px] px-2 mx-[0px] pr-[11px] rounded-full text-black group  w-auto">
                 <span className="translate-x-[2px] group-hover:translate-x-[4px] group-hover:translate-y-[-2px] inline-block transition-transform ease duration-100">↗</span>
                 <span>&nbsp;Letterboxd</span>
-              </a>
+              </a> */}
               <br></br>
 
               <button
                 onClick={handleCopyEmail}
-                className="!pointer-events-auto bg-black py-[1px] mt-1 px-2 pr-[11px] rounded-full text-white group relative w-auto"
+                className="!pointer-events-auto bg-[#eeeeee] py-[1px] mt-1 px-2 pr-[11px] rounded-full text-black group relative w-auto "
               >
 
 
 
                 <span className="inline-block translate-x-[4px] translate-y-[-2px] group-hover:translate-x-[5px]  transition-transform ease  duration-150">
-                  <div className="w-2 h-2 bg-black border-white border-1px border outline-black outline-1px outline rounded-sm"></div>
+                  <div className="w-2 h-2 bg-[#eeeeee] border-black border-1px border outline-[#eeeeee] outline-1px outline rounded-sm"></div>
 
                 </span>
                 <span className="inline-block translate-x-[1px] translate-y-[1px] group-hover:translate-x-[0px] transition-transform ease  duration-150">
-                  <div className="w-2 h-2 bg-black border-white border-1px border outline-black outline-1px outline rounded-sm"></div>
+                  <div className="w-2 h-2 bg-[#eeeeee] border-black border-1px border outline-[#eeeeee] outline-1px outline rounded-sm"></div>
                 </span>
 
 
                 {copied && (
 
-                <span>&nbsp;copied to clipboard</span>
+                  <span>&nbsp;copied to clipboard</span>
 
                 )}
 
