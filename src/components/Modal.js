@@ -100,7 +100,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId }) => {
                 <button className={`z-[9999999999999] text-sm fixed h-0 sm:top-6 top-6 sm:left-7 left-3 bg-transparent border-none cursor-pointer text-black ${benny.className}`} onClick={onClose}>
 
 
-                    <p className=" justify-center bg-black py-[2.5px] px-2 mx-[0px] pr-[11px] rounded-full text-white outline outline-[0.5px] outline-black w-auto group ">
+                    <p className=" justify-center bg-[#dddddd] py-[2.5px] px-2 mx-[0px] pr-[11px] rounded-full text-black  w-auto group font-[300] ">
                         <span className="translate-x-[3px] group-hover:translate-x-[1px] group-hover:translate-y-[2px] inline-block transition-transform ease duration-100">↙</span>
                         <span>&nbsp;close</span>
                     </p>

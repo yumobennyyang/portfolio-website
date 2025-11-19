@@ -14,6 +14,7 @@ const branding = {
 
     { "type": "section", "text": "Chink House Mafia - 2025" },
     { "type": "image", "src": "/images/branding/chm1.png" },
+    { "type": "image", "src": "/images/branding/chm2.png" },
 
     { "type": "section", "text": "Sunday Studio - 2025" },
     { "type": "video", "src": "/images/branding/sunday1.mp4", autoplay: true, looping: true, },
@@ -25,7 +26,7 @@ const branding = {
     { "type": "image", "src": "/images/branding/plasticfish3.png" },
     { "type": "image", "src": "/images/branding/plasticfish4.png" },
 
-    { "type": "section", "text": "Morningside investments - 2023" },
+    { "type": "section", "text": "Morningside Investments - 2023" },
     { "type": "image", "src": "/images/branding/morningside1.png" },
     { "type": "image", "src": "/images/branding/morningside2.png" },
 
