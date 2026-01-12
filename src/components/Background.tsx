@@ -3,7 +3,7 @@
 export default function Background() {
   return (
     <>
-      <div className="sm:block -z-50 fixed h-screen pointer-events-none w-screen items-center bg-white">
+      <div className="block -z-50 fixed h-screen pointer-events-none w-screen items-center bg-white">
         <video
           autoPlay
           muted

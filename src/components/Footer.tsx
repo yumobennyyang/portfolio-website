@@ -34,7 +34,7 @@ export default function Footer() {
               <> © 2026 Benny Yang | All Rights Reserved</>
             )}
             {footerState === 2 && (
-              <> Built with Next.js on Vercel</>
+              <> Built with Next.js on Vercel▲</>
             )}
 
           </span>
