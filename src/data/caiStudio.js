@@ -1,5 +1,6 @@
 const caiStudio = {
   id: 9,
+  category: "work",
   title: "Cai Studio",
   video: {
     src: "/images/portfolio/caistudio.mov",
@@ -7,7 +8,7 @@ const caiStudio = {
     height: 800,
     filter: "brightness(102%) contrast(98%) saturate(90%)"
   },
-  overview: "I worked as studio assistant to Cai Guo-Qiang during the summer of 2024 in preparation for his daytime fire work event commisioned by Getty Museum in the LA Memorial Coliseum. I was responsible for the design of the second act of the event, which required precise positionings of around 8500 explosives to form letters and other visuals.",
+  overview: "I worked as studio assistant to Cai Guo-Qiang in preparation for his daytime fire work event commisioned by Getty Museum in the LA Memorial Coliseum. I worked on designing the second act of the event, which required the precise positionings of around 8500 explosives to form letters and visuals.",
   tools: ["p5.js", "Figma", "Photoshop","AutoCAD"],
   duration: "6 weeks",
   description: "Daytime Firework",
@@ -15,10 +16,10 @@ const caiStudio = {
   content: [
 
 
-    { "type": "section", "text": "Sequence Visuaization - p5.js" },
+    { "type": "section", "text": "Sequence Visuaization" },
     { "type": "smallImage", "src": "/images/cai-studio/cai1.png" },
 
-    { "type": "section", "text": "Viewpoint Rendering - Figma" },
+    { "type": "section", "text": "Viewpoint Rendering" },
     { "type": "smallImage", "src": "/images/cai-studio/cai2.png" },
 
     { "type": "section", "text": "Final Scenes" },

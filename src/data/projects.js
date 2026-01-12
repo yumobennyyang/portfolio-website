@@ -17,18 +17,43 @@ import branding from './branding';
 
 export const projects = [
     tencent, 
-    neoTetra, 
-    cartier, 
-
-
 
     spectator, 
-    playground,  
+
+    cartier, 
+
+    caiStudio,
+
     valorant,
 
-
-
     gabble,
+
+
+
+
+    neoTetra, 
+
+    playground,  
+
     branding, 
-    caiStudio
+
+    volumes,
+
+    renderings,
+
+    surfaces,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];

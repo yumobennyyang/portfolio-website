@@ -1,5 +1,6 @@
 const volumes = {
   id: 7,
+  category: "play",
   title: "Volumes",
   image: {
     src: "/images/portfolio/volumes.png",

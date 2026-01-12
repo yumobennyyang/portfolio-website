@@ -74,15 +74,15 @@
 
 
 .vercelBackground {
-     /* color: rgb(var(--foreground-rgb));   */
+  /* color: rgb(var(--foreground-rgb));   */
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))),
     rgb(var(--background-start-rgb));
-    
 
- 
-      /*     backdrop-filter: blur(100px);
+
+
+  /*     backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
   
 
@@ -102,12 +102,24 @@ hr,
 
 
 
+* {
+  cursor: default !important;
+  -webkit-tap-highlight-color: transparent;
+}
 
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+}
 
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
+
 }
 
 #scrollSection {
@@ -124,7 +136,8 @@ html {
 
 .textareaElement:empty::before {
   content: attr(data-placeholder);
-  color: rgb(194, 194, 194); /* gray placeholder */
+  color: rgb(194, 194, 194);
+  /* gray placeholder */
   pointer-events: none;
   display: block;
 }
@@ -483,16 +496,31 @@ html {
   /* 0.133,0.12,0.06,0.9*/
 
 
-  .projectCard:hover .projectImage{
+  .projectCardd:hover .projectImagee {
     box-shadow:
       rgba(28, 29, 33, 0) 0px 0.602187px 0.602187px -1.16667px,
       rgba(28, 29, 33, 0) 0px 2.28853px 2.28853px -2.33333px,
       rgba(28, 29, 33, 0) 0px 10px 10px -3.5px,
       rgba(28, 29, 33, 0) 0px 0px 0px 0px
   }
+
+  .projectCard:hover .projectImage {
+    transform: scale(1.02);
+  }
+
+  .projectImage {
+  transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
+}
+
 }
 
 
+.squircle {
+  corner-shape: superellipse(1.1);
+  border-radius: 17px;
+
+  -webkit-corner-shape: superellipse(1.1);
+}
 
 
 
@@ -568,5 +596,3 @@ html {
     height: 70px;
   }
 }
-
-

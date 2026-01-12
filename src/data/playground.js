@@ -1,5 +1,6 @@
 const playground = {
   id: 8,
+  category: "play",
   title: "Playground",
   video: {
     src: "/images/portfolio/playground.mov",

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { projects } from '../data/projects';
 import localFont from 'next/font/local';
+import { motion } from 'framer-motion';
 
 import Image from 'next/image';
 
@@ -27,7 +28,7 @@ const ProjectView = ({ projectId }) => {
             const isMinWidth640 = window.matchMedia('(min-width: 640px)').matches;
 
             const calcModalWidth = isMinWidth768
-                ? Math.min(window.innerWidth - 56, 800)
+                ? Math.min(window.innerWidth - 56, 700)
                 : isMinWidth640
                     ? window.innerWidth - 56
                     : window.innerWidth - 24;
@@ -44,29 +45,29 @@ const ProjectView = ({ projectId }) => {
 
 
     return (
-        <div className={`${regularText.className}  text-neutral-900 bg-[#f1f1f1]`}>
+        <div className={`${regularText.className} tracking-normal text-neutral-900 bg-[#f1f1f1]`}>
 
 
 
 
             {project.image && (
-                <div className="overflow-hidden  rrounded-t-xl max-w-[800px] m-auto">
-                    <img style={{ height: `${maxH}px` }} className={` h-[${maxH}px] object-contain  !border-none !rrounded-none `} src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
+                <div className="brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center">
+                    <img className="object-top object-contain !border-none w-full h-auto" src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
                 </div>
             )}
 
 
             {project.video && (
-                <div className="overflow-hidden  rrounded-t-xl  max-w-[800px] m-auto">
+                <div className="overflow-hidden max-w-[700px] m-auto flex justify-center">
                     <video
                         playsInline
                         autoPlay
                         muted
                         loop
-                        className=" object-fit "
+                        className="object-fit object-top w-full h-auto"
                         width={project.video.width}
                         height={project.video.height}
-                        style={{ height: `${maxH}px`, filter: `${project.video.filter} ` }}>
+                        style={{ filter: `${project.video.filter} ` }}>
 
                         <source src={project.video.src} type="video/mp4" />
 
@@ -74,29 +75,29 @@ const ProjectView = ({ projectId }) => {
                 </div>
             )}
 
-            <div className={`max-w-[800px] m-auto z-20 relative w-full flex-row text-neutral-950 ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'}`}>
-                {/* <div className={` w-full pt-4 pb-4 truncate text-3xl border-t tracking-[.007em] ${text.className}`}>{project.title}</div> */}
+            <div className={`max-w-[800px] px-4 m-auto z-20 relative w-full grid grid-cols-2 gap-4 text-neutral-950 ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'} `}>
 
-                <div className={`px-0 text-5xl font-semibold pb-3 flex ${title.className}`}>
-                    {project?.title}&nbsp;
-                    <span className="text-[#e0e0e0]">{project?.year}</span>
+
+                <div className={`px-0 text-[20px] -mt-[2px] grid grid-cols-2 gap-4 items-start ${title.className}`}>
+                    <div className="font-medium">{project?.title}</div>
+                    <div className="font-[250]">{project?.year}</div>
                 </div>
-                {/* 
-                <div className={`px-0  opacity-30 text-xs font-light  uppercase tracking-wide  ${labels.className}`} >Overview</div> */}
-                <div className=" px-0  opacity-100 font-light mb-3 pb-4 text-[16px]  "> {project?.overview}</div>
+
+
+                <div className=" px-0  opacity-100 font-[350] text-[14px] items-start "> {project?.overview}</div>
 
 
 
-                <div className="flex justify-between space-x-4  px-0  text-[16px] ">
+                <div className="flex flex-col space-y-6 font-[350] px-0 text-[14px] mt-8 col-span-2">
 
 
 
                     {project.tools && (
-                        <div className="flex-1  ">
-                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-black">TOOLS</span>
+                        <div className="grid grid-cols-4 gap-4">
+                            <div className={`col-start-2 ${labels.className}`}>
+                                <span className="">Tools</span>
                             </div>
-                            <ul className="font-light ">
+                            <ul className="col-start-3 col-span-2  flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.tools?.map((tools, index) => (
                                     <li key={index}>{tools}</li>
                                 ))}
@@ -105,20 +106,20 @@ const ProjectView = ({ projectId }) => {
                     )}
 
                     {project.duration && (
-                        <div className="flex-1  ">
-                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-black">DURATION</span>
+                        <div className="grid grid-cols-4 gap-4">
+                            <div className={`col-start-2  ${labels.className}`}>
+                                <span className="">Duration</span>
                             </div>
-                            <div className="font-light "> {project?.duration}</div>
+                            <div className="col-start-3 col-span-2"> {project?.duration}</div>
                         </div>
                     )}
 
                     {project.team && (
-                        <div className="flex-1 ">
-                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-black">TEAM</span>
+                        <div className="grid grid-cols-4 gap-4">
+                            <div className={`col-start-2  ${labels.className}`}>
+                                <span className="">Team</span>
                             </div>
-                            <ul className="font-light">
+                            <ul className="col-start-3 col-span-2 flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.team?.map((team, index) => (
                                     <li key={index}>{team}</li>
                                 ))}
@@ -127,17 +128,16 @@ const ProjectView = ({ projectId }) => {
                     )}
 
                     {project.role && (
-                        <div className="flex-1">
-                            <div className={`  text-[#f1f1f1] text-xs uppercase  font-light tracking-wide pb-2 ${labels.className}`}>
-                                <span className="px-2 py-1 rounded bg-black">ROLE</span>
+                        <div className="grid grid-cols-4 gap-4">
+                            <div className={`col-start-2   ${labels.className}`}>
+                                <span className="">Role</span>
                             </div>
-                            <ul className="font-light  ">
+                            <ul className="col-start-3 col-span-2 flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.role?.map((role, index) => (
                                     <li key={index}>{role}</li>
                                 ))}
                             </ul>
                         </div>
-
                     )}
 
 
@@ -146,55 +146,72 @@ const ProjectView = ({ projectId }) => {
             </div>
 
 
-            <div className="bg-[#f1f1f1] pb-16 max-w-[800px] m-auto">
+            <div className="bg-[#f1f1f1] pb-16 max-w-[800px] m-auto px-4">
                 {project.content.map((item, index) => {
+                    const animationProps = {
+                        initial: "hidden",
+                        whileInView: "visible",
+                        viewport: { once: true, margin: "-50px" },
+                        variants: {
+                            hidden: { opacity: 0, y: 100 },
+                            visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } }
+                        }
+                    };
 
                     if (item.type === 'spacing') {
                         return <div className={`py-3`} key={index}></div>;
                     }
 
                     if (item.type === 'textarea') {
-                        return <div className="w-full mt-2" key={index}>
-                            <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] leading-[48px] text-5xl py-0 rounded pb-2 bg-neutral-200 text-[#D93A34] D93A34 border-[#dddddd]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
-                        </div>
+                        return (
+                            <motion.div {...animationProps} className="w-full mt-2" key={index}>
+                                <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] leading-[48px] text-5xl py-0 rounded pb-2 bg-neutral-200 text-[#D93A34] D93A34 border-[#dddddd]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
+                            </motion.div>
+                        );
                     }
                     if (item.type === 'section') {
+                        if (item.secondaryText) {
+                            return (
+                                <motion.div {...animationProps} className={` mb-1 grid grid-cols-4 gap-4 items-start text-neutral-950 font-medium  ${title.className}`} key={index}>
+                                    <div className="col-span-1 mt-[78px] text-xl">{item.text}</div>
+                                    <div className="col-span-3 mt-[5rem] font-[350] text-[14px] mb-[6px] ">{item.secondaryText}</div>
+                                </motion.div>
+                            );
+                        }
                         return (
-
-                            <div className={`  font-[550] mb-1 mt-[5rem] text-2xl ${title.className}`} key={index}>
+                            <motion.div {...animationProps} className={` font-medium mb-1 mt-[5rem] text-xl ${title.className}`} key={index}>
                                 {item.text}
-                            </div>
-
+                            </motion.div>
                         );
                     }
                     if (item.type === 'text') {
-                        return <div className={` opacity-100 font-light  mb-3 text-[16px] `} key={index}>{item.text}</div>;
+                        return <motion.div {...animationProps} className={` opacity-100 font-[350]  mb-[6px] text-[14px] `} key={index}>{item.text}</motion.div>;
                     }
 
                     if (item.type === 'link') {
-                        return <a href={item.url} className={` mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </a>;
+                        return <motion.a {...animationProps} href={item.url} className={`block mb-3 text-sm hover:opacity-50`} key={index}>↗ {item.text} </motion.a>;
                     }
 
 
                     if (item.type === 'image') {
 
 
-                        return <div className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                        return <motion.div {...animationProps} className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></motion.div>;
                     }
 
                     if (item.type === 'smallImage') {
-                        return <div className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></div>;
+                        return <motion.div {...animationProps} className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></motion.div>;
                     }
 
 
                     if (item.type === 'line') {
-                        return <div className=" border-b border-neutral-300 mb-2" key={index}></div>;
+                        return <motion.div {...animationProps} className=" border-b border-neutral-300 mb-2" key={index}></motion.div>;
                     }
 
                     if (item.type === 'iframe') {
                         const ratio = 1080 / 1920; // 1920:1080 aspect ratio
 
-                        return <div className="my-1 mx-1 iframe-container layer-shadow hidden md:flex" key={index}
+                        return <motion.div {...animationProps} className=" my-1 mx-1 iframe-container layer-shadow hidden md:flex" key={index}
                             style={{
                                 ...item.containerStyling,
                                 position: 'relative',
@@ -213,7 +230,7 @@ const ProjectView = ({ projectId }) => {
                                     height: '100%',
                                 }}
                             />
-                        </div>
+                        </motion.div>
                     }
                     if (item.type === 'video') {
 
@@ -221,7 +238,8 @@ const ProjectView = ({ projectId }) => {
                         if (autoplay && looping) {
                             // Video that auto-plays and loops without controls
                             return (
-                                <div
+                                <motion.div
+                                    {...animationProps}
                                     className="my-1   w-full h-auto overflow-hidden layer-shado"
                                     key={index}
                                 >
@@ -236,12 +254,13 @@ const ProjectView = ({ projectId }) => {
                                     >
                                         <source src={item.src} />
                                     </video>
-                                </div>
+                                </motion.div>
                             );
                         } else {
                             // Video with controls
                             return (
-                                <div
+                                <motion.div
+                                    {...animationProps}
                                     className="my-1   w-full h-auto overflow-hidden layer-shadow "
                                     key={index}
                                 >
@@ -254,7 +273,7 @@ const ProjectView = ({ projectId }) => {
                                     >
                                         <source src={item.src} />
                                     </video>
-                                </div>
+                                </motion.div>
                             );
                         }
                     }

@@ -2,6 +2,7 @@ import { a } from "framer-motion/client";
 
 const lab = {
   id: 12,
+  category: "play",
   title: "Lab",
   video: {
     src: "/images/portfolio/lab.mp4",

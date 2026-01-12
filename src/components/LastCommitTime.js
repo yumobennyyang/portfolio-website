@@ -6,7 +6,7 @@ import { getLastCommit } from '../lib/getLastCommit';
 
 const LastCommitTime = () => {
   const [lastCommitTime, setLastCommitTime] = useState(null);
-  const [timeAgo, setTimeAgo] = useState('');
+  const [timeAgo, setTimeAgo] = useState('· · ·');
 
   useEffect(() => {
     async function fetchData() {

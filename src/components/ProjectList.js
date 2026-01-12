@@ -3,187 +3,382 @@ import { projects } from '../data/projects';
 import styles from './Modal.module.css';
 import Image from 'next/image';
 import localFont from 'next/font/local';
+import { motion } from 'framer-motion';
 
-const subtitle = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Regular.otf' });
-const text = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Medium.otf' });
-const description = localFont({ src: '../fonts/SF-Pro/SF-Pro-Text-Bold.otf' });
-const title = localFont({ src: '../fonts/SF-Pro/SF-Pro-Display-Regular.otf' });
+const title = localFont({ src: '../fonts/TT_Commons_Pro_Mono_VF_Trial.ttf' });
 
-const ProjectList = ({ onSelect, selectedProjectId }) => {
-  const [scaleValues, setScaleValues] = useState({ scaleX: 1, scaleY: 1 });
-  const [translateValues, setTranslateValues] = useState({ translateX: 0, translateY: 0 });
-  const [itemScale, setItemScale] = useState({ itemScale: 0 });
-  const [isHidden, setIsHidden] = useState(false);
-  const selectedElementRef = useRef(null);
-  const [fadeIn, setFadeIn] = useState(false);
+const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView }) => {
+  const filteredProjects = category ? projects.filter(p => p.category === category) : projects;
+  const cardRefs = useRef({});
+  const [cardStyles, setCardStyles] = useState({});
+  const [mediaStyles, setMediaStyles] = useState({});
+  const [textStyles, setTextStyles] = useState({});
+  const [placeholderStyle, setPlaceholderStyle] = useState(null);
+  const [verticalOffsets, setVerticalOffsets] = useState({});
+  const [originalPositions, setOriginalPositions] = useState({});
+  const [isClosing, setIsClosing] = useState(false);
+
+
+
 
   const springWobbly = (t) => {
     return -0.5 * Math.exp(-6 * t) * (-2 * Math.exp(6 * t) + Math.sin(12 * t) + 2 * Math.cos(12 * t));
   };
 
-  useEffect(() => {
-    const updateTransformValues = () => {
-      if (selectedProjectId && selectedElementRef.current) {
-        const elem = selectedElementRef.current;
-  
-        const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
-        const isMinWidth640 = window.matchMedia('(min-width: 640px)').matches;
-  
-        const marginTop = isMinWidth768 ? 0 : 0;
-  
-        const minWidth = isMinWidth768
-          ? Math.min(window.innerWidth - 56, 800)
-          : isMinWidth640
-            ? window.innerWidth - 56
-            : window.innerWidth - 24;
-  
-        const scaleX = window.innerWidth / elem.offsetWidth;
-        const scaleY = (600) / elem.offsetHeight * 1.5;
-  
-        const rect = elem.getBoundingClientRect();
-        const translateY = marginTop - rect.top;
-        const translateX = window.innerWidth / 2 - (rect.left + rect.width / 2);
-  
-        const itemScale = (minWidth / (elem.offsetHeight - 0)) * (2 / 3); //change 0 if title height is added
-  
-        setScaleValues({ scaleX, scaleY });
-        setTranslateValues({ translateX, translateY });
-        setItemScale({ itemScale });
-      }
-    };
-  
-    updateTransformValues();
-  
-    window.addEventListener('resize', updateTransformValues);
-    return () => window.removeEventListener('resize', updateTransformValues);
-  }, [selectedProjectId]);
-  
 
+  
+  // Calculate vertical offsets for images that are wider than their containers
+  const calculateVerticalOffsets = () => {
+    const offsets = {};
+    filteredProjects.forEach((project) => {
+      const elem = cardRefs.current[project.id];
+      if (!elem) return;
+      
+      const rect = elem.getBoundingClientRect();
+      const containerWidth = rect.width;
+      const containerHeight = rect.height;
+      const containerAspect = containerWidth / containerHeight;
+      
+      let mediaAspect = null;
+      if (project.image && project.image.width && project.image.height) {
+        mediaAspect = project.image.width / project.image.height;
+      } else if (project.video && project.video.width && project.video.height) {
+        mediaAspect = project.video.width / project.video.height;
+      }
+      
+      if (mediaAspect !== null && mediaAspect > containerAspect) {
+        // Image is wider than container, will have vertical gaps
+        const renderedHeight = containerWidth / mediaAspect;
+        const gap = containerHeight - renderedHeight;
+        offsets[project.id] = gap / 2;
+      } else {
+        offsets[project.id] = 0;
+      }
+    });
+    setVerticalOffsets(offsets);
+  };
+
+  // Calculate offsets on mount and resize
   useEffect(() => {
-    if (!selectedProjectId) {
-      setFadeIn(false);
-      // Trigger fade-in after a short delay to ensure re-render
-      setTimeout(() => setFadeIn(false), 10);
-    } else {
-      setFadeIn(false);
-    }
-  }, [selectedProjectId]);
+    // Delay to ensure refs are populated
+    const timer = setTimeout(calculateVerticalOffsets, 100);
+    window.addEventListener('resize', calculateVerticalOffsets);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', calculateVerticalOffsets);
+    };
+  }, [category, filteredProjects]);
+
+  // Function to calculate and set expanded card styles
+  const updateExpandedCardStyles = (id) => {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Responsive padding based on breakpoints
+    const isSmall = viewportWidth < 640;
+    const isMedium = viewportWidth >= 640 && viewportWidth < 768;
+    
+    const padding = isSmall ? 12 : 42; // smaller padding on mobile
+    const topPadding = 60; // pt-20
+    const bottomPadding = 98; // pb-[98px]
+    const targetWidth = viewportWidth - (padding * 2);
+    const targetHeight = viewportHeight - topPadding - bottomPadding;
+
+    // Calculate text translation to align with "Close" button
+    // Target (Close btn): left: 38+7=45, top: 54+3=57
+    // Source (Card text): left: padding+6, top: 80+3=83
+    // DeltaX = 45 - (padding + 6) = 39 - padding
+    // DeltaY = 57 - 83 = -26
+    const textDeltaX = 0;
+    const textDeltaY = -26;
+
+    setCardStyles({
+      [id]: {
+        position: 'fixed',
+        top: `${topPadding}px`,
+        left: `${padding}px`,
+        width: `${targetWidth}px`,
+        height: `${targetHeight}px`,
+        zIndex: 10001,
+        borderRadius: '0px',
+        pointerEvents: 'none',
+        transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+      }
+    });
+
+    setTextStyles({
+      [id]: {
+        transform: `translate(${textDeltaX}px, ${textDeltaY}px)`,
+      }
+    });
+  };
 
   const handleClick = (id) => {
+    const elem = cardRefs.current[id];
+    if (!elem) {
+      onSelect(id);
+      return;
+    }
+
+    const rect = elem.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Store placeholder dimensions to maintain space in grid
+    setPlaceholderStyle({
+      id,
+      width: rect.width,
+      height: rect.height,
+    });
+    
+    // Store original position for closing animation
+    setOriginalPositions(prev => ({
+      ...prev,
+      [id]: {
+        top: rect.top,
+        left: rect.left,
+        width: rect.width,
+        height: rect.height,
+      }
+    }));
+    
+    // Responsive padding based on breakpoints
+    const isSmall = viewportWidth < 640;
+    const padding = isSmall ? 12 : 42;
+    const topPadding = 60;
+    const bottomPadding = 98;
+    const targetWidth = viewportWidth - (padding * 2);
+    const targetHeight = viewportHeight - topPadding - bottomPadding;
+
+    // Set transform styles for the clicked card - use fixed position to break out of grid
+    // First set position WITHOUT transition to capture current position
+    setCardStyles({
+      [id]: {
+        position: 'fixed',
+        top: `${rect.top}px`,
+        left: `${rect.left}px`,
+        width: `${rect.width}px`,
+        height: `${rect.height}px`,
+        zIndex: 10001,
+        pointerEvents: 'none',
+        transition: 'none',
+      }
+    });
+
+    // Trigger the expansion animation after two frames to ensure initial position is painted
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        updateExpandedCardStyles(id);
+      });
+    });
+
+    const finalMediaWidth = Math.min(targetWidth, 700);
+
+    setMediaStyles({
+      [id]: {
+        width: `${finalMediaWidth}px`,
+      }
+    });
+
     onSelect(id);
   };
 
+  // Reset styles when modal closes and handle resize
+  useEffect(() => {
+    if (!selectedProjectId && !isClosing) {
+      // Find which card was previously selected to animate it back
+      const prevId = Object.keys(cardStyles)[0];
+      if (prevId && originalPositions[prevId]) {
+        setIsClosing(true);
+        const orig = originalPositions[prevId];
+        
+        // Animate back to original position
+        setCardStyles({
+          [prevId]: {
+            position: 'fixed',
+            top: `${orig.top}px`,
+            left: `${orig.left}px`,
+            width: `${orig.width}px`,
+            height: `${orig.height}px`,
+            zIndex: 10001,
+            pointerEvents: 'none',
+            transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+          }
+        });
+        setMediaStyles({});
+        setTextStyles({});
+
+        // Clear styles after animation completes
+        setTimeout(() => {
+          // First disable transition to prevent twitch
+          const prevIdCopy = prevId;
+          setCardStyles({
+            [prevIdCopy]: {
+              transition: 'none',
+            }
+          });
+          // Then clear all styles on next frame
+          requestAnimationFrame(() => {
+            setCardStyles({});
+            setMediaStyles({});
+            setTextStyles({});
+            setPlaceholderStyle(null);
+            setOriginalPositions({});
+            setIsClosing(false);
+          });
+        }, 300);
+      } else {
+        setCardStyles({});
+        setMediaStyles({});
+        setTextStyles({});
+        setPlaceholderStyle(null);
+      }
+      return;
+    }
+
+    // Update card styles on resize
+    const handleResize = () => {
+      if (selectedProjectId) {
+        updateExpandedCardStyles(selectedProjectId);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [selectedProjectId]);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 10,
+      filter: 'blur(20px)'
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      filter: 'blur(0px)',
+      transition: {
+        duration: 0.3,
+        ease: [0.25, 0.1, 0.25, 1]
+      }
+    }
+  };
+
   return (
-    <div id="project-list" className={` sm:columns-2 lg:columns-3 p-2 gap-2 pb-8 ${fadeIn ? styles.projectListFadeIn : ''}`}>
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          ref={selectedProjectId === project.id ? selectedElementRef : null}
-          className={` project mb-2 ${styles.projectItem} ${selectedProjectId === project.id ? `${styles.scaled}` : ''}
-      ${isHidden && selectedProjectId === project.id ? "" : ''}
-
-      ${selectedProjectId && selectedProjectId !== project.id ? styles.projectFadeOut : ''}
-    `}
-          onClick={() => handleClick(project.id)}
-          style={{
-            breakInside: 'avoid',
-            zIndex: selectedProjectId === project.id ? 99999999999999999999 : '0'
-          }}
-        >
-          <div id="projectCard" className={` projectCard w-full text-zinc-950 tracking-wide rrounded-xl ${selectedProjectId === project.id ? '' : 'sm:hover:scale-[1.01]'} duration-[250ms] ease-[cubic-bezier(0,0,.5,1)]`}>
-            <div
-              className={`${styles.projectItem}  bborder  w-full flex-col relative flex grouprrounded-xl  `}
-              style={
-                selectedProjectId === project.id
-                  ? {
-                    borderWidth: '0px',
-                    pointerEvents: 'none',
-                    borderRadius: '0px',
-                    transformOrigin: 'top center',
-                    transform: `translate(${translateValues.translateX}px, ${translateValues.translateY}px) scale(${scaleValues.scaleX}, ${scaleValues.scaleY})`,
-                  }
-                  : {}
-              }
+    <motion.div 
+      id="project-list" 
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-fr h-auto min-h-screen pt-[60px] pb-[98px] sm:px-[42px] px-[12px]"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      key={category}
+    >
+      {filteredProjects.map((project, index) => {
+        const isSelected = selectedProjectId === project.id;
+        const isThisCardClosing = isClosing && cardStyles[project.id];
+        const isOther = selectedProjectId && selectedProjectId !== project.id;
+        const shouldFadeOut = isOther && !showProjectView;
+        const hasFixedStyles = cardStyles[project.id]?.position === 'fixed';
+        
+        return (
+          <div key={project.id} className="relative w-full h-full">
+            {/* This wrapper stays in grid, card inside can become fixed */}
+            <motion.div
+              ref={(el) => cardRefs.current[project.id] = el}
+              className={`project group bg-[#f1f1f1] cursor-pointer ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              onClick={() => handleClick(project.id)}
+              variants={itemVariants}
+              animate={shouldFadeOut ? { opacity: 0 } : { opacity: 1 }}
+              style={{
+                ...(cardStyles[project.id] || {}),
+                pointerEvents: isOther ? 'none' : undefined,
+              }}
             >
-              {project.image && (
-                <div
-                  className=" overflow-hidden rrounded-xl duration-[250ms] origin-top projectImage select-none"
-                  style={
-                    selectedProjectId === project.id
-                      ? {
-                        boxShadow: '0px 0px 0px 0px rgba(0, 0, 0, 0)',
-                        borderBottomLeftRadius: '0px',
-                        borderBottomRightRadius: '0px',
-                        transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
-                      }
-                      : {}
-                  }
-                >
-                  <img
-                    className="object-cover !border-none !rrounded-none select-none"
-                    src={project.image.src}
-                    alt={project.title}
-                    width={project.image.width}
-                    height={project.image.height}
-                  />
-                </div>
-              )}
-              {project.video && (
-                <div
-                  className="overflow-hidden rrounded-xl duration-[250ms] origin-top projectImage select-none"
-                  style={
-                    selectedProjectId === project.id
-                      ? {
-                        boxShadow: '0px 0px 0px 0px rgba(0, 0, 0, 0)',
-                        transform: `scale(${(1 / scaleValues.scaleX) * itemScale.itemScale}, ${(1 / scaleValues.scaleY) * itemScale.itemScale})`,
-                      }
-                      : {}
-                  }
-                >
-                  <video
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                    className="object-cover select-none block"
-                    width={project.video.width}
-                    height={project.video.height}
-                    style={{
-                      filter: `${project.video.filter} `
-                    }}
-
-                  >
-                    <source src={project.video.src} type="video/mp4" />
-                  </video>
-                </div>
-              )}
-            </div>
-            <div
-              style={
-                selectedProjectId === project.id
-                  ? { opacity: '0', transition: 'opacity 0.1s' }
-                  : {}
-              }
-              className="z-20 pb-2 relative w-full flex-row hidden "
+            <div 
+              className="projectCard w-full h-full text-zinc-950 tracking-wide flex items-center justify-center"
+              style={{
+                transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+              }}
             >
-              <div
-                className={`flex w-full pt-[2px] uppercase -mb-[2px] font-medium truncate text-sm   justify-between ${title.className}`}
+              <div 
+                className="brightness-100 w-full h-full flex items-center justify-center"
+                style={{
+                  ...(mediaStyles[project.id] || {}),
+                  transform: `translateY(${(!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0}px)`,
+                  transition: isSelected && !isThisCardClosing 
+                    ? 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)' // Opening: offset → 0
+                    : 'all 0.3s ease-out', // Closing: 0 → offset
+                }}
               >
-                {project.title}
-
-                <div className="font-light opacity-20"> {project.year} </div>
-
+                {project.image && (
+                  <div className=" w-full h-full flex items-center justify-center projectImage select-none">
+                    <img
+                      className="object-contain object-top select-none"
+                      style={{ width: '100%', height: '100%' }}
+                      src={project.image.src}
+                      alt={project.title}
+                    />
+                  </div>
+                )}
+                {project.video && (
+                  <div className="w-full h-full flex items-center justify-center projectImage select-none">
+                    <video
+                      playsInline
+                      autoPlay
+                      muted
+                      loop
+                      className="object-contain object-top  w-full h-full select-none"
+                      style={{ filter: project.video.filter || '' }}
+                    >
+                      <source src={project.video.src} type="video/mp4" />
+                    </video>
+                  </div>
+                )}
               </div>
-              <div
-                className={` opacity-30 w-full font-light truncate text-xs uppercase ${subtitle.className}`}
-              >
+            </div>
+            <div 
+              className={`font-[300] absolute top-0 left-0 right-0 ${isSelected ? 'px-[2px]' : 'px-[6px]'} py-[3px] flex justify-between items-start ${title.className}`}
+              style={{
+                opacity: 1,
+                transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                ...(textStyles[project.id] || {}),
+              }}
+            >
+              <div className={`flex gap-1 transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'sm:opacity-20 group-hover:opacity-100'}`}>
+                <span className="text-xs uppercase">{project.title}</span>
+                <span className={`hidden sm:inline text-xs uppercase transition-opacity duration-250 pl-[3px] ${isSelected ? 'opacity-100' : 'sm:opacity-0 opacity-40 group-hover:opacity-100'}`}> 〡 {project.description}</span>
+              </div>
+              <span className={`text-xs transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'sm:opacity-20 group-hover:opacity-100'}`}>{project.year}</span>
+            </div>
+            {/* Mobile description at bottom left */}
+            <div 
+              className={`sm:hidden font-[300] absolute bottom-0 left-0 right-0 ${isSelected ? 'px-[2px]' : 'px-[6px]'} py-[3px] flex justify-start items-end ${title.className}`}
+              style={{
+                opacity: 1,
+                transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                ...(textStyles[project.id] || {}), // Apply same transform to keep it consistent or removing it if it shouldn't move
+              }}
+            >
+              <span className={`text-[10px] sm:text-xs uppercase transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'opacity-40 group-hover:opacity-100'}`}>
                 {project.description}
-              </div>
+              </span>
             </div>
+          </motion.div>
           </div>
-        </div>
-      ))}
-    </div>
+        );
+      })}
+    </motion.div>
   );
 };
 

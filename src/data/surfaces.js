@@ -1,5 +1,6 @@
 const surfaces = {
     id: 4,
+    category: "play",
     title: "Surfaces",
     image: {
       src: "/images/portfolio/paint.png",

@@ -1,5 +1,6 @@
 const branding = {
   id: 10,
+  category: "play",
   title: "Branding",
   image: {
     src: "/images/portfolio/branding.png",

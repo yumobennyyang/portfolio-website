@@ -1,5 +1,6 @@
 const spectator = {
   id: 3,
+  category: "work",
   title: "Spectator Mobile",
   image: {
     src: "/images/portfolio/spectator.png",
@@ -11,7 +12,7 @@ const spectator = {
   team: ["Philippe Wu", "Christina Su", "Muchen Guo"],
   role: ["Design Systems", "UI/UX", "Product Management"],
   tools: ["Figma"],
-  description: "Mobile UI/UX",
+  description: "UI/UX Design",
   year: "2022",
   content: [
 
