@@ -153,8 +153,8 @@ const ProjectView = ({ projectId }) => {
                         whileInView: "visible",
                         viewport: { once: true, margin: "-50px" },
                         variants: {
-                            hidden: { opacity: 0, y: 100 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } }
+                            hidden: { opacity: 0, y: 20 },
+                            visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } }
                         }
                     };
 

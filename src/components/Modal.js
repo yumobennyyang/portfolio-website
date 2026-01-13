@@ -1,5 +1,6 @@
 // components/Modal.js
 import React, { useEffect, useState } from 'react';
+import Lenis from 'lenis';
 import localFont from 'next/font/local';
 import styles from './Modal.module.css';
 
@@ -9,6 +10,7 @@ const button = localFont({ src: '../fonts/TT_Commons_Pro_VF_Trial.ttf' });
 const Modal = ({ isOpen, onClose, children, selectedProjectId, onContentVisible }) => {
     const [showModalContent, setShowModalContent] = useState(false);
     const [makeClickable, setMakeClickable] = useState(false);
+    const scrollRef = React.useRef(null);
 
     const topLinks = typeof window !== "undefined" ? document.getElementById('top-links') : null;
 
@@ -65,6 +67,33 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId, onContentVisible 
         };
     }, [isOpen]);
 
+    // Initialize Lenis for the modal content
+    useEffect(() => {
+        if (!showModalContent || !scrollRef.current) return;
+
+        const lenis = new Lenis({
+            wrapper: scrollRef.current, // The element that has overflow: auto
+            content: scrollRef.current.firstElementChild, // The scrolling content
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            wheelMultiplier: 1,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        return () => {
+            lenis.destroy();
+        };
+    }, [showModalContent]);
+
     if (!isOpen) return null;
 
     return (
@@ -74,6 +103,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId, onContentVisible 
             <div className="fixed overflow-hidden z-[10003] pointer-events-auto top-[60px] bottom-[98px] left-[12px] right-[12px] sm:left-[42px] sm:right-[42px]">
 
                 <div 
+                    ref={scrollRef}
                     className={`${styles.modalContent} ${styles.modalFadeIn} ${showModalContent ? styles.modalVisible : ''} h-full w-full overflow-y-auto ${makeClickable ? '' : 'pointer-events-none'}`} 
                     onClick={(e) => e.stopPropagation()}
                 >

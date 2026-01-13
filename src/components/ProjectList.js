@@ -278,7 +278,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
   return (
     <motion.div 
       id="project-list" 
-      className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-fr h-auto min-h-screen pt-[60px] pb-[98px] sm:px-[42px] px-[12px]"
+      className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[6px] auto-rows-fr h-auto min-h-screen pt-[60px] pb-[98px] sm:px-[42px] px-[12px]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

@@ -7,43 +7,33 @@ const spectator = {
     width: 1200,
     height: 800,
   },
-  overview: "As Head Product Designer of Columbia University’s self-sustaining news publication - the Daily Spectator - I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, serving as a replacement of the web browser experience.",
+  overview: "I served as Head Product Designer at Columbia's self-sustaining news publication - The Daily Spectator. I designed and shipped an app with my team to enhance the platform’s mobile accessibility and interactivity, replacing the browser experience.",
   duration: "15 weeks",
   team: ["Philippe Wu", "Christina Su", "Muchen Guo"],
-  role: ["Design Systems", "UI/UX", "Product Management"],
+  role: ["Design System", "UI/UX", "Product Management"],
   tools: ["Figma"],
   description: "UI/UX Design",
   year: "2022",
   content: [
 
-    { "type": "section", "text": "Context" },
+    { "type": "section", "text": "Context", "secondaryText": "Spectator’s Engagement analytics report an increasing consumption of Spectator articles on mobile devices, with more and more users being directed to the Spectator’s mobile website from the organization’s instagram posts. However, a quick scan of the CDS website on mobile phones yields many problems as the visual layout on a desktop does not translate well onto a smaller screen. Thus, the product team at Spectator began ideating a different news viewing experience to replace the web browser: a mobile app." },
 
-    { "type": "text", "text": "Spectator’s Engagement analytics report an increasing consumption of Spectator articles on mobile devices, with more and more users being directed to the Spectator’s mobile website from the organization’s instagram posts. However, a quick scan of the CDS website on mobile phones yields many problems as the visual layout on a desktop does not translate well onto a smaller screen. Thus, the product team at Spectator began ideating a different news viewing experience to replace the web browser: a mobile app." },
 
 
     { "type": "image", "src": "/images/spec-mobile/spec1.png" },
 
 
 
-    { "type": "section", "text": "Oppurtunities & Demand" },
-
-
-
-
-    { "type": "text", "text": "We found existing research on mobile app demand and trends, and also sent out surveys about news consumption to 1) Spectator Staff, who spend half their life on the spectator website and have a full understanding of the site down to its tiniest inefficiencies and 2) other Columbia undergraduate students, who is our main target audience and can provide good general feedback for the current method of viewing Spectator news." },
+    { "type": "section", "text": "Oppurtunities & Demand", "secondaryText": "We found existing research on mobile app demand and trends, and also sent out surveys about news consumption to 1) Spectator Staff, who spend half their life on the spectator website and have a full understanding of the site down to its tiniest inefficiencies and 2) other Columbia undergraduate students, who is our main target audience and can provide good general feedback for the current method of viewing Spectator news." },
     { "type": "image", "src": "/images/spec-mobile/spec2.png" },
 
 
-
-
-    { "type": "section", "text": "Competitive Landscape" },
-    { "type": "text", "text": "We looked into other successful news delivering apps to gain a better understanding of the mobile iteration of news content and to get inspired with new feature ideas." },
+    { "type": "section", "text":"And we looked into successful news delivering apps to gain a better understanding of the mobile iteration of news content." },
     { "type": "image", "src": "/images/spec-mobile/spec3.png" },
 
 
 
-    { "type": "section", "text": "Conclusion" },
-    { "type": "text", "text": "An app is easier to access, easier to browse, and easier to share, resulting in an increased user activity and a more profound brand influence & mobile presence. An app also allows for expanded functionalities including story-telling through more specific sections and subsections, tighter integration between print and mobile formats, customizable notifications system, personalization of feed, offline reading, etc." },
+    { "type": "section", "text": "Conclusion", "secondaryText": "An app is easier to access, easier to browse, and easier to share, resulting in an increased user activity and a more profound brand influence & mobile presence. An app also allows for expanded functionalities including story-telling through more specific sections and subsections, tighter integration between print and mobile formats, customizable notifications system, personalization of feed, offline reading, etc." },
 
 
     { "type": "section", "text": "Style Revamp" },

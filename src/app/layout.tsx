@@ -6,6 +6,7 @@ import Background from "../components/Background";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { NavigationProvider } from "../components/NavigationContext";
+import SmoothScrolling from "../components/SmoothScrolling";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,12 +27,14 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <NavigationProvider>
-          <Background />
-          <Transition>
-            {children}
-          </Transition>
-          <Footer />
-          <Navigation />
+          <SmoothScrolling>
+            <Background />
+            <Transition>
+              {children}
+            </Transition>
+            <Footer />
+            <Navigation />
+          </SmoothScrolling>
         </NavigationProvider>
       </body>
 
