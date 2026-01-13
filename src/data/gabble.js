@@ -1,7 +1,7 @@
 import { a } from "framer-motion/client";
 
 const gabble = {
-  id: 13,
+  id: 6,
   category: "work",
   title: "Gabble",
   image: {

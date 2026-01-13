@@ -1,5 +1,5 @@
 const valorant = {
-  id: 6,
+  id:5,
   category: "work",
   title: "Valorant",
   image: {
@@ -14,13 +14,6 @@ const valorant = {
   year: "2023",
   content: [
 
-
-    // { "type": "image", "src": "/images/valorant/val1.png" },
-    // { "type": "image", "src": "/images/valorant/val2.png" },
-    // { "type": "image", "src": "/images/valorant/val3.png" },
-    // { "type": "image", "src": "/images/valorant/val4.png" },
-    // { "type": "image", "src": "/images/valorant/val5.png" },
-    // { "type": "image", "src": "/images/valorant/val6.png" },
     { "type": "section", "text": "" },
 
     { "type": "image", "src": "/images/valorant/valorant.png" },

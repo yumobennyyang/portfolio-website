@@ -1,7 +1,7 @@
 import { a } from "framer-motion/client";
 
 const lab = {
-  id: 12,
+  id: 10000,
   category: "play",
   title: "Lab",
   video: {

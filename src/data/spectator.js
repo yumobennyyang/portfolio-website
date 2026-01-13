@@ -1,5 +1,5 @@
 const spectator = {
-  id: 3,
+  id: 2,
   category: "work",
   title: "Spectator Mobile",
   image: {

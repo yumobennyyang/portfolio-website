@@ -291,13 +291,15 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
         const shouldFadeOut = isOther && !showProjectView;
         const hasFixedStyles = cardStyles[project.id]?.position === 'fixed';
         
+        const isClickable = project.clickable !== false;
+        
         return (
           <div key={project.id} className="relative w-full h-full">
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
-              className={`project group bg-[#f1f1f1] cursor-pointer ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
-              onClick={() => handleClick(project.id)}
+              className={`project ${isClickable ? 'group cursor-pointer border border-[#e5e5e5]' : ''} bg-[#f1f1f1] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              onClick={() => isClickable && handleClick(project.id)}
               variants={itemVariants}
               animate={shouldFadeOut ? { opacity: 0 } : { opacity: 1 }}
               style={{
@@ -306,7 +308,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               }}
             >
             <div 
-              className="projectCard w-full h-full text-zinc-950 tracking-wide flex items-center justify-center"
+              className={`${isClickable ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
               style={{
                 transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
               }}
@@ -355,11 +357,11 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 ...(textStyles[project.id] || {}),
               }}
             >
-              <div className={`flex gap-1 transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'sm:opacity-20 group-hover:opacity-100'}`}>
+              <div className={`flex gap-1 transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 group-hover:opacity-100' : 'opacity-40')}`}>
                 <span className="text-xs uppercase">{project.title}</span>
-                <span className={`hidden sm:inline text-xs uppercase transition-opacity duration-250 pl-[3px] ${isSelected ? 'opacity-100' : 'sm:opacity-0 opacity-40 group-hover:opacity-100'}`}> 〡 {project.description}</span>
+                <span className={`hidden sm:inline text-xs uppercase transition-opacity duration-250 pl-[3px] ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-0 opacity-40 group-hover:opacity-100' : 'opacity-100')}`}> 〡 {project.description}</span>
               </div>
-              <span className={`text-xs transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'sm:opacity-20 group-hover:opacity-100'}`}>{project.year}</span>
+              <span className={`text-xs transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 group-hover:opacity-100' : 'opacity-40')}`}>{project.year}</span>
             </div>
             {/* Mobile description at bottom left */}
             <div 
@@ -370,7 +372,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 ...(textStyles[project.id] || {}), // Apply same transform to keep it consistent or removing it if it shouldn't move
               }}
             >
-              <span className={`text-[10px] sm:text-xs uppercase transition-opacity duration-250 ${isSelected ? 'opacity-100' : 'opacity-40 group-hover:opacity-100'}`}>
+              <span className={`text-[10px] sm:text-xs uppercase transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'opacity-40 group-hover:opacity-100' : 'opacity-40')}`}>
                 {project.description}
               </span>
             </div>

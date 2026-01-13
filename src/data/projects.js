@@ -5,13 +5,17 @@ import valorant from './valorant'
 import surfaces from './surfaces'
 import volumes from './volumes'
 import renderings from './renderings'
-import playground from './playground'
+import lighting from './lighting'
 import caiStudio from './caiStudio'
-import plasticFish from './branding'
+import plasticFish from './plasticFish'
 import cartier from './cartier'
 import lab from './lab'
 import gabble from './gabble'
 import branding from './branding';
+import label2 from './label2';
+import label1 from './label1';
+import responsive from './responsive';
+
 
 // Import other projects as needed
 
@@ -33,15 +37,16 @@ export const projects = [
 
     neoTetra, 
 
-    playground,  
+    lighting,  
 
-    branding, 
+    plasticFish, 
+    label1,
+    label2,
 
-    volumes,
+    responsive,
 
-    renderings,
 
-    surfaces,
+
 
 
 

@@ -1,6 +1,6 @@
 // data/projects/project2.js
 const neoTetra = {
-  id: 1,
+  id: 13,
   category: "play",
   title: "Neo Tetra",
   image: {
