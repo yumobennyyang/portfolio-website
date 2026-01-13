@@ -298,7 +298,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
-              className={`project ${isClickable ? 'group cursor-pointer border border-[#e5e5e5]' : ''} bg-[#f1f1f1] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              className={`project ${isClickable ? 'group cursor-pointer' : ''} bg-[#f1f1f1] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
               onClick={() => isClickable && handleClick(project.id)}
               variants={itemVariants}
               animate={shouldFadeOut ? { opacity: 0 } : { opacity: 1 }}
@@ -354,6 +354,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               style={{
                 opacity: 1,
                 transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                zIndex: 30,
                 ...(textStyles[project.id] || {}),
               }}
             >
@@ -369,6 +370,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               style={{
                 opacity: 1,
                 transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                zIndex: 30,
                 ...(textStyles[project.id] || {}), // Apply same transform to keep it consistent or removing it if it shouldn't move
               }}
             >
@@ -376,6 +378,15 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 {project.description}
               </span>
             </div>
+            {!isClickable && (
+              <div 
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  boxShadow: 'inset 0 0 9px 3px white',
+                  zIndex: 20
+                }}
+              />
+            )}
           </motion.div>
           </div>
         );
