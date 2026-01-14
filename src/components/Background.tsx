@@ -8,9 +8,10 @@ export default function Background() {
           autoPlay
           muted
           loop
+          playsInline
           className="h-full w-full object-cover sm:object-fill blur-xl opacity-80"
         >
-          <source src={"/images/portfolio/background.mp4"} type="video/mp4" />
+          <source src="/images/portfolio/background.mp4" type="video/mp4" />
         </video>
       </div>
 

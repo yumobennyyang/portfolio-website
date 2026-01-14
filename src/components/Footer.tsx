@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <div id="footer" className={`h-[34px] font-[300] fixed lg:bottom-8 bottom-[80px] left-0 w-full z-[10002] pointer-events-auto justify-between items-center tracking-wide lg:flex ${isHomePage ? '' : 'hidden'}`}>
       <div
-        className={`translate-y-[-1px] -z-10 fixed top-6 lg:top-auto left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-auto lg:w-1/2 lg:relative lg:bottom-0 justify-between text-zinc-950 text-sm text-center lg:text-left ${title.className}`}
+        className={`translate-y-[-1px] -z-10 hidden lg:flex fixed top-6 lg:top-auto left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-auto lg:w-1/2 lg:relative lg:bottom-0 justify-between text-zinc-950 text-sm text-center lg:text-left ${title.className}`}
       >
         <div id="info" className="justify-center px-[31px] w-auto whitespace-nowrap">
           <span 
@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div id="links"
-        className={`lg:text-right text-center items-end -z-10 lg:right-0 lg:left-auto left-1/2 -translate-x-1/2 lg:translate-x-0 absolute bottom-0 lg:relative w-auto lg:w-1/2 leading-6 justify-between text-zinc-950 text-sm ${title.className}`}
+        className={`lg:text-right text-center items-end -z-10 lg:right-0 lg:left-auto left-1/2 -translate-x-1/2 lg:translate-x-0 fixed top-6 lg:top-auto lg:bottom-0 lg:relative w-auto lg:w-1/2 leading-6 justify-between text-zinc-950 text-sm ${title.className}`}
       >
         <div className="justify-center px-[31px] w-auto whitespace-nowrap">
           <a href="https://instagram.com/yangyart" target="_blank" className="!pointer-events-auto py-1 pl-[7px] mx-[0px] pr-[11px] rounded-full text-zinc-950 group w-auto opacity-40 hover:opacity-70">

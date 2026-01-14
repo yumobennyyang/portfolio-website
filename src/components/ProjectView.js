@@ -61,14 +61,9 @@ const ProjectView = ({ projectId }) => {
         <div className={`${regularText.className} tracking-normal text-neutral-900 bg-[#f1f1f1]`}>
 
             {project.image && (
-                <div className="brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
-                    {!mainImageLoaded && (
-                        <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
-                            Painting...
-                        </div>
-                    )}
+                <div className=" brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
                     <img 
-                        className={`object-top object-contain !border-none w-full h-auto transition-opacity duration-500 ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`} 
+                        className={`object-top object-contain !border-none w-full h-auto transition-opacity duration-500 `} 
                         src={project.image.src} 
                         alt={project.title} 
                         width={project.image.width} 
@@ -82,18 +77,14 @@ const ProjectView = ({ projectId }) => {
             )}
 
             {project.video && (
-                <div className="overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
-                    {!mainImageLoaded && (
-                        <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
-                            Painting...
-                        </div>
-                    )}
+                <div className="  overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
+                    
                     <video
                         playsInline
                         autoPlay
                         muted
                         loop
-                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 `}
                         width={project.video.width}
                         height={project.video.height}
                         style={{ filter: `${project.video.filter} ` }}
@@ -230,7 +221,7 @@ const ProjectView = ({ projectId }) => {
                         return (
                             <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
                                 {!contentImagesLoaded[index] && (
-                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0] min-h-[50px]`}>
                                         Painting...
                                     </div>
                                 )}
@@ -251,7 +242,7 @@ const ProjectView = ({ projectId }) => {
                         return (
                             <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
                                 {!contentImagesLoaded[index] && (
-                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0] min-h-[50px]`}>
                                         Painting...
                                     </div>
                                 )}

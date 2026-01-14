@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect, useRef } from 'react';
 import { projects } from '../data/projects';
 import styles from './Modal.module.css';
@@ -250,46 +252,14 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
         updateExpandedCardStyles(selectedProjectId);
       }
     };
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [selectedProjectId]);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 20,
-      filter: 'blur(0px)'
-    },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      filter: 'blur(0px)',
-      transition: {
-        duration: 0.3,
-        ease: easeOut
-      }
-    }
-  };
 
   return (
     <motion.div 
       id="project-list" 
       className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[6px] auto-rows-fr h-auto min-h-[100dvh] pt-[60px] pb-[98px] sm:px-[42px] px-[12px]"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
       key={category}
     >
       {filteredProjects.map((project, index) => {
@@ -308,15 +278,25 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               ref={(el) => cardRefs.current[project.id] = el}
               className={`project ${isClickable ? 'group cursor-pointer border border-[#eeeeee]' : ''} bg-[#f1f1f1] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
               onClick={() => isClickable && handleClick(project.id)}
-              variants={itemVariants}
-              animate={shouldFadeOut ? { opacity: 0 } : { opacity: 1 }}
+              initial={{ opacity: 1, y: 10, z: 0 }}
+              animate={shouldFadeOut ? { opacity: 0, y: 0, z: 0 } : { opacity: 1, y: 0, z: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: isSelected || isOther ? 0 : index * 0.05, // Only stagger on initial load/mount
+                ease: [0.25, 0.1, 0.25, 1.0]
+              }}
               style={{
                 ...(cardStyles[project.id] || {}),
                 pointerEvents: isOther ? 'none' : undefined,
+                // Force persistent hardware acceleration to prevent Safari flashing at animation end
+                willChange: 'transform, opacity',
+                backfaceVisibility: 'hidden',
+                WebkitBackfaceVisibility: 'hidden',
+                transform: 'translateZ(0)', 
               }}
             >
              <div 
-               className={`${isClickable ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
+               className={`${isClickable && !isSelected ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
                style={{
                  transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
                }}
@@ -399,10 +379,21 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 ...(textStyles[project.id] || {}), // Apply same transform to keep it consistent or removing it if it shouldn't move
               }}
             >
-              <span className={`text-[10px] sm:text-xs uppercase transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'opacity-40 group-hover:opacity-100' : 'opacity-40')}`}>
+              <span className={`text-[10px] sm:text-xs uppercase transition-opacity duration-250 ${isSelected ? 'opacity-0' : (isClickable ? 'opacity-40 group-hover:opacity-100' : 'opacity-40')}`}>
                 {project.description}
               </span>
             </div>
+
+            {project.video &&(
+              <div 
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  boxShadow: 'inset 0 0 30px 30px #f1f1f1',
+                  zIndex: 20
+                }}
+              />
+            )}
+
             {!isClickable && (
               <div 
                 className="absolute inset-0 pointer-events-none"
@@ -411,9 +402,8 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                   zIndex: 20
                 }}
               />
-
-              
             )}
+            
           </motion.div>
           </div>
         );
