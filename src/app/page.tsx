@@ -371,7 +371,7 @@ export default function AboutPage() {
                   <br /><br />
                   <span className="uppercase">Tencent<span className="opacity-0">------------------------------------</span>2023</span>
                   <br />
-                  <span className="uppercase">Interaction Designer</span>
+                  <span className="uppercase">Interaction Design</span>
                   <br /><br />
                   <span className="uppercase">Jeff Koons, LLC<span className="opacity-0">----------------------------</span>2022</span>
                   <br />

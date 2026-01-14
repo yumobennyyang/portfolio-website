@@ -12,13 +12,14 @@ const label2 = {
 
   },
 
-  overview: "",
+  overview: "Elastic Deformation calculated from Poisson's ratio. On stretch, the material appears to thin out, revealing a red, dotted inner lining, while the haptics deliver subtle, crisp thuds in sync.",
   description: "Metal Shader",
   year: "2025",
+  tools: ["Swift", "Metal"],
   content: [
 
 
-    { "type": "section", "text": "Red lining revealed on stretch." },
+    { "type": "section", "text": "" },
     { "type": "image", "src": "/images/label2/label2.png" },
 
   ],

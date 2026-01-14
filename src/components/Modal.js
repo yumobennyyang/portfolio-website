@@ -100,7 +100,7 @@ const Modal = ({ isOpen, onClose, children, selectedProjectId, onContentVisible 
         <div className={`${styles.modalOverlay} ${styles.overlayBackCursor} font-[400] tracking-wide text-[#ff0000] flex fixed inset-0 w-screen h-screen items-end justify-center z-[10002]`}>
 
             {/* Clipping container for safe area */}
-            <div className="border border-[#e5e5e5] fixed overflow-hidden z-[10003] pointer-events-auto top-[60px] bottom-[98px] left-[12px] right-[12px] sm:left-[42px] sm:right-[42px]">
+            <div className="border border-[#eeeeee] fixed overflow-hidden z-[10003] pointer-events-auto top-[60px] bottom-[98px] left-[12px] right-[12px] sm:left-[42px] sm:right-[42px]">
 
                 <div 
                     ref={scrollRef}

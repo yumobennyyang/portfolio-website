@@ -15,7 +15,7 @@ const valorant = {
 
     { "type": "section", "text": "" },
 
-    { "type": "image", "src": "/images/plastic-fish/plasticfish1.png" },
+    // { "type": "image", "src": "/images/plastic-fish/plasticfish1.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish2.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish3.png" },
     { "type": "image", "src": "/images/plastic-fish/plasticfish4.png" },
