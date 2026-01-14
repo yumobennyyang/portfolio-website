@@ -17,6 +17,14 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
   const [verticalOffsets, setVerticalOffsets] = useState({});
   const [originalPositions, setOriginalPositions] = useState({});
   const [isClosing, setIsClosing] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState({});
+
+  const handleImageLoad = (id) => {
+    setImagesLoaded((prev) => {
+      if (prev[id]) return prev;
+      return { ...prev, [id]: true };
+    });
+  };
 
 
 
@@ -307,47 +315,64 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 pointerEvents: isOther ? 'none' : undefined,
               }}
             >
-            <div 
-              className={`${isClickable ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
-              style={{
-                transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
-              }}
-            >
-              <div 
-                className="brightness-100 w-full h-full flex items-center justify-center"
-                style={{
-                  ...(mediaStyles[project.id] || {}),
-                  transform: `translateY(${(!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0}px)`,
-                  transition: isSelected && !isThisCardClosing 
-                    ? 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)' // Opening: offset → 0
-                    : 'all 0.3s ease-out', // Closing: 0 → offset
-                }}
-              >
-                {project.image && (
-                  <div className=" w-full h-full flex items-center justify-center projectImage select-none">
-                    <img
-                      className="object-contain object-top select-none"
-                      style={{ width: '100%', height: '100%' }}
-                      src={project.image.src}
-                      alt={project.title}
-                    />
-                  </div>
-                )}
-                {project.video && (
-                  <div className="w-full h-full flex items-center justify-center projectImage select-none">
-                    <video
-                      playsInline
-                      autoPlay
-                      muted
-                      loop
-                      className="object-contain object-top  w-full h-full select-none"
-                      style={{ filter: project.video.filter || '' }}
-                    >
-                      <source src={project.video.src} type="video/mp4" />
-                    </video>
-                  </div>
-                )}
-              </div>
+             <div 
+               className={`${isClickable ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
+               style={{
+                 transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+               }}
+             >
+                <div 
+                  className="brightness-100 w-full h-full flex items-center justify-center relative"
+                  style={{
+                    ...(mediaStyles[project.id] || {}),
+                    transform: `translateY(${(!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0}px)`,
+                    transition: isSelected && !isThisCardClosing 
+                      ? 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)' // Opening: offset → 0
+                      : 'all 0.3s ease-out', // Closing: 0 → offset
+                  }}
+                >
+                  {!imagesLoaded[project.id] && (
+                       <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0]`}>
+                           Painting...
+                       </div>
+                  )}
+                  {project.image && (
+                    <div className={`w-full h-full flex items-center justify-center projectImage select-none transition-opacity duration-500 ${imagesLoaded[project.id] ? 'opacity-100' : 'opacity-0'} relative z-[10]`}>
+                      <img
+                        className="object-contain object-top select-none"
+                        style={{ width: '100%', height: '100%' }}
+                        src={project.image.src}
+                        alt={project.title}
+                        ref={(img) => {
+                            if (img && img.complete) {
+                                handleImageLoad(project.id);
+                            }
+                        }}
+                        onLoad={() => handleImageLoad(project.id)}
+                      />
+                    </div>
+                  )}
+                  {project.video && (
+                    <div className="w-full h-full flex items-center justify-center projectImage select-none relative z-[10]">
+                      <video
+                        playsInline
+                        autoPlay
+                        muted
+                        loop
+                        className="object-contain object-top  w-full h-full select-none"
+                        style={{ filter: project.video.filter || '' }}
+                        onLoadedData={() => handleImageLoad(project.id)}
+                        ref={(vid) => {
+                            if (vid && vid.readyState >= 3) {
+                                handleImageLoad(project.id);
+                            }
+                        }}
+                      >
+                        <source src={project.video.src} type="video/mp4" />
+                      </video>
+                    </div>
+                  )}
+                </div>
             </div>
             <div 
               className={`font-[300] absolute top-0 left-0 right-0 ${isSelected ? 'px-[2px]' : 'px-[6px]'} py-[3px] flex justify-between items-start ${title.className}`}

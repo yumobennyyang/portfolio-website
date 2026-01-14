@@ -13,17 +13,32 @@ const neoTetra = localFont({ src: '../fonts/NeoTetra-Regular.ttf' });
 const labels = localFont({ src: '../fonts/TT_Commons_Pro_VF_Trial.ttf' })
 
 const ProjectView = ({ projectId }) => {
+    const project = projects.find((p) => p.id === projectId);
+    const [mainImageLoaded, setMainImageLoaded] = useState(false);
+    const [contentImagesLoaded, setContentImagesLoaded] = useState({});
     const [modalWidth, setModalWidth] = useState(0);
     const [maxH, setMaxH] = useState(0);
-    const project = projects.find((p) => p.id === projectId);
     const [detailsVisible, setDetailsVisible] = useState(false);
 
+    // Handler for main image
+    const handleMainImageLoad = () => {
+        setMainImageLoaded(true);
+    };
+
+    // Handler for content images
+    const handleContentImageLoad = (index) => {
+        setContentImagesLoaded(prev => {
+            if (prev[index]) return prev;
+            return { ...prev, [index]: true };
+        });
+    };
+
     useEffect(() => {
-
-
-
+        // Reset main image loading state when project changes
+        setMainImageLoaded(false);
+        setContentImagesLoaded({});
+        
         if (typeof window !== 'undefined') {
-
             const isMinWidth768 = window.matchMedia('(min-width: 768px)').matches;
             const isMinWidth640 = window.matchMedia('(min-width: 640px)').matches;
 
@@ -38,39 +53,56 @@ const ProjectView = ({ projectId }) => {
 
             setTimeout(() => setDetailsVisible(true), 500);
         }
-    }, []);
+    }, [projectId]); // Added projectId dependency to reset loading state
 
     if (!project) return null;
-
-
 
     return (
         <div className={`${regularText.className} tracking-normal text-neutral-900 bg-[#f1f1f1]`}>
 
-
-
-
             {project.image && (
-                <div className="brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center">
-                    <img className="object-top object-contain !border-none w-full h-auto" src={project.image.src} alt={project.title} width={project.image.width} height={project.image.height} />
+                <div className="brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
+                    {!mainImageLoaded && (
+                        <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                            Painting...
+                        </div>
+                    )}
+                    <img 
+                        className={`object-top object-contain !border-none w-full h-auto transition-opacity duration-500 ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`} 
+                        src={project.image.src} 
+                        alt={project.title} 
+                        width={project.image.width} 
+                        height={project.image.height} 
+                        onLoad={handleMainImageLoad}
+                        ref={(img) => {
+                            if (img && img.complete) handleMainImageLoad();
+                        }}
+                    />
                 </div>
             )}
 
-
             {project.video && (
-                <div className="overflow-hidden max-w-[700px] m-auto flex justify-center">
+                <div className="overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
+                    {!mainImageLoaded && (
+                        <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                            Painting...
+                        </div>
+                    )}
                     <video
                         playsInline
                         autoPlay
                         muted
                         loop
-                        className="object-fit object-top w-full h-auto"
+                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`}
                         width={project.video.width}
                         height={project.video.height}
-                        style={{ filter: `${project.video.filter} ` }}>
-
+                        style={{ filter: `${project.video.filter} ` }}
+                        onLoadedData={handleMainImageLoad}
+                        ref={(vid) => {
+                            if (vid && vid.readyState >= 3) handleMainImageLoad();
+                        }}
+                    >
                         <source src={project.video.src} type="video/mp4" />
-
                     </video>
                 </div>
             )}
@@ -195,12 +227,45 @@ const ProjectView = ({ projectId }) => {
 
                     if (item.type === 'image') {
 
-
-                        return <motion.div {...animationProps} className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></motion.div>;
+                        return (
+                            <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
+                                {!contentImagesLoaded[index] && (
+                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                                        Painting...
+                                    </div>
+                                )}
+                                <img 
+                                    className={`px-0 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
+                                    src={item.src} 
+                                    alt={`Project ${project.id} Image ${index + 1}`} 
+                                    onLoad={() => handleContentImageLoad(index)}
+                                    ref={(img) => {
+                                        if (img && img.complete) handleContentImageLoad(index);
+                                    }}
+                                />
+                            </motion.div>
+                        );
                     }
 
                     if (item.type === 'smallImage') {
-                        return <motion.div {...animationProps} className=" my-1" key={index} ><img className="px-0" src={item.src} alt={`Project ${project.id} Image ${index + 1}`} /></motion.div>;
+                        return (
+                            <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
+                                {!contentImagesLoaded[index] && (
+                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[5] min-h-[50px]`}>
+                                        Painting...
+                                    </div>
+                                )}
+                                <img 
+                                    className={`px-0 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
+                                    src={item.src} 
+                                    alt={`Project ${project.id} Image ${index + 1}`} 
+                                    onLoad={() => handleContentImageLoad(index)}
+                                    ref={(img) => {
+                                        if (img && img.complete) handleContentImageLoad(index);
+                                    }}
+                                />
+                            </motion.div>
+                        );
                     }
 
 
