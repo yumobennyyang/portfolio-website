@@ -221,10 +221,67 @@ const ProjectView = ({ projectId }) => {
                         return (
                             <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
                                 {!contentImagesLoaded[index] && (
-                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0] min-h-[50px]`}>
-                                        Painting...
-                                    </div>
-                                )}
+                                                       <div 
+                                                           className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0] min-h-[200px]`}
+                                                       >
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0 }}
+                                                           >P</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.01 }}
+                                                           >a</motion.span>
+                                
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.02 }}
+                                                           >i</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.03 }}
+                                                           >n</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.04 }}
+                                                           >t</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.05 }}
+                                                           >i</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.06 }}
+                                                           >n</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.07 }}
+                                                           >g</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.08 }}
+                                                           >&nbsp;.</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.09 }}
+                                                           >&nbsp;.</motion.span>
+                                                           <motion.span
+                                                               initial={{ opacity: 0 }}
+                                                               animate={{ opacity: 1 }}
+                                                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.1 }}
+                                                           >&nbsp;.</motion.span>
+                                                       </div>
+                                                  )}
                                 <img 
                                     className={`px-0 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
                                     src={item.src} 

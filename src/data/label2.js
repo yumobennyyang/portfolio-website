@@ -3,7 +3,7 @@ const label2 = {
   category: "play",
   title: "Label[2]",
   video: {
-    src: "/images/label2/label2.mov",
+    src: "/images/portfolio/label2.mp4",
     width: 1200,
     height: 800,
    filter: "brightness(101%) contrast(98%) saturate(98%)"

@@ -3,7 +3,7 @@ const lighting = {
   category: "play",
   title: "Interactive Lighting",
   video: {
-    src: "/images/portfolio/playground.mov",
+    src: "/images/portfolio/lighting.mp4",
     width: 1200,
     height: 800,
     filter: "brightness(102%) contrast(98%) saturate(90%)"

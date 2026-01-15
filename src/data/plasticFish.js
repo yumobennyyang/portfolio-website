@@ -1,4 +1,4 @@
-const valorant = {
+const plasticFish = {
   id:9,
   category: "play",
   title: "Plastic Fish",
@@ -24,4 +24,4 @@ const valorant = {
 
 };
 
-export default valorant;
+export default plasticFish;

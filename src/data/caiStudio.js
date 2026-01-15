@@ -3,7 +3,7 @@ const caiStudio = {
   category: "work",
   title: "Cai Studio",
   video: {
-    src: "/images/portfolio/caistudio.mov",
+    src: "/images/portfolio/caistudio.mp4",
     width: 1200,
     height: 800,
     filter: "brightness(102%) contrast(98%) saturate(90%)"

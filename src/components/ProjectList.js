@@ -8,6 +8,7 @@ import localFont from 'next/font/local';
 import { easeOut, motion } from 'framer-motion';
 
 const title = localFont({ src: '../fonts/TT_Commons_Pro_Mono_VF_Trial.ttf' });
+const loading = localFont({ src: '../fonts/TT_Commons_Pro_VF_Trial.ttf' })
 
 const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView }) => {
   const filteredProjects = category ? projects.filter(p => p.category === category) : projects;
@@ -271,8 +272,10 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
         
         const isClickable = project.clickable !== false;
         
+        const verticalTranslateY = (!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0;
+        
         return (
-          <div key={project.id} className="relative w-full h-full">
+          <div key={project.id} className="relative w-full h-full"> 
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
@@ -305,15 +308,75 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                   className="brightness-100 w-full h-full flex items-center justify-center relative"
                   style={{
                     ...(mediaStyles[project.id] || {}),
-                    transform: `translateY(${(!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0}px)`,
+                    transform: `translateY(${verticalTranslateY}px)`,
                     transition: isSelected && !isThisCardClosing 
                       ? 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)' // Opening: offset → 0
                       : 'all 0.3s ease-out', // Closing: 0 → offset
                   }}
                 >
                   {!imagesLoaded[project.id] && (
-                       <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0]`}>
-                           Painting...
+                       <div 
+                           className={`absolute inset-0 flex items-center justify-center ${loading.className} text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0]`}
+                           style={{
+                               transform: `translateY(${-verticalTranslateY}px)`,
+                           }}
+                       >
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0 }}
+                           >P</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.01 }}
+                           >a</motion.span>
+
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.02 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.03 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.04 }}
+                           >t</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.05 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.06 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.07 }}
+                           >g</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.08 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.09 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.1 }}
+                           >&nbsp;.</motion.span>
                        </div>
                   )}
                   {project.image && (
