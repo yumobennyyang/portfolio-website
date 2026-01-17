@@ -3,10 +3,9 @@ const responsive = {
   category: "code",
   title: "Responsive Characters",
   video: {
-    src: "/images/portfolio/hospital.mp4",
+    src: "/images/portfolio/hospital.mov",
     width: 1200,
     height: 800,
-    filter: "brightness(102%) contrast(98%) saturate(90%)"
 
 
   },

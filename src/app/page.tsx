@@ -432,6 +432,7 @@ export default function AboutPage() {
         <img src="/images/trail/7.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
         <img src="/images/trail/8.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
         <img src="/images/trail/9.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/10.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
       </div>
 
 

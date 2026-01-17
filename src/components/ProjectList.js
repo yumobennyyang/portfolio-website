@@ -305,7 +305,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                }}
              >
                 <div 
-                  className="w-full h-full flex items-center justify-center relative"
+                  className="w-full h-full flex items-center justify-center relative bg-[#f5f5f7]"
                   style={{
                     ...(mediaStyles[project.id] || {}),
                     transform: `translateY(${verticalTranslateY}px)`,

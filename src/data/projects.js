@@ -20,6 +20,7 @@ import brainstorm from './brainstorm';
 import manhattan from './manhattan';
 import pixelEcologies from './pixelEcologies';
 import spatialUX from './spatialUX';
+import sharp from './sharp';
 
 
 // Import other projects as needed
@@ -60,6 +61,8 @@ export const projects = [
 
 
     pixelEcologies,
+
+    sharp,
     spatialUX,
 
 
