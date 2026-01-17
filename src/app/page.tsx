@@ -422,8 +422,8 @@ export default function AboutPage() {
   return (
     <main className="flex justify-center w-screen m-auto font-[200]">
 
-      <div ref={containerRef} className="h-[300px] relative z-0 flex justify-center items-center content">
-        <img src="/images/trail/1.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+      <div ref={containerRef} className="hidden sm:flex h-[300px] relative z-0 justify-center items-center content">
+        <img src="/images/trail/1.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img " />
         <img src="/images/trail/2.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
         <img src="/images/trail/3.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
         <img src="/images/trail/4.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
