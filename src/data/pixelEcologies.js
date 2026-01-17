@@ -1,4 +1,4 @@
-const manhattan = {
+const pixelEcologies = {
   id:16,
   category: "code",
   title: "Pixel Ecologies",
@@ -17,9 +17,11 @@ const manhattan = {
 
     { "type": "image", "src": "/images/ecology/ecology1.png" },
 
+    { "type": "text", "text": "more to come." },
+
 
   ],
 
 };
 
-export default manhattan;
+export default pixelEcologies;
