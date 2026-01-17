@@ -58,7 +58,7 @@ const ProjectView = ({ projectId }) => {
     if (!project) return null;
 
     return (
-        <div className={`${regularText.className} tracking-normal text-neutral-900 bg-[#f1f1f1]`}>
+        <div className={`${regularText.className} tracking-normal text-neutral-900 bg-[#F5F5F7]`}>
 
             {project.image && (
                 <div className=" brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
@@ -84,7 +84,7 @@ const ProjectView = ({ projectId }) => {
                         autoPlay
                         muted
                         loop
-                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 `}
+                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 mix-blend-darken ${project.video.style || ''} `}
                         width={project.video.width}
                         height={project.video.height}
                         style={{ filter: `${project.video.filter} ` }}
@@ -98,29 +98,29 @@ const ProjectView = ({ projectId }) => {
                 </div>
             )}
 
-            <div className={`max-w-[800px] px-4 m-auto z-20 relative w-full grid grid-cols-2 gap-4 text-neutral-950 ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'} `}>
+            <div className={`max-w-[800px] px-4 m-auto z-20 relative w-full grid grid-cols-4 sm:grid-cols-2 gap-4 text-neutral-950 ${detailsVisible ? 'opacity-1 duration-[1000ms]' : 'opacity-0'} `}>
 
 
-                <div className={`px-0 text-[20px] -mt-[2px] grid grid-cols-2 gap-4 items-start ${title.className}`}>
-                    <div className="font-medium">{project?.title}</div>
-                    <div className="font-[250]">{project?.year}</div>
+                <div className={`px-0 text-[20px] -mt-[3px] grid grid-cols-4 sm:grid-cols-2 gap-4 items-start col-span-4 sm:col-span-1 ${title.className}`}>
+                    <div className="font-medium col-span-2 sm:col-span-1">{project?.title}</div>
+                    <div className="font-[250] col-start-3 sm:col-start-auto">{project?.year}</div>
                 </div>
 
 
-                <div className=" px-0  opacity-100 font-[350] text-[14px] items-start "> {project?.overview}</div>
+                <div className="col-span-4 sm:col-span-1 px-0  opacity-100 font-[350] text-[14px] items-start "> {project?.overview}</div>
 
 
 
-                <div className="flex flex-col space-y-6 font-[350] px-0 text-[14px] mt-8 col-span-2">
+                <div className="flex flex-col space-y-6 font-[350] px-0 text-[14px] mt-8 col-span-4 sm:col-span-2">
 
 
 
                     {project.tools && (
                         <div className="grid grid-cols-4 gap-4">
-                            <div className={`col-start-2 ${labels.className}`}>
+                            <div className={`col-start-1 sm:col-start-2 ${labels.className}`}>
                                 <span className="">Tools</span>
                             </div>
-                            <ul className="col-start-3 col-span-2  flex flex-wrap gap-x-4 gap-y-1">
+                            <ul className="col-start-2 col-span-3 sm:col-start-3 sm:col-span-2  flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.tools?.map((tools, index) => (
                                     <li key={index}>{tools}</li>
                                 ))}
@@ -130,19 +130,19 @@ const ProjectView = ({ projectId }) => {
 
                     {project.duration && (
                         <div className="grid grid-cols-4 gap-4">
-                            <div className={`col-start-2  ${labels.className}`}>
+                            <div className={`col-start-1 sm:col-start-2  ${labels.className}`}>
                                 <span className="">Duration</span>
                             </div>
-                            <div className="col-start-3 col-span-2"> {project?.duration}</div>
+                            <div className="col-start-2 col-span-3 sm:col-start-3 sm:col-span-2"> {project?.duration}</div>
                         </div>
                     )}
 
                     {project.team && (
                         <div className="grid grid-cols-4 gap-4">
-                            <div className={`col-start-2  ${labels.className}`}>
+                            <div className={`col-start-1 sm:col-start-2  ${labels.className}`}>
                                 <span className="">Team</span>
                             </div>
-                            <ul className="col-start-3 col-span-2 flex flex-wrap gap-x-4 gap-y-1">
+                            <ul className="col-start-2 col-span-3 sm:col-start-3 sm:col-span-2 flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.team?.map((team, index) => (
                                     <li key={index}>{team}</li>
                                 ))}
@@ -152,10 +152,10 @@ const ProjectView = ({ projectId }) => {
 
                     {project.role && (
                         <div className="grid grid-cols-4 gap-4">
-                            <div className={`col-start-2   ${labels.className}`}>
+                            <div className={`col-start-1 sm:col-start-2   ${labels.className}`}>
                                 <span className="">Role</span>
                             </div>
-                            <ul className="col-start-3 col-span-2 flex flex-wrap gap-x-4 gap-y-1">
+                            <ul className="col-start-2 col-span-3 sm:col-start-3 sm:col-span-2 flex flex-wrap gap-x-4 gap-y-1">
                                 {project?.role?.map((role, index) => (
                                     <li key={index}>{role}</li>
                                 ))}
@@ -169,7 +169,7 @@ const ProjectView = ({ projectId }) => {
             </div>
 
 
-            <div className="bg-[#f1f1f1] pb-16 max-w-[800px] m-auto px-4">
+            <div className="bg-[#F5F5F7] pb-16 max-w-[800px] m-auto px-4">
                 {project.content.map((item, index) => {
                     const animationProps = {
                         initial: "hidden",
@@ -188,21 +188,21 @@ const ProjectView = ({ projectId }) => {
                     if (item.type === 'textarea') {
                         return (
                             <motion.div {...animationProps} className="w-full mt-2" key={index}>
-                                <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] leading-[48px] text-5xl py-0 rounded pb-2 bg-neutral-200 text-[#D93A34] D93A34 border-[#dddddd]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
+                                <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] sm:leading-[48px] leading-[36px] sm:text-5xl text-4xl py-0 rounded pb-2 bg-neutral-200 text-[#D93A34] D93A34 border-[#dddddd]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
                             </motion.div>
                         );
                     }
                     if (item.type === 'section') {
                         if (item.secondaryText) {
                             return (
-                                <motion.div {...animationProps} className={` mb-1 grid grid-cols-4 gap-4 items-start text-neutral-950 font-medium  ${title.className}`} key={index}>
-                                    <div className="col-span-1 mt-[78px] text-xl">{item.text}</div>
-                                    <div className="col-span-3 mt-[5rem] font-[350] text-[14px] mb-[6px] ">{item.secondaryText}</div>
+                                <motion.div {...animationProps} className={` mb-1 grid grid-cols-4 sm:grid-cols-4 sm:gap-4 gap-0 items-start text-neutral-950 font-medium  ${title.className}`} key={index}>
+                                    <div className="col-span-4 sm:col-span-1 mt-[77px] text-xl">{item.text}</div>
+                                    <div className="col-span-4 sm:col-span-3 mt-1 sm:mt-[5rem] font-[350] text-[14px] mb-[6px] ">{item.secondaryText}</div>
                                 </motion.div>
                             );
                         }
                         return (
-                            <motion.div {...animationProps} className={` font-medium mb-1 mt-[5rem] text-xl ${title.className}`} key={index}>
+                            <motion.div {...animationProps} className={` font-medium mb-1 mt-[77px] text-xl ${title.className}`} key={index}>
                                 {item.text}
                             </motion.div>
                         );
@@ -217,12 +217,16 @@ const ProjectView = ({ projectId }) => {
 
 
                     if (item.type === 'image') {
-
                         return (
-                            <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
+                            <motion.div 
+                                {...animationProps} 
+                                className={`my-1 relative w-full ${!contentImagesLoaded[index] ? 'bg-[#ECECEF]' : ''}`} 
+                                style={!contentImagesLoaded[index] ? { aspectRatio: '5/3' } : {}}
+                                key={index}
+                            >
                                 {!contentImagesLoaded[index] && (
                                                        <div 
-                                                           className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0] min-h-[200px]`}
+                                                           className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0]`}
                                                        >
                                                            <motion.span
                                                                initial={{ opacity: 0 }}
@@ -283,38 +287,18 @@ const ProjectView = ({ projectId }) => {
                                                        </div>
                                                   )}
                                 <img 
-                                    className={`px-0 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
+                                    className={`px-0  transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
                                     src={item.src} 
                                     alt={`Project ${project.id} Image ${index + 1}`} 
                                     onLoad={() => handleContentImageLoad(index)}
                                     ref={(img) => {
-                                        if (img && img.complete) handleContentImageLoad(index);
+                                        if (img && img.complete && img.naturalWidth > 0) handleContentImageLoad(index);
                                     }}
                                 />
                             </motion.div>
                         );
                     }
 
-                    if (item.type === 'smallImage') {
-                        return (
-                            <motion.div {...animationProps} className=" my-1 relative min-h-[50px]" key={index} >
-                                {!contentImagesLoaded[index] && (
-                                    <div className={`absolute inset-0 flex items-center justify-center ${title.className} text-xs uppercase text-neutral-400 z-[0] min-h-[50px]`}>
-                                        Painting...
-                                    </div>
-                                )}
-                                <img 
-                                    className={`px-0 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
-                                    src={item.src} 
-                                    alt={`Project ${project.id} Image ${index + 1}`} 
-                                    onLoad={() => handleContentImageLoad(index)}
-                                    ref={(img) => {
-                                        if (img && img.complete) handleContentImageLoad(index);
-                                    }}
-                                />
-                            </motion.div>
-                        );
-                    }
 
 
                     if (item.type === 'line') {

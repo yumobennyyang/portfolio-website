@@ -1,6 +1,34 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+
 export default function Background() {
+  // const [hue, setHue] = useState(180);
+
+  const hue = 0;
+
+  // useEffect(() => {
+  //   const handleMouseMove = (e: MouseEvent) => {
+  //     const { innerWidth: w, innerHeight: h } = window;
+
+  //     const cx = w / 2;
+  //     const cy = h / 2;
+
+  //     const dx = e.clientX - cx;
+  //     const dy = e.clientY - cy;
+
+  //     const dist = Math.sqrt(dx * dx + dy * dy);
+  //     const maxDist = Math.sqrt(cx * cx + cy * cy); // center -> farthest corner
+
+  //     const t = dist / maxDist;          // 0 at center, 1 at farthest corner
+  //     const hueValue = t * 360;          // 0..360
+  //     setHue(hueValue);
+  //   };
+
+  //   window.addEventListener('mousemove', handleMouseMove);
+  //   return () => window.removeEventListener('mousemove', handleMouseMove);
+  // }, []);
+
   return (
     <>
       <div className="block -z-50 fixed h-screen pointer-events-none w-screen items-center bg-white">
@@ -9,7 +37,10 @@ export default function Background() {
           muted
           loop
           playsInline
-          className="h-full w-full object-cover sm:object-fill blur-xl opacity-80"
+          className="h-full w-full object-cover sm:object-fill opacity-80"
+          style={{ 
+            filter: `blur(24px) saturate(100%) hue-rotate(${hue}deg)` 
+          }}
         >
           <source src="/images/portfolio/background.mp4" type="video/mp4" />
         </video>

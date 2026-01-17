@@ -1,21 +1,19 @@
 const label1 = {
   id: 7,
   category: "play",
-  title: "Label[1]",
+  title: "Ripple Effect",
   video: {
-    src: "/images/portfolio/label1.mp4",
+    src: "/images/portfolio/label1.mov",
     width: 1200,
     height: 800,
-    filter: "brightness(100%) contrast(100%) saturate(00%)"
 
 
   },
 clickable: false,
   overview: "",
-  description: "Metal Shader",
+  description: "Metal Shader [1]",
   year: "2025",
   content: [
-
   ],
 
 };

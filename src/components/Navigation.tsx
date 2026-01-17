@@ -15,6 +15,7 @@ export default function Navigation() {
   const getSelectedTab = () => {
     if (pathname === '/work') return 'work';
     if (pathname === '/play') return 'play';
+    if (pathname === '/code') return 'code';
     return 'about';
   };
 
@@ -35,7 +36,7 @@ export default function Navigation() {
   return (
 
 
-    <div className={`z-[999999] p-[2px] tracking-wide navigation font-[400] squircle bg-gray-300 bg-opacity-30 backdrop-blur-lg fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-0 text-[12px] ${title.className} transition-opacity duration-300 `}>
+    <div className={`z-[999999] p-[2px] tracking-wide navigation font-[400] squircle bg-gray-300 bg-opacity-30 backdrop-blur-lg fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-0 text-[12px] whitespace-nowrap ${title.className} transition-opacity duration-300 `}>
       
     <div 
       className="squircle overflow-hidden group" 
@@ -118,6 +119,24 @@ export default function Navigation() {
       >
         <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>PLAY</span>
         {selectedTab === 'play' && !expandedProjectId && (
+          <motion.div
+            layoutId="nav-pill"
+            className="absolute inset-0 bg-black squircle z-[-1]"
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+          />
+        )}
+      </button>
+
+      {/* Code Tab */}
+      <button 
+        onClick={() => !expandedProjectId && handleNavigation('/code')}
+        className={`relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+          ${expandedProjectId ? '' : (selectedTab === 'code' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
+        `}
+        style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
+      >
+        <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>CODE</span>
+        {selectedTab === 'code' && !expandedProjectId && (
           <motion.div
             layoutId="nav-pill"
             className="absolute inset-0 bg-black squircle z-[-1]"

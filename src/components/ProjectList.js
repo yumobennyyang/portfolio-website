@@ -279,7 +279,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
-              className={`project ${isClickable ? 'group cursor-pointer border border-[#eeeeee]' : ''} bg-[#f1f1f1] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              className={`project ${isClickable ? 'group cursor-pointer border border-gray-100' : ''} bg-[#f5f5f7] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
               onClick={() => isClickable && handleClick(project.id)}
               initial={{ opacity: 1, y: 10, z: 0 }}
               animate={shouldFadeOut ? { opacity: 0, y: 0, z: 0 } : { opacity: 1, y: 0, z: 0 }}
@@ -299,13 +299,13 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               }}
             >
              <div 
-               className={`${isClickable && !isSelected ? 'projectCard' : ''} w-full h-full text-zinc-950 tracking-wide flex items-center justify-center`}
+               className={`${isClickable && !isSelected ? 'projectCard' : ''} w-full bg-[#f5f5f7] h-full text-zinc-950 tracking-wide flex items-center justify-center`}
                style={{
                  transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
                }}
              >
                 <div 
-                  className="brightness-100 w-full h-full flex items-center justify-center relative"
+                  className="w-full h-full flex items-center justify-center relative"
                   style={{
                     ...(mediaStyles[project.id] || {}),
                     transform: `translateY(${verticalTranslateY}px)`,
@@ -396,13 +396,13 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                     </div>
                   )}
                   {project.video && (
-                    <div className="w-full h-full flex items-center justify-center projectImage select-none relative z-[10]">
+                    <div className="w-full h-full bg-[#f5f5f7] flex items-center justify-center projectImage select-none relative z-[10]">
                       <video
                         playsInline
                         autoPlay
                         muted
                         loop
-                        className="object-contain object-top  w-full h-full select-none"
+                        className={`object-contain object-top  w-full h-full select-none ${project.video.style || ''}`}
                         style={{ filter: project.video.filter || '' }}
                         onLoadedData={() => handleImageLoad(project.id)}
                         ref={(vid) => {
@@ -447,17 +447,17 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               </span>
             </div>
 
-            {project.video &&(
+            {/* {project.video &&(
               <div 
                 className="absolute inset-0 pointer-events-none"
                 style={{
-                  boxShadow: 'inset 0 0 30px 30px #f1f1f1',
+                  boxShadow: 'inset 0 0 30px 30px #F5F5F7',
                   zIndex: 20
                 }}
               />
-            )}
+            )} */}
 
-            {!isClickable && (
+            {/* {!isClickable && (
               <div 
                 className="absolute inset-0 pointer-events-none"
                 style={{
@@ -465,7 +465,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                   zIndex: 20
                 }}
               />
-            )}
+            )} */}
             
           </motion.div>
           </div>

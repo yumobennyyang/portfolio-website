@@ -1,6 +1,6 @@
 const responsive = {
   id: 11,
-  category: "play",
+  category: "code",
   title: "Responsive Characters",
   video: {
     src: "/images/portfolio/hospital.mp4",

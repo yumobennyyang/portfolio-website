@@ -16,6 +16,123 @@ export default function AboutPage() {
   const expandedLevelRef = useRef(0);
   const splitTypeInstancesRef = useRef<any[]>([]);
 
+
+  // Image Trail Effect
+  const containerRef = useRef<HTMLDivElement>(null);
+  const cursorRef = useRef({ x: 0, y: 0 });
+  const cacheRef = useRef({ x: 0, y: 0 });
+  const lastImagePosRef = useRef({ x: 0, y: 0 });
+  const zIndexRef = useRef(1);
+
+  useEffect(() => {
+    // Mouse movement tracker
+    const handleMouseMove = (ev: MouseEvent) => {
+      cursorRef.current = { x: ev.clientX, y: ev.clientY };
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+
+    // Utils
+    const lerp = (a: number, b: number, n: number) => (1 - n) * a + n * b;
+    const distance = (x1: number, y1: number, x2: number, y2: number) => Math.hypot(x2 - x1, y2 - y1);
+    
+    // Setup images
+    const images = containerRef.current 
+      ? Array.from(containerRef.current.querySelectorAll('.content__img')) as HTMLImageElement[]
+      : [];
+    
+    let imgPosition = 0;
+    const threshold = 100;
+    let requestRef: number;
+
+    const render = () => {
+      // Lerp the "cache" position towards the current cursor position for smoother trailing
+      cacheRef.current.x = lerp(cacheRef.current.x, cursorRef.current.x, 0.1);
+      cacheRef.current.y = lerp(cacheRef.current.y, cursorRef.current.y, 0.1);
+
+      // Check distance from the last position where an image was shown
+      const dist = distance(
+        cacheRef.current.x, 
+        cacheRef.current.y, 
+        lastImagePosRef.current.x, 
+        lastImagePosRef.current.y
+      );
+
+      if (dist > threshold) {
+        showNextImage();
+        lastImagePosRef.current = { ...cacheRef.current };
+      }
+
+      // Check if all images are inactive (opacity 0) to reset zIndex logic if needed
+      // (Optional optimization: if zIndex gets too high, but usually 1-100 is fine)
+      
+      requestRef = requestAnimationFrame(render);
+    };
+
+    const showNextImage = () => {
+      if (images.length === 0) return;
+
+      const img = images[imgPosition];
+      // Increment Z-index so new images appear on top
+      zIndexRef.current += 1;
+      
+      // Kill any running animations on this image
+      gsap.killTweensOf(img);
+
+      // Create GSAP timeline
+      const tl = gsap.timeline();
+
+      // Ensure cacheRef values are used for placement
+      // We center the image on the cursor, but relative to the container
+      const containerRect = containerRef.current?.getBoundingClientRect();
+      const offsetX = containerRect ? containerRect.left : 0;
+      const offsetY = containerRect ? containerRect.top : 0;
+
+      const x = cacheRef.current.x - offsetX - img.width / 2;
+      const y = cacheRef.current.y - offsetY - img.height / 2;
+
+      const targetX = cursorRef.current.x - offsetX - img.width / 2;
+      const targetY = cursorRef.current.y - offsetY - img.height / 2;
+
+      tl.set(img, {
+        opacity: 1,
+        scale: 1,
+        zIndex: zIndexRef.current,
+        x: x,
+        y: y,
+        rotation: 0 // reset rotation if we add it later
+      })
+      .to(img, {
+        duration: 0.9,
+        ease: "expo.out",
+        x: targetX, // gently move towards actual cursor
+        y: targetY
+      }, 0)
+      .to(img, {
+        duration: 1,
+        ease: "power1.out",
+        opacity: 0,
+      }, 0.4)
+      .to(img, {
+        duration: 1,
+        ease: "quint.out",
+        scale: 0.2,
+      }, 0.4);
+
+      // Advance index
+      imgPosition = imgPosition < images.length - 1 ? imgPosition + 1 : 0;
+    };
+
+    // Start loop
+    render();
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(requestRef);
+      // Cleanup GSAP animations
+      images.forEach(img => gsap.killTweensOf(img));
+    };
+  }, []);
+
   useEffect(() => {
     expandedLevelRef.current = expandedLevel;
   }, [expandedLevel]);
@@ -304,6 +421,20 @@ export default function AboutPage() {
 
   return (
     <main className="flex justify-center w-screen m-auto font-[200]">
+
+      <div ref={containerRef} className="h-[300px] relative z-0 flex justify-center items-center content">
+        <img src="/images/trail/1.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/2.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/3.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/4.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/5.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/6.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/7.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/8.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <img src="/images/trail/9.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+      </div>
+
+
       <div id="logo" className="logoOffset z-40 absolute top-1/2 -translate-y-1/2 w-full h-auto px-4">
         <div
           className={`font-[320] left-1/2 -translate-x-1/2 relative leading-[1.1rem] justify-between text-zinc-950 text-xs ${benny.className}`}

@@ -14,7 +14,11 @@ import gabble from './gabble'
 import branding from './branding';
 import label2 from './label2';
 import label1 from './label1';
+import label3 from './label3';
 import responsive from './responsive';
+import brainstorm from './brainstorm';
+import manhattan from './manhattan';
+import pixelEcologies from './pixelEcologies';
 
 
 // Import other projects as needed
@@ -34,18 +38,27 @@ export const projects = [
 
 
 
-    lighting,  
     neoTetra, 
 
-
-
     plasticFish, 
-        label2,
+
+    brainstorm,
+
     label1,
 
+    label3,
+    
+    label2,
+
+
+
+    lighting,  
+
+    manhattan,
 
     responsive,
 
+    pixelEcologies,
 
 
 
