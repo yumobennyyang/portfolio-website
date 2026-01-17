@@ -11,6 +11,7 @@ const spatialUX = {
   tools: ["Mediapipe"],
   description: "Spatial UX",
   year: "2025",
+  team: ["Yuhang Qiu", "Zhengrui Hao"],
   content: [
 
     { "type": "section", "text": "" },

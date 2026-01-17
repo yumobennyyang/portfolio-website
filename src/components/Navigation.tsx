@@ -36,7 +36,7 @@ export default function Navigation() {
   return (
 
 
-    <div className={`z-[999999] p-[2px] tracking-wide navigation font-[400] squircle bg-gray-300 bg-opacity-30 backdrop-blur-lg fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-0 text-[12px] whitespace-nowrap ${title.className} transition-opacity duration-300 `}>
+    <div className={`z-[999999] p-[2px] tracking-wide navigation font-[400] squircle bg-gray-300 bg-opacity-30 backdrop-blur-lg fixed bottom-8 left-1/2 -translate-x-1/2 flex text-[12px] whitespace-nowrap ${title.className} transition-opacity duration-300 `}>
       
     <div 
       className="squircle overflow-hidden group" 
@@ -76,12 +76,12 @@ export default function Navigation() {
       {/* About Tab */}
       <button 
         onClick={() => !expandedProjectId && handleNavigation('/')}
-        className={`relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+        className={`-mr-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
           ${expandedProjectId ? '' : (selectedTab === 'about' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
         `}
         style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
       >
-        <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>ABOUT</span>
+        <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>HOME</span>
         {selectedTab === 'about' && !expandedProjectId && (
           <motion.div
             layoutId="nav-pill"
@@ -94,7 +94,7 @@ export default function Navigation() {
       {/* Work Tab */}
       <button 
         onClick={() => !expandedProjectId && handleNavigation('/work')}
-        className={`relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+        className={`-m-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
           ${expandedProjectId ? '' : (selectedTab === 'work' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
         `}
         style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
@@ -112,7 +112,7 @@ export default function Navigation() {
       {/* Play Tab */}
       <button 
         onClick={() => !expandedProjectId && handleNavigation('/play')}
-        className={`relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+        className={`-m-[2px]  relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
           ${expandedProjectId ? '' : (selectedTab === 'play' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
         `}
         style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
@@ -130,7 +130,7 @@ export default function Navigation() {
       {/* Code Tab */}
       <button 
         onClick={() => !expandedProjectId && handleNavigation('/code')}
-        className={`relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+        className={`-ml-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
           ${expandedProjectId ? '' : (selectedTab === 'code' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
         `}
         style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
