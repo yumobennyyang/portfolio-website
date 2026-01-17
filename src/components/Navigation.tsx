@@ -16,6 +16,7 @@ export default function Navigation() {
     if (pathname === '/work') return 'work';
     if (pathname === '/play') return 'play';
     if (pathname === '/code') return 'code';
+    if (pathname === '/make') return 'make';
     return 'about';
   };
 
@@ -130,13 +131,31 @@ export default function Navigation() {
       {/* Code Tab */}
       <button 
         onClick={() => !expandedProjectId && handleNavigation('/code')}
-        className={`-ml-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+        className={`-m-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
           ${expandedProjectId ? '' : (selectedTab === 'code' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
         `}
         style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
       >
         <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>CODE</span>
         {selectedTab === 'code' && !expandedProjectId && (
+          <motion.div
+            layoutId="nav-pill"
+            className="absolute inset-0 bg-black squircle z-[-1]"
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+          />
+        )}
+      </button>
+
+      {/* Make Tab */}
+      <button 
+        onClick={() => !expandedProjectId && handleNavigation('/make')}
+        className={`-ml-[2px] relative px-[14px] py-[6px] rounded-full transition-colors duration-200 z-10
+          ${expandedProjectId ? '' : (selectedTab === 'make' ? 'text-white' : 'hover:opacity-50 text-zinc-950')}
+        `}
+        style={{ pointerEvents: expandedProjectId ? 'none' : 'auto' }}
+      >
+        <span className={`relative z-10 transition-opacity duration-200 ${expandedProjectId ? 'opacity-0' : 'opacity-100'}`}>MAKE</span>
+        {selectedTab === 'make' && !expandedProjectId && (
           <motion.div
             layoutId="nav-pill"
             className="absolute inset-0 bg-black squircle z-[-1]"

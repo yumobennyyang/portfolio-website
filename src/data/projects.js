@@ -21,53 +21,49 @@ import manhattan from './manhattan';
 import pixelEcologies from './pixelEcologies';
 import spatialUX from './spatialUX';
 import sharp from './sharp';
+import sleep from './sleep';
+import clown from './clown';
+import pillars from './pillars';
+import totebag from './totebag';
+import cigar from './cigar';
+import cement from './cement';
 
 
 // Import other projects as needed
 
 export const projects = [
+
     tencent, 
-
     spectator, 
-
     cartier, 
-
     caiStudio,
-
     valorant,
-
     gabble,
 
 
-
     neoTetra, 
-
     plasticFish, 
-
     brainstorm,
-
     label1,
-
     label3,
-    
     label2,
 
 
-
     lighting,  
-
     manhattan,
-
-
-
     pixelEcologies,
-
     sharp,
     spatialUX,
-
-
-
     responsive,
+
+
+    pillars,
+    totebag,
+    cigar,
+    cement,
+    sleep,
+    clown,
+
 
 
 
