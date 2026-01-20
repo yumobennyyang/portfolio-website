@@ -163,6 +163,28 @@ const ProjectView = ({ projectId }) => {
                         </div>
                     )}
 
+                    {project.links && (
+                        <div className="grid grid-cols-4 gap-4">
+                            <div className={`col-start-1 sm:col-start-2   ${labels.className}`}>
+                                <span className="">Links</span>
+                            </div>
+                            <ul className="col-start-2 col-span-3  sm:col-start-3 sm:col-span-2 flex flex-wrap gap-x-3 gap-y-1">
+                                {project.links.map((link, index) => (
+                                    <li key={index}>
+                                        <a 
+                                            href={link.url} 
+                                            target="_blank" 
+                                            className="!pointer-events-auto pr-[11px]  bg-[#E5E5E8] bg-opacity-60 hover:bg-opacity-100 pb-[2px] pl-[6px] rounded-full text-zinc-950 group w-auto inline-flex items-center translate-x-[-4px] group "
+                                        >
+                                            <span className="translate-x-[1px] text-xs group-hover:translate-x-[3px] group-hover:translate-y-[-2px] inline-block opacity-100 group-hover:opacity-100 transition-transform ease duration-100 mr-1">↗</span>
+                                            <span className="opacity-100 group-hover:opacity-100">{link.text}</span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
 
 
                 </div>
@@ -188,7 +210,7 @@ const ProjectView = ({ projectId }) => {
                     if (item.type === 'textarea') {
                         return (
                             <motion.div {...animationProps} className="w-full mt-2" key={index}>
-                                <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] sm:leading-[48px] leading-[36px] sm:text-5xl text-4xl py-0 rounded pb-2 bg-neutral-200 text-[#D93A34] D93A34 border-[#dddddd]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
+                                <div contentEditable data-placeholder="Type Something" className={` textarea px-1  !min-h-[106px] sm:leading-[48px] leading-[36px] sm:text-5xl text-4xl py-0 rounded pb-2 bg-[#E5E5E8] text-[#D93A34] D93A34 border-[#dddde2]  border layer-shadow textareaElement ${neoTetra.className}`} ></div>
                             </motion.div>
                         );
                     }

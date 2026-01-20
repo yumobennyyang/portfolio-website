@@ -136,7 +136,7 @@ html {
 
 .textareaElement:empty::before {
   content: attr(data-placeholder);
-  color: rgb(194, 194, 194);
+  color: rgb(210, 210, 213);
   /* gray placeholder */
   pointer-events: none;
   display: block;

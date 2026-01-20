@@ -279,7 +279,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
-              className={`project ${isClickable ? 'group cursor-pointer border border-gray-100' : ''} bg-[#f5f5f7] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              className={`project ${isClickable ? 'group cursor-pointer' : 'cursor-not-allowed'} bg-[#f5f5f7] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
               onClick={() => isClickable && handleClick(project.id)}
               initial={{ opacity: 1, y: 10, z: 0 }}
               animate={shouldFadeOut ? { opacity: 0, y: 0, z: 0 } : { opacity: 1, y: 0, z: 0 }}
@@ -299,7 +299,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               }}
             >
              <div 
-               className={`${isClickable && !isSelected ? 'projectCard' : ''} w-full bg-[#f5f5f7] h-full text-zinc-950 tracking-wide flex items-center justify-center`}
+               className={`${isClickable && !isSelected ? 'projectCard ' : ''} w-full bg-[#f5f5f7] h-full text-zinc-950 tracking-wide flex items-center justify-center`}
                style={{
                  transition: 'all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
                }}

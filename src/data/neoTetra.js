@@ -10,9 +10,12 @@ const neoTetra = {
   },
   overview: "Neo Tetra is a typographic study that reimagines 26 letters, 10 numbers, and 12 symbols as geometric forms comprised of primitive shapes.",
   tools: ["Figma", "Glyphs"],
-  duration: "2 weeks",
   description: "Typeface Design",
   year: "2023",
+  links: [
+    { text: "Behance", url: "https://www.behance.net/gallery/160793887/Neo-Tetra-Typography" },
+    { text: "Dafont", url: "https://www.dafont.com/neo-tetra.font" },
+  ],
 
   content: [
 
