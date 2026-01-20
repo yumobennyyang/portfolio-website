@@ -174,7 +174,7 @@ const ProjectView = ({ projectId }) => {
                                         <a 
                                             href={link.url} 
                                             target="_blank" 
-                                            className="!pointer-events-auto pr-[11px]  bg-[#E5E5E8] bg-opacity-60 hover:bg-opacity-100 pb-[2px] pl-[6px] rounded-full text-zinc-950 group w-auto inline-flex items-center translate-x-[-4px] group "
+                                            className="!pointer-events-auto pr-[11px]  bg-[#E5E5E8] bg-opacity-60 hover:bg-opacity-100 pb-[1px] pl-[6px] rounded-full text-zinc-950 group w-auto inline-flex items-center translate-x-[-4px] group "
                                         >
                                             <span className="translate-x-[1px] text-xs group-hover:translate-x-[3px] group-hover:translate-y-[-2px] inline-block opacity-100 group-hover:opacity-100 transition-transform ease duration-100 mr-1">↗</span>
                                             <span className="opacity-100 group-hover:opacity-100">{link.text}</span>
