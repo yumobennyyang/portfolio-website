@@ -11,6 +11,11 @@ const cartier = {
   description: "Exhibition Displays",
   tools: ["Photoshop"],
   year: "2024",
+
+  links: [
+    { text: "Vogue", url: "https://vogue.sg/cartier-exhibition-shanghai-power-of-magic/" },
+  ],
+
   content: [
 
 

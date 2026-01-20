@@ -11,6 +11,12 @@ const pixelEcologies = {
   tools: ["Three.js", "p5.js"],
   description: "Boid Simulation",
   year: "2025",
+
+
+  links: [
+    { text: "Demo", url: "https://yumobennyyang.github.io/Starling/" },
+  ],
+
   content: [
 
     { "type": "section", "text": "" },

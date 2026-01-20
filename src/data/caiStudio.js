@@ -14,6 +14,11 @@ const caiStudio = {
   duration: "6 weeks",
   description: "Daytime Firework",
   year: "2024",
+
+  links: [
+    { text: "Artnet", url: "https://news.artnet.com/art-world/cai-guo-qiang-pst-art-fireworks-ai-2537066" },
+  ],
+
   content: [
 
 

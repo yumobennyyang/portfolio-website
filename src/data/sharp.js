@@ -9,6 +9,11 @@ const sharp = {
 
   },
 
+  links: [
+    { text: "Github", url: "https://github.com/yumobennyyang/ml-sharp-animator" },
+    { text: "Demo", url: "https://yumobennyyang.github.io/ml-sharp-animator/" },
+  ],  
+
   clickable: false,
   overview: "Video to 4D.",
   description: "Apple ML-Sharp",

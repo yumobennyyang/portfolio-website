@@ -14,13 +14,17 @@ const gabble = {
   year: "2025-",
   tools: ["Figma", "Swift"],
   role: ["Product", "Brand", "Design Engineering"],
+  links: [
+    { text: "Website", url: "https://www.gabble.world" },
+    { text: "App Store", url: "https://apps.apple.com/us/app/gabble-gamifying-debate/id6745415500" },
+  ],
+
   content: [
 
     
     { "type": "section", "text": "Closed Beta Launch" },
     { "type": "video", "src": "/images/gabble/gabble_launch.mov", autoplay: false, looping: false, },
-
-    { "type": "link", "text": "www.gabble.world", "url": "https://www.gabble.world" }
+    { "type": "text", "text": "more to come." },
 
     
   ],

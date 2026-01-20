@@ -11,6 +11,11 @@ const manhattan = {
   tools: ["OpenStreetMap", "p5.js"],
   description: "Mapping System",
   year: "2025",
+
+  links: [
+    { text: "Demo", url: "https://yumobennyyang.github.io/Vertical/" },
+  ],
+
   content: [
 
     { "type": "section", "text": "" },
