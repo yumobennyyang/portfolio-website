@@ -191,7 +191,7 @@ const ProjectView = ({ projectId }) => {
             </div>
 
 
-            <div className="bg-[#F5F5F7] pb-16 max-w-[800px] m-auto px-4">
+            <div className="bg-[#F5F5F7] pb-[100px] max-w-[800px] m-auto px-4">
                 {project.content.map((item, index) => {
                     const animationProps = {
                         initial: "hidden",
@@ -309,7 +309,7 @@ const ProjectView = ({ projectId }) => {
                                                        </div>
                                                   )}
                                 <img 
-                                    className={`px-0  transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
+                                    className={`px-0 z-1 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
                                     src={item.src} 
                                     alt={`Project ${project.id} Image ${index + 1}`} 
                                     onLoad={() => handleContentImageLoad(index)}
@@ -317,6 +317,17 @@ const ProjectView = ({ projectId }) => {
                                         if (img && img.complete && img.naturalWidth > 0) handleContentImageLoad(index);
                                     }}
                                 />
+                                {item.secondUrl && (
+                                    <video
+                                        playsInline
+                                        autoPlay
+                                        muted
+                                        loop
+                                        className={`absolute z-[20] transition-opacity duration-500 pointer-events-none ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'} ${item.videoStyles || ''}`}
+                                        src={item.secondUrl}
+                                        style={item.videoInlineStyles || {}}
+                                    />
+                                )}
                             </motion.div>
                         );
                     }

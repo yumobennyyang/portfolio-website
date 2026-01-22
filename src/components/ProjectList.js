@@ -21,6 +21,19 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
   const [originalPositions, setOriginalPositions] = useState({});
   const [isClosing, setIsClosing] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState({});
+  const [shakingId, setShakingId] = useState(null);
+  const shakeTimeoutRef = useRef(null);
+
+  const triggerShake = (id) => {
+    if (shakeTimeoutRef.current) {
+      clearTimeout(shakeTimeoutRef.current);
+    }
+    setShakingId(id);
+    shakeTimeoutRef.current = setTimeout(() => {
+      setShakingId(null);
+      shakeTimeoutRef.current = null;
+    }, 500);
+  };
 
   const handleImageLoad = (id) => {
     setImagesLoaded((prev) => {
@@ -271,6 +284,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
         const hasFixedStyles = cardStyles[project.id]?.position === 'fixed';
         
         const isClickable = project.clickable !== false;
+        const isShaking = shakingId === project.id;
         
         const verticalTranslateY = (!isSelected || isThisCardClosing) ? (verticalOffsets[project.id] !== undefined ? verticalOffsets[project.id] : 55) : 0;
         
@@ -279,10 +293,22 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
             {/* This wrapper stays in grid, card inside can become fixed */}
             <motion.div
               ref={(el) => cardRefs.current[project.id] = el}
-              className={`project ${isClickable ? 'group cursor-pointer' : 'cursor-not-allowed'} bg-[#f5f5f7] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
-              onClick={() => isClickable && handleClick(project.id)}
+              className={`project ${isClickable ? 'group cursor-pointer' : 'cursor-default'} bg-[#f5f5f7] ${styles.projectItem} ${hasFixedStyles ? '' : 'absolute inset-0'} ${isSelected ? '' : 'overflow-hidden'}`}
+              onClick={() => {
+                if (isClickable) {
+                  handleClick(project.id);
+                } else {
+                  triggerShake(project.id);
+                }
+              }}
               initial={{ opacity: 1, y: 10, z: 0 }}
-              animate={shouldFadeOut ? { opacity: 0, y: 0, z: 0 } : { opacity: 1, y: 0, z: 0 }}
+              animate={
+                shouldFadeOut 
+                  ? { opacity: 0, y: 0, z: 0 } 
+                  : isShaking 
+                    ? { x: [0, -5, 5, -5, 5, 0], y: 0, z: 0, opacity: 1, transition: { duration: 0.4 } }
+                    : { opacity: 1, y: 0, z: 0, x: 0 }
+              }
               transition={{
                 duration: 0.5,
                 delay: isSelected || isOther ? 0 : index * 0.05, // Only stagger on initial load/mount
@@ -405,8 +431,10 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                         className={`object-contain object-top  w-full h-full select-none ${project.video.style || ''}`}
                         style={{ filter: project.video.filter || '' }}
                         onLoadedData={() => handleImageLoad(project.id)}
+                        onCanPlay={() => handleImageLoad(project.id)}
+                        onLoadedMetadata={() => handleImageLoad(project.id)}
                         ref={(vid) => {
-                            if (vid && vid.readyState >= 3) {
+                            if (vid && vid.readyState >= 2) {
                                 handleImageLoad(project.id);
                             }
                         }}
