@@ -43,7 +43,6 @@ const caiStudio = {
 
 
     { "type": "section", "text": "Final Scenes" },
-        { "type": "section", "text": "" },
     { "type": "video", "src": "/images/cai-studio/EchoAnta-final.mp4" , autoplay: true, looping: true},
     { "type": "video", "src": "/images/cai-studio/SynthView-final.mp4" , autoplay: true, looping: true},
     { "type": "video", "src": "/images/cai-studio/AltCog-final.mp4" , autoplay: true, looping: true},
