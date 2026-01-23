@@ -7,7 +7,7 @@ const valorant = {
     width: 1200,
     height: 800,
   },
-  overview: "Promotional graphics published on July 4th, 2023 for Valorant's launch in China. I repurposed decorative elements from the brand's visual identity and created layouts and components that aligned with the existing aesthetic, fine-tuning information hierarchies to cater specifically to a Chinese audience.",
+  overview: "Promotional graphics published on July 4th, 2023 for Valorant's launch in China. I repurposed decorative elements from the brand's visual identity and created a series oflayouts and components that aligned with the existing aesthetic, fine-tuning information hierarchies to cater specifically to a Chinese audience.",
   tools: ["Photoshop", "Figma"],
   description: "Promotional Graphics",
   year: "2023",

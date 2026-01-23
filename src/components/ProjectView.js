@@ -335,7 +335,7 @@ const ProjectView = ({ projectId }) => {
 
 
                     if (item.type === 'line') {
-                        return <motion.div {...animationProps} className=" border-b border-neutral-300 mb-2" key={index}></motion.div>;
+                        return <motion.div {...animationProps} className=" opacity-0 border-b border-0 border-opacity-0 mb-2" key={index}></motion.div>;
                     }
 
                     if (item.type === 'iframe') {

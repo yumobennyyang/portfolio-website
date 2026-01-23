@@ -40,8 +40,27 @@ const pixelEcologies = {
 
 
         { "type": "section", "text": "Observation is never neutral." },
-        { "type": "text", "text": "Across all three systems, the mouse interaction introduces a presence that is not directive, but affective. It doesn’t command - it perturbs. The trails that remain are evidence of encounter. These traces visualize how information moves through matter, how behavior leaves marks, and how systems adapt when an outsider enters their field. Pixel Ecologies is about the shared logic of life across scales: how local sensing produces global form. By simulating, we don't attempt to imitate nature, but to participate in it, to render its algorithms visible. " },
-        
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "The cursor is a presence that is not directive," },
+        { "type": "text", "text": "but affective." },
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "It doesn’t command - " },
+        { "type": "text", "text": "it perturbs." },
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "The trails that remain are evidence of encounter. " },
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "These traces visualize how information moves through matter," },
+        { "type": "text", "text": "how behavior leaves marks," },
+        { "type": "text", "text": "how systems adapt when an outsider enters their field." },
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "Pixel Ecologies is about the shared logic of life across scales:" },
+        { "type": "text", "text": "how local sensing produces global form." },
+        { "type": "section", "text": "" },
+        { "type": "text", "text": "By simulating, we don't attempt to imitate nature," },
+        { "type": "text", "text": "but to participate in it," },
+        { "type": "text", "text": "to render its algorithms visible." },
+
+
   ],
 
 };
