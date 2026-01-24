@@ -26,7 +26,6 @@ const spatialUX = {
     { "type": "image", "src": "/images/spatial-ux/spatial3.png" },
     { "type": "text", "text": "more to come." },
 
-
   ],
 
 };
