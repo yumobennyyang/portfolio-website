@@ -407,16 +407,14 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                   )}
                   {project.image && (
                     <div className={`w-full h-full flex items-center justify-center projectImage select-none transition-opacity duration-500 ${imagesLoaded[project.id] ? 'opacity-100' : 'opacity-0'} relative z-[10]`}>
-                      <img
+                      <Image
+                        fill
                         className="object-contain object-top select-none"
-                        style={{ width: '100%', height: '100%' }}
                         src={project.image.src}
                         alt={project.title}
-                        ref={(img) => {
-                            if (img && img.complete) {
-                                handleImageLoad(project.id);
-                            }
-                        }}
+                        sizes="(max-width: 640px) 50vw, 33vw"
+                        priority={index < 6}
+                        unoptimized
                         onLoad={() => handleImageLoad(project.id)}
                       />
                     </div>
@@ -433,6 +431,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                         onLoadedData={() => handleImageLoad(project.id)}
                         onCanPlay={() => handleImageLoad(project.id)}
                         onLoadedMetadata={() => handleImageLoad(project.id)}
+                        poster={project.image ? project.image.src : undefined}
                         ref={(vid) => {
                             if (vid && vid.readyState >= 2) {
                                 handleImageLoad(project.id);

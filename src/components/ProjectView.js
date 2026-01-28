@@ -62,8 +62,70 @@ const ProjectView = ({ projectId }) => {
 
             {project.image && (
                 <div className=" brightness-100 overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
+                   {!mainImageLoaded && (
+                       <div 
+                           className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0]`}
+                       >
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0 }}
+                           >P</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.01 }}
+                           >a</motion.span>
+
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.02 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.03 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.04 }}
+                           >t</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.05 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.06 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.07 }}
+                           >g</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.08 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.09 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.1 }}
+                           >&nbsp;.</motion.span>
+                       </div>
+                  )}
                     <img 
-                        className={`object-top object-contain !border-none w-full h-auto transition-opacity duration-500 `} 
+                        className={`object-top object-contain !border-none w-full h-auto transition-opacity duration-500 ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`} 
                         src={project.image.src} 
                         alt={project.title} 
                         width={project.image.width} 
@@ -78,17 +140,80 @@ const ProjectView = ({ projectId }) => {
 
             {project.video && (
                 <div className="  overflow-hidden max-w-[700px] m-auto flex justify-center relative min-h-[50px]">
-                    
+                   {!mainImageLoaded && (
+                       <div 
+                           className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0]`}
+                       >
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0 }}
+                           >P</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.01 }}
+                           >a</motion.span>
+
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.02 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.03 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.04 }}
+                           >t</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.05 }}
+                           >i</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.06 }}
+                           >n</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.07 }}
+                           >g</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.08 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.09 }}
+                           >&nbsp;.</motion.span>
+                           <motion.span
+                               initial={{ opacity: 0 }}
+                               animate={{ opacity: 1 }}
+                               transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.1 }}
+                           >&nbsp;.</motion.span>
+                       </div>
+                  )}
                     <video
                         playsInline
                         autoPlay
                         muted
                         loop
-                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 mix-blend-darken ${project.video.style || ''} `}
+                        className={`object-fit object-top w-full h-auto transition-opacity duration-500 mix-blend-darken ${project.video.style || ''} ${mainImageLoaded ? 'opacity-100' : 'opacity-0'}`}
                         width={project.video.width}
                         height={project.video.height}
                         style={{ filter: `${project.video.filter} ` }}
                         onLoadedData={handleMainImageLoad}
+                        onCanPlay={handleMainImageLoad}
+                        poster={project.image ? project.image.src : undefined}
                         ref={(vid) => {
                             if (vid && vid.readyState >= 3) handleMainImageLoad();
                         }}
