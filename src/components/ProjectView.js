@@ -367,47 +367,101 @@ const ProjectView = ({ projectId }) => {
                     if (item.type === 'video') {
 
                         const { autoplay, looping } = item; // Get video-specific properties
-                        if (autoplay && looping) {
-                            // Video that auto-plays and loops without controls
-                            return (
-                                <motion.div
-                                    {...animationProps}
-                                    className="my-1   w-full h-auto overflow-hidden layer-shado"
-                                    key={index}
+                        const videoContent = (
+                            <>
+                                {!contentImagesLoaded[index] && (
+                                   <div 
+                                       className={`absolute inset-0 flex items-center justify-center ${regularText.className}  text-xl sm:text-2xl font-[550] text-black opacity-10 z-[0]`}
+                                   >
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0 }}
+                                       >P</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.01 }}
+                                       >a</motion.span>
+            
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.02 }}
+                                       >i</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.03 }}
+                                       >n</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.04 }}
+                                       >t</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.05 }}
+                                       >i</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.06 }}
+                                       >n</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.07 }}
+                                       >g</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.08 }}
+                                       >&nbsp;.</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.09 }}
+                                       >&nbsp;.</motion.span>
+                                       <motion.span
+                                           initial={{ opacity: 0 }}
+                                           animate={{ opacity: 1 }}
+                                           transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse", delay: 0.1 }}
+                                       >&nbsp;.</motion.span>
+                                   </div>
+                              )}
+                                <video
+                                    playsInline
+                                    muted={true}
+                                    autoPlay={autoplay}
+                                    loop={looping}
+                                    controls={!autoplay || !looping}
+                                    className={`object-contain transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'} relative z-[10]`}
+                                    width="100%"
+                                    height="auto"
+                                    onLoadedData={() => handleContentImageLoad(index)}
+                                    onCanPlay={() => handleContentImageLoad(index)}
+                                    onLoadedMetadata={() => handleContentImageLoad(index)}
+                                    ref={(vid) => {
+                                        if (vid && vid.readyState >= 2) handleContentImageLoad(index);
+                                    }}
                                 >
-                                    <video
-                                        playsInline
-                                        muted
-                                        autoPlay
-                                        loop
-                                        className="object-contain"
-                                        width="100%"
-                                        height="auto"
-                                    >
-                                        <source src={item.src} />
-                                    </video>
-                                </motion.div>
-                            );
-                        } else {
-                            // Video with controls
-                            return (
-                                <motion.div
-                                    {...animationProps}
-                                    className="my-1   w-full h-auto overflow-hidden layer-shadow "
-                                    key={index}
-                                >
-                                    <video
-                                        playsInline
-                                        controls
-                                        className="object-contain"
-                                        width="100%"
-                                        height="auto"
-                                    >
-                                        <source src={item.src} />
-                                    </video>
-                                </motion.div>
-                            );
-                        }
+                                    <source src={item.src} />
+                                </video>
+                            </>
+                        );
+
+                        return (
+                            <motion.div
+                                {...animationProps}
+                                className={`my-1 w-full h-auto overflow-hidden layer-shadow relative ${!contentImagesLoaded[index] ? 'bg-[#ECECEF]' : ''}`}
+                                style={!contentImagesLoaded[index] ? { aspectRatio: '16/9' } : {}}
+                                key={index}
+                            >
+                                {videoContent}
+                            </motion.div>
+                        );
                     }
                     return null;
                 })}

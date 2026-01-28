@@ -422,7 +422,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                     </div>
                   )}
                   {project.video && (
-                    <div className="w-full h-full bg-[#f5f5f7] flex items-center justify-center projectImage select-none relative z-[10]">
+                    <div className={`w-full h-full bg-[#f5f5f7] flex items-center justify-center projectImage select-none transition-opacity duration-500 ${imagesLoaded[project.id] ? 'opacity-100' : 'opacity-0'} relative z-[10]`}>
                       <video
                         playsInline
                         autoPlay
