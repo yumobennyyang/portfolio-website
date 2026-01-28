@@ -308,14 +308,16 @@ const ProjectView = ({ projectId }) => {
                                                            >&nbsp;.</motion.span>
                                                        </div>
                                                   )}
-                                <img 
+                                <Image 
                                     className={`px-0 z-1 transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'}`} 
                                     src={item.src} 
                                     alt={`Project ${project.id} Image ${index + 1}`} 
+                                    width={0}
+                                    height={0}
+                                    sizes="(max-width: 768px) 100vw, 800px"
+                                    style={{ width: '100%', height: 'auto' }}
                                     onLoad={() => handleContentImageLoad(index)}
-                                    ref={(img) => {
-                                        if (img && img.complete && img.naturalWidth > 0) handleContentImageLoad(index);
-                                    }}
+                                    unoptimized
                                 />
                                 {item.secondUrl && (
                                     <video
