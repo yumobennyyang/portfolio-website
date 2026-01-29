@@ -53,15 +53,12 @@ export default function PlayPage() {
             window.history.pushState(null, '', `#${slug}`);
         }
       }
-    } else {
-      if (window.location.hash) {
-         window.history.pushState(null, '', window.location.pathname);
-      }
     }
   }, [expandedProjectId]);
 
   const handleClose = () => {
     setExpandedProjectId(null);
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (

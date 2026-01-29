@@ -53,16 +53,12 @@ export default function CodePage() {
             window.history.pushState(null, '', `#${slug}`);
         }
       }
-    } else {
-      // If closed and hash exists, remove it
-      if (window.location.hash) {
-         window.history.pushState(null, '', window.location.pathname);
-      }
     }
   }, [expandedProjectId]);
 
   const handleClose = () => {
     setExpandedProjectId(null);
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (

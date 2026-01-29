@@ -57,19 +57,13 @@ export default function WorkPage() {
             window.history.pushState(null, '', `#${slug}`);
         }
       }
-    } else {
-      // If closed and hash exists, remove it
-      if (window.location.hash) {
-         // Use existing logic or pushState to remove hash without reload
-         // Using pushState with same path without hash
-         window.history.pushState(null, '', window.location.pathname);
-      }
     }
   }, [expandedProjectId]);
 
 
   const handleClose = () => {
     setExpandedProjectId(null);
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (

@@ -4,7 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion, LayoutGroup } from 'framer-motion';
 import localFont from 'next/font/local';
 import { useNavigationContext } from './NavigationContext';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const title = localFont({ src: '../fonts/TT_Commons_Pro_VF_Trial.ttf' });
 
@@ -12,10 +12,14 @@ export default function Navigation() {
   const pathname = usePathname();
   const router = useRouter();
   const { expandedProjectId, setExpandedProjectId } = useNavigationContext();
+  const prevPathname = useRef(pathname);
 
-  // Reset expanded state when pathname changes (e.g. browser back button)
+  // Reset expanded state only when pathname actually changes (not on initial mount)
   useEffect(() => {
-    setExpandedProjectId(null);
+    if (prevPathname.current !== pathname) {
+      setExpandedProjectId(null);
+      prevPathname.current = pathname;
+    }
   }, [pathname, setExpandedProjectId]);
 
   const getSelectedTab = () => {
