@@ -4,7 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion, LayoutGroup } from 'framer-motion';
 import localFont from 'next/font/local';
 import { useNavigationContext } from './NavigationContext';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const title = localFont({ src: '../fonts/TT_Commons_Pro_VF_Trial.ttf' });
 
@@ -13,6 +13,12 @@ export default function Navigation() {
   const router = useRouter();
   const { expandedProjectId, setExpandedProjectId } = useNavigationContext();
   const prevPathname = useRef(pathname);
+  const [currentPath, setCurrentPath] = useState(pathname);
+
+  // Sync state with actual pathname (for back/forward navigation)
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname]);
 
   // Reset expanded state only when pathname actually changes (not on initial mount)
   useEffect(() => {
@@ -23,10 +29,10 @@ export default function Navigation() {
   }, [pathname, setExpandedProjectId]);
 
   const getSelectedTab = () => {
-    if (pathname === '/work') return 'work';
-    if (pathname === '/play') return 'play';
-    if (pathname === '/code') return 'code';
-    if (pathname === '/make') return 'make';
+    if (currentPath === '/work') return 'work';
+    if (currentPath === '/play') return 'play';
+    if (currentPath === '/code') return 'code';
+    if (currentPath === '/make') return 'make';
     return 'about';
   };
 
@@ -37,11 +43,13 @@ export default function Navigation() {
       setExpandedProjectId(null);
       return;
     }
+    setCurrentPath(path); // Optimistic update
     router.push(path);
   };
 
   const handleReturnHome = () => {
     setExpandedProjectId(null);
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (
