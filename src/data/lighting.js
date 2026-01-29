@@ -11,7 +11,7 @@ const lighting = {
 
   clickable: false,
   overview: "Hover lighting effect.",
-  description: "CSS",
+  description: "CSS Only",
   year: "2022",
   content: [
 

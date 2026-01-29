@@ -31,10 +31,10 @@ export default function Footer() {
               <> Last updated <LastCommitTime /></>
             )}
             {footerState === 1 && (
-              <> © 2026 Benny Yang | All Rights Reserved</>
+              <> Built with Next.js on Vercel▲</>
             )}
             {footerState === 2 && (
-              <> Built with Next.js on Vercel▲</>
+              <> © 2026 Benny Yang | All Rights Reserved</>
             )}
 
           </span>
