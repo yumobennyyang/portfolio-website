@@ -93,25 +93,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
     };
   }, [category, filteredProjects]);
 
-  // Safety timeout: Ensure all items are revealed after a delay,
-  // preventing items (especially videos without posters) from staying hidden
-  // if the browser throttles loading while they are off-screen/covered.
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setImagesLoaded(prev => {
-        const next = { ...prev };
-        let changed = false;
-        filteredProjects.forEach(p => {
-          if (!next[p.id]) {
-            next[p.id] = true;
-            changed = true;
-          }
-        });
-        return changed ? next : prev;
-      });
-    }, 2500);
-    return () => clearTimeout(timeout);
-  }, [filteredProjects]);
+
 
   // Function to calculate and set expanded card styles
   const updateExpandedCardStyles = (id) => {
@@ -331,7 +313,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
               }
               transition={{
                 duration: 0.5,
-                delay: isSelected || isOther ? 0 : index * 0.05, // Only stagger on initial load/mount
+                delay: isSelected || isOther ? 0 : (index * 0.05) + 0.1, // Add base delay to prevent race condition on index 0
                 ease: [0.25, 0.1, 0.25, 1.0]
               }}
               style={{
@@ -436,7 +418,6 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                         priority={index < 6}
                         unoptimized
                         onLoad={() => handleImageLoad(project.id)}
-                        onLoadingComplete={() => handleImageLoad(project.id)} // Extra safety for Next.js Image
                       />
                     </div>
                   )}
@@ -454,7 +435,7 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                         onLoadedMetadata={() => handleImageLoad(project.id)}
                         poster={project.image ? project.image.src : undefined}
                         ref={(vid) => {
-                            if (vid && (vid.readyState >= 2 || (vid.poster && project.image))) {
+                            if (vid && vid.readyState >= 2) {
                                 handleImageLoad(project.id);
                             }
                         }}
