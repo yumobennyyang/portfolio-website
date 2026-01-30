@@ -24,6 +24,31 @@ const gabble = {
     
     { "type": "section", "text": "Closed Beta Launch" },
     { "type": "video", "src": "/images/gabble/gabble_launch.mov", autoplay: false, looping: false, },
+    
+    
+    { "type": "section", "text": "v1.0" },
+    {"type": "image", "src" : "/images/gabble/frames.png"},
+
+
+            { "type": "section", "text": "Explorations" },
+    {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/interaction.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)" } },
+    {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/gradient.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)" } },
+
+
+        { "type": "section", "text": "Unique icons hashed from usernames" },
+    {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/gabicons.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)" } },
+
+    
+        { "type": "section", "text": "Logo" },
+    {"type": "image", "src" : "/images/gabble/icon.png"},
+
+        {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/gavel1.mp4", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '15%', transform: "translate(-50%,-50%)" }, filter: "invert(1)" },
+        {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/gavel2.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '50%', transform: "translate(-50%,-50%)" }, filter: "invert(1)" },
+
+    
+
+
+  { "type": "section", "text": "" },
     { "type": "text", "text": "more to come." },
 
     
