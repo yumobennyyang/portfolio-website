@@ -34,11 +34,11 @@ import cement from './cement';
 export const projects = [
 
     tencent, 
-    spectator, 
+    gabble, 
     cartier, 
     caiStudio,
     valorant,
-    gabble,
+    spectator, 
 
 
     neoTetra, 
