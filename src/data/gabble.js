@@ -13,7 +13,7 @@ const gabble = {
   description: "0→1 Product",
   year: "2025-",
   tools: ["Figma", "Swift"],
-  role: ["Product", "Brand", "Design Engineering"],
+  role: ["Product", "Brand", "Design", "Frontend"],
   links: [
     { text: "Website", url: "https://www.gabble.world" },
     { text: "App Store", url: "https://apps.apple.com/us/app/gabble-gamifying-debate/id6745415500" },
