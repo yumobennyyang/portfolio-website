@@ -13,7 +13,7 @@ const responsive = {
   clickable: false,
   overview: "from the movie Idiocracy",
   description: "from the movie Idiocracy",
-  year: "2022",
+  year: "2024",
   content: [
 
   ],
