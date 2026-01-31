@@ -436,7 +436,6 @@ export default function AboutPage() {
         <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/10.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
       </div>
 
-
       <div id="logo" className="logoOffset z-40 absolute top-1/2 -translate-y-1/2 w-full h-auto px-4">
         <div
           className={`font-[320] left-1/2 -translate-x-1/2 relative leading-[1.1rem] justify-between text-zinc-950 text-xs ${benny.className}`}
@@ -450,10 +449,10 @@ export default function AboutPage() {
             {expandedLevel === 0 && (
               <>
                 <span className="flashing">_ </span>
-                <span className="text-[#ff0000] opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
-                  <span className="translate-x-[-3px] group-hover:translate-x-[-1px] inline-block translate-y-[1px] transition-transform ease duration-100">&gt;</span>
+                <span className="text-[#ff0000] font-[400] bg-[#ff3800] bg-opacity-0 opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
+                  <span className="text-[#ff0000] translate-x-[-3px] group-hover:translate-x-[-1px] inline-block translate-y-[1px] transition-transform ease duration-100">&gt;</span>
                   <>more</>
-                  <span className="translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>
+                  <span className="text-[#ff0000] translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>
                 </span>
               </>
             )}
