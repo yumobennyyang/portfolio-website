@@ -9,7 +9,7 @@ const usa = {
   },
   overview: "A look into the make-up of social and political powers in America.",
   description: "Data Art",
-  year: "2020-2025",
+  year: "2020-25",
   tools: ["Photoshop", "Remini","Gemini"],
   content: [
 
