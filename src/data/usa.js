@@ -17,6 +17,7 @@ const usa = {
     { "type": "image", "src": "/images/usa/usa1.png" },
     { "type": "image", "src": "/images/usa/usa2.png" },
 
+    
     { "type": "section", "text": "2023", "secondaryText": "3 years later, I decided to rebuild the same humans with the help of AI, which now has phenomenal capacities for facial recognition and reconstruction. This process yielded five clearer and more definitive faces. I then merged the five faces into a single human being –– the representation of American power, you might say." },
 
     { "type": "image", "src": "/images/usa/usa3.png" },
