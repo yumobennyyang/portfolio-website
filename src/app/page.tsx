@@ -424,16 +424,16 @@ export default function AboutPage() {
     <main className="flex justify-center w-screen m-auto font-[200]">
 
       <div ref={containerRef} className="hidden sm:flex h-[300px] relative z-0 justify-center items-center content">
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/1.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img " />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/2.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/3.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/4.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/5.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/6.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/7.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/8.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/9.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
-        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/10.png" alt="" className="max-w-[200px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/1.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img " />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/2.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/3.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/4.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/5.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/6.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/7.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/8.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/9.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/10.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
       </div>
 
       <div id="logo" className="logoOffset z-40 absolute top-1/2 -translate-y-1/2 w-full h-auto px-4">
@@ -449,7 +449,7 @@ export default function AboutPage() {
             {expandedLevel === 0 && (
               <>
                 <span className="flashing">_ </span>
-                <span className="text-[#ff0000] !font-[350] bg-[#ff3800] bg-opacity-0 opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
+                <span className="text-[#ff0000] !font-[350]  opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
                   <span className="text-[#ff0000] translate-x-[-3px] group-hover:translate-x-[-1px] inline-block translate-y-[1px] transition-transform ease duration-100">&gt;</span>
                   <>more</>
                   <span className="text-[#ff0000] translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>

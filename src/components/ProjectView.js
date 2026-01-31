@@ -228,7 +228,7 @@ const ProjectView = ({ projectId }) => {
 
                 <div className={`px-0 text-[20px] -mt-[3px] grid grid-cols-4 sm:grid-cols-2 gap-4 items-start col-span-4 sm:col-span-1 ${title.className}`}>
                     <div className="font-medium col-span-2 sm:col-span-1">{project?.title}</div>
-                    <div className="font-[250] col-start-3 sm:col-start-auto">{project?.year}</div>
+                    <div className="font-[250] col-start-3 col-span-2 sm:col-span-1 sm:col-start-auto">{project?.year}</div>
                 </div>
 
 
@@ -562,7 +562,7 @@ const ProjectView = ({ projectId }) => {
                                     autoPlay={autoplay}
                                     loop={looping}
                                     controls={!autoplay || !looping}
-                                    className={`object-contain transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'} relative z-[10]`}
+                                    className={`object-contain transition-opacity duration-500 ${contentImagesLoaded[index] ? 'opacity-100' : 'opacity-0'} relative z-[10] ${item.videoStyles || ''}`}
                                     width="100%"
                                     height="auto"
                                     onLoadedData={() => handleContentImageLoad(index)}

@@ -12,9 +12,7 @@ import cartier from './cartier'
 import lab from './lab'
 import gabble from './gabble'
 import branding from './branding';
-import label2 from './label2';
-import label1 from './label1';
-import label3 from './label3';
+import labels from './labels';
 import responsive from './responsive';
 import brainstorm from './brainstorm';
 import manhattan from './manhattan';
@@ -27,6 +25,8 @@ import pillars from './pillars';
 import totebag from './totebag';
 import cigar from './cigar';
 import cement from './cement';
+import yang from './yang';
+import usa from './usa';
 
 
 // Import other projects as needed
@@ -44,9 +44,9 @@ export const projects = [
     neoTetra, 
     plasticFish, 
     brainstorm,
-    label1,
-    label3,
-    label2,
+    yang,
+    labels,
+    usa,
 
 
     lighting,  

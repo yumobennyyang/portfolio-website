@@ -28,7 +28,7 @@ const gabble = {
 
 
                 { "type": "section", "text": "Explorations" },
-    {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/interaction.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)" } },
+    {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/interaction.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)"} },
     {"type": "image", "src" : "/images/background-color/e5e5e7.png", "secondUrl":"/images/gabble/gradient.mov", "videoInlineStyles": { position: 'absolute', top: '50%', left: '50%', width: '20%', transform: "translate(-50%,-50%)" } },
 
 
