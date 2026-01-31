@@ -1,4 +1,4 @@
-const plasticFish = {
+const usa = {
   id:8,
   category: "play",
   title: "The American Face",
@@ -21,6 +21,7 @@ const plasticFish = {
 
     { "type": "image", "src": "/images/usa/usa3.png" },
     { "type": "image", "src": "/images/usa/usa4.png" },
+    
 
 
     { "type": "section", "text": "2025", "secondaryText": "Another 2 years later, this person came to life with the help of Gemini." },
@@ -33,4 +34,4 @@ const plasticFish = {
 
 };
 
-export default plasticFish;
+export default usa;
