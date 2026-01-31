@@ -14,20 +14,20 @@ const usa = {
   content: [
 
     { "type": "section", "text": "2020", "secondaryText": "I went into photoshop and merge the most powerful figures in the United States to visualize the faces of 5 fictional leaders representing American power in fields of religion, wealth, military, legislation, and education. They looked almost identical." },
-    { "type": "image", "src": "/images/usa/usa1.png" },
-    { "type": "image", "src": "/images/usa/usa2.png" },
+    { "type": "image", "src": "/images/united/usa1.png" },
+    { "type": "image", "src": "/images/united/usa2.png" },
 
-    
+
     { "type": "section", "text": "2023", "secondaryText": "3 years later, I decided to rebuild the same humans with the help of AI, which now has phenomenal capacities for facial recognition and reconstruction. This process yielded five clearer and more definitive faces. I then merged the five faces into a single human being –– the representation of American power, you might say." },
 
-    { "type": "image", "src": "/images/usa/usa3.png" },
-    { "type": "image", "src": "/images/usa/usa4.png" },
+    { "type": "image", "src": "/images/united/usa3.png" },
+    { "type": "image", "src": "/images/united/usa4.png" },
     
 
 
     { "type": "section", "text": "2025", "secondaryText": "Another 2 years later, this person came to life with the help of Gemini." },
 
-    { "type": "image", "src": "/images/usa/usa5.png" },
+    { "type": "image", "src": "/images/united/usa5.png" },
     {"type":"text", "text":"*Data from June 2020."}
 
 
