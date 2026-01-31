@@ -8,7 +8,7 @@ const tencent = {
     height: 800,
   },
   overview: "I interned at Tencent’s Interactive Entertainment Group (IEG) as an interaction designer. I worked on a complete overhaul of the B2E recommender system used to promote content across all Tencent gaming apps.",
-  tools: ["Photoshop", "Figma"],
+  tools: ["Photoshop", "Figma", "Midjourney"],
   duration: "10 weeks",
   description: "Design System",
   year: "2023",
