@@ -449,7 +449,7 @@ export default function AboutPage() {
             {expandedLevel === 0 && (
               <>
                 <span className="flashing">_ </span>
-                <span className="text-[#ff0000] font-[400] bg-[#ff3800] bg-opacity-0 opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
+                <span className="text-[#ff0000] !font-[350] bg-[#ff3800] bg-opacity-0 opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
                   <span className="text-[#ff0000] translate-x-[-3px] group-hover:translate-x-[-1px] inline-block translate-y-[1px] transition-transform ease duration-100">&gt;</span>
                   <>more</>
                   <span className="text-[#ff0000] translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>
