@@ -13,12 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Benny Yang",
   description: "Benny Yang's portfolio website",
-  openGraph: {
-    images: [],
-  },
-  twitter: {
-    images: [],
-  },
 };
 
 export default function RootLayout({
