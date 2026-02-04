@@ -24,11 +24,19 @@ export default function AboutPage() {
   const cacheRef = useRef({ x: 0, y: 0 });
   const lastImagePosRef = useRef({ x: 0, y: 0 });
   const zIndexRef = useRef(1);
+  const isInitializedRef = useRef(false);
 
   useEffect(() => {
     // Mouse movement tracker
     const handleMouseMove = (ev: MouseEvent) => {
       cursorRef.current = { x: ev.clientX, y: ev.clientY };
+      
+      // Initialize cache on first mouse move to prevent trail from top-left
+      if (!isInitializedRef.current) {
+        cacheRef.current = { x: ev.clientX, y: ev.clientY };
+        lastImagePosRef.current = { x: ev.clientX, y: ev.clientY };
+        isInitializedRef.current = true;
+      }
     };
     window.addEventListener('mousemove', handleMouseMove);
 
