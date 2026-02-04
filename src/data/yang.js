@@ -7,8 +7,6 @@ const yang = {
     width: 1200,
     height: 800,
 
-
-
   },
   overview: "Reimagination of my name[楊雨默] in the calligraphic context of Chinese seal carving[篆刻] –– historically used in lieu of signatures for acknowledgement and authorship –– translated into a contemporary, animated form.",
   description: "Motion Graphics",
