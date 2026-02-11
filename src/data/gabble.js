@@ -47,7 +47,7 @@ const gabble = {
     
     { "type": "section", "text": "Closed Beta Launch" },
     { "type": "text", "text": "Made with Final Cut Pro" },
-    { "type": "video", "src": "/images/gabble/gabble_launch.mov", autoplay: false, looping: false, },
+    { "type": "video", "src": "/images/gabble/gabble_launch.mp4", autoplay: false, looping: false, },
     
 
 

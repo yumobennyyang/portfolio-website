@@ -26,17 +26,17 @@ const pixelEcologies = {
     { "type": "section", "text": "Starlings" },
     {"type":"image","src":"/images/ecology/bird.png", "secondUrl":"/images/ecology/bird.mov", "videoStyles":"mix-blend-lighten saturate-0 contrast-200 ", "videoInlineStyles": { position: 'absolute', top: '31.3%', left: '50%', transform: 'translate(-50%, -50%)', width: '21.2%' }},
     
-    {"type":"video","src":"/images/ecology/starling.mov" , autoplay: true, looping: true},
+    {"type":"video","src":"/images/ecology/starling.mp4" , autoplay: true, looping: true},
    
         { "type": "section", "text": "Emperor Penguins" },
     {"type":"image","src":"/images/ecology/penguin.png", "secondUrl":"/images/ecology/penguin.mov", "videoStyles":"mix-blend-lighten saturate-0 contrast-200 ", "videoInlineStyles": { position: 'absolute', top: '31.3%', left: '50%', transform: 'translate(-50%, -50%)', width: '21.2%' }},
 
-    {"type":"video","src":"/images/ecology/emperor.mov" , autoplay: true, looping: true},
+    {"type":"video","src":"/images/ecology/emperor.mp4" , autoplay: true, looping: true},
 
         { "type": "section", "text": "Bigeye Trevallies" },
     {"type":"image","src":"/images/ecology/fish.png", "secondUrl":"/images/ecology/fish.mov", "videoStyles":"mix-blend-lighten saturate-0 contrast-200 ", "videoInlineStyles": { position: 'absolute', top: '31.3%', left: '50%', transform: 'translate(-50%, -50%)', width: '21.2%' }},
 
-        {"type":"video","src":"/images/ecology/trevally.mov" , autoplay: true, looping: true},
+        {"type":"video","src":"/images/ecology/trevally.mp4" , autoplay: true, looping: true},
 
 
         { "type": "section", "text": "Observation is never neutral." },
