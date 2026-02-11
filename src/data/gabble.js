@@ -9,7 +9,7 @@ const gabble = {
     width: 1200,
     height: 800,
   },
-  overview: "At Gabble we are predicting beliefs, starting with an app that gamifies online discourse by placing users in fast-paced rounds of debate to discuss current-affairs topics with strangers.",
+  overview: "At Gabble we are predicting beliefs, starting with an app that gamifies online discourse by placing users in fast-paced rounds of debate to discuss current-affairs topics with strangers. Currently under rebrand.",
   description: "0→1 Product",
   year: "2025-",
   tools: ["Figma", "Swift"],

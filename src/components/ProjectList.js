@@ -455,11 +455,11 @@ const ProjectList = ({ onSelect, selectedProjectId, category, showProjectView })
                 ...(textStyles[project.id] || {}),
               }}
             >
-              <div className={`flex gap-1 transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 group-hover:opacity-100' : 'opacity-40')}`}>
-                <span className="text-xs uppercase">{project.title}</span>
-                <span className={`hidden sm:inline text-xs uppercase transition-opacity duration-250 pl-[3px] ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-0 opacity-40 group-hover:opacity-100' : 'opacity-100')}`}> 〡 {project.description}</span>
+              <div className={`flex gap-1 transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 opacity-40 group-hover:opacity-100' : 'opacity-40')}`}>
+                <span className="text-[10px] sm:text-xs uppercase">{project.title}</span>
+                <span className={`hidden sm:inline text-[10px] sm:text-xs uppercase transition-opacity duration-250 pl-[3px] ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-0 opacity-40 group-hover:opacity-100' : 'opacity-100')}`}> 〡 {project.description}</span>
               </div>
-              <span className={`text-xs transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 group-hover:opacity-100' : 'opacity-40')}`}>{project.year}</span>
+              <span className={`text-[10px] sm:text-xs transition-opacity duration-250 ${isSelected ? 'opacity-100' : (isClickable ? 'sm:opacity-20 opacity-40 group-hover:opacity-100' : 'opacity-40')}`}>{project.year}</span>
             </div>
             {/* Mobile description at bottom left */}
             <div 
