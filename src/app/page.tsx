@@ -266,7 +266,7 @@ export default function AboutPage() {
       gsap.fromTo(element,
         {
           opacity: 1,
-          transition: 'opacity 0.5s ease-in-out'
+          transition: 'opacity 0.3s ease-in-out'
         },
         {
           opacity: 0,
