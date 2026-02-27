@@ -454,7 +454,7 @@ export default function AboutPage() {
               playful futility —— tools, toys, and everything<br />
               in between.
             </span>
-            {expandedLevel === 0 && (
+            {/* {expandedLevel === 0 && (
               <>
                 <span className="flashing">_ </span>
                 <span className="text-[#ff0000] !font-[350]  opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
@@ -463,10 +463,10 @@ export default function AboutPage() {
                   <span className="text-[#ff0000] translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>
                 </span>
               </>
-            )}
+            )} */}
 
-            {expandedLevel >= 1 && (
-              <>
+            {/* {expandedLevel >= 1 && ( */}
+              {/* <> */}
                 <br /><br />
                 <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
                 <br />
@@ -482,7 +482,7 @@ export default function AboutPage() {
                   <span className="uppercase">B.A. Computer Science</span>
                 </span>
 
-                {expandedLevel === 1 && (
+                {/* {expandedLevel === 1 && (
                   <span className="opacity-0 more-prompt level-1">
                     <span className="flashing">_ </span>
                     <span className="text-[#ff3800] opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(2)}>
@@ -493,10 +493,10 @@ export default function AboutPage() {
                   </span>
                 )}
               </>
-            )}
+            )} */}
 
-            {expandedLevel >= 2 && (
-              <>
+            {/* {expandedLevel >= 2 && ( */}
+              {/* <> */}
                 <br /><br />
                 <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
                 <br />
@@ -520,8 +520,8 @@ export default function AboutPage() {
                 <span className="more-prompt level-2 opacity-0">
                   <span className="flashing">_ </span>
                 </span>
-              </>
-            )}
+              {/* </>
+            )} */}
           </div>
         </div>
       </div>
