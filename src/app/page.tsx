@@ -25,17 +25,25 @@ export default function AboutPage() {
   const lastImagePosRef = useRef({ x: 0, y: 0 });
   const zIndexRef = useRef(1);
   const isInitializedRef = useRef(false);
+  const totalDistanceRef = useRef(0);
+  const lastMousePosRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     // Mouse movement tracker
     const handleMouseMove = (ev: MouseEvent) => {
       cursorRef.current = { x: ev.clientX, y: ev.clientY };
-      
+
       // Initialize cache on first mouse move to prevent trail from top-left
       if (!isInitializedRef.current) {
         cacheRef.current = { x: ev.clientX, y: ev.clientY };
         lastImagePosRef.current = { x: ev.clientX, y: ev.clientY };
+        lastMousePosRef.current = { x: ev.clientX, y: ev.clientY };
         isInitializedRef.current = true;
+      } else {
+        const dx = ev.clientX - lastMousePosRef.current.x;
+        const dy = ev.clientY - lastMousePosRef.current.y;
+        totalDistanceRef.current += Math.hypot(dx, dy);
+        lastMousePosRef.current = { x: ev.clientX, y: ev.clientY };
       }
     };
     window.addEventListener('mousemove', handleMouseMove);
@@ -43,14 +51,15 @@ export default function AboutPage() {
     // Utils
     const lerp = (a: number, b: number, n: number) => (1 - n) * a + n * b;
     const distance = (x1: number, y1: number, x2: number, y2: number) => Math.hypot(x2 - x1, y2 - y1);
-    
+
     // Setup images
-    const images = containerRef.current 
+    const images = containerRef.current
       ? Array.from(containerRef.current.querySelectorAll('.content__img')) as HTMLImageElement[]
       : [];
-    
+
     let imgPosition = 0;
     const threshold = 100;
+    const minTotalDistance = 1000;
     let requestRef: number;
 
     const render = () => {
@@ -60,20 +69,20 @@ export default function AboutPage() {
 
       // Check distance from the last position where an image was shown
       const dist = distance(
-        cacheRef.current.x, 
-        cacheRef.current.y, 
-        lastImagePosRef.current.x, 
+        cacheRef.current.x,
+        cacheRef.current.y,
+        lastImagePosRef.current.x,
         lastImagePosRef.current.y
       );
 
-      if (dist > threshold) {
+      if (dist > threshold && totalDistanceRef.current > minTotalDistance) {
         showNextImage();
         lastImagePosRef.current = { ...cacheRef.current };
       }
 
       // Check if all images are inactive (opacity 0) to reset zIndex logic if needed
       // (Optional optimization: if zIndex gets too high, but usually 1-100 is fine)
-      
+
       requestRef = requestAnimationFrame(render);
     };
 
@@ -83,7 +92,7 @@ export default function AboutPage() {
       const img = images[imgPosition];
       // Increment Z-index so new images appear on top
       zIndexRef.current += 1;
-      
+
       // Kill any running animations on this image
       gsap.killTweensOf(img);
 
@@ -103,29 +112,38 @@ export default function AboutPage() {
       const targetY = cursorRef.current.y - offsetY - img.height / 2;
 
       tl.set(img, {
-        opacity: 1,
-        scale: 1,
+        opacity: 0,
+        scale: 0.5,
+        filter: 'blur(10px)',
         zIndex: zIndexRef.current,
         x: x,
         y: y,
         rotation: 0 // reset rotation if we add it later
       })
-      .to(img, {
-        duration: 0.9,
-        ease: "expo.out",
-        x: targetX, // gently move towards actual cursor
-        y: targetY
-      }, 0)
-      .to(img, {
-        duration: 1,
-        ease: "power1.out",
-        opacity: 0,
-      }, 0.4)
-      .to(img, {
-        duration: 1,
-        ease: "quint.out",
-        scale: 0.2,
-      }, 0.4);
+        .to(img, {
+          duration: 0.3,
+          ease: "power2.out",
+          opacity: 1,
+          scale: 1,
+          filter: 'blur(0px)',
+        }, 0)
+        .to(img, {
+          duration: 0.9,
+          ease: "expo.out",
+          x: targetX, // gently move towards actual cursor
+          y: targetY
+        }, 0)
+        .to(img, {
+          duration: 1,
+          ease: "power1.out",
+          opacity: 0,
+          filter: 'blur(30px)',
+        }, 0.5)
+        .to(img, {
+          duration: 1,
+          ease: "quint.out",
+          scale: 0.2,
+        }, 0.4);
 
       // Advance index
       imgPosition = imgPosition < images.length - 1 ? imgPosition + 1 : 0;
@@ -442,6 +460,16 @@ export default function AboutPage() {
         <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/8.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
         <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/9.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
         <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/10.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/1.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/2.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/3.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/4.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/5.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/6.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/7.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/8.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/9.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
+        <Image width={0} height={0} sizes="200px" style={{ width: 'auto', height: 'auto' }} src="/images/trail/10.png" alt="" className="max-w-[150px] absolute top-0 left-0 opacity-0 content__img" />
       </div>
 
       <div id="logo" className="logoOffset z-40 absolute top-1/2 -translate-y-1/2 w-full h-auto px-4">
@@ -454,7 +482,7 @@ export default function AboutPage() {
               playful futility —— tools, toys, and everything<br />
               in between.
             </span>
-            {/* {expandedLevel === 0 && (
+            {expandedLevel === 0 && (
               <>
                 <span className="flashing">_ </span>
                 <span className="text-[#ff0000] !font-[350]  opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(1)}>
@@ -463,26 +491,26 @@ export default function AboutPage() {
                   <span className="text-[#ff0000] translate-x-[3px] group-hover:translate-x-[1px] inline-block translate-y-[1px] transition-transform ease duration-100">&lt;</span>
                 </span>
               </>
-            )} */}
+            )}
 
-            {/* {expandedLevel >= 1 && ( */}
-              {/* <> */}
-                <br /><br />
-                <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-                <br />
-                <span className="typewriter-text level-1 opacity-0">
-                  <span className="uppercase">Columbia GSAPP<span className="opacity-0">------------------------</span>2025-2026</span>
-                  <br />
-                  <span className="uppercase">M.S. computational design Practices</span>
-                  <br /><br />
-                  <span className="uppercase">Columbia College<span className="opacity-0">----------------------</span>2021-2025</span>
-                  <br />
-                  <span className="uppercase">B.A. Visual arts</span>
-                  <br />
-                  <span className="uppercase">B.A. Computer Science</span>
-                </span>
+            {expandedLevel >= 1 && (
+            <> 
+            <br /><br />
+            <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <br />
+            <span className="typewriter-text level-1 opacity-0">
+              <span className="uppercase">Columbia GSAPP<span className="opacity-0">------------------------</span>2025-2026</span>
+              <br />
+              <span className="uppercase">M.S. computational design Practices</span>
+              <br /><br />
+              <span className="uppercase">Columbia College<span className="opacity-0">----------------------</span>2021-2025</span>
+              <br />
+              <span className="uppercase">B.A. Visual arts</span>
+              <br />
+              <span className="uppercase">B.A. Computer Science</span>
+            </span>
 
-                {/* {expandedLevel === 1 && (
+            {expandedLevel === 1 && (
                   <span className="opacity-0 more-prompt level-1">
                     <span className="flashing">_ </span>
                     <span className="text-[#ff3800] opacity-100 group cursor-pointer" onClick={() => setExpandedLevel(2)}>
@@ -493,35 +521,35 @@ export default function AboutPage() {
                   </span>
                 )}
               </>
-            )} */}
+            )}
 
-            {/* {expandedLevel >= 2 && ( */}
-              {/* <> */}
-                <br /><br />
-                <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-                <br />
-                <span className="typewriter-text level-2 opacity-0">
-                  <span className="uppercase">Gabble<span className="opacity-0">-------------------------------------</span>2025</span>
-                  <br />
-                  <span className="uppercase">Co-founder, Product</span>
-                  <br /><br />
-                  <span className="uppercase">Cai Guo-Qiang Studio<span className="opacity-0">-----------------------</span>2024</span>
-                  <br />
-                  <span className="uppercase">Studio Assistant</span>
-                  <br /><br />
-                  <span className="uppercase">Tencent<span className="opacity-0">------------------------------------</span>2023</span>
-                  <br />
-                  <span className="uppercase">Interaction Design</span>
-                  <br /><br />
-                  <span className="uppercase">Jeff Koons, LLC<span className="opacity-0">----------------------------</span>2022</span>
-                  <br />
-                  <span className="uppercase">Studio Assistant</span>
-                </span>
-                <span className="more-prompt level-2 opacity-0">
-                  <span className="flashing">_ </span>
-                </span>
-              {/* </>
-            )} */}
+            {expandedLevel >= 2 && ( 
+             <>
+            <br /><br />
+            <span className="border-t border-black opacity-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <br />
+            <span className="typewriter-text level-2 opacity-0">
+              <span className="uppercase">Gabble<span className="opacity-0">-------------------------------------</span>2025</span>
+              <br />
+              <span className="uppercase">Co-founder, Product</span>
+              <br /><br />
+              <span className="uppercase">Cai Guo-Qiang Studio<span className="opacity-0">-----------------------</span>2024</span>
+              <br />
+              <span className="uppercase">Studio Assistant</span>
+              <br /><br />
+              <span className="uppercase">Tencent<span className="opacity-0">------------------------------------</span>2023</span>
+              <br />
+              <span className="uppercase">Interaction Design</span>
+              <br /><br />
+              <span className="uppercase">Jeff Koons, LLC<span className="opacity-0">----------------------------</span>2022</span>
+              <br />
+              <span className="uppercase">Studio Assistant</span>
+            </span>
+            <span className="more-prompt level-2 opacity-0">
+              <span className="flashing">_ </span>
+            </span>
+            </>
+            )}
           </div>
         </div>
       </div>
